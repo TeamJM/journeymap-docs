@@ -1,0 +1,19 @@
+site_name: JourneyMap Documentation
+site_url: https://example.com
+nav:
+  - Home: index.md
+  - About:
+      - Licensing: About/licensing.md
+  - Client Docs:
+      - Installing: Client Docs/installing.md
+      - Basic Usage: Client Docs/basic-usage.md
+
+theme:
+  name: material
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+plugins:
+  - glightbox
