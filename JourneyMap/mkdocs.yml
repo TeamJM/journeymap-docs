@@ -1,5 +1,9 @@
 site_name: JourneyMap Documentation
 site_url: https://example.com
+
+repo_name: TeamJM/journeymap-docs2
+repo_url: https://github.com/TeamJM/journeymap-docs2
+
 nav:
   - Home: index.md
   - About:
@@ -7,13 +11,44 @@ nav:
   - Client Docs:
       - Installing: Client Docs/installing.md
       - Basic Usage: Client Docs/basic-usage.md
+      - Full-Screen Map: Client Docs/full-screen-map.md
+      - Waypoints: Client Docs/waypoints.md
+      - Settings: Client Docs/settings.md
+      - Web Map: Client Docs/webmap.md
+      - Data Files: Client Docs/data-files.md
+  - Server Docs:
+      - Current Version: Server Docs/current-version.md
+      - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
+      - Minecraft 1.11 and older: Server Docs/minecraft-1.11-and-older.md
+  - Tools & Customisation:
+      - Tools & Customisation: Tools and Customisation/tools-and-customisation.md
+  - Development:
+      - Development: Development/development.md
 
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 markdown_extensions:
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 plugins:
   - glightbox
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

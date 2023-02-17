@@ -37,8 +37,8 @@ All map types contain markers. These markers denote various pieces of informatio
 | Icon | Description |
 | ----------- | ------------------------------------ |
 | ![Marker-Grey](/img/markers/marker-grey.png){ align=left } | A neutral entity, like an animal. |
-| ![Marker-Blue](/img/markers/marker-blue.png){ align=left } | Another player. |
 | ![Marker-Green](/img/markers/marker-green.png){ align=left } | A villager. |
+| ![Marker-Blue](/img/markers/marker-blue.png){ align=left } | Another player. |
 | ![Marker-Red](/img/markers/marker-red.png){ align=left } | A hostile entity, like a monster. |
 
 Markers and their display can be customized in the [settings manager]().
