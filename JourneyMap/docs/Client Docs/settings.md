@@ -2,7 +2,7 @@
 
 JourneyMap provides more than a few configuration options, allowing you to customize the behaviour and appearance of many different aspects of the mod. All of these settings are made available through the settings manager.
 
-![Overview](/img/settings/overview.png){ align=left }
+![Overview](/img/settings/overview.png){: .center}
 
 To get to the settings manager, open the [full-screen map](full-screen-map.md) and click the settings button at the bottom, or press the O key. Each entry in the list represents a specific category of settings - click on it to expand and see the settings within.
 
@@ -18,7 +18,7 @@ Both minimap presets and the full-screen map may have a configurable grid overla
 
 You can also reach this from the [full-screen](full-screen-map.md) map by holding the Shift key and clicking on the grid button at the top.
 
-![Grid](/img/settings/grid.png){ align=left }
+![Grid](/img/settings/grid.png){: .center}
 
 The grid outlines individual chunks on the map. Grid styles that include region lines will draw an extra grid with differently-coloured lines to outline world regions on the map.
 
@@ -43,7 +43,7 @@ JourneyMap allows you to have two minimap presets. Each preset represents a sepa
 
 To switch between minimap presets, press the switch minimap preset key (the # key by default).
 
-![Minimap-Overview](/img/settings/minimap.png){ align=left }
+![Minimap-Overview](/img/settings/minimap.png){: .center}
 
 ## **Toggles**
 
@@ -74,7 +74,7 @@ By default, all of the following toggle settings are enabled.
 
 Info slots are text areas above and below the minimap that show extra contextual information. There are four of them, numbered from top to bottom.
 
-![Minimap-Slots](/img/minimap-slots.png){ align=left }
+![Minimap-Slots](/img/minimap-slots.png){: .center}
 
 All info slots can be set to one of the following:
 

@@ -24,22 +24,22 @@ All map types contain markers. These markers denote various pieces of informatio
 
 | Icon | Description |
 | ----------- | ------------------------------------ |
-| ![Marker-Player](/img/markers/marker-player.png){ align=left } | Your position on the map. ***Note: This icon has a white border ingame.*** |
-| ![Waypoint](/img/markers/waypoint.png){ align=left } | [A waypoint](). The colour can be set in the waypoint manager. |
-| ![Waypoint](/img/markers/waypoint-death.png){ align=left } | [Death Waypoint]() |
+| ![Marker-Player](/img/markers/marker-player.png){: .center} | Your position on the map. ***Note: This icon has a white border ingame.*** |
+| ![Waypoint](/img/markers/waypoint.png){: .center} | [A waypoint](). The colour can be set in the waypoint manager. |
+| ![Waypoint](/img/markers/waypoint-death.png){: .center} | [Death Waypoint]() |
 
 | Icon | Description |
 | ----------- | ------------------------------------ |
-| ![Marker-White](/img/markers/marker-white.png){ align=left } | A marker denoting an entity on the map. The colour of the marker denotes the type of entity. |
-| ![Marker-White-Down](/img/markers/marker-white-down.png){ align=left } | An entity below you. |
-| ![Marker-White-Up](/img/markers/marker-white-up.png){ align=left } | An entity above you. |
+| ![Marker-White](/img/markers/marker-white.png){: .center} | A marker denoting an entity on the map. The colour of the marker denotes the type of entity. |
+| ![Marker-White-Down](/img/markers/marker-white-down.png){: .center} | An entity below you. |
+| ![Marker-White-Up](/img/markers/marker-white-up.png){: .center} | An entity above you. |
 
 | Icon | Description |
 | ----------- | ------------------------------------ |
-| ![Marker-Grey](/img/markers/marker-grey.png){ align=left } | A neutral entity, like an animal. |
-| ![Marker-Green](/img/markers/marker-green.png){ align=left } | A villager. |
-| ![Marker-Blue](/img/markers/marker-blue.png){ align=left } | Another player. |
-| ![Marker-Red](/img/markers/marker-red.png){ align=left } | A hostile entity, like a monster. |
+| ![Marker-Grey](/img/markers/marker-grey.png){: .center} | A neutral entity, like an animal. |
+| ![Marker-Green](/img/markers/marker-green.png){: .center} | A villager. |
+| ![Marker-Blue](/img/markers/marker-blue.png){: .center} | Another player. |
+| ![Marker-Red](/img/markers/marker-red.png){: .center} | A hostile entity, like a monster. |
 
 Markers and their display can be customized in the [settings manager]().
 
@@ -47,7 +47,7 @@ Markers and their display can be customized in the [settings manager]().
 
 By default, the minimap will be displayed in the top-right corner of your screen.
 
-![Minimap](/img/minimap.png){ align=left }
+![Minimap](/img/minimap.png){: .center}
 
 This is your minimap. By default, it displays the area around your character, as well as some basic information and the positions of your character, other players, animals and monsters.
 
@@ -66,7 +66,7 @@ The minimap and its info slots may be customized in the [settings manager]().
 
 By pressing the full-screen map key (by default, the J key), you can open the full-screen map.
 
-![Full-Screen-Map](/img/full-screen.png){ align=left }
+![Full-Screen-Map](/img/full-screen.png){: .center}
 
 This map gives you a scrollable view of all of the areas of the map you’ve explored so far, displayed as it was when you discovered them. It also provides access to JourneyMap’s Settings and a number of map display options.
 
@@ -76,6 +76,6 @@ For more information on the full-screen map, please see the [full-screen map pag
 
 Once enabled in the [settings manager](), the webmap allows you to view and explore your generated map in a web browser, including accessing it from another device (such as a phone or tablet). This will work as long as the game is running.
 
-![Webmap](/img/webmap.png){ align=left }
+![Webmap](/img/webmap.png){: .center}
 
 For more information on the webmap map, please see [the webmap page]().
