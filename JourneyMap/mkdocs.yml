@@ -14,7 +14,7 @@ nav:
       - Full-Screen Map: Client Docs/full-screen-map.md
       - Waypoints: Client Docs/waypoints.md
       - Settings: Client Docs/settings.md
-      - Web Map: Client Docs/webmap.md
+      - Webmap: Client Docs/webmap.md
       - Data Files: Client Docs/data-files.md
   - Server Docs:
       - Current Version: Server Docs/current-version.md
