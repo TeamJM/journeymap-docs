@@ -2,7 +2,7 @@
 
 JourneyMap is a popular mapping mod for Minecraft. Originally released by techbrew in 2011, it’s gone from strength to strength and today stands as the most popular mapping mod in the world.
 
-![Background](/img/background.jpg){ align=left }
+![Background](img/background.jpg){: .center}
 
 JourneyMap includes an in-game minimap and full-screen map, as well as a webmap that can be viewed in a browser.
 
