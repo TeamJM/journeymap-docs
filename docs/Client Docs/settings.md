@@ -2,7 +2,7 @@
 
 JourneyMap provides more than a few configuration options, allowing you to customize the behaviour and appearance of many different aspects of the mod. All of these settings are made available through the settings manager.
 
-![Overview](/img/settings/overview.png){: .center}
+![Overview](../img/settings/overview.png){: .center}
 
 To get to the settings manager, open the [full-screen map](full-screen-map.md) and click the settings button at the bottom, or press the ++o++ key. Each entry in the list represents a specific category of settings - click on it to expand and see the settings within.
 
@@ -18,7 +18,7 @@ Both minimap presets and the full-screen map may have a configurable grid overla
 
 You can also reach this from the [full-screen](full-screen-map.md) map by holding the ++shift++ key and clicking on the grid button at the top.
 
-![Grid-Settings](/img/settings/grid.png){: .center}
+![Grid-Settings](../img/settings/grid.png){: .center}
 
 The grid outlines individual chunks on the map. Grid styles that include region lines will draw an extra grid with differently-coloured lines to outline world regions on the map.
 
@@ -43,7 +43,7 @@ JourneyMap allows you to have two minimap presets. Each preset represents a sepa
 
 To switch between minimap presets, press the switch minimap preset key (the # key by default).
 
-![Minimap-Settings](/img/settings/minimap.png){: .center}
+![Minimap-Settings](../img/settings/minimap.png){: .center}
 
 ## **Toggles**
 
@@ -74,7 +74,7 @@ By default, all of the following toggle settings are enabled.
 
 Info slots are text areas above and below the minimap that show extra contextual information. There are four of them, numbered from top to bottom.
 
-![Minimap-Slots](/img/minimap-slots.png){: .center}
+![Minimap-Slots](../img/minimap-slots.png){: .center}
 
 All info slots can be set to one of the following:
 
@@ -243,7 +243,7 @@ The [full-screen map](full-screen-map.md) provides a large, scrollable view of y
 
 To switch open the full-screen map, press the full-screen map key (the ++j++ key by default).
 
-![Full-Screen-Settings](/img/settings/full-screen.png){: .center}
+![Full-Screen-Settings](../img/settings/full-screen.png){: .center}
 
 !!! note "Note"
 
@@ -422,7 +422,7 @@ The default option for each setting below is marked with **bold text.**
 
 The [webmap](webmap.md) is an entirely different way to view your map - in a web browser instead of from directly within Minecraft. This allows you to have a map view visible on another screen, or even another device!
 
-![Webmap-Settings](/img/settings/webmap.png){: .center}
+![Webmap-Settings](../img/settings/webmap.png){: .center}
 
 !!! info "Important"
 
@@ -448,7 +448,7 @@ By default, **none** of the following toggle settings are enabled. You will need
 
 This category allows you to change some settings relating to how [waypoints](waypoints.md) behave and are displayed. Waypoints also have a number of individual settings - you can find out about those on [the waypoints page.](waypoints.md)
 
-![Waypoint-Settings](/img/settings/waypoints.png){: .center}
+![Waypoint-Settings](../img/settings/waypoints.png){: .center}
 
 ## **Toggles**
 
@@ -653,7 +653,7 @@ The default option for each setting below is marked with **bold text.**
 
 By default, waypoints are displayed in the world using a beacon beam in the distance, which allows you to see where they are from anywhere in the world. By default, you can look towards the beam and see the waypoint’s icon and label as well. This behaviour can be customized below.
 
-![Beacon-Settings](/img/settings/waypoint-beacons.png){: .center}
+![Beacon-Settings](../img/settings/waypoint-beacons.png){: .center}
 
 ## **Toggles**
 
@@ -740,7 +740,7 @@ This section contains advanced settings for power users and those that may wish 
 
     If tweaking these settings crashes your client or causes your computer to lag horribly, don’t say we didn’t warn you.
 
-![Advanced-Settings](/img/settings/advanced.png){: .center}
+![Advanced-Settings](../img/settings/advanced.png){: .center}
 
 ## **Toggles**
 
