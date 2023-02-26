@@ -42,11 +42,15 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
+  - admonition
   - attr_list
   - md_in_html
-  - admonition
+  - pymdownx.caret
   - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.superfences
+  - pymdownx.tilde
 
 plugins:
   - glightbox

@@ -4,7 +4,7 @@ Waypoints allow you to mark specific locations on your map, in order to keep tra
 
 Additionally, death waypoints are created when, for example, you’re blown off the edge of a cliff by [a trumpet-wielding skeleton](https://www.curseforge.com/minecraft/mc-mods/trumpet-skeleton-redooted).
 
-By default, they’re shown using a coloured beacon beam, and the name and icon for the waypoint will be displayed when you look towards it - but this behavior can be changed in the [settings manager](). Death waypoints may also be disabled there, if preferred.
+By default, they’re shown using a coloured beacon beam, and the name and icon for the waypoint will be displayed when you look towards it - but this behavior can be changed in the [settings manager](settings.md). Death waypoints may also be disabled there, if preferred.
 
 !!! warning "Warning"
 
@@ -14,22 +14,22 @@ By default, they’re shown using a coloured beacon beam, and the name and icon 
 
 You can create waypoints using one of the following methods:
 
-- By pressing B ingame to create one where you’re standing
-- By double-clicking or pressing B in the [full-screen map](full-screen-map.md) to create a waypoint at the cursor
+- By pressing ++b++ ingame to create one where you’re standing
+- By double-clicking or pressing ++b++ in the [full-screen map](full-screen-map.md) to create a waypoint at the cursor
 - By opening the waypoint manager and manually creating a waypoint
 
 ## **Waypoint Management**
 
 The waypoint manager provides a single place for - as you may expect - managing your waypoints. You can open it in the following ways:
 
-- By pressing Ctrl B ingame
+- By pressing ++ctrl+b++ ingame
 - By opening the [full-screen map](full-screen-map.md) and clicking on the waypoint manager button at the bottom
 
 ![Waypoint-Manager](/img/waypoint-manager.png){: .center}
 
 The waypoint manager gives you a list of all of your waypoints, and provides some options to manage them. At the bottom are the following buttons:
 
-- **Options**: Open the [settings manager]()
+- **Options**: Open the [settings manager](settings.md)
 - **New**: Create a new waypoint
 - **Dimension**: Filter shown waypoints based on dimension
 - **Close**: Close the waypoint manager

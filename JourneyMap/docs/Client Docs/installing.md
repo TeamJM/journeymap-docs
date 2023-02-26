@@ -8,7 +8,7 @@ If you prefer a video guide, the below video will show you how to install Forge 
 
 This video is by [The Breakdown](https://www.youtube.com/channel/UC6Ec5NXzcESo60F3UgtgQRA).
 
-[![Installing Forge](https://img.youtube.com/vi/71Co8ygepxo/0.jpg)](https://www.youtube.com/watch?v=71Co8ygepxo)
+<iframe width="800" height="450" src="https://www.youtube.com/embed/71Co8ygepxo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## **Textual Guide**
 

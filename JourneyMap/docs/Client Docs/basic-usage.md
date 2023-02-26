@@ -8,29 +8,30 @@ For the most part, JourneyMap works right out of the box. All you need to do to 
 
 The following key mappings are available by default when you’re playing on a world or multiplayer server.
 
-- J - Show/hide the full-screen map
-- Ctrl J - Show/hide the minimap
-- = and – - Zoom the minimap in and out respectively
-- [ - Cycle the map type shown in the minimap
-- | - Switch between minimap presets
-- B - Create [a waypoint]() where you’re currently standing
-- Ctrl B - Open the [waypoint manager]() (this conflicts with the narrator keybind, so you may want to change or disable that)
-- Z - Toggle the visibility of all waypoints
+- ++j++ - Show/hide the full-screen map
+- ++ctrl+j++ - Show/hide the minimap
+- ++equal+minus++ - Zoom the minimap in and out respectively
+- ++bracket-left++ - Cycle the map type shown in the minimap
+- ++bar++ - Switch between minimap presets
+- ++b++ - Create [a waypoint](waypoints.md) where you’re currently standing
+- ++ctrl+b++ - Open the [waypoint manager](waypoints.md) (this conflicts with the narrator keybind, so you may want to change or disable that)
+- ++z++ - Toggle the visibility of all waypoints
 
+All keys specified in the documentation can be customized in Minecraft’s own settings. Just open the menu (by default, with the ++esc++ key), click on Options and then Controls, and you’ll see two new categories for all of JourneyMap’s keys.
 
 ## **Markers**
 
-All map types contain markers. These markers denote various pieces of information - such as the position of an entity or [a waypoint]() on the map.
+All map types contain markers. These markers denote various pieces of information - such as the position of an entity or [a waypoint](waypoints.md) on the map.
 
 | Icon | Description |
 | ----------- | ------------------------------------ |
-| ![Marker-Player](/img/markers/marker-player.png){: .center} | Your position on the map. ***Note: This icon has a white border ingame.*** |
-| ![Waypoint](/img/markers/waypoint.png){: .center} | [A waypoint](). The colour can be set in the waypoint manager. |
-| ![Waypoint](/img/markers/waypoint-death.png){: .center} | [Death Waypoint]() |
+| ![Marker-Player](/img/markers/marker-player.png){: .center} | Your position on the map. *Note: This icon has a <br>white border ingame.* |
+| ![Waypoint](/img/markers/waypoint.png){: .center} | [A waypoint](waypoints.md). The colour can be set in <br>the waypoint manager. |
+| ![Waypoint](/img/markers/waypoint-death.png){: .center} | [A death Waypoint](waypoints.md) |
 
 | Icon | Description |
 | ----------- | ------------------------------------ |
-| ![Marker-White](/img/markers/marker-white.png){: .center} | A marker denoting an entity on the map. The colour of the marker denotes the type of entity. |
+| ![Marker-White](/img/markers/marker-white.png){: .center} | A marker denoting an entity on the map. The colour <br>of the marker denotes the type of entity. |
 | ![Marker-White-Down](/img/markers/marker-white-down.png){: .center} | An entity below you. |
 | ![Marker-White-Up](/img/markers/marker-white-up.png){: .center} | An entity above you. |
 
@@ -41,7 +42,7 @@ All map types contain markers. These markers denote various pieces of informatio
 | ![Marker-Blue](/img/markers/marker-blue.png){: .center} | Another player. |
 | ![Marker-Red](/img/markers/marker-red.png){: .center} | A hostile entity, like a monster. |
 
-Markers and their display can be customized in the [settings manager]().
+Markers and their display can be customized in the [settings manager](settings.md).
 
 ## **The Minimap**
 
@@ -51,7 +52,7 @@ By default, the minimap will be displayed in the top-right corner of your screen
 
 This is your minimap. By default, it displays the area around your character, as well as some basic information and the positions of your character, other players, animals and monsters.
 
-The minimap can be zoomed in and out at any time by pressing either of the zoom keys (by default, the = and – keys).
+The minimap can be zoomed in and out at any time by pressing either of the zoom keys (by default, the ++equal++ and ++minus++ keys).
 
 The four lines of text above and below the minimap are known as info slots. By default, they show (in order):
 

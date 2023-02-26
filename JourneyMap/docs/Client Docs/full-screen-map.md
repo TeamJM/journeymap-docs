@@ -1,6 +1,6 @@
 ## **Full-Screen Map**
 
-By pressing the full-screen map key (by default, the J key), you can open the full-screen map.
+By pressing the full-screen map key (by default, the ++j++ key), you can open the full-screen map.
 
 ![Full-Sceen](/img/full-screen.png){: .center}
 
@@ -12,14 +12,13 @@ Once you have the full-screen map open, you can scroll and zoom, or use the butt
 
 - Click and drag the map to scroll around
 - Use the mouse wheel to change the zoom level
-- Double-click on a block to create a [waypoint]()
+- Double-click on a block to create a [waypoint](waypoints.md)
 
 The following keybinds are available, and they may be changed in Minecraft’s options:
 
-- C Copy the coordinates of the block your cursor is pointing at to the chat box
-- B Create a waypoint at the block your cursor is pointing at
-- O Open JourneyMap’s settings manager
-- 🡐 🡒 🡑 🡓 Scroll the map 16 blocks in each direction
+- ++c++ Copy the coordinates of the block your cursor is pointing at to the chat box
+- ++b++ Create a [waypoint](waypoints.md) at the block your cursor is pointing at
+- ++o++ Open JourneyMap’s [settings manager](settings.md)
 
 ## **Buttons**
 
@@ -45,7 +44,7 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 
 | Icon | Description |
 | ----------- | ------------------------------------ |
-| ![Grid](/img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold Shift and click to change the [grid settings](). |
+| ![Grid](/img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold ++shift++ and <br>click to change the [grid settings](). |
 | ![Keys](/img/icons/keys.png){: .center} | Toggle visibility of the keybinds. |
 
 ## **Upper-Right Buttons**
@@ -68,10 +67,10 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 
 | Icon | Description |
 | ----------- | ------------------------------------ |
-| ![Waypoints](/img/icons/waypoints.png){: .center} | Open the [waypoint manager](). |
-| ![Options](/img/icons/options.png){: .center} | Open the [settings manager](). |
-| ![About](/img/icons/about.png){: .center} | Open the [About screen](). |
-| ![Browser](/img/icons/browser.png){: .center} | Open the [Webmap](), if enabled. |
+| ![Waypoints](/img/icons/waypoints.png){: .center} | Open the [waypoint manager](waypoints.md). |
+| ![Options](/img/icons/options.png){: .center} | Open the [settings manager](settings.md). |
+| ![About](/img/icons/about.png){: .center} | Open the About screen. |
+| ![Browser](/img/icons/browser.png){: .center} | Open the [Webmap](webmap.md), if enabled. |
 | ![Theme](/img/icons/theme.png){: .center} | Cycle through the available themes. |
 | ![Reset](/img/icons/reset.png){: .center} | Reset the colour palette. |
 | ![Delete](/img/icons/delete.png){: .center} | Delete the map in one or more dimensions. |
