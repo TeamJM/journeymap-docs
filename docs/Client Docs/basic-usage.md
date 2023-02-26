@@ -48,7 +48,7 @@ Markers and their display can be customized in the [settings manager](settings.m
 
 By default, the minimap will be displayed in the top-right corner of your screen.
 
-![Minimap](../../img/minimap.png){: .center}
+![Minimap](../img/minimap.png){: .center}
 
 This is your minimap. By default, it displays the area around your character, as well as some basic information and the positions of your character, other players, animals and monsters.
 
