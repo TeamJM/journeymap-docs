@@ -7,7 +7,9 @@ repo_url: https://github.com/TeamJM/journeymap-docs2
 nav:
   - Home: index.md
   - About:
+      - Credits: About/credits.md
       - Licensing: About/licensing.md
+      - Support: About/support.md
   - Client Docs:
       - Installing: Client Docs/installing.md
       - Basic Usage: Client Docs/basic-usage.md
@@ -21,7 +23,13 @@ nav:
       - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
       - Minecraft 1.11 and older: Server Docs/minecraft-1.11-and-older.md
   - Tools & Customisation:
-      - Tools & Customisation: Tools and Customisation/tools-and-customisation.md
+      - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
+      - Integrate your mod: Tools and Customisation/integration.md
+      - JourneyMap Tools: Tools and Customisation/journeymap-tools.md
+      - Map a multiplayer server: Tools and Customisation/multiplayer-server.md
+      - Topographic: Tools and Customisation/topographic.md
+      - Translate: Tools and Customisation/translate.md
+      - UI Themes: Tools and Customisation/ui-themes.md
   - Development:
       - Development: Development/development.md
 
@@ -44,13 +52,18 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
   - md_in_html
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
+  - def_list
+
 
 plugins:
   - glightbox
