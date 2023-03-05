@@ -66,3 +66,35 @@ Here’s what each of the other buttons do:
 - **Reset**: Undo your edits to the current waypoint
 - **Save**: Save the changes you’ve made to the waypoint
 - **Close**: Close the editor and discard your changes
+
+## **Sharing Waypoints**
+
+As of JourneyMap 5.2, you can now easily share waypoints and locations with other players on the server. The goal of this feature was to add convenience for everyone using JourneyMap, but not make it annoying for people who don't. If a player doesn't have JourneyMap, they will still see the location in their chat in a human-friendly format.
+
+When a properly-formatted location appears in Minecraft's chat, you can either **click** on it (to create a waypoint) or **control-click** on it (to view the location in your Fullscreen map.)
+
+## **How to Share Waypoints and Locations**
+
+You can share Waypoints and locations in one of three ways:
+
+1. In the Waypoint Manager, press the new **Chat** button next to a Waypoint.  The location will be pasted into the chat UI for you. Add some context if desired, then press Enter.  You can use this with /msg or server channels (if present).
+2. In the chat UI, type <code>/jm ~</code> and press Enter.  The command will be replaced with your current location.  Add information or edit as needed, then press Enter.
+3. In the chat UI, manually type in a location between square brackets.   See location format options below:
+
+## **Location Format**
+
+A location must minimally have the x and z coordinates, but any of the following is possible, and the order you use doesn't matter:
+
+- [x:#, z:#]
+- [x:#, y:#, z:#]
+- [x:#, y:#, z:#, dim:#]
+- [x:#, y:#, z:#, dim:#, name:text]
+- [ name:text, dim:#, x:#, z:#, y:#]
+
+A location consists of 2 or more ''name:value'' pairs, separated with commas.  Any of the following values is supported:
+
+- x (integer) **required**
+- y (integer) 
+- z (integer) **required**
+- dim (integer)
+- name (string, no quotes, no commas)
