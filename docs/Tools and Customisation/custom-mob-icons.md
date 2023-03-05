@@ -1,6 +1,6 @@
 ## **Custom Mob Icon Sets**
 
-JourneyMap only comes with mob icons for Vanilla Minecraft mobs. (There's no magic way to derive icons from mobs added by mods.)   However, as of JourneyMap 5.3, mod authors and resource pack authors can provide their own mob icons for JourneyMap to use.  See [Instructions for Mod Authors](https://teamjm.github.io/journeymap-docs2/Tools%20and%20Customisation/custom-mob-icons/#instructions-for-mod-authors) and [Instructions for Resource Pack Authors](https://teamjm.github.io/journeymap-docs2/Tools%20and%20Customisation/custom-mob-icons/#instructions-for-resource-pack-authors) below.
+JourneyMap only comes with mob icons for Vanilla Minecraft mobs. (There's no magic way to derive icons from mobs added by mods.)   However, as of JourneyMap 5.3, mod authors and resource pack authors can provide their own mob icons for JourneyMap to use.  See [Instructions for Mod Authors](https://teamjm.github.io/journeymap-docs/Tools%20and%20Customisation/custom-mob-icons/#instructions-for-mod-authors) and [Instructions for Resource Pack Authors](https://teamjm.github.io/journeymap-docs/Tools%20and%20Customisation/custom-mob-icons/#instructions-for-resource-pack-authors) below.
 
 ## **Mob Icon Sources (Legacy)**
 
