@@ -1,6 +1,6 @@
 ## **Overview**
 
-JourneyMap Server is an optional server-side utility for both Forge and Bukkit servers. As of JourneyMap 5.1.1, the server-side mod (and Bukkit plugin) comes in the same jar as the JourneyMap client with Forge.  
+JourneyMap Server is an optional server-side utility for both Forge and Bukkit servers. As of JourneyMap 5.1.1, the server-side mod comes in the same jar as the JourneyMap client with Forge.  
 
 You don't have to have JourneyMap Server installed to use the JourneyMap Client. It simply provides a way for server admins to restrict some features, and/or support Bukkit Multiworld and BungeeCord installations. Some features may not be available in both Forge and Bukkit server environments, however, so please read the information on this page and the changelogs for each release to get specific information on features for your server.
 
