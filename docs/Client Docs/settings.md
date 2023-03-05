@@ -4,7 +4,7 @@ JourneyMap provides more than a few configuration options, allowing you to custo
 
 ![Overview](../img/settings/overview.png){: .center}
 
-To get to the settings manager, open the [full-screen map](full-screen-map.md) and click the settings button at the bottom, or press the ++o++ key. Each entry in the list represents a specific category of settings - click on it to expand and see the settings within.
+To get to the settings manager, open the full-screen map and click the settings button at the bottom, or press the ++o++ key. Each entry in the list represents a specific category of settings - click on it to expand and see the settings within.
 
 !!! note "Note"
 
@@ -16,7 +16,7 @@ Some of these categories have quite a few settings. Feel free to skip to a speci
 
 Both minimap presets and the full-screen map may have a configurable grid overlay. You can customize this overlay by clicking on the Edit Grid… button below the settings in each respective category.
 
-You can also reach this from the [full-screen](full-screen-map.md) map by holding the ++shift++ key and clicking on the grid button at the top.
+You can also reach this from the full-screen map by holding the ++shift++ key and clicking on the grid button at the top.
 
 ![Grid-Settings](../img/settings/grid.png){: .center}
 
@@ -239,7 +239,7 @@ size</td>
 
 ## **Full-Screen Map Settings**
 
-The [full-screen map](full-screen-map.md) provides a large, scrollable view of your entire map. Just like the minimap presets, it can be customized to a great deal.
+The full-screen map provides a large, scrollable view of your entire map. Just like the minimap presets, it can be customized to a great deal.
 
 To switch open the full-screen map, press the full-screen map key (the ++j++ key by default).
 
@@ -420,13 +420,13 @@ The default option for each setting below is marked with **bold text.**
 
 ## **Webmap Settings**
 
-The [webmap](webmap.md) is an entirely different way to view your map - in a web browser instead of from directly within Minecraft. This allows you to have a map view visible on another screen, or even another device!
+The webmap is an entirely different way to view your map - in a web browser instead of from directly within Minecraft. This allows you to have a map view visible on another screen, or even another device!
 
 ![Webmap-Settings](../img/settings/webmap.png){: .center}
 
 !!! info "Important"
 
-    There are a lot of settings in this category that don’t do anything at the moment. Instead, the webmap is configured using its own interface - see the [webmap page](webmap.md) for more information on this.
+    There are a lot of settings in this category that don’t do anything at the moment. Instead, the webmap is configured using its own interface - see the webmap page for more information on this.
 
     Because of this, only the settings that actually do anything are documented below.
 

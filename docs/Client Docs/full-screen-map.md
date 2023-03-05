@@ -2,9 +2,9 @@
 
 By pressing the full-screen map key (by default, the ++j++ key), you can open the full-screen map.
 
-![Full-Sceen](../img/full-screen.png){: .center}
+![Full-Screen](../img/full-screen.png){: .center}
 
-The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings]().
+The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](https://teamjm.github.io/journeymap-docs//Client%20Docs/settings/#full-screen-map-settings).
 
 ## **Basic Usage**
 
@@ -70,7 +70,7 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 | ![Waypoints](../img/icons/waypoints.png){: .center} | Open the [waypoint manager](waypoints.md). |
 | ![Options](../img/icons/options.png){: .center} | Open the [settings manager](settings.md). |
 | ![About](../img/icons/about.png){: .center} | Open the About screen. |
-| ![Browser](../img/icons/browser.png){: .center} | Open the [Webmap](webmap.md), if enabled. |
+| ![Browser](../img/icons/browser.png){: .center} | Open the Webmap, if enabled. |
 | ![Theme](../img/icons/theme.png){: .center} | Cycle through the available themes. |
 | ![Reset](../img/icons/reset.png){: .center} | Reset the colour palette. |
 | ![Delete](../img/icons/delete.png){: .center} | Delete the map in one or more dimensions. |
