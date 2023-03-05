@@ -1,8 +1,8 @@
 site_name: JourneyMap Documentation
-site_url: https://teamjm.github.io/journeymap-docs2/
+site_url: https://teamjm.github.io/journeymap-docs/
 
-repo_name: TeamJM/journeymap-docs2
-repo_url: https://github.com/TeamJM/journeymap-docs2
+repo_name: TeamJM/journeymap-docs
+repo_url: https://github.com/TeamJM/journeymap-docs
 
 nav:
   - Home: index.md
@@ -16,8 +16,6 @@ nav:
       - Full-Screen Map: Client Docs/full-screen-map.md
       - Waypoints: Client Docs/waypoints.md
       - Settings: Client Docs/settings.md
-      - Webmap: Client Docs/webmap.md
-      - Data Files: Client Docs/data-files.md
   - Server Docs:
       - Current Version: Server Docs/current-version.md
       - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
