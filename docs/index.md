@@ -17,7 +17,7 @@ If you’d like a featureful, easy-to-use mapping mod then why not give JourneyM
 
 ## **Learn More**
 
-- [Support for Forge/Bukkit/Sponge Servers](Server Docs/)
+- [Support for Forge/Bukkit/Sponge Servers](Server Docs/bukkit-and-spigot)
 - [Use Keyboard Shortcuts (Keybindings)](Client Docs/basic-usage/#key-mappings)
 - [Customize Topographic Maps](Tools and Customisation/topographic/)
 - [Map a multiplayer server](Tools and Customisation/multiplayer-server/)

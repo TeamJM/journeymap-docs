@@ -21,7 +21,6 @@ nav:
   - Server Docs:
       - Current Version: Server Docs/current-version.md
       - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
-      - Minecraft 1.11 and older: Server Docs/minecraft-1.11-and-older.md
   - Tools & Customisation:
       - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
       - Integrate your mod: Tools and Customisation/integration.md
