@@ -17,6 +17,8 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - run: git config user.name github-actions
+      - run: git config user.email github-actions@github.com
       - run: pip install mkdocs-material
       - run: pip install mkdocs-glightbox
       - run: pip install mike
