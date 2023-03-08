@@ -64,6 +64,11 @@ markdown_extensions:
 
 plugins:
   - glightbox
-  - mike
+  - mike:
+      version_selector: true
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+extra:
+  version:
+    provider: mike
