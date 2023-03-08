@@ -24,4 +24,4 @@ jobs:
       - run: pip install mike
       - run: mkdocs gh-deploy --force -f ./config/en/mkdocs.yml
       - run: mike deploy --push --update-aliases 5.7.1 latest -F ./config/en/mkdocs.yml
-      - run: mike set-default --push latest
+      - run: mike set-default --push latest -F ./config/en/mkdocs.yml
