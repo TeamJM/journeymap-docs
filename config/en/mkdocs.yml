@@ -1,0 +1,75 @@
+site_name: JourneyMap Documentation
+site_url: https://teamjm.github.io/journeymap-docs/
+docs_dir: ../../docs/en
+
+repo_name: TeamJM/journeymap-docs
+repo_url: https://github.com/TeamJM/journeymap-docs
+
+theme:
+  name: material
+  custom_dir: ../../overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra:
+  version:
+    provider: mike
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - def_list
+
+plugins:
+  - glightbox
+  - mike:
+      version_selector: true
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+nav:
+  - Home: index.md
+  - About:
+      - Credits: About/credits.md
+      - Licensing: About/licensing.md
+      - Support: About/support.md
+  - Client Docs:
+      - Installing: Client Docs/installing.md
+      - Basic Usage: Client Docs/basic-usage.md
+      - Full-Screen Map: Client Docs/full-screen-map.md
+      - Waypoints: Client Docs/waypoints.md
+      - Settings: Client Docs/settings.md
+  - Server Docs:
+      - Forge Version: Server Docs/forge-version.md
+      - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
+  - Tools & Customisation:
+      - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
+      - Integrate your mod: Tools and Customisation/integration.md
+      - JourneyMap Tools: Tools and Customisation/journeymap-tools.md
+      - Map a multiplayer server: Tools and Customisation/multiplayer-server.md
+      - Topographic: Tools and Customisation/topographic.md
+      - Translate: Tools and Customisation/translate.md
+      - UI Themes: Tools and Customisation/ui-themes.md
+  - Development:
+      - Development: Development/development.md
