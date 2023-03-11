@@ -18,7 +18,7 @@ You don't have to have JourneyMap Server installed to use the JourneyMap Client.
 ## **Multi-world Support for Maps and Waypoints**
 
 - **Important note**: If your server doesn't use multiple worlds, you do not need this feature!  Set **UseWorldID=false** in the config file.
-- For servers with multiple world folders (not just multiple dimensions) -- usually Bukkit not Forge -- this mod will automatically send a unique **World ID** to users with the JourneyMap client whenever the client loads a world.  This is necessary for servers which use multiple worlds, because it solves [http://www.minecraftforum.net/forums/minecraft-discussion/suggestions/79149-world-uid-for-multi-world-servers this problem]. The JourneyMap client uses the World Id to organize map images and waypoints when traversing between worlds.
+- For servers with multiple world folders (not just multiple dimensions) -- usually Bukkit not Forge -- this mod will automatically send a unique **World ID** to users with the JourneyMap client whenever the client loads a world.  This is necessary for servers which use multiple worlds, because it solves <http://www.minecraftforum.net/forums/minecraft-discussion/suggestions/79149-world-uid-for-multi-world-servers> this problem. The JourneyMap client uses the World Id to organize map images and waypoints when traversing between worlds.
 - Console commands are provided for server admins to manage the World ID without needing to restart the server.
 
 ## **What it is Not**
