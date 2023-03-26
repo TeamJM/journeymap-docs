@@ -1,1 +1,7 @@
+# Project Files
+/.idea
+/.vscode
+/.vs
+
+#OSX Stuff
 .DS_Store

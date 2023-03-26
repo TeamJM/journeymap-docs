@@ -22,6 +22,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-glightbox
       - run: pip install mike
-      - run: mkdocs gh-deploy --force -f ./config/en/mkdocs.yml
-      - run: mike deploy --push --update-aliases 5.7.1 latest -F ./config/en/mkdocs.yml
-      - run: mike set-default --push latest -F ./config/en/mkdocs.yml
+      - run: mkdocs gh-deploy -f ./config/en/mkdocs.yml
+      - run: mike deploy 5.7.1 latest --update-aliases --push -F ./config/en/mkdocs.yml
+      - run: mike set-default latest --push -F ./config/en/mkdocs.yml
