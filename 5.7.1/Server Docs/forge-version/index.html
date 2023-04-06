@@ -9,9 +9,9 @@
 <link href="../../Client%20Docs/settings/" rel="prev"/>
 <link href="../bukkit-and-spigot/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.1.4" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.5" name="generator"/>
 <title>Forge Version - JourneyMap Documentation</title>
-<link href="../../assets/stylesheets/main.240905d7.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.7a7fce14.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -261,6 +261,16 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#journeymap-555">
+    JourneyMap 5.5.5+
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#legacy-versions-below">
+    Legacy Versions Below
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#server-control-of-radar-and-cave-mapping">
     Server control of Radar and Cave Mapping
   </a>
@@ -386,6 +396,16 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#journeymap-555">
+    JourneyMap 5.5.5+
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#legacy-versions-below">
+    Legacy Versions Below
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#server-control-of-radar-and-cave-mapping">
     Server control of Radar and Cave Mapping
   </a>
@@ -441,6 +461,33 @@
 <h2 id="overview"><strong>Overview</strong></h2>
 <p>JourneyMap Server is an optional server-side utility for both Forge and Bukkit servers. As of JourneyMap 5.1.1, the server-side mod comes in the same jar as the JourneyMap client with Forge.  </p>
 <p>You don't have to have JourneyMap Server installed to use the JourneyMap Client. It simply provides a way for server admins to restrict some features, and/or support Bukkit Multiworld and BungeeCord installations. Some features may not be available in both Forge and Bukkit server environments, however, so please read the information on this page and the changelogs for each release to get specific information on features for your server.</p>
+<h2 id="journeymap-555"><strong>JourneyMap 5.5.5+</strong></h2>
+<p>To access the Server Admin Screen open the JourneyMap options screen. As an Opped user there will be a <code>Server Admin</code> button at the bottom of the screen. </p>
+<p>All Options in the Server Admin Screen have tooltips that explain them in detail. </p>
+<p>If the button does not appear, you may need to log out and back into your server if you were recently Opped, or the Admin disabled it in the config file. </p>
+<p>By default all Opped users have access to the Server Admin screen. This can be changed via a config file on the server. </p>
+<p>The config file is location: <code>(server_folder)/configs/journeymap_server.cfg</code>. </p>
+<p>If you are using Minecraft 1.16+ the config file location: <code>(server_folder)/world/serverconfig/journeymap_server.cfg</code>.</p>
+<div class="highlight"><pre><span></span><code>    server {
+    # Players in this list have access to the Journeymap's Server Admin Panel
+    # Add users by name or UUID, Prefer UUID as it is more secure!
+    # Each value on a new line with the example format provided. (please delete the default values)
+    S:"Journeymap Server Admins" &lt;
+    mysticdrew
+    12341234132
+    &gt;
+
+        # Default, all Ops have access to Server Admin UI in the Options screen.
+        # If set to false, only users in the Admin List will have access.
+        # If set to true, all ops and users in the Admin List will have access.
+        B:"Ops Admin Access"=true
+    }
+</code></pre></div>
+<h2 id="legacy-versions-below"><strong>Legacy Versions Below</strong></h2>
+<div class="admonition note">
+<p class="admonition-title">Legacy</p>
+<p>The following only pertains to version pre JourneyMap version 5.5.5, before the Server Admin screen was added to JourneyMap.</p>
+</div>
 <h2 id="server-control-of-radar-and-cave-mapping"><strong>Server control of Radar and Cave Mapping</strong></h2>
 <ul>
 <li>Use server configs to selectively <strong>disable radar</strong> and/or <strong>disable cave mapping </strong>(which includes Nether/End mapping) for users.</li>
@@ -461,7 +508,7 @@
 <h2 id="what-it-is-not"><strong>What it is Not</strong></h2>
 <ul>
 <li>This is not a server-side mapping mod.  No maps are created, made, hosted, shared, or even contemplated on the server.</li>
-<li>This is not a a way to administer anything other than JourneyMap client features.</li>
+<li>This is not a way to administer anything other than JourneyMap client features.</li>
 <li>This is neither a hot tub nor a time machine.</li>
 </ul>
 <h2 id="modpack-usage"><strong>Modpack Usage</strong></h2>
@@ -576,6 +623,6 @@
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
-<script src="../../assets/javascripts/bundle.19047be9.min.js"></script>
+<script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
