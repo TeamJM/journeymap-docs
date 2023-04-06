@@ -1,6 +1,6 @@
 ## **Custom Mob Icon Sets**
 
-JourneyMap only comes with mob icons for Vanilla Minecraft mobs. (There's no magic way to derive icons from mobs added by mods.)   However, as of JourneyMap 5.3, mod authors and resource pack authors can provide their own mob icons for JourneyMap to use.  See [Instructions for Mod Authors](https://teamjm.github.io/journeymap-docs/Tools%20and%20Customisation/custom-mob-icons/#instructions-for-mod-authors) and [Instructions for Resource Pack Authors](https://teamjm.github.io/journeymap-docs/Tools%20and%20Customisation/custom-mob-icons/#instructions-for-resource-pack-authors) below.
+JourneyMap only comes with mob icons for Vanilla Minecraft mobs. (There's no magic way to derive icons from mobs added by mods.)   However, as of JourneyMap 5.3, mod authors and resource pack authors can provide their own mob icons for JourneyMap to use.  See [Instructions for Mod Authors](#instructions-for-mod-authors) and [Instructions for Resource Pack Authors](#instructions-for-resource-pack-authors) below.
 
 ## **Mob Icon Sources (Legacy)**
 
@@ -11,7 +11,7 @@ Whenever JourneyMap encounters a mob without a known icon, it creates a blank pl
 
 If you view the folder tree with thumbnails displayed, it should be easy to spot the blank placeholder files. Simply find and replace them with your own mob icon. It must be a PNG file and should have the same dimensions as the one you are replacing (usually 32x32 pixels).
 
-Or, you can create your own custom mob icon set in it's own folder:
+Or, you can create your own custom mob icon set in its own folder:
 
 - Look in <code>.minecraft/journeymap/icon/entity/</code> for existing icon set folders, like "2D", "3D", or "Default" (JourneyMap 5.3+)
 - Copy that folder and give it a new name, placing it in the same directory as above.

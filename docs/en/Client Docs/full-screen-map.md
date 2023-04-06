@@ -4,7 +4,7 @@ By pressing the full-screen map key (by default, the ++j++ key), you can open th
 
 ![Full-Screen](../img/full-screen.png){: .center}
 
-The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](https://teamjm.github.io/journeymap-docs//Client%20Docs/settings/#full-screen-map-settings).
+The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](settings.md#full-screen-map-settings).
 
 ## **Basic Usage**
 
