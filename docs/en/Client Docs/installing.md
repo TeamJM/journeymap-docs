@@ -35,4 +35,4 @@ If you prefer a more complete guide you can read and follow along with at your o
 
     If no download is available for your version of Minecraft, then we haven’t released one yet! Please have patience - JourneyMap is a large, complicated mod and it takes a long time for us to port it to new versions of Minecraft.
 
-5. That’s everything, you’re done - launch the game and JourneyMap should be availble!
+5. That’s everything, you’re done - launch the game and JourneyMap should be available!

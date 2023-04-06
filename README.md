@@ -20,4 +20,9 @@ To run the documentation locally, you will need to first install MkDocs and Mate
 - `pip install mkdocs-glightbox`
 - `pip install mike`
 
-These commands will install MkDocs and Material for MkDocs. You can then clone this repository and run the following command to start the local documentation server: `mkdocs serve`
+These commands will install MkDocs and Material for MkDocs.
+
+
+Run one of the following commands to start the local documentation server:
+1. `mkdocs serve -f ./config/en/mkdocs.yml`
+2. `python -m mkdocs serve -f ./config/en/mkdocs.yml`

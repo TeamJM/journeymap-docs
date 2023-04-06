@@ -4,7 +4,7 @@ By pressing the full-screen map key (by default, the ++j++ key), you can open th
 
 ![Full-Screen](../img/full-screen.png){: .center}
 
-The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](https://teamjm.github.io/journeymap-docs//Client%20Docs/settings/#full-screen-map-settings).
+The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](settings.md#full-screen-map-settings).
 
 ## **Basic Usage**
 
@@ -42,10 +42,10 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 | ![Villagers](../img/icons/villagers.png){: .center} | Toggle visibility of villagers. |
 | ![Players](../img/icons/players.png){: .center} | Toggle visibility of other players. |
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Grid](../img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold ++shift++ and <br>click to change the [grid settings](). |
-| ![Keys](../img/icons/keys.png){: .center} | Toggle visibility of the keybinds. |
+| Icon | Description                                                                                                           |
+| ----------- |-----------------------------------------------------------------------------------------------------------------------|
+| ![Grid](../img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold ++shift++ and <br>click to change the [grid settings](settings.md#grid-settings). |
+| ![Keys](../img/icons/keys.png){: .center} | Toggle visibility of the keybinds.                                                                                    |
 
 ## **Upper-Right Buttons**
 
