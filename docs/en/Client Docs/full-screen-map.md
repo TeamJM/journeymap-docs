@@ -42,10 +42,10 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 | ![Villagers](../img/icons/villagers.png){: .center} | Toggle visibility of villagers. |
 | ![Players](../img/icons/players.png){: .center} | Toggle visibility of other players. |
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Grid](../img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold ++shift++ and <br>click to change the [grid settings](). |
-| ![Keys](../img/icons/keys.png){: .center} | Toggle visibility of the keybinds. |
+| Icon | Description                                                                                                           |
+| ----------- |-----------------------------------------------------------------------------------------------------------------------|
+| ![Grid](../img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold ++shift++ and <br>click to change the [grid settings](settings.md#grid-settings). |
+| ![Keys](../img/icons/keys.png){: .center} | Toggle visibility of the keybinds.                                                                                    |
 
 ## **Upper-Right Buttons**
 

@@ -42,7 +42,7 @@ All map types contain markers. These markers denote various pieces of informatio
 | ![Marker-Blue](../img/markers/marker-blue.png){: .center} | Another player. |
 | ![Marker-Red](../img/markers/marker-red.png){: .center} | A hostile entity, like a monster. |
 
-Markers and their display can be customized in the [settings manager](settings.md).
+Markers and their display can be customized in the [settings manager](settings.md#waypoint-settings).
 
 ## **The Minimap**
 
@@ -61,7 +61,7 @@ The four lines of text above and below the minimap are known as info slots. By d
 - The coordinate of your character
 - The current biome your character is in
 
-The minimap and its info slots may be customized in the [settings manager]().
+The minimap and its info slots may be customized in the [settings manager](settings.md#minimap-settings).
 
 ## **The Full-Screen Map**
 
@@ -69,14 +69,14 @@ By pressing the full-screen map key (by default, the J key), you can open the fu
 
 ![Full-Screen-Map](../img/full-screen.png){: .center}
 
-This map gives you a scrollable view of all of the areas of the map you’ve explored so far, displayed as it was when you discovered them. It also provides access to JourneyMap’s Settings and a number of map display options.
+This map gives you a scrollable view of all the areas of the map you’ve explored so far, displayed as it was when you discovered them. It also provides access to JourneyMap’s Settings and a number of map display options.
 
-For more information on the full-screen map, please see the [full-screen map page]().
+For more information on the full-screen map, please see the [full-screen map page](full-screen-map.md).
 
 ## **The Webmap**
 
-Once enabled in the [settings manager](), the webmap allows you to view and explore your generated map in a web browser, including accessing it from another device (such as a phone or tablet). This will work as long as the game is running.
+Once enabled in the [settings manager](settings.md), the webmap allows you to view and explore your generated map in a web browser, including accessing it from another device (such as a phone or tablet). This will work as long as the game is running.
 
 ![Webmap](../img/webmap.png){: .center}
 
-For more information on the webmap map, please see [the webmap page]().
+For more information on the webmap map, please see [the webmap page](settings.md#webmap-settings).

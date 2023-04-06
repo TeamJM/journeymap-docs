@@ -4,6 +4,40 @@ JourneyMap Server is an optional server-side utility for both Forge and Bukkit s
 
 You don't have to have JourneyMap Server installed to use the JourneyMap Client. It simply provides a way for server admins to restrict some features, and/or support Bukkit Multiworld and BungeeCord installations. Some features may not be available in both Forge and Bukkit server environments, however, so please read the information on this page and the changelogs for each release to get specific information on features for your server.
 
+## **JourneyMap 5.5.5+**
+To access the Server Admin Screen open the JourneyMap options screen. As an Opped user there will be a `Server Admin` button at the bottom of the screen. 
+
+All Options in the Server Admin Screen have tooltips that explain them in detail. 
+
+If the button does not appear, you may need to log out and back into your server if you were recently Opped, or the Admin disabled it in the config file. 
+
+By default all Opped users have access to the Server Admin screen. This can be changed via a config file on the server. 
+
+The config file is location: `(server_folder)/configs/journeymap_server.cfg`. 
+
+If you are using Minecraft 1.16+ the config file location: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
+
+```
+    server {
+    # Players in this list have access to the Journeymap's Server Admin Panel
+    # Add users by name or UUID, Prefer UUID as it is more secure!
+    # Each value on a new line with the example format provided. (please delete the default values)
+    S:"Journeymap Server Admins" <
+    mysticdrew
+    12341234132
+    >
+    
+        # Default, all Ops have access to Server Admin UI in the Options screen.
+        # If set to false, only users in the Admin List will have access.
+        # If set to true, all ops and users in the Admin List will have access.
+        B:"Ops Admin Access"=true
+    }
+```
+
+## **Legacy Versions Below**
+!!! note "Legacy"
+    The following only pertains to version pre JourneyMap version 5.5.5, before the Server Admin screen was added to JourneyMap.
+
 ## **Server control of Radar and Cave Mapping**
 
 - Use server configs to selectively **disable radar** and/or **disable cave mapping **(which includes Nether/End mapping) for users.
@@ -24,7 +58,7 @@ You don't have to have JourneyMap Server installed to use the JourneyMap Client.
 ## **What it is Not**
 
 * This is not a server-side mapping mod.  No maps are created, made, hosted, shared, or even contemplated on the server.
-* This is not a a way to administer anything other than JourneyMap client features.
+* This is not a way to administer anything other than JourneyMap client features.
 * This is neither a hot tub nor a time machine.
 
 ## **Modpack Usage**
