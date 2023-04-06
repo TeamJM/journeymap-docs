@@ -24,4 +24,3 @@ jobs:
       - run: pip install mkdocs-glightbox
       - run: pip install mike
       - run: mike deploy 5.7.1 latest --update-aliases --push -F ./config/en/mkdocs.yml
-      - run: mike set-default latest --push -F ./config/en/mkdocs.yml
