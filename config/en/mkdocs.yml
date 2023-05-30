@@ -58,11 +58,12 @@ nav:
       - Installing: Client Docs/installing.md
       - Basic Usage: Client Docs/basic-usage.md
       - Full-Screen Map: Client Docs/full-screen-map.md
-      - Waypoints: Client Docs/waypoints.md
       - Settings: Client Docs/settings.md
+      - Waypoints: Client Docs/waypoints.md
   - Server Docs:
       - Forge Version: Server Docs/forge-version.md
       - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
+      - Waypoints: Server Docs/waypoints.md
   - Tools & Customisation:
       - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
       - Integrate your mod: Tools and Customisation/integration.md

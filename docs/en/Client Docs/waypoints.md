@@ -73,6 +73,20 @@ As of JourneyMap 5.2, you can now easily share waypoints and locations with othe
 
 When a properly-formatted location appears in Minecraft's chat, you can either **click** on it (to create a waypoint) or **control-click** on it (to view the location in your Fullscreen map.)
 
+## **Waypoint Commands**
+
+In JourneyMap 5.8.5, a new command was added which allows you to create, delete and reload waypoints from the chat. 
+
+**Reload Waypoints**
+
+- Reloads waypoints in the waypoint directory without having to restart.
+- Primarily used when dropping waypoint files into the folder while the game is running.
+
+```
+/jm reload
+```
+The create and delete commands are only available when the server has JourneyMap installed and if the player has op permissions. You can find more information about the add and delete commands [here](https://teamjm.github.io/journeymap-docs/Server%20Docs/waypoints/).
+
 ## **How to Share Waypoints and Locations**
 
 You can share Waypoints and locations in one of three ways:
