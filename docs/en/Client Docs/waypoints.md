@@ -75,7 +75,7 @@ When a properly-formatted location appears in Minecraft's chat, you can either *
 
 ## **Waypoint Commands**
 
-In JourneyMap 5.8.5, a new command was added which allows you to create, delete and reload waypoints from the chat. 
+In JourneyMap 5.8.5, a new command was added which allows you to create, delete and reload waypoints from the chat.
 
 **Reload Waypoints**
 

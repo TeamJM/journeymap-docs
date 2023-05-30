@@ -61,8 +61,9 @@ nav:
       - Settings: Client Docs/settings.md
       - Waypoints: Client Docs/waypoints.md
   - Server Docs:
-      - Forge Version: Server Docs/forge-version.md
-      - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
+      - Installing: Server Docs/installing.md
+      - Basic Usage: Server Docs/basic-usage.md
+      - Settings: Server Docs/settings.md
       - Waypoints: Server Docs/waypoints.md
   - Tools & Customisation:
       - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
