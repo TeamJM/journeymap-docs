@@ -2,7 +2,7 @@
 
 JourneyMap provides more than a few configuration options, allowing you to customize the behaviour and appearance of many different aspects of the mod. All of these settings are made available through the settings manager.
 
-![Overview](../img/settings/overview.png){: .center}
+![Overview](../img/settings/client/overview.png){: .center}
 
 To get to the settings manager, open the full-screen map and click the settings button at the bottom, or press the ++o++ key. Each entry in the list represents a specific category of settings - click on it to expand and see the settings within.
 
@@ -18,7 +18,7 @@ Both minimap presets and the full-screen map may have a configurable grid overla
 
 You can also reach this from the full-screen map by holding the ++shift++ key and clicking on the grid button at the top.
 
-![Grid-Settings](../img/settings/grid.png){: .center}
+![Grid-Settings](../img/settings/client/grid.png){: .center}
 
 The grid outlines individual chunks on the map. Grid styles that include region lines will draw an extra grid with differently-coloured lines to outline world regions on the map.
 
@@ -28,10 +28,10 @@ The grid outlines individual chunks on the map. Grid styles that include region 
 - Click the **Cancel** button to discard your changes and close the grid editor.
 - Click the **Save** button to save your changes and close the grid editor.
 
-| Setting | Options | Description |
-| ----------- | ------------------------------------ | ------------------------------------ |
-| Style | **Squares**, SquaresWithRegion, GridRegion, Dots, Checkers | Change the type of grid overlaid on the map |
-| Opacity | Percentage: (default: **50**) | How opaque the grid should be drawn |
+| Setting | Options                                                    | Description                                 |
+|---------|------------------------------------------------------------|---------------------------------------------|
+| Style   | **Squares**, SquaresWithRegion, GridRegion, Dots, Checkers | Change the type of grid overlaid on the map |
+| Opacity | Percentage: (default: **50**)                              | How opaque the grid should be drawn         |
 
 ## **Minimap Settings**
 
@@ -43,32 +43,32 @@ JourneyMap allows you to have two minimap presets. Each preset represents a sepa
 
 To switch between minimap presets, press the switch minimap preset key (the # key by default).
 
-![Minimap-Settings](../img/settings/minimap.png){: .center}
+![Minimap-Settings](../img/settings/client/minimap.png){: .center}
 
 ## **Toggles**
 
 By default, all of the following toggle settings are enabled.
 
-| Toggle | Description |
-| ----------- | ------------------------------------ |
-| Enable Minimap | Enable or disable this minimap preset |
-| Show Animals | Show or hide animals |
-| Show Caves | Toggle automatically switching to cave mode |
-| Show Compass | Toggle showing compass points around the edge of the minimap |
-| Show Day/Night | Toggle automatically switching between day and night mode |
-| Show Entity Names | Show or hide entity names |
-| Show Grid | Show or hide the grid overlay |
-| Show Mob Headings | Toggle showing which way mobs are facing |
-| Show Mobs | Show or hide mobs |
-| Show Pets | Show or hide pets |
-| Show Player Headings | Toggle showing which way other players are facing |
-| Show Players | Show or hide other players |
-| Show Reticle | Show or hide midpoint lines pointing to the center of the minimap |
-| Show Self | Show or hide your own location and heading |
-| Show Villagers | Show or hide villagers |
-| Show Waypoint Labels | Show or hide the names of waypoints |
-| Show Waypoints | Show or hide all waypoints |
-| Verbose Location | Toggle between a long or short form of your current coordinates |
+| Toggle               | Description                                                       |
+|----------------------|-------------------------------------------------------------------|
+| Enable Minimap       | Enable or disable this minimap preset                             |
+| Show Animals         | Show or hide animals                                              |
+| Show Caves           | Toggle automatically switching to cave mode                       |
+| Show Compass         | Toggle showing compass points around the edge of the minimap      |
+| Show Day/Night       | Toggle automatically switching between day and night mode         |
+| Show Entity Names    | Show or hide entity names                                         |
+| Show Grid            | Show or hide the grid overlay                                     |
+| Show Mob Headings    | Toggle showing which way mobs are facing                          |
+| Show Mobs            | Show or hide mobs                                                 |
+| Show Pets            | Show or hide pets                                                 |
+| Show Player Headings | Toggle showing which way other players are facing                 |
+| Show Players         | Show or hide other players                                        |
+| Show Reticle         | Show or hide midpoint lines pointing to the center of the minimap |
+| Show Self            | Show or hide your own location and heading                        |
+| Show Villagers       | Show or hide villagers                                            |
+| Show Waypoint Labels | Show or hide the names of waypoints                               |
+| Show Waypoints       | Show or hide all waypoints                                        |
+| Verbose Location     | Toggle between a long or short form of your current coordinates   |
 
 ## **Info Slots**
 
@@ -243,7 +243,7 @@ The full-screen map provides a large, scrollable view of your entire map. Just l
 
 To switch open the full-screen map, press the full-screen map key (the ++j++ key by default).
 
-![Full-Screen-Settings](../img/settings/full-screen.png){: .center}
+![Full-Screen-Settings](../img/settings/client/full-screen.png){: .center}
 
 !!! note "Note"
 
@@ -422,7 +422,7 @@ The default option for each setting below is marked with **bold text.**
 
 The webmap is an entirely different way to view your map - in a web browser instead of from directly within Minecraft. This allows you to have a map view visible on another screen, or even another device!
 
-![Webmap-Settings](../img/settings/webmap.png){: .center}
+![Webmap-Settings](../img/settings/client/webmap.png){: .center}
 
 !!! info "Important"
 
@@ -434,8 +434,8 @@ The webmap is an entirely different way to view your map - in a web browser inst
 
 By default, **none** of the following toggle settings are enabled. You will need to enable the webmap before you can use it.
 
-| Toggle | Description |
-| ----------- | ------------------------------------ |
+| Toggle         | Description                                         |
+|----------------|-----------------------------------------------------|
 | Enable Web Map | Whether the webmap should be enabled and accessible |
 
 !!! note "Note"
@@ -448,18 +448,18 @@ By default, **none** of the following toggle settings are enabled. You will need
 
 This category allows you to change some settings relating to how [waypoints](waypoints.md) behave and are displayed. Waypoints also have a number of individual settings - you can find out about those on [the waypoints page.](waypoints.md)
 
-![Waypoint-Settings](../img/settings/waypoints.png){: .center}
+![Waypoint-Settings](../img/settings/client/waypoints.png){: .center}
 
 ## **Toggles**
 
 The **bold** toggle settings below are enabled by default.
 
-| Toggle | Description |
-| ----------- | ------------------------------------ |
-| **Enable Waypoint Manager** | Enable the waypoint manager - you can disable this if you use another <br>mod to manage waypoints |
-| Auto Remove Death Waypoints | Whether death waypoints should be removed when you approach them |
-| **Create Deathpoints** | Whether death waypoints should be created when you die |
-| **Display Death Waypoint Label <br>on map overlay** | Whether to show the name for death waypoints on your minimap and <br>full-screen map |
+| Toggle                                              | Description                                                                                       |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Enable Waypoint Manager**                         | Enable the waypoint manager - you can disable this if you use another <br>mod to manage waypoints |
+| Auto Remove Death Waypoints                         | Whether death waypoints should be removed when you approach them                                  |
+| **Create Deathpoints**                              | Whether death waypoints should be created when you die                                            |
+| **Display Death Waypoint Label <br>on map overlay** | Whether to show the name for death waypoints on your minimap and <br>full-screen map              |
 
 ## **Other Settings**
 
@@ -653,29 +653,29 @@ The default option for each setting below is marked with **bold text.**
 
 By default, waypoints are displayed in the world using a beacon beam in the distance, which allows you to see where they are from anywhere in the world. By default, you can look towards the beam and see the waypoint’s icon and label as well. This behaviour can be customized below.
 
-![Beacon-Settings](../img/settings/waypoint-beacons.png){: .center}
+![Beacon-Settings](../img/settings/client/waypoint-beacons.png){: .center}
 
 ## **Toggles**
 
 The **bold** toggle settings below are enabled by default.
 
-| Toggle | Description |
-| ----------- | ------------------------------------ |
-| Always Map Caves | Whether to map caves below you when you’re on the surface |
-| Always Map Surface | Whether to map the surface above you when you’re in caves |
-| **Blend Foliage** | Whether to apply biome colours to foliage |
-| Blend Grass | Whether to apply biome colours to grass |
-| Blend Water | Whether to apply biome colours to water |
-| **Ignore Glass Ceilings** | Whether to remain in surface mode when under a glass ceiling |
-| **Map Topography** | Whether to generate a contour map that shows elevation |
-| Show Bathymetry | Whether to show underwater terrain on the map |
-| **Show Crops** | Whether to show crops on the map |
-| Show Plant Shadows | Whether to plants and crops should cast shadows on the map |
-| Show Plants | Whether to show plants on the map |
-| **Show Surface Above Caves** | Whether to show a dimmed view of the surface when in cave mode |
-| **Use Antialiasing** | Whether to use anti-aliasing to improve the shading effect used to show elevation |
-| **Use Cave Lighting** | Whether to show lights underground - disable for a fully bright map |
-| **Use Transparency** | Whether transparent blocks should reveal what’s below them on the map |
+| Toggle                       | Description                                                                       |
+|------------------------------|-----------------------------------------------------------------------------------|
+| Always Map Caves             | Whether to map caves below you when you’re on the surface                         |
+| Always Map Surface           | Whether to map the surface above you when you’re in caves                         |
+| **Blend Foliage**            | Whether to apply biome colours to foliage                                         |
+| Blend Grass                  | Whether to apply biome colours to grass                                           |
+| Blend Water                  | Whether to apply biome colours to water                                           |
+| **Ignore Glass Ceilings**    | Whether to remain in surface mode when under a glass ceiling                      |
+| **Map Topography**           | Whether to generate a contour map that shows elevation                            |
+| Show Bathymetry              | Whether to show underwater terrain on the map                                     |
+| **Show Crops**               | Whether to show crops on the map                                                  |
+| Show Plant Shadows           | Whether to plants and crops should cast shadows on the map                        |
+| Show Plants                  | Whether to show plants on the map                                                 |
+| **Show Surface Above Caves** | Whether to show a dimmed view of the surface when in cave mode                    |
+| **Use Antialiasing**         | Whether to use anti-aliasing to improve the shading effect used to show elevation |
+| **Use Cave Lighting**        | Whether to show lights underground - disable for a fully bright map               |
+| **Use Transparency**         | Whether transparent blocks should reveal what’s below them on the map             |
 
 ## **Other Settings**
 
@@ -740,19 +740,19 @@ This section contains advanced settings for power users and those that may wish 
 
     If tweaking these settings crashes your client or causes your computer to lag horribly, don’t say we didn’t warn you.
 
-![Advanced-Settings](../img/settings/advanced.png){: .center}
+![Advanced-Settings](../img/settings/client/advanced.png){: .center}
 
 ## **Toggles**
 
 The **bold** toggle settings below are enabled by default.
 
-| Toggle | Description |
-| ----------- | ------------------------------------ |
-| **Announce Mod** | Whether to announce in chat when JourneyMap is ready to use |
-| **Check for Mod Updates** | Whether JourneyMap should check for updates on Curse |
-| **Hide Sneaking Entities** | Whether sneaking/crouching creatures should be hidden |
-| **High Display Quality** | Uncheck to improve zoom performance and memory usage, but reduce <br>display quality and lower performance of minimap rotation when set to “My Heading” |
-| Record Cache Statistics | This is intended for beta testers - enable to record statistics for each cache |
+| Toggle                     | Description                                                                                                                                             |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Announce Mod**           | Whether to announce in chat when JourneyMap is ready to use                                                                                             |
+| **Check for Mod Updates**  | Whether JourneyMap should check for updates on Curse                                                                                                    |
+| **Hide Sneaking Entities** | Whether sneaking/crouching creatures should be hidden                                                                                                   |
+| **High Display Quality**   | Uncheck to improve zoom performance and memory usage, but reduce <br>display quality and lower performance of minimap rotation when set to “My Heading” |
+| Record Cache Statistics    | This is intended for beta testers - enable to record statistics for each cache                                                                          |
 
 ## **Other Settings**
 

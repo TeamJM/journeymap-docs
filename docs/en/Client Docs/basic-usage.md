@@ -23,24 +23,24 @@ All keys specified in the documentation can be customized in Minecraft’s own s
 
 All map types contain markers. These markers denote various pieces of information - such as the position of an entity or [a waypoint](waypoints.md) on the map.
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Marker-Player](../img/markers/marker-player.png){: .center} | Your position on the map. *Note: This icon has a <br>white border ingame.* |
-| ![Waypoint](../img/markers/waypoint.png){: .center} | [A waypoint](waypoints.md). The colour can be set in <br>the waypoint manager. |
-| ![Waypoint](../img/markers/waypoint-death.png){: .center} | [A death Waypoint](waypoints.md) |
+| Icon                                                          | Description                                                                    |
+|---------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ![Marker-Player](../img/markers/marker-player.png){: .center} | Your position on the map. *Note: This icon has a <br>white border ingame.*     |
+| ![Waypoint](../img/markers/waypoint.png){: .center}           | [A waypoint](waypoints.md). The colour can be set in <br>the waypoint manager. |
+| ![Waypoint](../img/markers/waypoint-death.png){: .center}     | [A death Waypoint](waypoints.md)                                               |
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Marker-White](../img/markers/marker-white.png){: .center} | A marker denoting an entity on the map. The colour <br>of the marker denotes the type of entity. |
-| ![Marker-White-Down](../img/markers/marker-white-down.png){: .center} | An entity below you. |
-| ![Marker-White-Up](../img/markers/marker-white-up.png){: .center} | An entity above you. |
+| Icon                                                                  | Description                                                                                      |
+|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ![Marker-White](../img/markers/marker-white.png){: .center}           | A marker denoting an entity on the map. The colour <br>of the marker denotes the type of entity. |
+| ![Marker-White-Down](../img/markers/marker-white-down.png){: .center} | An entity below you.                                                                             |
+| ![Marker-White-Up](../img/markers/marker-white-up.png){: .center}     | An entity above you.                                                                             |
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Marker-Grey](../img/markers/marker-grey.png){: .center} | A neutral entity, like an animal. |
-| ![Marker-Green](../img/markers/marker-green.png){: .center} | A villager. |
-| ![Marker-Blue](../img/markers/marker-blue.png){: .center} | Another player. |
-| ![Marker-Red](../img/markers/marker-red.png){: .center} | A hostile entity, like a monster. |
+| Icon                                                        | Description                       |
+|-------------------------------------------------------------|-----------------------------------|
+| ![Marker-Grey](../img/markers/marker-grey.png){: .center}   | A neutral entity, like an animal. |
+| ![Marker-Green](../img/markers/marker-green.png){: .center} | A villager.                       |
+| ![Marker-Blue](../img/markers/marker-blue.png){: .center}   | Another player.                   |
+| ![Marker-Red](../img/markers/marker-red.png){: .center}     | A hostile entity, like a monster. |
 
 Markers and their display can be customized in the [settings manager](settings.md#waypoint-settings).
 
