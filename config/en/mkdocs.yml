@@ -65,6 +65,7 @@ nav:
       - Basic Usage: Server Docs/basic-usage.md
       - Settings: Server Docs/settings.md
       - Waypoints: Server Docs/waypoints.md
+      - Multiplayer: Server Docs/multiplayer.md
   - Tools & Customisation:
       - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
       - Integrate your mod: Tools and Customisation/integration.md
