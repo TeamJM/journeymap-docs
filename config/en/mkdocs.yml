@@ -63,9 +63,12 @@ nav:
   - Server Docs:
       - Installing: Server Docs/installing.md
       - Basic Usage: Server Docs/basic-usage.md
+      - Commands: 
+          - Waypoint: Server Docs/Commands/waypoint_command.md
       - Settings: Server Docs/settings.md
-      - Waypoints: Server Docs/waypoints.md
       - Multiplayer: Server Docs/multiplayer.md
+      - Endpoints: 
+          - Waypoint: Server Docs/Endpoints/waypoint.md
   - Tools & Customisation:
       - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
       - Integrate your mod: Tools and Customisation/integration.md
