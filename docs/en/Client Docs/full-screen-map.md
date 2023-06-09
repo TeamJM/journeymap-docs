@@ -4,7 +4,7 @@ By pressing the full-screen map key (by default, the ++j++ key), you can open th
 
 ![Full-Screen](../img/full-screen.png){: .center}
 
-The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](settings.md#full-screen-map-settings).
+The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](settings/full-screen-map.md).
 
 ## **Basic Usage**
 
@@ -18,7 +18,7 @@ The following keybinds are available, and they may be changed in Minecraft’s o
 
 - ++c++ Copy the coordinates of the block your cursor is pointing at to the chat box
 - ++b++ Create a [waypoint](waypoints.md) at the block your cursor is pointing at
-- ++o++ Open JourneyMap’s [settings manager](settings.md)
+- ++o++ Open JourneyMap’s [settings manager](settings/overview.md)
 
 ## **Buttons**
 
@@ -42,10 +42,10 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 | ![Villagers](../img/icons/villagers.png){: .center} | Toggle visibility of villagers.     |
 | ![Players](../img/icons/players.png){: .center}     | Toggle visibility of other players. |
 
-| Icon                                      | Description                                                                                                           |
-|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| ![Grid](../img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold ++shift++ and <br>click to change the [grid settings](settings.md#grid-settings). |
-| ![Keys](../img/icons/keys.png){: .center} | Toggle visibility of the keybinds.                                                                                    |
+| Icon                                      | Description                                                                                                  |
+|-------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| ![Grid](../img/icons/grid.png){: .center} | Toggle visibility of the grid. Hold ++shift++ and <br>click to change the [grid settings](settings/grid.md). |
+| ![Keys](../img/icons/keys.png){: .center} | Toggle visibility of the keybinds.                                                                           |
 
 ## **Upper-Right Buttons**
 
@@ -65,15 +65,15 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 
 ## **Bottom Buttons**
 
-| Icon                                                | Description                                |
-|-----------------------------------------------------|--------------------------------------------|
-| ![Waypoints](../img/icons/waypoints.png){: .center} | Open the [waypoint manager](waypoints.md). |
-| ![Options](../img/icons/options.png){: .center}     | Open the [settings manager](settings.md).  |
-| ![About](../img/icons/about.png){: .center}         | Open the About screen.                     |
-| ![Browser](../img/icons/browser.png){: .center}     | Open the Webmap, if enabled.               |
-| ![Theme](../img/icons/theme.png){: .center}         | Cycle through the available themes.        |
-| ![Reset](../img/icons/reset.png){: .center}         | Reset the colour palette.                  |
-| ![Delete](../img/icons/delete.png){: .center}       | Delete the map in one or more dimensions.  |
-| ![Save](../img/icons/savemap.png){: .center}        | Save the whole map to a file.              |
-| ![Auto-Map](../img/icons/automap.png){: .center}    | Map the explored world, in single-player.  |
-| ![Disable](../img/icons/disable.png){: .center}     | Toggle mapping on and off.                 |
+| Icon                                                | Description                                        |
+|-----------------------------------------------------|----------------------------------------------------|
+| ![Waypoints](../img/icons/waypoints.png){: .center} | Open the [waypoint manager](settings/waypoint.md). |
+| ![Options](../img/icons/options.png){: .center}     | Open the [settings manager](settings/overview.md). |
+| ![About](../img/icons/about.png){: .center}         | Open the About screen.                             |
+| ![Browser](../img/icons/browser.png){: .center}     | Open the Webmap, if enabled.                       |
+| ![Theme](../img/icons/theme.png){: .center}         | Cycle through the available themes.                |
+| ![Reset](../img/icons/reset.png){: .center}         | Reset the colour palette.                          |
+| ![Delete](../img/icons/delete.png){: .center}       | Delete the map in one or more dimensions.          |
+| ![Save](../img/icons/savemap.png){: .center}        | Save the whole map to a file.                      |
+| ![Auto-Map](../img/icons/automap.png){: .center}    | Map the explored world, in single-player.          |
+| ![Disable](../img/icons/disable.png){: .center}     | Toggle mapping on and off.                         |

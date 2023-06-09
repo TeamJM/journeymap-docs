@@ -4,7 +4,7 @@ Waypoints allow you to mark specific locations on your map, in order to keep tra
 
 Additionally, death waypoints are created when, for example, you’re blown off the edge of a cliff by [a trumpet-wielding skeleton](https://www.curseforge.com/minecraft/mc-mods/trumpet-skeleton-redooted).
 
-By default, they’re shown using a coloured beacon beam, and the name and icon for the waypoint will be displayed when you look towards it - but this behavior can be changed in the [settings manager](settings.md). Death waypoints may also be disabled there, if preferred.
+By default, they’re shown using a coloured beacon beam, and the name and icon for the waypoint will be displayed when you look towards it - but this behavior can be changed in the [settings manager](settings/overview.md). Death waypoints may also be disabled there, if preferred.
 
 !!! warning "Warning"
 
@@ -29,7 +29,7 @@ The waypoint manager provides a single place for - as you may expect - managing 
 
 The waypoint manager gives you a list of all of your waypoints, and provides some options to manage them. At the bottom are the following buttons:
 
-- **Options**: Open the [settings manager](settings.md)
+- **Options**: Open the [settings manager](settings/overview.md)
 - **New**: Create a new waypoint
 - **Dimension**: Filter shown waypoints based on dimension
 - **Close**: Close the waypoint manager
