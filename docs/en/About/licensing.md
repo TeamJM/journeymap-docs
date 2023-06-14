@@ -4,7 +4,7 @@ JourneyMap is distributed under an All Rights Reserved license. This means that 
 
 ## **What you CAN do**
 
-- Create a modpack containing JourneyMap, as long as JourneyMap is downloaded from CurseForge as part of the modpack installation or launch process. This includes modpacks hosted directly on CurseForge.
+- Create a modpack containing JourneyMap, as long as JourneyMap is downloaded from CurseForge or Modrinth as part of the modpack installation or launch process. This includes modpacks hosted directly on CurseForge or Modrinth.
 
 - If you’re using solder.io with Technic to allow each user to download the mod directly from CurseForge, you may also include JourneyMap. Just ensure that you’re [following these directions](https://github.com/bochen415/JourneyMap-TechnicSolder-Tutorial/wiki/JourneyMap-TechnicSolder-Tutorial).
 
