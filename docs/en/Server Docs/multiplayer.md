@@ -1,6 +1,6 @@
 ## **Settings**
 
-The Multiplayer section is a section designed to give users control on how they are viewed on other clients using the JourneyMap mod, and how they are displayed on the map. This section is only unlocked when the server is running the JourneyMap mod.
+The Multiplayer section is a section designed to give users control on how they are viewed on other clients using the JourneyMap mod, and how they are displayed on the map. This section is only unlocked when the server is running the JourneyMap mod and can be disabled by the server.
 
 ![Overview](../img/settings/multiplayer/overview.png){: .center}
 

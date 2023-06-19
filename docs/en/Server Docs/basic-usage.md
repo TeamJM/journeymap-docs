@@ -9,9 +9,11 @@ All Options in the Server Admin Screen have tooltips that explain them in detail
 
 If the button does not appear, you may need to log out and back into your server if you were recently Opped, or the Admin disabled it in the config file. 
 
-By default all Opped users have access to the Server Admin screen. This can be changed via a config file on the server. 
+By default, all Opped users have access to the Server Admin screen. This can be changed via a config file on the server. 
 
-The config file is location: ```(server folder)/journeymap/server/<version>/journeymap.server.minecraft~<world>.config```. 
+The config file location for Fabric Servers is: `(server_folder)/configs/journeymap_server.cfg`.
+
+If you are using Minecraft 1.16+ the config file location: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
 ```
     server {

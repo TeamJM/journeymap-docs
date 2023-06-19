@@ -1,8 +1,6 @@
 ## **Waypoints**
 
-The External Waypoint Packet Listener is a feature that allows the server to send waypoints to the client.  This is useful for server admins who want to provide waypoints to players without requiring an addon mod.
-
-The waypoints are stored in the world's waypoint directory which is <code>./minecraft/journeymap/data/mp/{worldname}/waypoints</code>, and are sent to the client whenever the server wants the user to see them. The waypoints are not editable by the player, but they can be deleted if the origin for the waypoint is 'external'. The waypoints are not persistent, so they will not be saved to the client's config file.
+The External Waypoint Packet Listener is a feature that allows the server to send waypoints to the client. This is useful for server admins who want to provide waypoints to players without requiring an addon mod.
 
 ## **Examples**
 

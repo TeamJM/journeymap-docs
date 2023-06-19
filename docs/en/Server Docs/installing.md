@@ -1,6 +1,6 @@
 ## **Installing**
 
-JourneyMap Server is an optional server-side utility for Forge, Fabric and Bukkit servers. As of JourneyMap 5.1.1, the server-side mod comes in the same jar as the JourneyMap client with Forge and Fabric.  
+Installing JourneyMap on the server for Forge or Fabric adds some optional utility for server admins. Note: Forge or Fabric versions can connect to JourneyMap on the server no matter if it is Forge or Fabric.
 
 ## **Textual Guide**
 

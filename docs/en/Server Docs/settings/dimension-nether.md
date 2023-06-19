@@ -1,19 +1,20 @@
 ## **Dimension: minecraft:the_nether**
 
-The Dimension: minecraft:the_nether category contains settings that will be the default settings for the nether dimension.
+The Dimension: minecraft:the_nether category contains settings that will be the default settings for the nether
+dimension.
 
 ![Dimension-Minecraft-Nether](../../img/settings/server/dimension-minecraft-nether.png){: .center}
 
 ## **Toggles**
 
-| Toggle                | Description                                                                                                                                                |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable                | Enabling this dimension will override the global properties for this dimension.                                                                            |
-| Waypoint Teleporting  | Enabling will change the save directory for this servers mapping data. If disabled and then enabling on an active server will reset all user mapping data. |
-| Player Radar          | If players can see other players on the map.                                                                                                               |
-| Villager Radar        | If players can see villagers on the map.                                                                                                                   |
-| Animal Radar          | If players can see animals on the map.                                                                                                                     |
-| Monster/Hostile Radar | If players can see monsters or hostile entities on the map.                                                                                                |
+| Toggle                | Description                                                                     |
+|-----------------------|---------------------------------------------------------------------------------|
+| Enable                | Enabling this dimension will override the global properties for this dimension. |
+| Waypoint Teleporting  | Allows or prevents teleport teleporting via waypoint manager.                   |
+| Player Radar          | If players can see other players on the map.                                    |
+| Villager Radar        | If players can see villagers on the map.                                        |
+| Animal Radar          | If players can see animals on the map.                                          |
+| Monster/Hostile Radar | If players can see monsters or hostile entities on the map.                     |
 
 ## **Other Settings**
 
