@@ -4,7 +4,7 @@ Waypoints allow you to mark specific locations on your map, in order to keep tra
 
 Additionally, death waypoints are created when, for example, you’re blown off the edge of a cliff by [a trumpet-wielding skeleton](https://www.curseforge.com/minecraft/mc-mods/trumpet-skeleton-redooted).
 
-By default, they’re shown using a coloured beacon beam, and the name and icon for the waypoint will be displayed when you look towards it - but this behavior can be changed in the [settings manager](settings.md). Death waypoints may also be disabled there, if preferred.
+By default, they’re shown using a coloured beacon beam, and the name and icon for the waypoint will be displayed when you look towards it - but this behavior can be changed in the [settings manager](settings/overview.md). Death waypoints may also be disabled there, if preferred.
 
 !!! warning "Warning"
 
@@ -29,7 +29,7 @@ The waypoint manager provides a single place for - as you may expect - managing 
 
 The waypoint manager gives you a list of all of your waypoints, and provides some options to manage them. At the bottom are the following buttons:
 
-- **Options**: Open the [settings manager](settings.md)
+- **Options**: Open the [settings manager](settings/overview.md)
 - **New**: Create a new waypoint
 - **Dimension**: Filter shown waypoints based on dimension
 - **Close**: Close the waypoint manager
@@ -72,6 +72,20 @@ Here’s what each of the other buttons do:
 As of JourneyMap 5.2, you can now easily share waypoints and locations with other players on the server. The goal of this feature was to add convenience for everyone using JourneyMap, but not make it annoying for people who don't. If a player doesn't have JourneyMap, they will still see the location in their chat in a human-friendly format.
 
 When a properly-formatted location appears in Minecraft's chat, you can either **click** on it (to create a waypoint) or **control-click** on it (to view the location in your Fullscreen map.)
+
+## **Waypoint Commands**
+
+In JourneyMap 5.8.5, a new command was added which allows you to create, delete and reload waypoints from the chat.
+
+**Reload Waypoints**
+
+- Reloads waypoints in the waypoint directory without having to restart.
+- Primarily used when dropping waypoint files into the folder while the game is running.
+
+```
+/jm reload
+```
+The create and delete commands are only available when the server has JourneyMap installed and if the player has op permissions. You can find more information about the add and delete commands [here](https://teamjm.github.io/journeymap-docs/Server%20Docs/waypoints/).
 
 ## **How to Share Waypoints and Locations**
 

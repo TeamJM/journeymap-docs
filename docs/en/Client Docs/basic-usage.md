@@ -23,26 +23,26 @@ All keys specified in the documentation can be customized in Minecraft’s own s
 
 All map types contain markers. These markers denote various pieces of information - such as the position of an entity or [a waypoint](waypoints.md) on the map.
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Marker-Player](../img/markers/marker-player.png){: .center} | Your position on the map. *Note: This icon has a <br>white border ingame.* |
-| ![Waypoint](../img/markers/waypoint.png){: .center} | [A waypoint](waypoints.md). The colour can be set in <br>the waypoint manager. |
-| ![Waypoint](../img/markers/waypoint-death.png){: .center} | [A death Waypoint](waypoints.md) |
+| Icon                                                          | Description                                                                    |
+|---------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ![Marker-Player](../img/markers/marker-player.png){: .center} | Your position on the map. *Note: This icon has a <br>white border ingame.*     |
+| ![Waypoint](../img/markers/waypoint.png){: .center}           | [A waypoint](waypoints.md). The colour can be set in <br>the waypoint manager. |
+| ![Waypoint](../img/markers/waypoint-death.png){: .center}     | [A death Waypoint](waypoints.md)                                               |
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Marker-White](../img/markers/marker-white.png){: .center} | A marker denoting an entity on the map. The colour <br>of the marker denotes the type of entity. |
-| ![Marker-White-Down](../img/markers/marker-white-down.png){: .center} | An entity below you. |
-| ![Marker-White-Up](../img/markers/marker-white-up.png){: .center} | An entity above you. |
+| Icon                                                                  | Description                                                                                      |
+|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ![Marker-White](../img/markers/marker-white.png){: .center}           | A marker denoting an entity on the map. The colour <br>of the marker denotes the type of entity. |
+| ![Marker-White-Down](../img/markers/marker-white-down.png){: .center} | An entity below you.                                                                             |
+| ![Marker-White-Up](../img/markers/marker-white-up.png){: .center}     | An entity above you.                                                                             |
 
-| Icon | Description |
-| ----------- | ------------------------------------ |
-| ![Marker-Grey](../img/markers/marker-grey.png){: .center} | A neutral entity, like an animal. |
-| ![Marker-Green](../img/markers/marker-green.png){: .center} | A villager. |
-| ![Marker-Blue](../img/markers/marker-blue.png){: .center} | Another player. |
-| ![Marker-Red](../img/markers/marker-red.png){: .center} | A hostile entity, like a monster. |
+| Icon                                                        | Description                       |
+|-------------------------------------------------------------|-----------------------------------|
+| ![Marker-Grey](../img/markers/marker-grey.png){: .center}   | A neutral entity, like an animal. |
+| ![Marker-Green](../img/markers/marker-green.png){: .center} | A villager.                       |
+| ![Marker-Blue](../img/markers/marker-blue.png){: .center}   | Another player.                   |
+| ![Marker-Red](../img/markers/marker-red.png){: .center}     | A hostile entity, like a monster. |
 
-Markers and their display can be customized in the [settings manager](settings.md#waypoint-settings).
+Markers and their display can be customized in the [settings manager](settings/minimap.md).
 
 ## **The Minimap**
 
@@ -61,7 +61,7 @@ The four lines of text above and below the minimap are known as info slots. By d
 - The coordinate of your character
 - The current biome your character is in
 
-The minimap and its info slots may be customized in the [settings manager](settings.md#minimap-settings).
+The minimap and its info slots may be customized in the [settings manager](settings/minimap.md).
 
 ## **The Full-Screen Map**
 
@@ -71,12 +71,12 @@ By pressing the full-screen map key (by default, the J key), you can open the fu
 
 This map gives you a scrollable view of all the areas of the map you’ve explored so far, displayed as it was when you discovered them. It also provides access to JourneyMap’s Settings and a number of map display options.
 
-For more information on the full-screen map, please see the [full-screen map page](full-screen-map.md).
+For more information on the full-screen map, please see the [full-screen map page](settings/full-screen-map.md).
 
 ## **The Webmap**
 
-Once enabled in the [settings manager](settings.md), the webmap allows you to view and explore your generated map in a web browser, including accessing it from another device (such as a phone or tablet). This will work as long as the game is running.
+Once enabled in the [settings manager](settings/webmap.md), the webmap allows you to view and explore your generated map in a web browser, including accessing it from another device (such as a phone or tablet). This will work as long as the game is running.
 
 ![Webmap](../img/webmap.png){: .center}
 
-For more information on the webmap map, please see [the webmap page](settings.md#webmap-settings).
+For more information on the webmap map, please see [the webmap page](settings/webmap.md).
