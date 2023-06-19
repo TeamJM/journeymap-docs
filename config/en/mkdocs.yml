@@ -65,8 +65,9 @@ nav:
           - Full-Screen Map: Client Docs/settings/full-screen-map.md
           - Webmap: Client Docs/settings/webmap.md
           - Waypoint: Client Docs/settings/waypoint.md
-          - Waypoint Beacon: Client Docs/settings/waypoint-beacon.md
-          - Advanced: Client Docs/settings/advanced.md
+          - Waypoint Beacons: Client Docs/settings/waypoint-beacon.md
+          - Cartography: Client Docs/settings/cartography.md
+          - Advanced Options: Client Docs/settings/advanced.md
       - Waypoints: Client Docs/waypoints.md
   - Server Docs:
       - Installing: Server Docs/installing.md
