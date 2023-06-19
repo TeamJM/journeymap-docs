@@ -13,7 +13,7 @@ By default, all Opped users have access to the Server Admin screen. This can be 
 
 The config file location for Fabric Servers: `(server_folder)/configs/journeymap_server.cfg`.
 
-If you are using Minecraft 1.16+, the config file location for Forge servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
+The config file location for Forge servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
 ```
     server {
