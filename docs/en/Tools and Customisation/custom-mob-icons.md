@@ -33,7 +33,7 @@ JourneyMap 5.3+ uses the mob's entity texture resource location and substitutes 
 * Mob entity texture: <code>enderzoo:textures/entity/wither_cat.png</code>
 * Mob icon texture: <code>enderzoo:textures/entity_icon/wither_cat.png</code>
 
-*Note: If you are a player and you want to provide your own icons similiar to older versions of JourneyMap, you'll need to put together a [http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack simple resource pack] in a zip file. See the Instructions for Resource Pack Authors below.*
+*Note: If you are a player and you want to provide your own icons similar to older versions of JourneyMap, you'll need to put together a [simple resource pack](http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack) in a zip file. See the Instructions for Resource Pack Authors below.*
 
 ## **Instructions for Mod Authors**
 

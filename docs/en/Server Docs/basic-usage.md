@@ -1,21 +1,19 @@
 ## **Overview**
 
-JourneyMap Server is an optional server-side utility for both Forge and Bukkit servers. As of JourneyMap 5.1.1, the server-side mod comes in the same jar as the JourneyMap client with Forge.  
-
 You don't have to have JourneyMap Server installed to use the JourneyMap Client. It simply provides a way for server admins to restrict some features, and/or support Bukkit Multiworld and BungeeCord installations. Some features may not be available in both Forge and Bukkit server environments, however, so please read the information on this page and the changelogs for each release to get specific information on features for your server.
 
 ## **JourneyMap 5.5.5+**
-To access the Server Admin Screen open the JourneyMap options screen. As an Opped user there will be a `Server Admin` button at the bottom of the screen. 
+To access the Server Admin Screen open the JourneyMap options screen. As an Opped user there will be a `Server Admin` button at the bottom of the screen.
 
-All Options in the Server Admin Screen have tooltips that explain them in detail. 
+All Options in the Server Admin Screen have tooltips that explain them in detail.
 
-If the button does not appear, you may need to log out and back into your server if you were recently Opped, or the Admin disabled it in the config file. 
+If the button does not appear, you may need to log out and back into your server if you were recently Opped, or the Admin disabled it in the config file.
 
-By default all Opped users have access to the Server Admin screen. This can be changed via a config file on the server. 
+By default, all Opped users have access to the Server Admin screen. This can be changed via a config file on the server.
 
-The config file is location: `(server_folder)/configs/journeymap_server.cfg`. 
+The config file location for Fabric Servers: `(server_folder)/configs/journeymap_server.cfg`.
 
-If you are using Minecraft 1.16+ the config file location: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
+The config file location for Forge Servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
 ```
     server {
@@ -36,7 +34,7 @@ If you are using Minecraft 1.16+ the config file location: `(server_folder)/worl
 
 ## **Legacy Versions Below**
 !!! note "Legacy"
-    The following only pertains to version pre JourneyMap version 5.5.5, before the Server Admin screen was added to JourneyMap.
+The following only pertains to version pre JourneyMap version 5.5.5, before the Server Admin screen was added to JourneyMap.
 
 ## **Server control of Radar and Cave Mapping**
 
@@ -55,34 +53,6 @@ If you are using Minecraft 1.16+ the config file location: `(server_folder)/worl
 - For servers with multiple world folders (not just multiple dimensions) -- usually Bukkit not Forge -- this mod will automatically send a unique **World ID** to users with the JourneyMap client whenever the client loads a world.  This is necessary for servers which use multiple worlds, because it solves <http://www.minecraftforum.net/forums/minecraft-discussion/suggestions/79149-world-uid-for-multi-world-servers> this problem. The JourneyMap client uses the World Id to organize map images and waypoints when traversing between worlds.
 - Console commands are provided for server admins to manage the World ID without needing to restart the server.
 
-## **What it is Not**
-
-* This is not a server-side mapping mod.  No maps are created, made, hosted, shared, or even contemplated on the server.
-* This is not a way to administer anything other than JourneyMap client features.
-* This is neither a hot tub nor a time machine.
-
-## **Modpack Usage**
-
-The JourneyMap Client mod is governed by a [different modpack policy](../About/licensing.md) than the server.  
-
-The following applies to the server mod only:
-
-You may include JourneyMapServer in the server-side configuration of a modpack, provided you agree to the following conditions:
-
-1. Your launcher should link directly to a download here on the Curse CDN if it is capable of doing so (ATLauncher, MCUpdater, etc.).  If the launcher cannot link to the file directly, the JourneyMap Server jar file may be rehosted/bundled only for the purposes of your modpack, but not distributed in any other way.
-2. You must provide a link to this page for server admins who use your modpack.  Documentation is a good thing.
-
-## **Credits and Complaints**
-
-JourneyMapServer was created by Mysticdrew on behalf of an overworked Techbrew.  All credit goes to Mysticdrew. Complaints should be composed using letters cut out from magazines and newspapers, then sent via snail mail to your local government official inside an envelope containing baking flour.  Be sure to include a return address and recent photo.
-
-## **Installation/Set-Up**
-
-1. Put the JourneyMap .jar in your **server mods** folder: ```(server folder)/mods/ . ```
-2. The first time you start the server after installing **1.0RC4** or later, a new config file will be generated in ```(server folder)/configs/JourneyMapServer/(world).cfg.```  **If you had previously used 1.0RC3** or earlier, you will need to update this new config file with the settings from your old config file.  We apologize for the inconvenience.
-3. If you do not want to use the randomly-generated worldid, run the command: “/jmserver worldid set <name>” in the console or within the game as an admin.
-4. Clients that are connected will be automatically updated to the new worldid.  This results in the creation of a new folder by the client to store waypoints and map images: ```minecraft**'/journeymap/data/mp/(server_worldid).```  **New in client 5.0.0RC4**:  If this is the first time a World ID is assigned, the client will automatically migrate existing waypoints and map images to the new folder.
-
 ## **Server Reset**
 
 - If you are resetting / wiping a server world map, it is not recommended to keep a previous World ID for the new world, because users will still have waypoints and map images from their old world map.
@@ -96,10 +66,10 @@ JourneyMapServer was created by Mysticdrew on behalf of an overworked Techbrew. 
 * **help** - displays a list of sub commands.
 * **worldid** - displays the current world id to the user. (If the config option UseWorldID=true)
 
-** **set** <name> - sets the world id to a user specified string and sends it to all connected clients.
-** **setrandom** - sets the world id to a random UUID string and sends to all connected clients
-** **resync** - debug command, sends the current world id to all connected clients.  A need to use this is unusual.
-** **help** - displays the usage for /jmserver worldid
+* **set** <name> - sets the world id to a user specified string and sends it to all connected clients.
+* **setrandom** - sets the world id to a random UUID string and sends to all connected clients
+* **resync** - debug command, sends the current world id to all connected clients.  A need to use this is unusual.
+* **help** - displays the usage for /jmserver worldid
 
 ## **Config File Options**
 
@@ -157,3 +127,24 @@ The following options in the config file can be modified to suit your needs. Cha
 
 - A comma-separated list of usernames that will be allowed to use radar features in the JourneyMap client even if PlayerRadar is disabled
 - For example: WhitelistRadar=techbrew,mysticdrew
+
+## **What it is Not**
+
+* This is not a server-side mapping mod.  No maps are created, made, hosted, shared, or even contemplated on the server.
+* This is not a way to administer anything other than JourneyMap client features.
+* This is neither a hot tub nor a time machine.
+
+## **Modpack Usage**
+
+The JourneyMap Client mod is governed by a [different modpack policy](../About/licensing.md) than the server.
+
+The following applies to the server mod only:
+
+You may include JourneyMapServer in the server-side configuration of a modpack, provided you agree to the following conditions:
+
+1. Your launcher should link directly to a download here on the Curse CDN if it is capable of doing so (ATLauncher, MCUpdater, etc.).  If the launcher cannot link to the file directly, the JourneyMap Server jar file may be rehosted/bundled only for the purposes of your modpack, but not distributed in any other way.
+2. You must provide a link to this page for server admins who use your modpack.  Documentation is a good thing.
+
+## **Credits and Complaints**
+
+JourneyMapServer was created by Mysticdrew on behalf of an overworked Techbrew.  All credit goes to Mysticdrew. Complaints should be composed using letters cut out from magazines and newspapers, then sent via snail mail to your local government official inside an envelope containing baking flour.  Be sure to include a return address and recent photo.

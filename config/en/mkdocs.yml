@@ -59,10 +59,18 @@ nav:
       - Basic Usage: Client Docs/basic-usage.md
       - Full-Screen Map: Client Docs/full-screen-map.md
       - Waypoints: Client Docs/waypoints.md
-      - Settings: Client Docs/settings.md
+      - Settings:
+          - Overview: Client Docs/settings/overview.md
+          - Grid: Client Docs/settings/grid.md
+          - Minimap: Client Docs/settings/minimap.md
+          - Full-Screen Map: Client Docs/settings/full-screen-map.md
+          - Webmap: Client Docs/settings/webmap.md
+          - Waypoint: Client Docs/settings/waypoint.md
+          - Waypoint Beacons: Client Docs/settings/waypoint-beacon.md
+          - Advanced Options: Client Docs/settings/advanced.md
   - Server Docs:
-      - Forge Version: Server Docs/forge-version.md
-      - Bukkit & Spigot: Server Docs/bukkit-and-spigot.md
+      - Basic Usage: Server Docs/basic-usage.md
+      - Installing: Server Docs/installing.md
   - Tools & Customisation:
       - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
       - Integrate your mod: Tools and Customisation/integration.md
