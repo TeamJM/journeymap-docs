@@ -23,7 +23,7 @@ The **bold** toggle settings below are enabled by default.
 | **Hide Sneaking Entities** | Whether sneaking/crouching creatures should be hidden                                                                                                   |
 | Hide Spectators            | Whether spectators should be hidden on the radar                                                                                                        |
 | **High Display Quality**   | Uncheck to improve zoom performance and memory usage, but reduce <br>display quality and lower performance of minimap rotation when set to “My Heading” |
-| Multi-World Support        | Enables or disables multi-world support                                                                                                                 |
+| Multi-World Support        | Enables or disables multi-world support - Note: this may not work for all servers.                                                                      |
 | Record Cache Statistics    | This is intended for beta testers - enable to record statistics for each cache                                                                          |
 
 ## **Other Settings**
