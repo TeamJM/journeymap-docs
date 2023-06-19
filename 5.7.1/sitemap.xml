@@ -2,92 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/About/credits/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/About/licensing/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/About/support/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/basic-usage/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/full-screen-map/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/installing/</loc>
-         <lastmod>2023-06-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/waypoints/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Server%20Docs/bukkit-and-spigot/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/advanced/</loc>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Server%20Docs/forge-version/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/full-screen-map/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/grid/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/minimap/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/overview/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/waypoint-beacon/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/waypoint/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Client%20Docs/settings/webmap/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Server%20Docs/basic-usage/</loc>
+         <lastmod>2023-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Server%20Docs/installing/</loc>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Tools%20and%20Customisation/custom-mob-icons/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Tools%20and%20Customisation/integration/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Tools%20and%20Customisation/journeymap-tools/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Tools%20and%20Customisation/multiplayer-server/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Tools%20and%20Customisation/topographic/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Tools%20and%20Customisation/translate/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://teamjm.github.io/journeymap-docs/5.7.1/Tools%20and%20Customisation/ui-themes/</loc>
-         <lastmod>2023-06-14</lastmod>
+         <lastmod>2023-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
