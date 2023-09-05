@@ -11,7 +11,7 @@ If you’d like a featureful, easy-to-use mapping mod then why not give JourneyM
 ## **First Steps**
 
 - [Download JourneyMap](Client Docs/installing/)
-- [Use the Options Manager](Client Docs/settings/)
+- [Use the Options Manager](Client Docs/settings/overview)
 - [Share Waypoints](Client Docs/waypoints/#sharing-waypoints)
 - [Get Support](About/support/)
 
