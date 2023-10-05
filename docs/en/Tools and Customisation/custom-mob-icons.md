@@ -21,7 +21,7 @@ Or, you can create your own custom mob icon set in its own folder:
 
 ## **Mob Icon Sources**
 
-JourneyMap 5.3+ no longer uses folders of icons.  Instead, it uses mob icons via standard resource location, just like any other texture in Minecraft.  This is so **mods can provide their own mob icons</b> and <b>resource packs can provide or override mob icons** like everything else in the game.
+JourneyMap 5.3+ no longer uses folders of icons.  Instead, it uses mob icons via standard resource location, just like any other texture in Minecraft.  This is so **mods can provide their own mob icons resource packs can provide or override mob icons** like everything else in the game.
 
 JourneyMap 5.3+ uses the mob's entity texture resource location and substitutes "/entity/" with "/entity_icon/" to look up the mob icon.  Thus:
 
