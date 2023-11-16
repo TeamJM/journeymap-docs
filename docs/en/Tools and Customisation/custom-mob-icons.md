@@ -39,7 +39,7 @@ JourneyMap 5.3+ uses the mob's entity texture resource location and substitutes 
 
 You can now provide icons to JourneyMap for your mod's mobs. Here's how:
 
-- JourneyMap 5.3+ will look in your mod jar for icons in <code>/assets/modname/textures/entity_icons</code> .  
+- JourneyMap 5.3+ will look in your mod jar for icons in <code>/assets/modname/textures/entity_icon</code> .  
 - Icons should be transparent PNG files. Other sizes are usually supported, but 16x16 pixels is recommended.
 - The folder structure and filenames for your icons must mirror the folder structure and filename for your mob textures in <code>/assets/modname/textures/entity</code>.
 
@@ -54,7 +54,7 @@ For example:
                │   └───kobold
                │       │   kobold_green.png
                │       │   kobold_blue.png
-               └───entity_icons
+               └───entity_icon
                    │   owlbear.png
                    └───kobold
                        │   kobold_green.png
