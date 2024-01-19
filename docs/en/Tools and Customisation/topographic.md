@@ -14,7 +14,6 @@ Here's how it works:
 
 **{World height} ÷ {Number of colors} = {Contour interval}**
 
-
 So, given a **world height of 256** blocks, a palette of **32 colors** will create 32 elevation contours, each with a **contour interval of 8** blocks high.
 
 - 1st color: y 0-7

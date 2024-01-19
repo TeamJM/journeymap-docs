@@ -45,7 +45,7 @@ The contents of the file provide the theme folder name, json file name, and the 
 
 ## **Code and Comments for Themes**
 
-Each theme.json file is read by JourneyMap via GSON and creates a simple Java class hierarchy used to build the UI elements. **You cannot change the structure of the json files in any way, only edit the values provided.**   
+Each theme.json file is read by JourneyMap via GSON and creates a simple Java class hierarchy used to build the UI elements. **You cannot change the structure of the json files in any way, only edit the values provided.**
 
 Here is the source code of the Java class used to generate the theme.json files.  The comments are intended to give you insight into how each property is used:
 
