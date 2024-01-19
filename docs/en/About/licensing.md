@@ -1,4 +1,4 @@
-## **Licensing**
+# **Licensing**
 
 JourneyMap is distributed under an All Rights Reserved license. This means that you may not alter, host or distribute JourneyMap yourself.
 

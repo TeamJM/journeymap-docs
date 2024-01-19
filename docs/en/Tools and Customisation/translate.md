@@ -1,12 +1,12 @@
 ## **I. Check the current language files**
 
-This Git repository contains the latest language files for JourneyMap: **[JourneyMap Language Files](https://github.com/TeamJM/journeymap-lang)**. 
+This Git repository contains the latest language files for JourneyMap: **[JourneyMap Language Files](https://github.com/TeamJM/journeymap-lang)**.
 
 - If your language file is in the repository, view it and check it for accuracy.
 - If your language file is **not** in the repository, your language has not yet been translated for JourneyMap.
 
 ## **II. Instructions for creating / using the language file**
- 
+
 If your language file does not yet exist:
 
 1. Copy the en_US.lang file
