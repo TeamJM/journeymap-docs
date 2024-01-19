@@ -67,11 +67,9 @@ The following only pertains to version pre JourneyMap version 5.5.5, before the 
 
 * **help** - displays a list of sub commands.
 * **worldid** - displays the current world id to the user. (If the config option UseWorldID=true)
-
 * **set** - sets the world id to a user specified string and sends it to all connected clients.
 * **setrandom** - sets the world id to a random UUID string and sends to all connected clients
 * **resync** - debug command, sends the current world id to all connected clients.  A need to use this is unusual.
-* **help** - displays the usage for /jmserver worldid
 
 ## **Config File Options**
 
