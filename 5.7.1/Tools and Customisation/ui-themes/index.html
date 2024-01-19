@@ -148,9 +148,19 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -158,9 +168,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1234,670 +1244,670 @@
 <h2 id="how-to-designate-a-default-ui-theme-in-modpacks"><strong>How to Designate a Default UI Theme in Modpacks</strong></h2>
 <p>Modpacks can provide a theme for users by creating a theme folder just like the above. If a modpack author so wishes, they can also designate that theme to be the default theme for users who are using JourneyMap 5 for the first time.  </p>
 <p>This can be done by creating this file: .minecraft/journeymap/icon/theme/default.theme.config
-The contents of the file provide the theme folder name, json file name, and the name designated within the json file, like so:
-<div class="highlight"><pre><span></span><code> {
-  &quot;directory&quot;: &quot;Victorian&quot;,
-  &quot;filename&quot;: &quot;Victorian&quot;,
-  &quot;name&quot;: &quot;Victorian&quot;
- }
-</code></pre></div></p>
+The contents of the file provide the theme folder name, json file name, and the name designated within the json file, like so:</p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Victorian&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Victorian&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Victorian&quot;</span>
+<span class="w"> </span><span class="p">}</span>
+</code></pre></div>
 <h2 id="code-and-comments-for-themes"><strong>Code and Comments for Themes</strong></h2>
-<p>Each theme.json file is read by JourneyMap via GSON and creates a simple Java class hierarchy used to build the UI elements. <strong>You cannot change the structure of the json files in any way, only edit the values provided.</strong>   </p>
-<p>Here is the source code of the Java class used to generate the theme.json files.  The comments are intended to give you insight into how each property is used: 
-<div class="highlight"><pre><span></span><code> /**
-  * Theme specification for JourneyMap 5.0
-  */
- public class Theme implements Comparable&lt;Theme&gt;
- {
-    /**
-     * Current version of this specification
-     */
-    public static final int VERSION = 1; 
-
-    /**
-     * Theme author.
-     */
-    @Since(1)
-    public String author; 
-
-    /**
-     * Theme name.
-     */
-    @Since(1)
-    public String name; 
-
-    /**
-     * Parent directory name of theme files.
-     */
-    @Since(1)
-    public String directory; 
-
-    /**
-     * Container specs for images in the /container directory.
-     * Currently just Toolbar.
-     */
-    @Since(1)
-    public Container container = new Container(); 
-
-    /**
-     * UI Control specs for images in the /control directory.
-     * Currently: Button &amp; Toggle.
-     */
-    @Since(1)
-    public Control control = new Control(); 
-
-    /**
-     * FullMap Map specs for images in the /fullscreen directory.
-     */
-    @Since(1)
-    public Fullscreen fullscreen = new Fullscreen(); 
-
-    /**
-     * General size for all icons in the /icon directory
-     */
-    @Since(1)
-    public ImageSpec icon = new ImageSpec(); 
-
-    /**
-     * Circular Minimap specs for images in the /minimap/circle directory.
-     */
-    @Since(1)
-    public Minimap minimap = new Minimap(); 
-
-    /**
-     * Container class for images in /container.
-     */
-    public static class Container
-    {
-        /**
-         * Specs for toolbar images in /container.
-         */
-        @Since(1)
-        public Toolbar toolbar = new Toolbar(); 
-
-        /**
-         * Toolbar class for toolbar images in /container.
-         */
-        public static class Toolbar
-        {
-            /**
-             * Specs for horizontal toolbar images.
-             */
-            @Since(1)
-            public ToolbarSpec horizontal = new ToolbarSpec(); 
-
-            /**
-             * Specs for vertical toolbar images.
-             */
-            @Since(1)
-            public ToolbarSpec vertical = new ToolbarSpec(); 
-
-            /**
-             * ToolbarSpec class. A toolbar consists of a beginning image, a
-             * repeating inner image (one rep per button), and an end image.
-             * &lt;p/&gt;
-             * Filenames expected by the Theme loader are:
-             * toolbar_begin.png, toolbar_inner.png, toolbar_end.png
-             */
-            public static class ToolbarSpec
-            {
-                /**
-                 * True to use theme images, false for invisible.
-                 */
-                @Since(1)
-                public boolean useThemeImages; 
-
-                /**
-                 * Filename prefix. Example: &quot;h&quot; for horizontal, &quot;v&quot; for vertical.
-                 */
-                @Since(1)
-                public String prefix = &quot;&quot;; 
-
-                /**
-                 * Margin in pixels around toolbar.
-                 */
-                @Since(1)
-                public int margin; 
-
-                /**
-                 * Padding in pixels between buttons in toolbar.
-                 */
-                @Since(1)
-                public int padding; 
-
-                /**
-                 * Image dimensions for the beginning of the toolbar.
-                 */
-                @Since(1)
-                public ImageSpec begin; 
-
-                /**
-                 * Image dimensions for the inner repeating section of the toolbar.
-                 */
-                @Since(1)
-                public ImageSpec inner; 
-
-                /**
-                 * Image dimensions for the end of the toolbar.
-                 */
-                @Since(1)
-                public ImageSpec end;
-            }
-        }
-    } 
-
-    /**
-     * Control class for images in /control
-     */
-    public static class Control
-    {
-        /**
-         * Specs for a normal button.
-         */
-        @Since(1)
-        public ButtonSpec button = new ButtonSpec(); 
-
-        /**
-         * Specs for a toggle button.
-         */
-        @Since(1)
-        public ButtonSpec toggle = new ButtonSpec(); 
-
-        /**
-         * Specification for a button.
-         * Filenames expected by the Theme loader are:
-         * on.png, off.png, hover.png, disabled.png
-         */
-        public static class ButtonSpec
-        {
-            /**
-             * True to use theme images.  False to use current resource pack&#39;s button texture.
-             */
-            @Since(1)
-            public boolean useThemeImages; 
-
-            /**
-             * Button width.
-             */
-            @Since(1)
-            public int width; 
-
-            /**
-             * Button height.
-             */
-            @Since(1)
-            public int height; 
-
-            /**
-             * Filename prefix. Optional.
-             */
-            @Since(1)
-            public String prefix = &quot;&quot;; 
-
-            /**
-             * String format style (using § control codes) for tooltips when the button is on.
-             */
-            @Since(1)
-            public String tooltipOnStyle = &quot;&quot;; 
-
-            /**
-             * String format style (using § control codes) for tooltips when the button is off.
-             */
-            @Since(1)
-            public String tooltipOffStyle = &quot;&quot;; 
-
-            /**
-             * String format style (using § control codes) for tooltips when the button is disabled.
-             */
-            @Since(1)
-            public String tooltipDisabledStyle = &quot;&quot;; 
-
-            /**
-             * Hex color for icons when button is on.
-             */
-            @Since(1)
-            public String iconOnColor = &quot;&quot;; 
-
-            /**
-             * Hex color for icons when button is off.
-             */
-            @Since(1)
-            public String iconOffColor = &quot;&quot;; 
-
-            /**
-             * Hex color for icons when button is hovered.
-             */
-            @Since(1)
-            public String iconHoverColor = &quot;&quot;; 
-
-            /**
-             * Hex color for icons when button is disabled.
-             */
-            @Since(1)
-            public String iconDisabledColor = &quot;&quot;;
-        }
-    } 
-
-    /**
-     * FullMap class for images in /fullscreen.
-     */
-    public static class Fullscreen
-    {
-        /**
-         * Hex color for map background (behind tiles).
-         */
-        @Since(1)
-        public String mapBackgroundColor = &quot;&quot;; 
-
-        /**
-         * Hex color for background of status text on the bottom of the screen.
-         */
-        @Since(1)
-        public LabelSpec statusLabel = new LabelSpec();
-    } 
-
-    /**
-     * Image dimensions.
-     */
-    public static class ImageSpec
-    {
-        /**
-         * Image width.
-         */
-        @Since(1)
-        public int width; 
-
-        /**
-         * Image height.
-         */
-        @Since(1)
-        public int height; 
-
-        public ImageSpec()
-        {
-        } 
-
-        public ImageSpec(int width, int height)
-        {
-            this.width = width;
-            this.height = height;
-        }
-    } 
-
-    /**
-     * Class for images in /minimap
-     */
-    public static class Minimap
-    {
-        /**
-         * Circular minimap specifications, corresponds to /minimap/circle
-         */
-        @Since(1)
-        public MinimapCircle circle = new MinimapCircle(); 
-
-        /**
-         * Square minimap specifications, corresponds to /minimap/square
-         */
-        @Since(1)
-        public MinimapSquare square = new MinimapSquare(); 
-
-        /**
-         * Shared minimap spec
-         */
-        public static abstract class MinimapSpec
-        {
-            /**
-             * Minimum margin outside of minimap frame.
-             */
-            @Since(1)
-            public int margin; 
-
-            /**
-             * Whether key shown at the top of the minimap (FPS) should
-             * be inside the frame (true), or outside/above it (false)
-             */
-            @Since(1)
-            public boolean labelTopInside; 
-
-            /**
-             * Margin around top labels in minimap.
-             */
-            @Since(1)
-            public int labelTopMargin; 
-
-            /**
-             * Whether labels shown at the bottom of the minimap (location) should
-             * be inside the frame (true), or outside/below it (false)
-             */
-            @Since(1)
-            public boolean labelBottomInside; 
-
-            /**
-             * Margin around bottom labels in minimap.
-             */
-            @Since(1)
-            public int labelBottomMargin; 
-
-            /**
-             * Label spec for showing FPS
-             */
-            @Since(1)
-            public LabelSpec fpsLabel = new LabelSpec(); 
-
-            /**
-             * Label spec for showing location
-             */
-            @Since(1)
-            public LabelSpec locationLabel = new LabelSpec(); 
-
-            /**
-             * Label spec for showing location
-             */
-            @Since(1)
-            public LabelSpec biomeLabel = new LabelSpec(); 
-
-            /**
-             * Label spec for showing compass points
-             */
-            @Since(1)
-            public LabelSpec compassLabel = new LabelSpec(); 
-
-            /**
-             * Background image on which to place compass points.
-             * Expecting filename &quot;compass_point.png&quot;
-             */
-            @Since(1)
-            public ImageSpec compassPoint = new ImageSpec(); 
-
-            /**
-             * Hex color used to draw compass point. Use #ffffff to leave unchanged.
-             */
-            @Since(1)
-            public String compassPointColor = &quot;#ffffff&quot;; 
-
-            /**
-             * Number of pixels to pad around a compass point&#39;s key. Effects the scaled size of the compass point image.
-             */
-            @Since(1)
-            public int compassPointLabelPad; 
-
-            /**
-             * Number of pixels to shift the center of a compass point away from the map center.
-             * Use this to adjust how it overlays the minimap frame.
-             */
-            @Since(1)
-            public double compassPointOffset; 
-
-            /**
-             * Whether to show the North compass point.
-             * Defaults to true.
-             */
-            @Since(1)
-            public boolean compassShowNorth = true; 
-
-            /**
-             * Whether to show the South compass point.
-             * Defaults to true.
-             */
-            @Since(1)
-            public boolean compassShowSouth = true; 
-
-            /**
-             * Whether to show the East compass point.
-             * Defaults to true.
-             */
-            @Since(1)
-            public boolean compassShowEast = true; 
-
-            /**
-             * Whether to show the West compass point.
-             * Defaults to true.
-             */
-            @Since(1)
-            public boolean compassShowWest = true; 
-
-            /**
-             * Number of pixels to shift the center of an &quot;off-map&quot; waypoint away from the map center.
-             * Use this to adjust how it overlays the minimap frame.
-             */
-            @Since(1)
-            public double waypointOffset; 
-
-            /**
-             * Hex color used to draw reticle.
-             */
-            @Since(1)
-            public String reticleColor = &quot;&quot;; 
-
-            /**
-             * General alpha transparency (0-255) of reticle.
-             * Default is 128.
-             */
-            @Since(1)
-            public int reticleAlpha = 96; 
-
-            /**
-             * Alpha transparency (0-255) for the heading segment of reticle.
-             * Default is 150.
-             */
-            @Since(1)
-            public int reticleHeadingAlpha = 112; 
-
-            /**
-             * General reticle thickness in pixels.
-             * Default is 2.25 pixels.
-             */
-            @Since(1)
-            public double reticleThickness = 2.25; 
-
-            /**
-             * Reticle thickness in pixels for the heading segment of reticle.
-             * Default is 2.5 pixels.
-             */
-            @Since(1)
-            public double reticleHeadingThickness = 2.5; 
-
-            /**
-             * Number of pixels to shift the outer endpoint of a reticle segment away from the map center.
-             * Negative values move the end closer to the center.
-             * Use this to adjust how it underlays the minimap frame.
-             */
-            @Since(1)
-            public int reticleOffset; 
-
-            /**
-             * Hex color to apply to frame image. Use #ffffff to keep unchanged.
-             */
-            @Since(1)
-            public String frameColor = &quot;&quot;; 
-
-
-            /**
-             * Image prefix (optional) for images in /minimap/square
-             */
-            @Since(1)
-            public String prefix = &quot;&quot;;
-        } 
-
-        /**
-         * Class for images in /minimap/circle.
-         * &lt;p/&gt;
-         * The mask defines the area of the minimap that will be shown.
-         * The rim is the frame/overlay placed atop the minimap.
-         * &lt;p/&gt;
-         * Filenames expected by the Theme loader are:
-         * mask_256.png, rim_256.png, mask_512.png, rim_512.png, compass_point.png
-         * &lt;p/&gt;
-         * Minimap sizes &lt;=256 will use mask_256 and rim_256. Anything
-         * larger will use mask_512 and rim_512.
-         */
-        public static class MinimapCircle extends MinimapSpec
-        {
-            /**
-             * Size of rim_256.png (Ideally 256x256px)
-             */
-            @Since(1)
-            public ImageSpec rim256 = new ImageSpec(256, 256); 
-
-            /**
-             * Size of mask_256.png (Ideally 256x256px)
-             */
-            @Since(1)
-            public ImageSpec mask256 = new ImageSpec(256, 256); 
-
-            /**
-             * Size of rim_512.png (Ideally 512x512px)
-             */
-            @Since(1)
-            public ImageSpec rim512 = new ImageSpec(512, 512); 
-
-            /**
-             * Size of mask_512.png (Ideally 512x512px)
-             */
-            @Since(1)
-            public ImageSpec mask512 = new ImageSpec(512, 512);
-        } 
-
-        /**
-         * Class for images in /minimap/square.
-         * &lt;p/&gt;
-         * Filenames expected by the Theme loader are:
-         * topleft.png, top.png, topright.png, left.png, right.png,
-         * bottomleft.png, bottom.png, bottomright.png, compass_point.png
-         * &lt;p/&gt;
-         * Images are centered along the edges of the minimap area.
-         */
-        public static class MinimapSquare extends MinimapSpec
-        {
-            /**
-             * Dimensions of topleft.png
-             */
-            @Since(1)
-            public ImageSpec topLeft = new ImageSpec(); 
-
-            /**
-             * Dimensions of top.png. It will be stretched to fit minimap size.
-             */
-            @Since(1)
-            public ImageSpec top = new ImageSpec(); 
-
-            /**
-             * Dimensions of topright.png
-             */
-            @Since(1)
-            public ImageSpec topRight = new ImageSpec(); 
-
-
-            /**
-             * Dimensions of right.png. It will be stretched to fit minimap size.
-             */
-            @Since(1)
-            public ImageSpec right = new ImageSpec(); 
-
-            /**
-             * Dimensions of bottomright.png
-             */
-            @Since(1)
-            public ImageSpec bottomRight = new ImageSpec(); 
-
-            /**
-             * Dimensions of bottom.png. It will be stretched to fit minimap size.
-             */
-            @Since(1)
-            public ImageSpec bottom = new ImageSpec(); 
-
-            /**
-             * Dimensions of bottomleft.png
-             */
-            @Since(1)
-            public ImageSpec bottomLeft = new ImageSpec(); 
-
-            /**
-             * Dimensions of left.png. It will be stretched to fit minimap size.
-             */
-            @Since(1)
-            public ImageSpec left = new ImageSpec();
-        }
-    } 
-
-    /**
-     * Class for defining key characteristics.
-     */
-    public static class LabelSpec
-    {
-        /**
-         * Hex color for key background.
-         * Default is black.
-         */
-        @Since(1)
-        public String backgroundColor = toHexColor(Color.black); 
-
-        /**
-         * Alpha transparency (0-255) of key background.
-         * Default is 200.
-         */
-        @Since(1)
-        public int backgroundAlpha = 200; 
-
-        /**
-         * Hex color for key foreground.
-         * Default is white.
-         */
-        @Since(1)
-        public String foregroundColor = toHexColor(Color.white); 
-
-        /**
-         * Alpha transparency (0-255) of key background.
-         * Default is 255.
-         */
-        @Since(1)
-        public int foregroundAlpha = 255; 
-
-        /**
-         * Whether to use font shadow.
-         * Default is false.
-         */
-        @Since(1)
-        public boolean shadow = false;
-    } 
-
-    /**
-     * The basis of default.theme.json, which
-     * is used to load a specific theme as the default.
-     */
-    public static class DefaultPointer
-    {
-        /**
-         * Parent directory name of theme files.
-         */
-        @Since(1)
-        public String directory; 
-
-        /**
-         * Theme filename.
-         */
-        @Since(1)
-        public String filename; 
-
-        /**
-         * Theme name.
-         */
-        @Since(1)
-        public String name; 
-
-        protected DefaultPointer()
-        {
-        } 
-
-        public DefaultPointer(Theme theme)
-        {
-            this.name = theme.name;
-            this.filename = theme.name;
-            this.directory = theme.directory;
-        }
-    }
- }
-</code></pre></div></p>
+<p>Each theme.json file is read by JourneyMap via GSON and creates a simple Java class hierarchy used to build the UI elements. <strong>You cannot change the structure of the json files in any way, only edit the values provided.</strong></p>
+<p>Here is the source code of the Java class used to generate the theme.json files.  The comments are intended to give you insight into how each property is used:</p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="cm">/**</span>
+<span class="cm">  * Theme specification for JourneyMap 5.0</span>
+<span class="cm">  */</span>
+<span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Theme</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Comparable</span><span class="o">&lt;</span><span class="n">Theme</span><span class="o">&gt;</span>
+<span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Current version of this specification</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">VERSION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Theme author.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">author</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Theme name.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Parent directory name of theme files.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">directory</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Container specs for images in the /container directory.</span>
+<span class="cm">     * Currently just Toolbar.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Container</span><span class="w"> </span><span class="n">container</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Container</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * UI Control specs for images in the /control directory.</span>
+<span class="cm">     * Currently: Button &amp; Toggle.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Control</span><span class="w"> </span><span class="n">control</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Control</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * FullMap Map specs for images in the /fullscreen directory.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Fullscreen</span><span class="w"> </span><span class="n">fullscreen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Fullscreen</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * General size for all icons in the /icon directory</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Circular Minimap specs for images in the /minimap/circle directory.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Minimap</span><span class="w"> </span><span class="n">minimap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Minimap</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Container class for images in /container.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Container</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Specs for toolbar images in /container.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">Toolbar</span><span class="w"> </span><span class="n">toolbar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Toolbar</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Toolbar class for toolbar images in /container.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Toolbar</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Specs for horizontal toolbar images.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ToolbarSpec</span><span class="w"> </span><span class="n">horizontal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ToolbarSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Specs for vertical toolbar images.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ToolbarSpec</span><span class="w"> </span><span class="n">vertical</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ToolbarSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * ToolbarSpec class. A toolbar consists of a beginning image, a</span>
+<span class="cm">             * repeating inner image (one rep per button), and an end image.</span>
+<span class="cm">             * &lt;p/&gt;</span>
+<span class="cm">             * Filenames expected by the Theme loader are:</span>
+<span class="cm">             * toolbar_begin.png, toolbar_inner.png, toolbar_end.png</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ToolbarSpec</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="cm">/**</span>
+<span class="cm">                 * True to use theme images, false for invisible.</span>
+<span class="cm">                 */</span>
+<span class="w">                </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">useThemeImages</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">                </span><span class="cm">/**</span>
+<span class="cm">                 * Filename prefix. Example: &quot;h&quot; for horizontal, &quot;v&quot; for vertical.</span>
+<span class="cm">                 */</span>
+<span class="w">                </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">                </span><span class="cm">/**</span>
+<span class="cm">                 * Margin in pixels around toolbar.</span>
+<span class="cm">                 */</span>
+<span class="w">                </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">margin</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">                </span><span class="cm">/**</span>
+<span class="cm">                 * Padding in pixels between buttons in toolbar.</span>
+<span class="cm">                 */</span>
+<span class="w">                </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">padding</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">                </span><span class="cm">/**</span>
+<span class="cm">                 * Image dimensions for the beginning of the toolbar.</span>
+<span class="cm">                 */</span>
+<span class="w">                </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">begin</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">                </span><span class="cm">/**</span>
+<span class="cm">                 * Image dimensions for the inner repeating section of the toolbar.</span>
+<span class="cm">                 */</span>
+<span class="w">                </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">inner</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">                </span><span class="cm">/**</span>
+<span class="cm">                 * Image dimensions for the end of the toolbar.</span>
+<span class="cm">                 */</span>
+<span class="w">                </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">end</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Control class for images in /control</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Control</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Specs for a normal button.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">ButtonSpec</span><span class="w"> </span><span class="n">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ButtonSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Specs for a toggle button.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">ButtonSpec</span><span class="w"> </span><span class="n">toggle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ButtonSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Specification for a button.</span>
+<span class="cm">         * Filenames expected by the Theme loader are:</span>
+<span class="cm">         * on.png, off.png, hover.png, disabled.png</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ButtonSpec</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * True to use theme images.  False to use current resource pack&#39;s button texture.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">useThemeImages</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Button width.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Button height.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Filename prefix. Optional.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * String format style (using § control codes) for tooltips when the button is on.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">tooltipOnStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * String format style (using § control codes) for tooltips when the button is off.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">tooltipOffStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * String format style (using § control codes) for tooltips when the button is disabled.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">tooltipDisabledStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Hex color for icons when button is on.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">iconOnColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Hex color for icons when button is off.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">iconOffColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Hex color for icons when button is hovered.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">iconHoverColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Hex color for icons when button is disabled.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">iconDisabledColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * FullMap class for images in /fullscreen.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Fullscreen</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Hex color for map background (behind tiles).</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">mapBackgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Hex color for background of status text on the bottom of the screen.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">LabelSpec</span><span class="w"> </span><span class="n">statusLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LabelSpec</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Image dimensions.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ImageSpec</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Image width.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Image height.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="nf">ImageSpec</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="nf">ImageSpec</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">width</span><span class="p">;</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Class for images in /minimap</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Minimap</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Circular minimap specifications, corresponds to /minimap/circle</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">MinimapCircle</span><span class="w"> </span><span class="n">circle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MinimapCircle</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Square minimap specifications, corresponds to /minimap/square</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">MinimapSquare</span><span class="w"> </span><span class="n">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MinimapSquare</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Shared minimap spec</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MinimapSpec</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Minimum margin outside of minimap frame.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">margin</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Whether key shown at the top of the minimap (FPS) should</span>
+<span class="cm">             * be inside the frame (true), or outside/above it (false)</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">labelTopInside</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Margin around top labels in minimap.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">labelTopMargin</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Whether labels shown at the bottom of the minimap (location) should</span>
+<span class="cm">             * be inside the frame (true), or outside/below it (false)</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">labelBottomInside</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Margin around bottom labels in minimap.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">labelBottomMargin</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Label spec for showing FPS</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">LabelSpec</span><span class="w"> </span><span class="n">fpsLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LabelSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Label spec for showing location</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">LabelSpec</span><span class="w"> </span><span class="n">locationLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LabelSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Label spec for showing location</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">LabelSpec</span><span class="w"> </span><span class="n">biomeLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LabelSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Label spec for showing compass points</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">LabelSpec</span><span class="w"> </span><span class="n">compassLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LabelSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Background image on which to place compass points.</span>
+<span class="cm">             * Expecting filename &quot;compass_point.png&quot;</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">compassPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Hex color used to draw compass point. Use #ffffff to leave unchanged.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">compassPointColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#ffffff&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Number of pixels to pad around a compass point&#39;s key. Effects the scaled size of the compass point image.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">compassPointLabelPad</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Number of pixels to shift the center of a compass point away from the map center.</span>
+<span class="cm">             * Use this to adjust how it overlays the minimap frame.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">compassPointOffset</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Whether to show the North compass point.</span>
+<span class="cm">             * Defaults to true.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">compassShowNorth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Whether to show the South compass point.</span>
+<span class="cm">             * Defaults to true.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">compassShowSouth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Whether to show the East compass point.</span>
+<span class="cm">             * Defaults to true.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">compassShowEast</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Whether to show the West compass point.</span>
+<span class="cm">             * Defaults to true.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">compassShowWest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Number of pixels to shift the center of an &quot;off-map&quot; waypoint away from the map center.</span>
+<span class="cm">             * Use this to adjust how it overlays the minimap frame.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">waypointOffset</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Hex color used to draw reticle.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">reticleColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * General alpha transparency (0-255) of reticle.</span>
+<span class="cm">             * Default is 128.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">reticleAlpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">96</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Alpha transparency (0-255) for the heading segment of reticle.</span>
+<span class="cm">             * Default is 150.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">reticleHeadingAlpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">112</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * General reticle thickness in pixels.</span>
+<span class="cm">             * Default is 2.25 pixels.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">reticleThickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.25</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Reticle thickness in pixels for the heading segment of reticle.</span>
+<span class="cm">             * Default is 2.5 pixels.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">reticleHeadingThickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.5</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Number of pixels to shift the outer endpoint of a reticle segment away from the map center.</span>
+<span class="cm">             * Negative values move the end closer to the center.</span>
+<span class="cm">             * Use this to adjust how it underlays the minimap frame.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">reticleOffset</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Hex color to apply to frame image. Use #ffffff to keep unchanged.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">frameColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span>
+
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Image prefix (optional) for images in /minimap/square</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Class for images in /minimap/circle.</span>
+<span class="cm">         * &lt;p/&gt;</span>
+<span class="cm">         * The mask defines the area of the minimap that will be shown.</span>
+<span class="cm">         * The rim is the frame/overlay placed atop the minimap.</span>
+<span class="cm">         * &lt;p/&gt;</span>
+<span class="cm">         * Filenames expected by the Theme loader are:</span>
+<span class="cm">         * mask_256.png, rim_256.png, mask_512.png, rim_512.png, compass_point.png</span>
+<span class="cm">         * &lt;p/&gt;</span>
+<span class="cm">         * Minimap sizes &lt;=256 will use mask_256 and rim_256. Anything</span>
+<span class="cm">         * larger will use mask_512 and rim_512.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MinimapCircle</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">MinimapSpec</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Size of rim_256.png (Ideally 256x256px)</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">rim256</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="w"> </span><span class="mi">256</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Size of mask_256.png (Ideally 256x256px)</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">mask256</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="w"> </span><span class="mi">256</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Size of rim_512.png (Ideally 512x512px)</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">rim512</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span><span class="w"> </span><span class="mi">512</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Size of mask_512.png (Ideally 512x512px)</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">mask512</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span><span class="w"> </span><span class="mi">512</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Class for images in /minimap/square.</span>
+<span class="cm">         * &lt;p/&gt;</span>
+<span class="cm">         * Filenames expected by the Theme loader are:</span>
+<span class="cm">         * topleft.png, top.png, topright.png, left.png, right.png,</span>
+<span class="cm">         * bottomleft.png, bottom.png, bottomright.png, compass_point.png</span>
+<span class="cm">         * &lt;p/&gt;</span>
+<span class="cm">         * Images are centered along the edges of the minimap area.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MinimapSquare</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">MinimapSpec</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of topleft.png</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">topLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of top.png. It will be stretched to fit minimap size.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of topright.png</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">topRight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of right.png. It will be stretched to fit minimap size.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of bottomright.png</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">bottomRight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of bottom.png. It will be stretched to fit minimap size.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">bottom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of bottomleft.png</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">bottomLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span><span class="w"> </span>
+
+<span class="w">            </span><span class="cm">/**</span>
+<span class="cm">             * Dimensions of left.png. It will be stretched to fit minimap size.</span>
+<span class="cm">             */</span>
+<span class="w">            </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="n">ImageSpec</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageSpec</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Class for defining key characteristics.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">LabelSpec</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Hex color for key background.</span>
+<span class="cm">         * Default is black.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">backgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">toHexColor</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">black</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Alpha transparency (0-255) of key background.</span>
+<span class="cm">         * Default is 200.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">backgroundAlpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Hex color for key foreground.</span>
+<span class="cm">         * Default is white.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">foregroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">toHexColor</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">white</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Alpha transparency (0-255) of key background.</span>
+<span class="cm">         * Default is 255.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">foregroundAlpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Whether to use font shadow.</span>
+<span class="cm">         * Default is false.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">shadow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * The basis of default.theme.json, which</span>
+<span class="cm">     * is used to load a specific theme as the default.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">DefaultPointer</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Parent directory name of theme files.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">directory</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Theme filename.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">filename</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Theme name.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="nd">@Since</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="kd">protected</span><span class="w"> </span><span class="nf">DefaultPointer</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="nf">DefaultPointer</span><span class="p">(</span><span class="n">Theme</span><span class="w"> </span><span class="n">theme</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">theme</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">filename</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">theme</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">directory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">theme</span><span class="p">.</span><span class="na">directory</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w"> </span><span class="p">}</span>
+</code></pre></div>
 
 
 
