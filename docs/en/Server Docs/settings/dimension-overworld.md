@@ -1,4 +1,4 @@
-## **Dimension: minecraft:overworld**
+# **Dimension: minecraft:overworld**
 
 The Dimension: minecraft:overworld category contains settings that will be the default settings for the overworld
 dimension.

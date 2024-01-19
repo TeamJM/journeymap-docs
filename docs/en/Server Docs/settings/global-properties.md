@@ -1,4 +1,4 @@
-## **Global Properties**
+# **Global Properties**
 
 The Global Properties category contains settings that affect the server side behaviour of the mod. These are the default
 properties for the server.

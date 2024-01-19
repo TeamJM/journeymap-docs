@@ -1,4 +1,4 @@
-## **Dimension: minecraft:the_nether**
+# **Dimension: minecraft:the_nether**
 
 The Dimension: minecraft:the_nether category contains settings that will be the default settings for the nether
 dimension.

@@ -1,4 +1,4 @@
-## **Settings**
+# **Settings**
 
 JourneyMap provides more than a few configuration options, allowing you to customize the behaviour and appearance of many different aspects of the mod. All of these settings are made available through the settings manager.
 

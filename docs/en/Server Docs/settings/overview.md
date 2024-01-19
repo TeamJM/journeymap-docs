@@ -1,4 +1,4 @@
-## **Settings**
+# **Settings**
 
 JourneyMap Server provides a few configuration options, allowing you to customize the behaviour of clients connecting with the JourneyMap mod and many different aspects of the mod. All of these settings are made available through the Server Admin tab in the settings manager.
 

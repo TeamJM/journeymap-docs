@@ -1,4 +1,4 @@
-## **Minimap Settings**
+# **Minimap Settings**
 
 JourneyMap allows you to have two minimap presets. Each preset represents a separate set of settings - essentially
 allowing you to have two distinct minimaps available to switch between.

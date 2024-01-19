@@ -1,4 +1,4 @@
-## **Default Dimension Properties**
+# **Default Dimension Properties**
 
 The Default Dimension Properties category contains settings that will be the default settings for all new dimensions
 created. These settings can be overridden on a per-dimension basis.

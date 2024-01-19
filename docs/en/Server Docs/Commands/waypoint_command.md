@@ -1,15 +1,15 @@
-## **Waypoint Commands**
+# **Waypoint Commands**
 
 Commands allows you to create and delete waypoints from the chat.
 
-Note: <u>It will not be ported to older versions<u>
+Note: <u>It will not be ported to older versions</u>
 
 - Command: waypoint
 - Alias: wp
 
 **Create Waypoint**
 
-```
+```text
 fields in [] are optional -> 
 [player] is the target player, if no player is specified it sends to all
 [announce] is whether the player has a notification that a waypoint is being created, if it is not specified, defaults to false it is created silently.
@@ -19,7 +19,7 @@ fields in [] are optional ->
 
 **Examples**
 
-```
+```text
 -   /waypoint create "Spawn" minecraft:overworld 1 50 12 aqua
 -   /waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew
 -   /waypoint create "Home" minecraft:overworld 1 50 12 aqua true~~  currently bugged in v5.8.x
@@ -28,9 +28,9 @@ fields in [] are optional ->
 
 **Delete Waypoint**
 
-Note: <u>Only deletes waypoints created by command<u>
+Note: <u>Only deletes waypoints created by command</u>
 
-```
+```text
 /waypoint delete "WaypointName"
 /waypoint delete "WaypointName" true
 /waypoint delete "WaypointName" mysticdrew
