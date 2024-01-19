@@ -13,12 +13,9 @@ When submitting a pull request, please follow these guidelines:
 
 ## Installing
 
-To run the documentation locally, you will need to first install MkDocs and Material for MkDocs. You can do this by running the following commands:
+To run the documentation locally, you will need to first install MkDocs and Material for MkDocs. You can do this by running the following command:
 
-- `pip install mkdocs`
-- `pip install mkdocs-material`
-- `pip install mkdocs-glightbox`
-- `pip install mike`
+- `pip install -r requirements.txt`
 
 These commands will install MkDocs and Material for MkDocs.
 
