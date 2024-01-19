@@ -1,4 +1,4 @@
-## **Live Help on Discord**
+# **Live Help on Discord**
 
 **Support is available on the public [JourneyMap Discord server](https://discord.gg/eP8gE69)**
 

@@ -1,4 +1,4 @@
-## **Full-Screen Map**
+# **Full-Screen Map**
 
 By pressing the full-screen map key (by default, the ++j++ key), you can open the full-screen map.
 

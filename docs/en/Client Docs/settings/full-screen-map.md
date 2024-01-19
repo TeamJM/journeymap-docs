@@ -1,4 +1,4 @@
-## **Full-Screen Map Settings**
+# **Full-Screen Map Settings**
 
 The full-screen map provides a large, scrollable view of your entire map. Just like the minimap presets, it can be
 customized to a great deal.

@@ -3,6 +3,7 @@
 You don't have to have JourneyMap Server installed to use the JourneyMap Client. It simply provides a way for server admins to restrict some features, and/or support Bukkit Multiworld and BungeeCord installations. Some features may not be available in both Forge and Bukkit server environments, however, so please read the information on this page and the changelogs for each release to get specific information on features for your server.
 
 ## **JourneyMap 5.5.5+**
+
 To access the Server Admin Screen open the JourneyMap options screen. As an Opped user there will be a `Server Admin` button at the bottom of the screen.
 
 All Options in the Server Admin Screen have tooltips that explain them in detail.
@@ -15,7 +16,7 @@ The config file location for Fabric Servers: `(server_folder)/configs/journeymap
 
 The config file location for Forge Servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
-```
+```text
     server {
     # Players in this list have access to the Journeymap's Server Admin Panel
     # Add users by name or UUID, Prefer UUID as it is more secure!
@@ -33,6 +34,7 @@ The config file location for Forge Servers: `(server_folder)/world/serverconfig/
 ```
 
 ## **Legacy Versions Below**
+
 !!! note "Legacy"
 The following only pertains to version pre JourneyMap version 5.5.5, before the Server Admin screen was added to JourneyMap.
 
@@ -57,7 +59,7 @@ The following only pertains to version pre JourneyMap version 5.5.5, before the 
 
 - If you are resetting / wiping a server world map, it is not recommended to keep a previous World ID for the new world, because users will still have waypoints and map images from their old world map.
 - To reset the World ID, simply delete it from the config and a new one will be generated when the server starts up.
-- Note: Changing the World ID will result in the creation of a new folder on each JourneyMap 5.x client:  ```minecraft**'/journeymap/data/mp/(server_newworldid). ```If the client has already received a different World ID, the user's waypoints and map images will remain in the old folder: ```minecraft**'/journeymap/data/mp/(server_oldworldid).```
+- Note: Changing the World ID will result in the creation of a new folder on each JourneyMap 5.x client:  ```minecraft**'/journeymap/data/mp/(server_newworldid).```If the client has already received a different World ID, the user's waypoints and map images will remain in the old folder: ```minecraft**'/journeymap/data/mp/(server_oldworldid).```
 
 ## **Console/Chat Commands**
 
@@ -66,7 +68,7 @@ The following only pertains to version pre JourneyMap version 5.5.5, before the 
 * **help** - displays a list of sub commands.
 * **worldid** - displays the current world id to the user. (If the config option UseWorldID=true)
 
-* **set** <name> - sets the world id to a user specified string and sends it to all connected clients.
+* **set** - sets the world id to a user specified string and sends it to all connected clients.
 * **setrandom** - sets the world id to a random UUID string and sends to all connected clients
 * **resync** - debug command, sends the current world id to all connected clients.  A need to use this is unusual.
 * **help** - displays the usage for /jmserver worldid
@@ -77,7 +79,7 @@ The config file is located here: ```(server folder)/configs/JourneyMapServer/(wo
 
 The following options in the config file can be modified to suit your needs. Changes require a server restart:
 
-**''UseWorldID''**
+**"UseWorldID"**
 
 - Valid options: true, false. Default value: true
 - **Important note**: If your server doesn't use multiple world folders, you do not need this feature!  Set to **false**.
@@ -85,45 +87,45 @@ The following options in the config file can be modified to suit your needs. Cha
     - The server will not send the worldid to the client.
     - All **/jmserver worldid** subcommands will be disabled.
 
-**''WorldID''**
+**"WorldID"**
 
 - Valid options: any valid string, no spaces!
 - This is the ID that is sent to JourneyMap for unique map instances.
 - This value is ignored if UseWorldID is set to false
 
-**''PlayerCaveMapping''**
+**"PlayerCaveMapping"**
 
 - Valid options: true, false. Default value: true
 - When set to false, users with the JourneyMap client will not have access to cave mapping features, including Nether and End maps.
 
-**''OpsCaveMapping''**
+**"OpsCaveMapping"**
 
 - Valid options: true, false. Default value: true
 - When set to true, Op users with the JourneyMap client will be allowed to use cave mapping features even if PlayerCaveMapping is disabled
 
-**''WhitelistCaveMapping''**
+**"WhitelistCaveMapping"**
 
 - A comma-separated list of usernames that will be allowed to use cave mapping features in the JourneyMap client even if PlayerCaveMapping is disabled
 - For example: WhitelistCaveMapping=techbrew,mysticdrew
 
-**''PlayerRadar''**
+**"PlayerRadar"**
 
 - Valid options: true, false. Default value: true
 - When set to false, users with the JourneyMap client will not have access to radar features.
 
-**''OpsRadar''**
+**"OpsRadar"**
 
 - Valid options: true, false. Default value: true
 - When set to true, Op users with the JourneyMap client will be allowed to use radar features even if PlayerRadar is disabled for normal users.
 
-**''SaveInWorldFolder''**
+**"SaveInWorldFolder"**
 
 - ''Valid for Forge only. Bukkit servers must keep this value false!''
 - Valid options: true, false. Default value: false
 - When set to true, the world ID will be saved to a separate file and placed in the world folder, rather than in the config file.
 - MCEdu servers must set this to true!  This ensures the world id stays with the world data when it is moved by the launcher.
 
-**''WhitelistRadar''**
+**"WhitelistRadar"**
 
 - A comma-separated list of usernames that will be allowed to use radar features in the JourneyMap client even if PlayerRadar is disabled
 - For example: WhitelistRadar=techbrew,mysticdrew

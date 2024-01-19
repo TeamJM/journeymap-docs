@@ -1,4 +1,4 @@
-## **Waypoint Settings**
+# **Waypoint Settings**
 
 This category allows you to change some settings relating to how [waypoints](../waypoints.md) behave and are displayed.
 Waypoints also have a number of individual settings - you can find out about those

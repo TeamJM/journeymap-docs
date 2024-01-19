@@ -44,7 +44,8 @@ You can now provide icons to JourneyMap for your mod's mobs. Here's how:
 - The folder structure and filenames for your icons must mirror the folder structure and filename for your mob textures in <code>/assets/modname/textures/entity</code>.
 
 For example:
-```
+
+```text
   coolmod-1.0.jar
    └───assets
        └───coolmod
@@ -72,7 +73,8 @@ You can use a resource pack to provide icons to JourneyMap 5.3+ for any Minecraf
 - The folder structure and filenames for your icons must mirror the folder structure and filename for mob textures in minecraft or other mods in <code>/assets/<modname>/textures/entity</code>.
 
 For example, if you want to provide custom icons for both Minecraft mobs and a mod called "coolmod", the mob textures for both would along these lines:
-```
+
+```text
  minecraft.jar                         coolmod-1.0.jar
    └───assets                               └───assets
        └───minecraft                            └───coolmod
@@ -85,7 +87,8 @@ For example, if you want to provide custom icons for both Minecraft mobs and a m
 ```
 
 In your resource pack, therefore, you would mirror the above file trees, replacing "entity" with "entity_icon" to store your custom mob icon files:
-```
+
+```text
  awesomepack.zip                    
    └───assets                              
        ├───minecraft                       

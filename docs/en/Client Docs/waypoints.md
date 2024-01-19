@@ -1,4 +1,4 @@
-## **Waypoints**
+# **Waypoints**
 
 Waypoints allow you to mark specific locations on your map, in order to keep track of those locations or easily find your way back to them later.
 
@@ -38,7 +38,7 @@ Each waypoint has the following options available:
 
 - **Teleport**: If allowed by the server, teleport directly to the waypoint
 - **Find**: Find the waypoint on the [full-screen map](full-screen-map.md)
-- **On/Off**: Toggle the waypoint’s visibilty ingame
+- **On/Off**: Toggle the waypoint’s visibility ingame
 - **Remove**: Delete the waypoint
 - **Edit**: Open the waypoint editor
 - **Chat**: Copy the waypoint’s information to the chat box, as shown:

@@ -18,7 +18,7 @@ If you prefer a more complete guide you can read and follow along with at your o
     - [The CurseForge Launcher](https://download.curseforge.com/)
     - [MultiMC](https://multimc.org/)
     - [The official Minecraft Launcher](https://www.minecraft.net/download)
-    
+
     We recommend MultiMC for ease of use, but any launcher will work just fine.
 
 2. Ensure that you have a copy of Java installed. If not, you can download a copy from the [Adoptium website](https://adoptium.net/temurin/releases/).
