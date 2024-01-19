@@ -1,4 +1,4 @@
-## **Waypoints**
+# **Waypoints**
 
 Waypoints allow you to mark specific locations on your map, in order to keep track of those locations or easily find your way back to them later.
 
@@ -38,7 +38,7 @@ Each waypoint has the following options available:
 
 - **Teleport**: If allowed by the server, teleport directly to the waypoint
 - **Find**: Find the waypoint on the [full-screen map](full-screen-map.md)
-- **On/Off**: Toggle the waypoint’s visibilty ingame
+- **On/Off**: Toggle the waypoint’s visibility ingame
 - **Remove**: Delete the waypoint
 - **Edit**: Open the waypoint editor
 - **Chat**: Copy the waypoint’s information to the chat box, as shown:
@@ -82,9 +82,10 @@ In JourneyMap 5.8.5, a new command was added which allows you to create, delete 
 - Reloads waypoints in the waypoint directory without having to restart.
 - Primarily used when dropping waypoint files into the folder while the game is running.
 
-```
+```text
 /jm reload
 ```
+
 The create and delete commands are only available when the server has JourneyMap installed and if the player has op permissions. You can find more information about the add and delete commands [here](https://teamjm.github.io/journeymap-docs/Server%20Docs/waypoints/).
 
 ## **How to Share Waypoints and Locations**
@@ -108,7 +109,7 @@ A location must minimally have the x and z coordinates, but any of the following
 A location consists of 2 or more ''name:value'' pairs, separated with commas.  Any of the following values is supported:
 
 - x (integer) **required**
-- y (integer) 
+- y (integer)
 - z (integer) **required**
 - dim (integer)
 - name (string, no quotes, no commas)

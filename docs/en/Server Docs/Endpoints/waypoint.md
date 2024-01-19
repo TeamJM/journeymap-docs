@@ -1,4 +1,4 @@
-## **Waypoints**
+# **Waypoints**
 
 The External Waypoint Packet Listener is a feature that allows the server to send waypoints to the client. This is useful for server admins who want to provide waypoints to players without requiring an addon mod.
 
@@ -7,18 +7,23 @@ The External Waypoint Packet Listener is a feature that allows the server to sen
 Below is an example of what the packet json looks like and what information the server sends to the client to process and interpret.
 
 Packet Identifier
-```
+
+```text
 discriminator:0
 channel:journeymap:waypoint
 ```
 
 Packet Buffer
+
+```text
 <code>waypoint StringUtf</code>  value -> waypointjson.toString();
 <code>action StringUtf</code>  value-> "create" or "delete"
 <code>announce Boolean</code> -> value true or false  : Announce determines if the user is notified when a waypoint is created or deleted. 
+```
 
 Packet Reader (journeymap's client code)
-```
+
+```text
 this.waypoint = buf.readUtf();
 this.action = buf.readUtf();
 this.announce = buf.readBoolean();
@@ -26,7 +31,7 @@ this.announce = buf.readBoolean();
 
 **Example Create Payload**
 
-```
+```json
 {
   "id": "home_-10,70,32",
   "name": "home",
@@ -47,6 +52,7 @@ this.announce = buf.readBoolean();
 }
 ```
 
+```text
 id -> <code>id = "name + "_" + x + "," + y + "," + z"</code> this format is required.<br>
 name -> waypoint name<br>
 icon -> <code>journeymap:ui/img/waypoint-icon.png</code> this is required<br>
@@ -61,11 +67,11 @@ g -> green value<br>
 b -> blue value<br>
 persistent -> <code>true</code> saves to disk, will load when the user restarts minecraft, or changes dimensions. <code>false</code> is not saved to disk, is removed from memory when the user exists minecraft<br>
 dimensions -> list of dimensions<br>
-
+```
 
 **Example Delete Payload**
 
-```
+```json
 {
   "name": "test"
 }
@@ -73,7 +79,8 @@ dimensions -> list of dimensions<br>
 
 name -> waypoint name is all that is required to delete the waypoint. 
 Example implementation using CraftBukkit
-```
+
+```java
     public static void createWaypoint(Player player, String name, IntVector3 pos, WaypointType type, ChatColor color) {
         Color rgb = color.getColor();
         JsonObject obj = new JsonObject();
@@ -119,7 +126,8 @@ Example implementation using CraftBukkit
 
 If you have the PacketDataSerializer (PacketBuffer) deobfuscated it would most likely use buffer.writeString(...) rather than buffer.a(...)
 If you want to use a different buffer/write manually the internals of that method are something like:
-```
+
+```java
     public PacketDataSerializer writeString(String s, int byteLimit) {
         
         byte[] bytes = s.getBytes(StandardCharsets.UTF_8);

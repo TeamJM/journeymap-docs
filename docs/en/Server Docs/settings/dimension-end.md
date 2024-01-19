@@ -1,4 +1,4 @@
-## **Dimension: minecraft:the_end**
+# **Dimension: minecraft:the_end**
 
 The Dimension: minecraft:the_end category contains settings that will be the default settings for the end dimension.
 

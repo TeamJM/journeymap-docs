@@ -9,6 +9,7 @@ Installing JourneyMap on the server for Forge or Fabric adds some optional utili
 3. Clients that are connected will be automatically connected to the worldid. This results in the creation of a new folder by the client to store waypoints and map images: ```.minecraft/journeymap/data/mp/(server_worldid)```
 
 ## **Legacy Versions Below**
+
 !!! note "Legacy"
     The following only pertains to version pre JourneyMap version 5.5.5, before the Server Admin screen was added to JourneyMap.
 

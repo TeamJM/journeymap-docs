@@ -1,4 +1,4 @@
-## **Webmap Settings**
+# **Webmap Settings**
 
 The webmap is an entirely different way to view your map - in a web browser instead of from directly within Minecraft. This allows you to have a map view visible on another screen, or even another device!
 

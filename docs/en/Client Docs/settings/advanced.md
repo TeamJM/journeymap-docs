@@ -1,4 +1,4 @@
-## **Advanced Settings**
+# **Advanced Settings**
 
 This section contains advanced settings for power users and those that may wish to tweak some of JourneyMap’s internals.
 

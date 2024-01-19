@@ -41,7 +41,7 @@ The sample lines above have the **keys** of "jm.common.chat_announcement" and "j
 
 <span style="color: red">**Incorrect**</span>: <code>example.llave=Esta es una frase.</code>
 
-- Many of the phrases contain one or more numbered **parameters**. For example: "%1$s", "%1$d", "%2$s", etc. These are placeholders which will be replaced with a value when the message is displayed. You may reorder these parameters if it is required by the grammar rules of your language. 
+- Many of the phrases contain one or more numbered **parameters**. For example: "%1$s", "%1$d", "%2$s", etc. These are placeholders which will be replaced with a value when the message is displayed. You may reorder these parameters if it is required by the grammar rules of your language.
 
 For example:
 <code>

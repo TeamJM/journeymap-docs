@@ -1,8 +1,10 @@
+# **Credits**
+
 >"It is amazing what you can accomplish if you do not care who gets the credit." - Harry S. Truman
 
 ## **Under The Hood**
 
-JourneyMap includes and/or makes use of the following software under their respective licenses: 
+JourneyMap includes and/or makes use of the following software under their respective licenses:
 
 **Minecraft**
 
