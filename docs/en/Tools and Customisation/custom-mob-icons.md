@@ -2,23 +2,6 @@
 
 JourneyMap only comes with mob icons for Vanilla Minecraft mobs. (There's no magic way to derive icons from mobs added by mods.)   However, as of JourneyMap 5.3, mod authors and resource pack authors can provide their own mob icons for JourneyMap to use.  See [Instructions for Mod Authors](#instructions-for-mod-authors) and [Instructions for Resource Pack Authors](#instructions-for-resource-pack-authors) below.
 
-## **Mob Icon Sources (Legacy)**
-
-!!! note "Note"
-    This section is for JourneyMap 5.2 and older.  It is no longer relevant for JourneyMap 5.3+.
-
-Whenever JourneyMap encounters a mob without a known icon, it creates a blank placeholder file that you can replace with your own icon.  Look for them here <code>.minecraft/journeymap/icon/entity/(set name)/ ...</code>
-
-If you view the folder tree with thumbnails displayed, it should be easy to spot the blank placeholder files. Simply find and replace them with your own mob icon. It must be a PNG file and should have the same dimensions as the one you are replacing (usually 32x32 pixels).
-
-Or, you can create your own custom mob icon set in its own folder:
-
-- Look in <code>.minecraft/journeymap/icon/entity/</code> for existing icon set folders, like "2D", "3D", or "Default" (JourneyMap 5.3+)
-- Copy that folder and give it a new name, placing it in the same directory as above.
-- Within the copied folder, you can optionally edit the <code>[[#sources.json|sources.json]]</code> file to define how new icon sources (mods and resource packs) will be handled.
-- Within the copied folder, replace existing PNG images with a newer version your own. Do not change the filename. It is highly recommended that you keep the image sizes the same (32x32 pixels).
-- Restart Minecraft and go into (J > Options Manager > Fullscreen Map) or (J > Options Manager > MiniMap Preset). You will now be able to select your new mob icon set for these displays.
-
 ## **Mob Icon Sources**
 
 JourneyMap 5.3+ no longer uses folders of icons.  Instead, it uses mob icons via standard resource location, just like any other texture in Minecraft.  This is so **mods can provide their own mob icons resource packs can provide or override mob icons** like everything else in the game.
