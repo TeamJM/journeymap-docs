@@ -36,6 +36,7 @@ The config file location for Forge Servers: `(server_folder)/world/serverconfig/
 ## **Legacy Versions Below**
 
 !!! note "Legacy"
+
     The following only pertains to version pre JourneyMap version 5.5.5, before the Server Admin screen was added to JourneyMap.
 
 ## **Server control of Radar and Cave Mapping**
