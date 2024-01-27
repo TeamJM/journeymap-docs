@@ -86,7 +86,7 @@ In JourneyMap 5.8.5, a new command was added which allows you to create, delete 
 /jm reload
 ```
 
-The create and delete commands are only available when the server has JourneyMap installed and if the player has op permissions. You can find more information about the add and delete commands [here](https://teamjm.github.io/journeymap-docs/Server%20Docs/waypoints/).
+The create and delete commands are only available when the server has JourneyMap installed and if the player has op permissions. You can find more information about the add and delete commands [here](../Server%20Docs/Commands/waypoint_command.md).
 
 ## **How to Share Waypoints and Locations**
 

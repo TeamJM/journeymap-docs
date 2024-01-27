@@ -93,6 +93,7 @@ nav:
       - Endpoints: 
           - Waypoint: Server Docs/Endpoints/waypoint.md
   - Tools & Customisation:
+      - Changelogs: Tools and Customisation/changelogs.md
       - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
       - Integrate your mod: Tools and Customisation/integration.md
       - JourneyMap Tools: Tools and Customisation/journeymap-tools.md
