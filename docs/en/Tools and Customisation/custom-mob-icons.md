@@ -5,6 +5,7 @@ JourneyMap only comes with mob icons for Vanilla Minecraft mobs. (There's no mag
 ## **Mob Icon Sources (Legacy)**
 
 !!! note "Note"
+
     This section is for JourneyMap 5.2 and older.  It is no longer relevant for JourneyMap 5.3+.
 
 Whenever JourneyMap encounters a mob without a known icon, it creates a blank placeholder file that you can replace with your own icon.  Look for them here <code>.minecraft/journeymap/icon/entity/(set name)/ ...</code>
