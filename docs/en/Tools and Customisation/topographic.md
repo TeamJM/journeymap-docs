@@ -41,4 +41,4 @@ In truth, finding a "one size fits all" set of colors for topographic maps isn't
 
 For some examples of topographic gradients used in the real world, see [this site](http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html), especially [this page](http://soliton.vm.bytemark.co.uk/pub/cpt-city/views/topo.html).
 
-For your convenience, [the Color Editor tool](http://jsfiddle.net/techbrew/4vm9as0o/embedded/result/) and the [Gradient Generator tool](http://jsfiddle.net/techbrew/umh423j0/embedded/result/) may be helpful in choosing colors for your topographic maps.
+For your convenience, [the Color Editor tool](https://jsfiddle.net/techbrew/4vm9as0o/embedded/result/) and the [Gradient Generator tool](https://jsfiddle.net/techbrew/umh423j0/embedded/result/) may be helpful in choosing colors for your topographic maps.

@@ -11,7 +11,7 @@ Note: <u>It will not be ported to older versions</u>
 
 ```text
 fields in [] are optional -> 
-[player] is the target player, if no player is specified it sends to all
+[player] is the target player, if no player is specified, it will show an error.
 [announce] is whether the player has a notification that a waypoint is being created, if it is not specified, defaults to false it is created silently.
 - /waypoint create "name" dimension x y z color [player] [announce]
 - /waypoint delete "name" [player] [announce]
