@@ -28,4 +28,4 @@ If you’d like a featureful, easy-to-use mapping mod then why not give JourneyM
 - [Integrate your mod](Tools and Customisation/integration.md)
 - [Make custom mob Icons](Tools and Customisation/custom-mob-icons.md)
 - [Create a UI Theme (Skin)](Tools and Customisation/ui-themes.md)
-- [Translate JourneyMap For Your Language](Tools and Customisation/translate.md)
+- [Translate JourneyMap For Your Language](Contributing/translate-mod.md)
