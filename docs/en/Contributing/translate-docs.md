@@ -20,7 +20,7 @@ Make sure to copy and paste the `mkdocs.yml` file from the en directory to your 
     + docs_dir: ../../docs/fr
     ```
 
-3. Scroll down untuil you see the variable name `alternate` and input a new line like this:
+3. Scroll down until you see the variable name `alternate` and input a new line like this:
 
     ```diff
         # Switch to English
