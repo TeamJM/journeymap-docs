@@ -23,3 +23,5 @@ Run one of the following commands to start the local documentation server:
 
 1. `mkdocs serve -f ./config/en/mkdocs.yml`
 2. `python -m mkdocs serve -f ./config/en/mkdocs.yml`
+
+If you want to see the docs in another language, just replace en with your language name.
