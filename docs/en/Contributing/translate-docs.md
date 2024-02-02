@@ -52,7 +52,6 @@ Now that you have set yourself up, you can now start translating the actual docs
 │    ├─ en/
 │    │   ├─ About/
 │    │   ├─ Client Docs/
-│    │   ├─ img/
 │    │   ├─ Server Docs/
 │    │   ├─ Tools and Customisation/
 │    │   ├─ changelogs.md
@@ -62,7 +61,6 @@ Now that you have set yourself up, you can now start translating the actual docs
 │    └─ fr/
 │        ├─ About/
 │        ├─ Client Docs/
-│        ├─ img/
 │        ├─ Server Docs/
 │        ├─ Tools and Customisation/
 │        ├─ changelogs.md
