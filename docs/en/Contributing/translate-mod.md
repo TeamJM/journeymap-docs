@@ -1,3 +1,9 @@
+# **Translate the mod**
+
+If you want to contribute towards JourneyMap, a good way to do that is to translate the docs and the mod. This can help people that do not speak or not know how to read English, be able to read the JourneyMap docs in their own language.
+
+Instructions on how to translate the docs can be found [here](translate-docs.md)
+
 ## **I. Check the current language files**
 
 This Git repository contains the latest language files for JourneyMap: **[JourneyMap Language Files](https://github.com/TeamJM/journeymap-lang)**.
