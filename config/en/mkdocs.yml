@@ -70,6 +70,7 @@ nav:
           - Overview: Client Docs/settings/overview.md
           - Grid: Client Docs/settings/grid.md
           - Minimap: Client Docs/settings/minimap.md
+          - Minimap Position: Client Docs/settings/minimap-position.md
           - Full-Screen Map: Client Docs/settings/full-screen-map.md
           - Webmap: Client Docs/settings/webmap.md
           - Waypoint: Client Docs/settings/waypoint.md
