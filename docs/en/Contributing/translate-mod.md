@@ -24,7 +24,7 @@ If your language uses a character set which needs to be handled with Unicode cha
 <span style="color: green">**Correct**</span>: <code>jm.common.saving_map_to_file=节能 %1$s 映射到文件...</code>
 
 ## **III. How to translate the .lang file**
- 
+
 - Open your new .lang file in a text editor which can handle UTF-8 characters like [http://notepad-plus-plus.org/ Notepad Plus]. You will see a series of **keys** and **phrases** separated by an equals (=) sign. For example:
 
 <code>jm.common.chat_announcement= &sect;eJourneyMap:&sect;f %1$s
@@ -65,14 +65,14 @@ Location: 23,-98 | Elevation: 32 (2) | Biome: Desert
 - Do not translate or remove the special character combinations used by Minecraft to change color. (&sect;b, &sect;f, &sect;e, etc.)
 
 ## **IV. How to test your translation**
- 
+
 1. Use a zip program like 7Zip to open your JourneyMap*.jar mod file.
 2. Navigate down to <code>/assets/journeymap/lang</code> and add your language file (if new) or replace the older one.
 3. JourneyMap will use the language you select in Minecraft. Select your language in Minecraft, and JourneyMap will use your new translation.
 4. Please test your translation in Minecraft as best as you can. Don't worry about trying to provoke error messages, but please try to test as much as possible, including the Fullscreen Map controls (and tooltips), Options (and tooltips), and Web Map controls to confirm they are working.
 
 ## **V. How to submit your translation**
- 
+
 [Follow the instructions on Github](https://github.com/TeamJM/journeymap-lang#how-to-translate-journeymap)
 
 **Thank you very much for your hard work!**

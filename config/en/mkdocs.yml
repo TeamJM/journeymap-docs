@@ -36,6 +36,12 @@ theme:
 extra:
   version:
     provider: mike
+  alternate:  
+
+      # Switch to English
+    - name: English
+      link: /en/
+      lang: en
 
 markdown_extensions:
   - admonition
@@ -56,7 +62,8 @@ plugins:
   - glightbox
   - mike:
       version_selector: true
-  - search
+  - search:
+      lang: en
 
 nav:
   - Home: index.md
@@ -100,5 +107,7 @@ nav:
       - JourneyMap Tools: Tools and Customisation/journeymap-tools.md
       - Map a multiplayer server: Tools and Customisation/multiplayer-server.md
       - Topographic: Tools and Customisation/topographic.md
-      - Translate: Tools and Customisation/translate.md
       - UI Themes: Tools and Customisation/ui-themes.md
+  - Contributing:
+      - Translate the mod: Contributing/translate-mod.md
+      - Translate the docs: Contributing/translate-docs.md
