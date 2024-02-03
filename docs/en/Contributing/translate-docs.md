@@ -8,44 +8,32 @@ Instructions on how to translate the mod can be found [here](translate-mod.md)
 
 To get started on translating the wiki, you will need to have a local environment ready for testing your translations. This can be done by following the steps shown in the [README](https://github.com/TeamJM/journeymap-docs#installing).
 
-You will also have to create a new folder in the existing config folder with the name of your language. For example, en is English, fr is French, de is Deutsh, etc. In our example below, we will show how to add translations for French.
+You will have to make a few changes to the `mkdocs.yml` file in the config folder. This can be done by:
 
-Make sure to copy and paste the `mkdocs.yml` file from the en directory to your newly created folder. You will also have to make a few changes to the `mkdocs.yml` file. This can be done by:
+1. Opening the `mkdocs.yml` file in the config folder
+2. Scroll down until you see the variable name `languages` and input a new line like this:
 
-1. Opening the `mkdocs.yml` file in your newly created folder
-2. Replace the `docs_dir` variable to the name of your language
+```diff
+      languages:
+         - locale: en
+           default: true
+           name: English
+           build: true
++
++        - locale: fr
++          default: false
++          name: Français
++          build: true
 
-    ```diff
-    - docs_dir: ../../docs/en
-    + docs_dir: ../../docs/fr
-    ```
+```
 
-3. Scroll down until you see the variable name `alternate` and input a new line like this:
+!!! note "Note"
 
-    ```diff
-        # Switch to English
-        - name: English
-        link: /en/
-        lang: en
-    +
-    +    # Switch to French
-    +    - name: French
-    +     link: /fr/
-    +      lang: fr
-    ```
-
-4. Scroll down again until you see the variable name `search` and change the language from en to the language you are translating to. Here is an example for French:
-
-    ```diff
-    -  lang: en
-    +  lang: fr
-    ```
-
-You have now finished setting up yourself up to translate the docs.
+    The instructions above only apply if you are translating to French. Please apply these intructions to the relative language you are translating to.
 
 ## **Creating a new folder**
 
-Now that you have set yourself up, you can now start translating the actual docs. To start, you will need to create a new folder in the docs directory with your language name. Here is an example of how to do this if you are translating the docs to French:
+Now that you have set yourself up, you can now start translating the actual docs. To start, you will need to create a new folder in the docs directory with your 2-letter [ISO-639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code. Here is an example of how to do this if you are translating the docs to French:
 
 ```text
 ├─ docs/
@@ -55,8 +43,7 @@ Now that you have set yourself up, you can now start translating the actual docs
 │    │   ├─ Server Docs/
 │    │   ├─ Tools and Customisation/
 │    │   ├─ changelogs.md
-│    │   ├─ index.md
-│    │   └─ translate.md
+│    │   └─ index.md
 │    │
 │    └─ fr/
 │        ├─ About/
@@ -64,13 +51,12 @@ Now that you have set yourself up, you can now start translating the actual docs
 │        ├─ Server Docs/
 │        ├─ Tools and Customisation/
 │        ├─ changelogs.md
-│        ├─ index.md
-│        └─ translate.md
+│        └─ index.md
 ```
 
-An easy way to do this is to create a folder with your language name and copy and paste the contents from the en directory to your newly created folder in the docs directory.
+An easy way to do this is to create a folder with your 2-letter [ISO-639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code and copy and paste the contents from the en directory to your newly created folder in the docs directory.
 
-Once your folder with all the files have been created, you can actually start translating the docs.
+Once your folder with all the files have been created, you can start translating the docs to your language.
 
 ## **Finishing steps**
 

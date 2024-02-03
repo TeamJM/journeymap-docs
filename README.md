@@ -17,11 +17,11 @@ To run the documentation locally, you will need to first install MkDocs and Mate
 
 - `pip install -r requirements.txt`
 
-These commands will install MkDocs and Material for MkDocs.
+This command will install MkDocs, Material for MkDocs and the other dependencies required for the docs to run.
+
+## Running
 
 Run one of the following commands to start the local documentation server:
 
-1. `mkdocs serve -f ./config/en/mkdocs.yml`
-2. `python -m mkdocs serve -f ./config/en/mkdocs.yml`
-
-If you want to see the docs in another language, just replace en with your language name.
+1. `mkdocs serve -f ./config/mkdocs.yml`
+2. `python -m mkdocs serve -f ./config/mkdocs.yml`
