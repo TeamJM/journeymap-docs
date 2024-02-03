@@ -20,7 +20,8 @@ jobs:
       - run: git pull
       - run: git config user.name github-actions
       - run: git config user.email github-actions@github.com
-      - run: pip install mkdocs-material
       - run: pip install mkdocs-glightbox
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-static-i18n
       - run: pip install mike
       - run: mike deploy 5.8.5 --update-aliases --push -F ./config/en/mkdocs.yml
