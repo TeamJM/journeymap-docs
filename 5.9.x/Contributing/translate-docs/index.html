@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.7">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f2e4d321.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -181,26 +181,6 @@
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
-    
-      <div class="md-header__option">
-  <div class="md-select">
-    
-    <button class="md-header__button md-icon" aria-label="Select language">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
-    </button>
-    <div class="md-select__inner">
-      <ul class="md-select__list">
-        
-          <li class="md-select__item">
-            <a href="/en/" hreflang="en" class="md-select__link">
-              English
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</div>
     
     
       <label class="md-header__button md-icon" for="__search">
@@ -1644,39 +1624,28 @@
 <p>Instructions on how to translate the mod can be found <a href="../translate-mod/">here</a></p>
 <h2 id="getting-setup"><strong>Getting Setup</strong></h2>
 <p>To get started on translating the wiki, you will need to have a local environment ready for testing your translations. This can be done by following the steps shown in the <a href="https://github.com/TeamJM/journeymap-docs#installing">README</a>.</p>
-<p>You will also have to create a new folder in the existing config folder with the name of your language. For example, en is English, fr is French, de is Deutsh, etc. In our example below, we will show how to add translations for French.</p>
-<p>Make sure to copy and paste the <code>mkdocs.yml</code> file from the en directory to your newly created folder. You will also have to make a few changes to the <code>mkdocs.yml</code> file. This can be done by:</p>
+<p>You will have to make a few changes to the <code>mkdocs.yml</code> file in the config folder. This can be done by:</p>
 <ol>
-<li>Opening the <code>mkdocs.yml</code> file in your newly created folder</li>
-<li>
-<p>Replace the <code>docs_dir</code> variable to the name of your language</p>
-<div class="highlight"><pre><span></span><code><span class="gd">- docs_dir: ../../docs/en</span>
-<span class="gi">+ docs_dir: ../../docs/fr</span>
-</code></pre></div>
-</li>
-<li>
-<p>Scroll down untuil you see the variable name <code>alternate</code> and input a new line like this:</p>
-<div class="highlight"><pre><span></span><code><span class="w"> </span>   # Switch to English
-<span class="w"> </span>   - name: English
-<span class="w"> </span>   link: /en/
-<span class="w"> </span>   lang: en
-<span class="gi">+</span>
-<span class="gi">+    # Switch to French</span>
-<span class="gi">+    - name: French</span>
-<span class="gi">+     link: /fr/</span>
-<span class="gi">+      lang: fr</span>
-</code></pre></div>
-</li>
-<li>
-<p>Scroll down again until you see the variable name <code>search</code> and change the language from en to the language you are translating to. Here is an example for French:</p>
-<div class="highlight"><pre><span></span><code><span class="gd">-  lang: en</span>
-<span class="gi">+  lang: fr</span>
-</code></pre></div>
-</li>
+<li>Opening the <code>mkdocs.yml</code> file in the config folder</li>
+<li>Scroll down until you see the variable name <code>languages</code> and input a new line like this:</li>
 </ol>
-<p>You have now finished setting up yourself up to translate the docs.</p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>     languages:
+<span class="w"> </span>        - locale: en
+<span class="w"> </span>          default: true
+<span class="w"> </span>          name: English
+<span class="w"> </span>          build: true
+<span class="gi">+</span>
+<span class="gi">+        - locale: fr</span>
+<span class="gi">+          default: false</span>
+<span class="gi">+          name: Français</span>
+<span class="gi">+          build: true</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The instructions above only apply if you are translating to French. Please apply these intructions to the relative language you are translating to.</p>
+</div>
 <h2 id="creating-a-new-folder"><strong>Creating a new folder</strong></h2>
-<p>Now that you have set yourself up, you can now start translating the actual docs. To start, you will need to create a new folder in the docs directory with your language name. Here is an example of how to do this if you are translating the docs to French:</p>
+<p>Now that you have set yourself up, you can now start translating the actual docs. To start, you will need to create a new folder in the docs directory with your 2-letter <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO-639-1</a> language code. Here is an example of how to do this if you are translating the docs to French:</p>
 <div class="highlight"><pre><span></span><code>├─ docs/
 │    ├─ en/
 │    │   ├─ About/
@@ -1684,8 +1653,7 @@
 │    │   ├─ Server Docs/
 │    │   ├─ Tools and Customisation/
 │    │   ├─ changelogs.md
-│    │   ├─ index.md
-│    │   └─ translate.md
+│    │   └─ index.md
 │    │
 │    └─ fr/
 │        ├─ About/
@@ -1693,11 +1661,10 @@
 │        ├─ Server Docs/
 │        ├─ Tools and Customisation/
 │        ├─ changelogs.md
-│        ├─ index.md
-│        └─ translate.md
+│        └─ index.md
 </code></pre></div>
-<p>An easy way to do this is to create a folder with your language name and copy and paste the contents from the en directory to your newly created folder in the docs directory.</p>
-<p>Once your folder with all the files have been created, you can actually start translating the docs.</p>
+<p>An easy way to do this is to create a folder with your 2-letter <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO-639-1</a> language code and copy and paste the contents from the en directory to your newly created folder in the docs directory.</p>
+<p>Once your folder with all the files have been created, you can start translating the docs to your language.</p>
 <h2 id="finishing-steps"><strong>Finishing steps</strong></h2>
 <p>You might have come here asking yourself, what do I do once I have finished translating? Well, the final step you would do is to PR your work to the main repo for us to review and merge if all of it looks great.</p>
 <p><strong>Thank you very much for your hard work!</strong></p>
@@ -1750,7 +1717,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.caa56a14.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
