@@ -66,7 +66,7 @@ When the above phrase is used by JourneyMap, the parameters will be substituted 
 
 ## **IV. How to test your translation**
 
-1. Use a zip program like 7Zip to open your JourneyMap*.jar mod file.
+1. Use a zip program like 7-Zip to open your JourneyMap*.jar mod file.
 2. Navigate down to `/assets/journeymap/lang` and add your language file (if new) or replace the older one.
 3. JourneyMap will use the language you select in Minecraft. Select your language in Minecraft, and JourneyMap will use your new translation.
 4. Please test your translation in Minecraft as best as you can. Don't worry about trying to provoke error messages, but please try to test as much as possible, including the Fullscreen Map controls (and tooltips), Options (and tooltips), and Web Map controls to confirm they are working.
