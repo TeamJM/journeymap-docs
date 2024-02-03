@@ -19,6 +19,8 @@ To run the documentation locally, you will need to first install MkDocs and Mate
 
 This command will install MkDocs, Material for MkDocs and the other dependencies required for the docs to run.
 
+## Running
+
 Run one of the following commands to start the local documentation server:
 
 1. `mkdocs serve -f ./config/mkdocs.yml`
