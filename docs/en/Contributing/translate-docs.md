@@ -1,6 +1,6 @@
 # **Translate the docs**
 
-If you want to contribute towards JourneyMap, a good way to do that is to translate the docs and the mod. This can help people that do not speak or not know how to read English, be able to read the JourneyMap docs in their own language.
+If you want to contribute towards JourneyMap, a good way to do that is to translate the docs and the mod. This can help people that do not speak or not know how to read English, be able to read the JourneyMap docs or play the JourneyMap mod in their own language.
 
 Instructions on how to translate the mod can be found [here](translate-mod.md)
 
