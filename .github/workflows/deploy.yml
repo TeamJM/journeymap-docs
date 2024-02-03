@@ -24,4 +24,4 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-static-i18n
       - run: pip install mike
-      - run: mike deploy 5.7.1 --update-aliases --push -F ./config/en/mkdocs.yml
+      - run: mike deploy 5.7.1 --update-aliases --push -F ./config/mkdocs.yml
