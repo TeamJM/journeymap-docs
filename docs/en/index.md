@@ -6,7 +6,7 @@ JourneyMap is a popular mapping mod for Minecraft. Originally released by techbr
 
 JourneyMap includes an in-game minimap and full-screen map, as well as a webmap that can be viewed in a browser.
 
-If you’d like a featureful, easy-to-use mapping mod then why not give JourneyMap a try? You can [find it on Curse](https://www.curseforge.com/minecraft/mc-mods/journeymap) and install it just like any other [Forge](https://forums.minecraftforge.net/) mod - or continue reading if you need help.
+If you’d like a featureful, easy-to-use mapping mod then why not give JourneyMap a try? You can find it on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap) or [Modrinth](https://modrinth.com/mod/journeymap) and install it just like any other [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org), [Forge](https://forums.minecraftforge.net/) or [NeoForge](https://neoforged.net/) mod - or continue reading if you need help.
 
 ## **First Steps**
 
