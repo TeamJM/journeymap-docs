@@ -1,6 +1,6 @@
 site_name: JourneyMap Documentation
 site_url: https://teamjm.github.io/journeymap-docs/
-docs_dir: ../docs/en
+docs_dir: ../docs/
 
 repo_name: TeamJM/journeymap-docs
 repo_url: https://github.com/TeamJM/journeymap-docs
