@@ -13,7 +13,7 @@ You will have to make a few changes to the `mkdocs.yml` file in the config folde
 1. Opening the `mkdocs.yml` file in the config folder
 2. Scroll down until you see the variable name `languages` and input a new line like this:
 
-```diff
+```diff title="mkdocs.yml"
       languages:
          - locale: en
            default: true
@@ -27,9 +27,70 @@ You will have to make a few changes to the `mkdocs.yml` file in the config folde
 
 ```
 
+3\. You will also have to translate the navigation elements. To do this, please copy and paste the `nav_translations` section to the French Section and translate the words after the colon to French. Here is an example:
+
+```diff title="mkdocs.yml"
+          - locale: fr
+            default: false
+            name: Français
+            build: true
++           nav_translations:
++             Home: Home
++             About: About
++             Credits: Credits
++             Licensing: Licensing
++             Support: Support
++             Client Docs: Client Docs
++             Installing: Installing
++             Basic Usage: Basic Usage
++             Full-Screen Map: Full-Screen Map
++             Settings: Settings
++             Overview: Overview
++             Grid: Grid
++             Minimap: Minimap
++             Minimap Position: Minimap Position
++             Full-Screen Map: Full-Screen Map
++             Webmap: Webmap
++             Waypoint: Waypoint
++             Waypoint Beacons: Waypoint Beacons
++             Cartography: Cartography
++             Advanced Options: Advanced Options
++             Waypoints: Waypoints
++             Server Docs: Server Docs
++             Installing: Installing
++             Basic Usage: Basic Usage
++             Commands: Commands
++             Waypoint: Waypoint
++             Settings: Settings
++             Overview: Overview
++             Global Properties: Global Properties
++             Default Dimension Properties: Default Dimension Properties
++             Dimension - minecraft:overworld: Dimension - minecraft:overworld
++             Dimension - minecraft:the_nether: Dimension - minecraft:the_nether
++             Dimension - minecraft:the_end: Dimension - minecraft:the_end
++             Multiplayer: Multiplayer
++             Endpoints: Endpoints
++             Waypoint: Waypoint
++             Tools & Customisation: Tools & Customisation
++             Custom Mob Icons: Custom Mob Icons
++             Integrate your mod: Integrate your mod
++             JourneyMap Tools: JourneyMap Tools
++             Map a multiplayer server: Map a multiplayer server
++             Topographic: Topographic
++             UI Themes: UI Themes
++             Contributing: Contributing
++             Translate the mod: Translate the mod
++             Translate the docs: Translate the docs
++             Changelogs: Changelogs
+```
+
+!!! info "Info"
+
+    The second codeblock includes English translations. In this case, you would need to translate the English words after the colon into French. I have left them English as an example.
+
 !!! note "Note"
 
-    The instructions above only apply if you are translating to French. Please apply these intructions to the relative language you are translating to.
+    The instructions above only apply if you are translating to French. Please apply these instructions to the relative language you are translating to.
 
 ## **Creating a new folder**
 
