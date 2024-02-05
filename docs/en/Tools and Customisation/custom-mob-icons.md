@@ -8,15 +8,13 @@ JourneyMap 5.3+ no longer uses folders of icons.  Instead, it uses mob icons via
 
 JourneyMap 5.3+ uses the mob's entity texture resource location and substitutes "/entity/" with "/entity_icon/" to look up the mob icon.  Thus:
 
-* Mob entity texture: <code>minecraft:textures/entity/pig/pig.png</code>
-* Mob icon texture: <code>minecraft:textures/entity_icon/pig/pig.png</code>
+- Mob entity texture: `minecraft:textures/entity/pig/pig.png`
+- Mob icon texture: `minecraft:textures/entity_icon/pig/pig.png`
 
 (or)
 
-* Mob entity texture: <code>enderzoo:textures/entity/wither_cat.png</code>
-* Mob icon texture: <code>enderzoo:textures/entity_icon/wither_cat.png</code>
-
-*Note: If you are a player and you want to provide your own icons similiar to older versions of JourneyMap, you'll need to put together a [simple resource pack](http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack) in a zip file. See the Instructions for Resource Pack Authors below.*
+- Mob entity texture: `enderzoo:textures/entity/wither_cat.png`
+- Mob icon texture: `enderzoo:textures/entity_icon/wither_cat.png`
 
 !!! note "Note"
 
