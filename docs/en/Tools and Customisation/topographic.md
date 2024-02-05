@@ -8,7 +8,7 @@
 
 ## **Overview of Topographic Maps in JourneyMap**
 
-JourneyMap's Topographic Maps let you see the elevation contours of your world.  You can customize the topographic map properties and colors in (''.minecraft/journeymap/config/5.2/journeymap.topo.config'') according to what looks best to you, or what you want to emphasize.  
+JourneyMap's Topographic Maps let you see the elevation contours of your world.  You can customize the topographic map properties and colors in (`.minecraft/journeymap/config/5.2/journeymap.topo.config`) according to what looks best to you, or what you want to emphasize.  
 
 Here's how it works:
 
