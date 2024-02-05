@@ -11,9 +11,7 @@ Players can add waypoints by clicking on specially-formatted text in chat.  (Han
 
 For example:
 
-<code>
-NPC says: "Here's where I buried my loot:" [name:"treasure", x:1212, y:70, z:456, dim:0]
-</code>
+`NPC says: "Here's where I buried my loot:" [name:"treasure", x:1212, y:70, z:456, dim:0]`
 
 The chat text itself is not changed, but is turned into a link for players with JourneyMap.  Hover text shows it can be clicked to create a waypoint, or shift-clicked to show on the full screen map.
 
