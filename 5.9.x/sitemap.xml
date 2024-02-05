@@ -2,229 +2,229 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/changelogs/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/changelogs/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/About/credits/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/About/credits/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/About/licensing/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/About/licensing/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/About/support/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/About/support/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/basic-usage/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/basic-usage/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/full-screen-map/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/full-screen-map/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/installing/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/installing/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/waypoints/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/waypoints/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/advanced/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/advanced/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/cartography/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/cartography/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/full-screen-map/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/full-screen-map/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/grid/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/grid/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/minimap-position/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/minimap-position/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/minimap/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/minimap/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/overview/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/overview/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/waypoint-beacon/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/waypoint-beacon/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/waypoint/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/waypoint/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/webmap/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Client%20Docs/settings/webmap/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Contributing/translate-docs/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Contributing/translate-docs/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Contributing/translate-mod/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Contributing/translate-mod/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/basic-usage/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/basic-usage/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/installing/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/installing/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/multiplayer/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/multiplayer/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/Commands/waypoint_command/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/Commands/waypoint_command/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/Endpoints/waypoint/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/Endpoints/waypoint/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/default-dimension-properties/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/default-dimension-properties/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/dimension-end/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/dimension-end/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/dimension-nether/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/dimension-nether/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/dimension-overworld/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/dimension-overworld/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/global-properties/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/global-properties/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/overview/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Server%20Docs/settings/overview/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/custom-mob-icons/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/custom-mob-icons/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/integration/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/integration/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/journeymap-tools/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/journeymap-tools/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/multiplayer-server/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/multiplayer-server/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/topographic/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/topographic/"/>
     </url>
     <url>
         <loc>https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/ui-themes/</loc>
-        <lastmod>2024-02-04</lastmod>
+        <lastmod>2024-02-05</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://teamjm.github.io/journeymap-docs/5.9.x/Tools%20and%20Customisation/ui-themes/"/>
     </url>

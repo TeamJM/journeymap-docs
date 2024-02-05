@@ -1648,10 +1648,14 @@
 <li>Mob icon texture: <code>enderzoo:textures/entity_icon/wither_cat.png</code></li>
 </ul>
 <p><em>Note: If you are a player and you want to provide your own icons similiar to older versions of JourneyMap, you'll need to put together a <a href="http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack">simple resource pack</a> in a zip file. See the Instructions for Resource Pack Authors below.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are a player and you want to provide your own icons similar to older versions of JourneyMap, you'll need to put together a <a href="http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack">simple resource pack</a> in a zip file. See the Instructions for Resource Pack Authors below.</p>
+</div>
 <h2 id="instructions-for-mod-authors"><strong>Instructions for Mod Authors</strong></h2>
 <p>You can now provide icons to JourneyMap for your mod's mobs. Here's how:</p>
 <ul>
-<li>JourneyMap 5.3+ will look in your mod jar for icons in <code>/assets/modname/textures/entity_icon</code> .  </li>
+<li>JourneyMap 5.3+ will look in your mod jar for icons in <code>/assets/modname/textures/entity_icon</code>.  </li>
 <li>Icons should be transparent PNG files. Other sizes are usually supported, but 16x16 pixels is recommended.</li>
 <li>The folder structure and filenames for your icons must mirror the folder structure and filename for your mob textures in <code>/assets/modname/textures/entity</code>.</li>
 </ul>
@@ -1675,9 +1679,9 @@
 <h2 id="instructions-for-resource-pack-authors"><strong>Instructions for Resource Pack Authors</strong></h2>
 <p>You can use a resource pack to provide icons to JourneyMap 5.3+ for any Minecraft mobs or mod mobs. Here's how:</p>
 <ul>
-<li>JourneyMap will look in your resource pack zip for icons in <code>/assets/<modname>/textures/entity_icon</code> .  </li>
+<li>JourneyMap will look in your resource pack zip for icons in <code>/assets/&lt;modname&gt;/textures/entity_icon</code>.  </li>
 <li>Icons should be transparent PNG files. Other sizes are usually supported, but 16x16 pixels is recommended.</li>
-<li>The folder structure and filenames for your icons must mirror the folder structure and filename for mob textures in minecraft or other mods in <code>/assets/<modname>/textures/entity</code>.</li>
+<li>The folder structure and filenames for your icons must mirror the folder structure and filename for mob textures in minecraft or other mods in <code>/assets/&lt;modname&gt;/textures/entity</code>.</li>
 </ul>
 <p>For example, if you want to provide custom icons for both Minecraft mobs and a mod called "coolmod", the mob textures for both would along these lines:</p>
 <div class="highlight"><pre><span></span><code> minecraft.jar                         coolmod-1.0.jar
@@ -1754,7 +1758,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.caa56a14.min.js"></script>
