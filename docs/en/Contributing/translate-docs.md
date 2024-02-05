@@ -27,7 +27,7 @@ You will have to make a few changes to the `mkdocs.yml` file in the config folde
 
 ```
 
-3\. You will also have to add translations to the navigation elements for French. To do this, please copy and paste the `nav_translations` section to the French Section and translate the words after the colon to French. Here is an example:
+3\. You will also have to add translations to the navigation elements for French. To do this, please copy and paste the `nav_translations` section to the French Section. Here is an example:
 
 ```diff title="mkdocs.yml"
           - locale: fr
@@ -84,9 +84,7 @@ You will have to make a few changes to the `mkdocs.yml` file in the config folde
 +             Changelogs: Changelogs
 ```
 
-!!! info "Info"
-
-    The second codeblock includes English translations. In this case, you would need to translate the English words after the colon into French. I have left them English as an example.
+This codeblock includes English translations. In this case, you would need to translate the English words after the colon into French. I have left them English as an example.
 
 !!! note "Note"
 
