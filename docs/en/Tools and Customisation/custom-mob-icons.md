@@ -18,13 +18,17 @@ JourneyMap 5.3+ uses the mob's entity texture resource location and substitutes 
 
 *Note: If you are a player and you want to provide your own icons similiar to older versions of JourneyMap, you'll need to put together a [simple resource pack](http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack) in a zip file. See the Instructions for Resource Pack Authors below.*
 
+!!! note "Note"
+
+    If you are a player and you want to provide your own icons similar to older versions of JourneyMap, you'll need to put together a [simple resource pack](http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack) in a zip file. See the Instructions for Resource Pack Authors below.
+
 ## **Instructions for Mod Authors**
 
 You can now provide icons to JourneyMap for your mod's mobs. Here's how:
 
-- JourneyMap 5.3+ will look in your mod jar for icons in <code>/assets/modname/textures/entity_icon</code> .  
+- JourneyMap 5.3+ will look in your mod jar for icons in `/assets/modname/textures/entity_icon`.  
 - Icons should be transparent PNG files. Other sizes are usually supported, but 16x16 pixels is recommended.
-- The folder structure and filenames for your icons must mirror the folder structure and filename for your mob textures in <code>/assets/modname/textures/entity</code>.
+- The folder structure and filenames for your icons must mirror the folder structure and filename for your mob textures in `/assets/modname/textures/entity`.
 
 For example:
 
@@ -45,15 +49,15 @@ For example:
                        │   kobold_blue.png
 ```
 
-Why is the above necessary?  JourneyMap uses the ResourceLocation returned by <code>net.minecraft.client.renderer.entity.Render.getEntityTexture()</code> as the unique way to identify a mob for any mod.  Providing icons with a similar same path and name keeps things as simple as possible.
+Why is the above necessary?  JourneyMap uses the ResourceLocation returned by `net.minecraft.client.renderer.entity.Render.getEntityTexture()` as the unique way to identify a mob for any mod.  Providing icons with a similar same path and name keeps things as simple as possible.
 
 ## **Instructions for Resource Pack Authors**
 
 You can use a resource pack to provide icons to JourneyMap 5.3+ for any Minecraft mobs or mod mobs. Here's how:
 
-- JourneyMap will look in your resource pack zip for icons in <code>/assets/<modname>/textures/entity_icon</code> .  
+- JourneyMap will look in your resource pack zip for icons in `/assets/<modname>/textures/entity_icon`.  
 - Icons should be transparent PNG files. Other sizes are usually supported, but 16x16 pixels is recommended.
-- The folder structure and filenames for your icons must mirror the folder structure and filename for mob textures in minecraft or other mods in <code>/assets/<modname>/textures/entity</code>.
+- The folder structure and filenames for your icons must mirror the folder structure and filename for mob textures in minecraft or other mods in `/assets/<modname>/textures/entity`.
 
 For example, if you want to provide custom icons for both Minecraft mobs and a mod called "coolmod", the mob textures for both would along these lines:
 
