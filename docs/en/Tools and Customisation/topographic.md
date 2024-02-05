@@ -14,7 +14,6 @@ Here's how it works:
 
 **{World height} ÷ {Number of colors} = {Contour interval}**
 
-
 So, given a **world height of 256** blocks, a palette of **32 colors** will create 32 elevation contours, each with a **contour interval of 8** blocks high.
 
 - 1st color: y 0-7
@@ -23,7 +22,7 @@ So, given a **world height of 256** blocks, a palette of **32 colors** will crea
 
 ## **Customization**
 
-The topographic maps config file </code>.minecraft/journeymap/config/5.2/journeymap.topo.config</code> can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
+The topographic maps config file `.minecraft/journeymap/config/5.2/journeymap.topo.config` can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
 
 The file has the following properties:
 
