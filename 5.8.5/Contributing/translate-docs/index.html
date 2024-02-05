@@ -1586,7 +1586,7 @@
 <li>Opening the <code>mkdocs.yml</code> file in the config folder</li>
 <li>Scroll down until you see the variable name <code>languages</code> and input a new line like this:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="w"> </span>     languages:
+<div class="highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span class="w"> </span>     languages:
 <span class="w"> </span>        - locale: en
 <span class="w"> </span>          default: true
 <span class="w"> </span>          name: English
@@ -1597,9 +1597,64 @@
 <span class="gi">+          name: Français</span>
 <span class="gi">+          build: true</span>
 </code></pre></div>
+<p>3. You will also have to add translations to the navigation elements for French. To do this, please copy and paste the <code>nav_translations</code> section from the English to the French section. Here is an example:</p>
+<div class="highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span class="w"> </span>         - locale: fr
+<span class="w"> </span>           default: false
+<span class="w"> </span>           name: Français
+<span class="w"> </span>           build: true
+<span class="gi">+           nav_translations:</span>
+<span class="gi">+             Home: Home</span>
+<span class="gi">+             About: About</span>
+<span class="gi">+             Credits: Credits</span>
+<span class="gi">+             Licensing: Licensing</span>
+<span class="gi">+             Support: Support</span>
+<span class="gi">+             Client Docs: Client Docs</span>
+<span class="gi">+             Installing: Installing</span>
+<span class="gi">+             Basic Usage: Basic Usage</span>
+<span class="gi">+             Full-Screen Map: Full-Screen Map</span>
+<span class="gi">+             Settings: Settings</span>
+<span class="gi">+             Overview: Overview</span>
+<span class="gi">+             Grid: Grid</span>
+<span class="gi">+             Minimap: Minimap</span>
+<span class="gi">+             Minimap Position: Minimap Position</span>
+<span class="gi">+             Full-Screen Map: Full-Screen Map</span>
+<span class="gi">+             Webmap: Webmap</span>
+<span class="gi">+             Waypoint: Waypoint</span>
+<span class="gi">+             Waypoint Beacons: Waypoint Beacons</span>
+<span class="gi">+             Cartography: Cartography</span>
+<span class="gi">+             Advanced Options: Advanced Options</span>
+<span class="gi">+             Waypoints: Waypoints</span>
+<span class="gi">+             Server Docs: Server Docs</span>
+<span class="gi">+             Installing: Installing</span>
+<span class="gi">+             Basic Usage: Basic Usage</span>
+<span class="gi">+             Commands: Commands</span>
+<span class="gi">+             Waypoint: Waypoint</span>
+<span class="gi">+             Settings: Settings</span>
+<span class="gi">+             Overview: Overview</span>
+<span class="gi">+             Global Properties: Global Properties</span>
+<span class="gi">+             Default Dimension Properties: Default Dimension Properties</span>
+<span class="gi">+             Dimension - minecraft:overworld: Dimension - minecraft:overworld</span>
+<span class="gi">+             Dimension - minecraft:the_nether: Dimension - minecraft:the_nether</span>
+<span class="gi">+             Dimension - minecraft:the_end: Dimension - minecraft:the_end</span>
+<span class="gi">+             Multiplayer: Multiplayer</span>
+<span class="gi">+             Endpoints: Endpoints</span>
+<span class="gi">+             Waypoint: Waypoint</span>
+<span class="gi">+             Tools &amp; Customisation: Tools &amp; Customisation</span>
+<span class="gi">+             Custom Mob Icons: Custom Mob Icons</span>
+<span class="gi">+             Integrate your mod: Integrate your mod</span>
+<span class="gi">+             JourneyMap Tools: JourneyMap Tools</span>
+<span class="gi">+             Map a multiplayer server: Map a multiplayer server</span>
+<span class="gi">+             Topographic: Topographic</span>
+<span class="gi">+             UI Themes: UI Themes</span>
+<span class="gi">+             Contributing: Contributing</span>
+<span class="gi">+             Translate the mod: Translate the mod</span>
+<span class="gi">+             Translate the docs: Translate the docs</span>
+<span class="gi">+             Changelogs: Changelogs</span>
+</code></pre></div>
+<p>This codeblock includes English translations. In this case, you would need to translate the English words after the colon into French. I have left them English as an example.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The instructions above only apply if you are translating to French. Please apply these intructions to the relative language you are translating to.</p>
+<p>The instructions above only apply if you are translating to French. Please apply these instructions to the relative language you are translating to.</p>
 </div>
 <h2 id="creating-a-new-folder"><strong>Creating a new folder</strong></h2>
 <p>Now that you have set yourself up, you can now start translating the actual docs. To start, you will need to create a new folder in the docs directory with your 2-letter <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO-639-1</a> language code. Here is an example of how to do this if you are translating the docs to French:</p>
@@ -1671,7 +1726,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.caa56a14.min.js"></script>
