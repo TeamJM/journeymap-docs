@@ -33,6 +33,7 @@ Create images 2x larger than the sizes you specify in the theme.json file.  This
 Modpacks can provide a theme for users by creating a theme folder just like the above. If a modpack author so wishes, they can also designate that theme to be the default theme for users who are using JourneyMap 5 for the first time.  
 
 This can be done by creating this file: .minecraft/journeymap/icon/theme/default.theme.config
+
 The contents of the file provide the theme folder name, json file name, and the name designated within the json file, like so:
 
 ```json

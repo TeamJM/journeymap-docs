@@ -7,7 +7,7 @@ You can find the mod at <https://www.curseforge.com/minecraft/mc-mods/journeymap
 Source code is available at <https://github.com/TeamJM/journeymap-tools> and you are encouraged to contribute!
 
 - **MapSaver**: Save all region tile images to a single file, with optional resizing.
-- **MapMerger**: Merge tiles from two directories (usually from different players). ''Not implemented yet, can you help'?'
+- **MapMerger**: Merge tiles from two directories (usually from different players). "Not implemented yet, can you help?"
 
 ## **How to use JourneyMap Tools**
 
