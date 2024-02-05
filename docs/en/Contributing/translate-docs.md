@@ -27,7 +27,7 @@ You will have to make a few changes to the `mkdocs.yml` file in the config folde
 
 ```
 
-3\. You will also have to add translations to the navigation elements for French. To do this, please copy and paste the `nav_translations` section to the French Section. Here is an example:
+3\. You will also have to add translations to the navigation elements for French. To do this, please copy and paste the `nav_translations` section from the English to the French section. Here is an example:
 
 ```diff title="mkdocs.yml"
           - locale: fr
