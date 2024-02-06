@@ -26,13 +26,13 @@ JourneyMap 5.3+ no longer uses folders of icons.  Instead, it uses mob icons via
 
 JourneyMap 5.3+ uses the mob's entity texture resource location and substitutes "/entity/" with "/entity_icon/" to look up the mob icon.  Thus:
 
-* Mob entity texture: `minecraft:textures/entity/pig/pig.png`
-* Mob icon texture: `minecraft:textures/entity_icon/pig/pig.png`
+- Mob entity texture: `minecraft:textures/entity/pig/pig.png`
+- Mob icon texture: `minecraft:textures/entity_icon/pig/pig.png`
 
 (or)
 
-* Mob entity texture: `enderzoo:textures/entity/wither_cat.png`
-* Mob icon texture: `enderzoo:textures/entity_icon/wither_cat.png`
+- Mob entity texture: `enderzoo:textures/entity/wither_cat.png`
+- Mob icon texture: `enderzoo:textures/entity_icon/wither_cat.png`
 
 !!! note "Note"
 
