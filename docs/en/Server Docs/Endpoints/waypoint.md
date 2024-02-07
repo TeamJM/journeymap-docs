@@ -16,9 +16,9 @@ channel:journeymap:waypoint
 Packet Buffer
 
 ```text
-<code>waypoint StringUtf</code>  value -> waypointjson.toString();
-<code>action StringUtf</code>  value-> "create" or "delete"
-<code>announce Boolean</code> -> value true or false  : Announce determines if the user is notified when a waypoint is created or deleted. 
+waypoint StringUtf  value -> waypointjson.toString();
+action StringUtf  value-> "create" or "delete"
+announce Boolean -> value true or false  : Announce determines if the user is notified when a waypoint is created or deleted. 
 ```
 
 Packet Reader (journeymap's client code)
