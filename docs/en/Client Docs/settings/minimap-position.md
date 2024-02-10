@@ -11,7 +11,7 @@ The **bold** toggle settings below are enabled by default.
 | Toggle                         | Description                                                                    |
 |--------------------------------|--------------------------------------------------------------------------------|
 | **Move Effect Icons**          | Enables moving the potion effects away from the minimap.                       |
-| Reverse Effect Icon Rendering  | Reversed Rendering of Icons. Vertical bottom to top, non Vertical let to right |
+| Reverse Effect Icon Rendering  | Reversed Rendering of Icons. Vertical bottom to top, non Vertical left to right |
 | Vertical Effect Icon Rendering | Vertical Rendering of the icons first from top to bottom.                      |
 
 ## **Other Settings**
