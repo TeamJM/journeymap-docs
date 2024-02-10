@@ -63,7 +63,7 @@ plugins:
           name: English
           build: true
           nav_translations:
-            Home: Home
+Home: Home
             About: About
             Credits: Credits
             Licensing: Licensing
@@ -77,7 +77,6 @@ plugins:
             Grid: Grid
             Minimap: Minimap
             Minimap Position: Minimap Position
-            Full-Screen Map: Full-Screen Map
             Webmap: Webmap
             Waypoint: Waypoint
             Waypoint Beacons: Waypoint Beacons
@@ -85,12 +84,7 @@ plugins:
             Advanced Options: Advanced Options
             Waypoints: Waypoints
             Server Docs: Server Docs
-            Installing: Installing
-            Basic Usage: Basic Usage
             Commands: Commands
-            Waypoint: Waypoint
-            Settings: Settings
-            Overview: Overview
             Global Properties: Global Properties
             Default Dimension Properties: Default Dimension Properties
             Dimension - minecraft:overworld: Dimension - minecraft:overworld
@@ -98,7 +92,6 @@ plugins:
             Dimension - minecraft:the_end: Dimension - minecraft:the_end
             Multiplayer: Multiplayer
             Endpoints: Endpoints
-            Waypoint: Waypoint
             Tools & Customisation: Tools & Customisation
             Custom Mob Icons: Custom Mob Icons
             Integrate your mod: Integrate your mod
