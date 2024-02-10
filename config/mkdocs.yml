@@ -63,7 +63,7 @@ plugins:
           name: English
           build: true
           nav_translations:
-Home: Home
+            Home: Home
             About: About
             Credits: Credits
             Licensing: Licensing
