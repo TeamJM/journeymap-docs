@@ -6,7 +6,7 @@ JourneyMap allows you to have two minimap presets. Each preset represents a sepa
 
     The settings for each minimap are identical, so we’ll only cover a single preset below.
 
-To switch between minimap presets, press the switch minimap preset key (the '\' key by default).
+To switch between minimap presets, press the switch minimap preset key (the ++backslash++ key by default).
 
 ![Minimap-Settings](../../img/settings/client/minimap.png){: .center}
 
