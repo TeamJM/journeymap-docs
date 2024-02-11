@@ -9,7 +9,7 @@ To switch open the full-screen map, press the full-screen map key (the ++j++ key
 
 !!! note "Note"
 
-    A handful of the following options are also available as buttons on the full-screen map view itself. For more information on this, please see the [full-screen map page](full-screen-map.md).
+    A handful of the following options are also available as buttons on the full-screen map view itself. For more information on this, please see the [full-screen map page](../full-screen-map.md).
 
 ## **Toggles**
 
