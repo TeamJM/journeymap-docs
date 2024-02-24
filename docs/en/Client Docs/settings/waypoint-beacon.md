@@ -1,8 +1,6 @@
 # **Waypoint Beacon Settings**
 
-By default, waypoints are displayed in the world using a beacon beam in the distance, which allows you to see where they
-are from anywhere in the world. By default, you can look towards the beam and see the waypoint’s icon and label as well.
-This behaviour can be customized below.
+By default, waypoints are displayed in the world using a beacon beam in the distance, which allows you to see where they are from anywhere in the world. You can look towards the beam and see the waypoint’s icon and label as well. This behaviour can be customized below.
 
 ![Beacon-Settings](../../img/settings/client/waypoint-beacons.png){: .center}
 
