@@ -22,7 +22,7 @@ So, given a **world height of 256** blocks, a palette of **32 colors** will crea
 
 ## **Customization**
 
-The topographic maps config file </code>.minecraft/journeymap/config/5.2/journeymap.topo.config</code> can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
+The topographic maps config file `.minecraft/journeymap/config/5.2/journeymap.topo.config` can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
 
 The file has the following properties:
 
