@@ -1,6 +1,12 @@
 # **Changelogs**
 
-This page shows all the changelogs from JourneyMap 5.9.0 to 5.9.20 which is the latest version of JourneyMap so far.
+This page shows all the changelogs from JourneyMap 5.9.0 to 5.9.21 which is the latest version of JourneyMap so far.
+
+## **JourneyMap 5.9.21**
+
+- Fixed: [ModCompat] ViveCraft key bindings.
+- Fixed: Minimap rendering logic bug.
+- Fixed: Removed some unnecessary class allocations that can have a severe impact on performance.
 
 ## **JourneyMap 5.9.20**
 
