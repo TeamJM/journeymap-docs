@@ -1,6 +1,20 @@
 # **Changelogs**
 
-This page shows all the changelogs from JourneyMap 5.9.0 to 5.9.21 which is the latest version of JourneyMap so far.
+This page shows all the changelogs from JourneyMap 5.9.0 to 5.9.24 which is the latest version of JourneyMap so far.
+
+## **JourneyMap 5.9.24**
+
+- Fixed: unintentional bug that prevent map updates with the performance release effecting some, but not all versions released.
+
+## **JourneyMap 5.9.23**
+
+- Fixed: Changed the performance update to be even better.
+- Fixed: Version numbers that had p1 which was breaking for fabric mods that depended on journeymap.
+
+## **JourneyMap 5.9.22**
+
+- Fixed: Minimap rotation causing the screen hud to rotate, this fix also fixes some other weird issues with minimap.
+- Fixed: Added a 3s delay to deathpoint creation.
 
 ## **JourneyMap 5.9.21**
 
