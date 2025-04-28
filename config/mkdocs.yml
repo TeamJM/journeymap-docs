@@ -110,6 +110,51 @@ plugins:
             Translate the mod: Translate the mod
             Translate the docs: Translate the docs
             Changelogs: Changelogs
+        - locale: fr
+          default: false
+          name: Français
+          build: true
+          nav_translations:
+            Home: Acceuil
+            About: À propos
+            Credits: Crédits
+            Licensing: Licence
+            Support: Support
+            Client Docs: Docs Client
+            Installing: Installation
+            Basic Usage: Utilisation de Base
+            Full-Screen Map: Carte en Plein Écran
+            Settings: Paramètres
+            Overview: Vue d'Ensemble
+            Grid: Grille
+            Minimap: Minicarte
+            Minimap Position: Position de la Minicarte
+            Webmap: Webmap
+            Waypoint:  Point de Repère
+            Waypoint Beacons: Balises de Point de Repère
+            Cartography: Cartographie
+            Advanced Options: Options Avancées
+            Waypoints: Points de Repère
+            Server Docs: Docs Serveur
+            Commands: Commandes
+            Global Properties: Propriétés Globales
+            Default Dimension Properties: Propriétés de Dimension par Défaut
+            Dimension - minecraft:overworld: Dimension - minecraft:overworld
+            Dimension - minecraft:the_nether: Dimension - minecraft:the_nether
+            Dimension - minecraft:the_end: Dimension - minecraft:the_end
+            Multiplayer: Multijoueur
+            Endpoints: Points de Terminaison
+            Tools & Customisation: Outils & Personnalisation
+            Custom Mob Icons: Icônes de Mobs Personnalisées
+            Integrate your mod: Intégrez votre mod
+            JourneyMap Tools: Outils JourneyMap
+            Map a multiplayer server: Cartographier un serveur multijoueur
+            Topographic: Topographique
+            UI Themes: Thèmes UI
+            Contributing: Contribuer
+            Translate the mod: Traduire le mod
+            Translate the docs: Traduire les docs
+            Changelogs: Changelogs
         - locale: es
           default: false
           name: Español
