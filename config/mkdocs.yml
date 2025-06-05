@@ -214,50 +214,50 @@ plugins:
 nav:
   - Home: index.md
   - About:
-      - Credits: About/credits.md
-      - Licensing: About/licensing.md
-      - Support: About/support.md
+      - Credits: about/credits.md
+      - Licensing: about/licensing.md
+      - Support: about/support.md
   - Client Docs:
-      - Installing: Client-Docs/installing.md
-      - Basic Usage: Client-Docs/basic-usage.md
-      - Full-Screen Map: Client-Docs/full-screen-map.md
+      - Installing: client/installing.md
+      - Basic Usage: client/basic-usage.md
+      - Full-Screen Map: client/full-screen-map.md
       - Settings:
-          - Overview: Client-Docs/settings/overview.md
-          - Grid: Client-Docs/settings/grid.md
-          - Minimap: Client-Docs/settings/minimap.md
-          - Minimap Position: Client-Docs/settings/minimap-position.md
-          - Full-Screen Map: Client-Docs/settings/full-screen-map.md
-          - Webmap: Client-Docs/settings/webmap.md
-          - Waypoint: Client-Docs/settings/waypoint.md
-          - Waypoint Beacons: Client-Docs/settings/waypoint-beacon.md
-          - Cartography: Client-Docs/settings/cartography.md
-          - Advanced Options: Client-Docs/settings/advanced.md
-      - Waypoints: Client-Docs/waypoints.md
+          - Overview: client/settings/overview.md
+          - Grid: client/settings/grid.md
+          - Minimap: client/settings/minimap.md
+          - Minimap Position: client/settings/minimap-position.md
+          - Full-Screen Map: client/settings/full-screen-map.md
+          - Webmap: client/settings/webmap.md
+          - Waypoint: client/settings/waypoint.md
+          - Waypoint Beacons: client/settings/waypoint-beacon.md
+          - Cartography: client/settings/cartography.md
+          - Advanced Options: client/settings/advanced.md
+      - Waypoints: client/waypoints.md
   - Server Docs:
-      - Installing: Server-Docs/installing.md
-      - Basic Usage: Server-Docs/basic-usage.md
+      - Installing: server/installing.md
+      - Basic Usage: server/basic-usage.md
       - Commands:
-          - Waypoint: Server-Docs/Commands/waypoint_command.md
+          - Waypoint: server/commands/waypoint_command.md
       - Settings:
-          - Overview: Server-Docs/settings/overview.md
-          - Global Properties: Server-Docs/settings/global-properties.md
-          - Default Dimension Properties: Server-Docs/settings/default-dimension-properties.md
-          - Dimension - minecraft:overworld: Server-Docs/settings/dimension-overworld.md
-          - Dimension - minecraft:the_nether: Server-Docs/settings/dimension-nether.md
-          - Dimension - minecraft:the_end: Server-Docs/settings/dimension-end.md
-      - Multiplayer: Server-Docs/multiplayer.md
+          - Overview: server/settings/overview.md
+          - Global Properties: server/settings/global-properties.md
+          - Default Dimension Properties: server/settings/default-dimension-properties.md
+          - Dimension - minecraft:overworld: server/settings/dimension-overworld.md
+          - Dimension - minecraft:the_nether: server/settings/dimension-nether.md
+          - Dimension - minecraft:the_end: server/settings/dimension-end.md
+      - Multiplayer: server/multiplayer.md
       - Endpoints:
-          - Waypoint: Server-Docs/Endpoints/waypoint.md
+          - Waypoint: server/endpoints/waypoint.md
   - Tools & Customisation:
-      - Custom Mob Icons: Tools-and-Customisation/custom-mob-icons.md
-      - Integrate your mod: Tools-and-Customisation/integration.md
-      - JourneyMap Tools: Tools-and-Customisation/journeymap-tools.md
-      - Map a multiplayer server: Tools-and-Customisation/multiplayer-server.md
-      - Topographic: Tools-and-Customisation/topographic.md
-      - UI Themes: Tools-and-Customisation/ui-themes.md
+      - Custom Mob Icons: tools/custom-mob-icons.md
+      - Integrate your mod: tools/integration.md
+      - JourneyMap Tools: tools/journeymap-tools.md
+      - Map a multiplayer server: tools/multiplayer-server.md
+      - Topographic: tools/topographic.md
+      - UI Themes: tools/ui-themes.md
   - Contributing:
-      - Translate the mod: Contributing/translate-mod.md
-      - Translate the docs: Contributing/translate-docs.md
+      - Translate the mod: contributing/translate-mod.md
+      - Translate the docs: contributing/translate-docs.md
   - Changelogs: changelogs.md
 
 
