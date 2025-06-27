@@ -10,22 +10,22 @@ Si vous souhaitez un mod de cartographie riche en fonctionnalités et facile à 
 
 ## **Premiers Pas**
 
--   [Télécharger JourneyMap](Client Docs/installing.md)
--   [Utiliser le Gestionnaire d'Options](Client Docs/settings/overview.md)
--   [Partager des Points de Repère](Client Docs/waypoints.md/#sharing-waypoints)
--   [Obtenir de l'Aide](About/support.md)
+-   [Télécharger JourneyMap](client/installing)
+-   [Utiliser le Gestionnaire d'Options](client/settings/overview)
+-   [Partager des Points de Repère](client/waypoints/#sharing-waypoints)
+-   [Obtenir de l'Aide](about/support)
 
 ## **En Savoir Plus**
 
--   [Utiliser les Raccourcis Clavier (Keybindings)](Client Docs/basic-usage.md/#key-mappings)
--   [Personnaliser les Cartes Topographiques](Tools and Customisation/topographic.md)
--   [Cartographier un serveur multijoueur](Tools and Customisation/multiplayer-server.md)
--   [Générer des cartes à l'échelle personnalisée](Tools and Customisation/journeymap-tools.md)
+-   [Utiliser les Raccourcis Clavier (Keybindings)](client/basic-usage/#key-mappings)
+-   [Personnaliser les Cartes Topographiques](tools/topographic)
+-   [Cartographier un serveur multijoueur](tools/multiplayer-server)
+-   [Générer des cartes à l'échelle personnalisée](tools/journeymap-tools)
 
 ## **Sujets Avancés**
 
--   [Utilisation dans un Modpack](About/licensing.md)
--   [Intégrer votre mod](Tools and Customisation/integration.md)
--   [Créer des icônes de mobs personnalisées](Tools and Customisation/custom-mob-icons.md)
--   [Créer un Thème d'Interface Utilisateur (Skin)](Tools and Customisation/ui-themes.md)
--   [Traduire JourneyMap dans votre langue](Contributing/translate-mod.md)
+-   [Utilisation dans un Modpack](about/licensing)
+-   [Intégrer votre mod](tools/integration)
+-   [Créer des icônes de mobs personnalisées](tools/custom-mob-icons)
+-   [Créer un Thème d'Interface Utilisateur (Skin)](tools/ui-themes)
+-   [Traduire JourneyMap dans votre langue](contributing/translate-mod)

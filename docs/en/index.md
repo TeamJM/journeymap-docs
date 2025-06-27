@@ -10,22 +10,22 @@ If you’d like a featureful, easy-to-use mapping mod then why not give JourneyM
 
 ## **First Steps**
 
-- [Download JourneyMap](Client Docs/installing.md)
-- [Use the Options Manager](Client Docs/settings/overview.md)
-- [Share Waypoints](Client Docs/waypoints.md/#sharing-waypoints)
-- [Get Support](About/support.md)
+- [Download JourneyMap](client/installing)
+- [Use the Options Manager](client/settings/overview)
+- [Share Waypoints](client/waypoints/#sharing-waypoints)
+- [Get Support](about/support)
 
 ## **Learn More**
 
-- [Use Keyboard Shortcuts (Keybindings)](Client Docs/basic-usage.md/#key-mappings)
-- [Customize Topographic Maps](Tools and Customisation/topographic.md)
-- [Map a multiplayer server](Tools and Customisation/multiplayer-server.md)
-- [Generate custom-scale maps](Tools and Customisation/journeymap-tools.md)
+- [Use Keyboard Shortcuts (Keybindings)](client/basic-usage/#key-mappings)
+- [Customize Topographic Maps](tools/topographic)
+- [Map a multiplayer server](tools/multiplayer-server)
+- [Generate custom-scale maps](tools/journeymap-tools)
 
 ## **Advanced Topics**
 
-- [Use in a Modpack](About/licensing.md)
-- [Integrate your mod](Tools and Customisation/integration.md)
-- [Make custom mob Icons](Tools and Customisation/custom-mob-icons.md)
-- [Create a UI Theme (Skin)](Tools and Customisation/ui-themes.md)
-- [Translate JourneyMap For Your Language](Contributing/translate-mod.md)
+- [Use in a Modpack](about/licensing)
+- [Integrate your mod](tools/integration)
+- [Make custom mob Icons](tools/custom-mob-icons)
+- [Create a UI Theme (Skin)](tools/ui-themes)
+- [Translate JourneyMap For Your Language](contributing/translate-mod)
