@@ -10,22 +10,22 @@ Si deseas un mod de mapeo con funciones y fácil de usar, ¿por qué no pruebas 
 
 ## **Primeros Pasos**
 
-- [Descargar JourneyMap](Client Docs/installing.md)
-- [Usar el Administrador de opciones](Client Docs/settings/overview.md)
-- [Compartir puntos de ruta](Client Docs/waypoints.md/#compartir-puntos-de-ruta)
-- [Obtener soporte](About/support.md)
+- [Descargar JourneyMap](client/installing)
+- [Usar el Administrador de opciones](client/settings/overview)
+- [Compartir puntos de ruta](client/waypoints/#compartir-puntos-de-ruta)
+- [Obtener soporte](about/support)
 
 ## **Más Información**
 
-- [Usar atajos de teclado (combinaciones de teclas)](Client Docs/basic-usage.md/#asignaciones-de-teclas)
-- [Personalizar mapas topográficos](Tools and Customisation/topographic.md)
-- [Asignar un servidor multijugador](Tools and Customisation/multiplayer-server.md)
-- [Generar mapas a escala personalizada](Tools and Customisation/journeymap-tools.md)
+- [Usar atajos de teclado (combinaciones de teclas)](client/basic-usage/#asignaciones-de-teclas)
+- [Personalizar mapas topográficos](tools/topographic)
+- [Asignar un servidor multijugador](tools/multiplayer-server)
+- [Generar mapas a escala personalizada](tools/journeymap-tools)
 
 ## **Temas Avanzados**
 
-- [Usar en un Modpack](About/licensing.md)
-- [Integra tu mod](Tools and Customisation/integration.md)
-- [Crear íconos de mob personalizados](Tools and Customisation/custom-mob-icons.md)
-- [Crear un tema de interfaz de usuario (máscara)](Tools and Customisation/ui-themes.md)
-- [Traduce JourneyMap para tu idioma](Contributing/translate-mod.md)
+- [Usar en un Modpack](about/licensing)
+- [Integra tu mod](tools/integration)
+- [Crear íconos de mob personalizados](tools/custom-mob-icons)
+- [Crear un tema de interfaz de usuario (máscara)](tools/ui-themes)
+- [Traduce JourneyMap para tu idioma](contributing/translate-mod)
