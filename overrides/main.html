@@ -14,8 +14,6 @@
     const isRoot = window.location.pathname === baseDir || 
                    window.location.pathname === baseDir + 'index.html';
 
-    // 1. OBTENER IDIOMAS SOPORTADOS (Dinámico)
-    // Extraemos los idiomas que MkDocs realmente generó basándonos en el selector del tema
     const getAvailableLangs = () => {
       const selectors = document.querySelectorAll('link[hreflang], a[hreflang]');
       return Array.from(selectors)
@@ -31,25 +29,18 @@
       let targetLang = savedLang || browserLang;
       let finalMatch = null;
 
-      // 2. LÓGICA DE COINCIDENCIA (Sin simplificación agresiva)
-      // Intento 1: Coincidencia exacta (ej: pt-BR === pt-BR)
       finalMatch = availableLangs.find(l => l.toLowerCase() === targetLang.toLowerCase());
 
-      // Intento 2: Si no hay exacta, buscamos la base (ej: es-MX -> es)
       if (!finalMatch) {
         const short = targetLang.split('-')[0].toLowerCase();
         finalMatch = availableLangs.find(l => l.toLowerCase() === short);
       }
 
-      // 3. REDIRECCIÓN SEGURA
-      // Solo redirige si el idioma existe en tu MkDocs y no es el inglés (raíz)
       if (finalMatch && finalMatch !== 'en') {
         window.location.replace(baseDir + finalMatch + '/');
       }
     }
 
-    // 4. GUARDAR PREFERENCIA MANUAL
-    // Escuchamos cualquier cambio manual en el selector de idiomas
     document.addEventListener("DOMContentLoaded", function() {
       const langLinks = document.querySelectorAll('.md-select__link, [hreflang]');
       langLinks.forEach(link => {
