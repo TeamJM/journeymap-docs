@@ -207,6 +207,57 @@ plugins:
             Translate the mod: Traducir el Mod
             Translate the docs: Traducir los Documentos
             Changelogs: Registros de Cambios
+        - locale: de
+          default: false
+          name: Detusch
+          build: true
+          nav_translations:
+            Home: Home
+            About: Über
+            Credits: Credits
+            Licensing: Lizenzierung
+            Support: Support
+            Client Docs: Client Dokumentation
+            Installing: Installation
+            Basic Usage: Grundlegende Verwendung
+            Full-Screen Map: Vollbild Karte
+            Settings: Einstellungen
+            Overview: Übersicht
+            Grid: Raster
+            Minimap: Minimap
+            Minimap Position: Minimap Position
+            Webmap: Webmap
+            Waypoint: Wegpunkt
+            Waypoint Beacons: Wegpunkt Beacons
+            Cartography: Kartographie
+            Advanced Options: Fortgeschrittene Einstellungen
+            Waypoints: Wegpunkte
+            Server Docs: Server Dokumentation
+            Installing: Instalation
+            Basic Usage: Grundlegende Verwendung
+            Commands: Befehle
+            Waypoint: Wegpunkt
+            Settings: Einstellungen
+            Overview: Übersicht
+            Global Properties: Globale Eigenschaften
+            Default Dimension Properties: Standart Dimension Eigenschhaften
+            Dimension - minecraft:overworld: Dimension - minecraft:overworld
+            Dimension - minecraft:the_nether: Dimension - minecraft:the_nether
+            Dimension - minecraft:the_end: Dimension - minecraft:the_end
+            Multiplayer: Mehrspieler
+            Endpoints: Endpunkte
+            Waypoint: Wegpunkt
+            Tools & Customisation: Werkzeuge & Anpassungen
+            Custom Mob Icons: Eigene Monster Icons
+            Integrate your mod: Integriere deine Modifikation
+            JourneyMap Tools: JourneyMap Werkzeuge
+            Map a multiplayer server: Kartiere einen Mehrspieler Server
+            Topographic: Topographisch
+            UI Themes: UI Themes
+            Contributing: Contributing
+            Translate the mod: Übersetze die Modifikation
+            Translate the docs: Übersetze die Dokumentation
+            Changelogs: Changelogs
   - mike:
       version_selector: true
   - search
