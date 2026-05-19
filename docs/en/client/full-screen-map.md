@@ -4,7 +4,7 @@ By pressing the full-screen map key (by default, the ++j++ key), you can open th
 
 ![Full-Screen](../img/full-screen.png){: .center}
 
-The full-screen map is a scrollable, customisable view of everything you’ve explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](settings/full-screen-map.md).
+The full-screen map is a scrollable, customisable view of everything you have explored in your world so far. It provides access to a myriad of options which will be covered below, but you can also customize it in the [full-screen settings](settings/full-screen-map.md).
 
 ## **Basic Usage**
 
@@ -14,15 +14,25 @@ Once you have the full-screen map open, you can scroll and zoom, or use the butt
 - Use the mouse wheel to change the zoom level
 - Double-click on a block to create a [waypoint](waypoints.md)
 
-The following keybinds are available, and they may be changed in Minecraft’s options:
+The following keybinds are available, and they may be changed in Minecraft's options:
 
 - ++c++ Copy the coordinates of the block your cursor is pointing at to the chat box
 - ++b++ Create a [waypoint](waypoints.md) at the block your cursor is pointing at
-- ++o++ Open JourneyMap’s [settings manager](settings/overview.md)
+- ++o++ Open JourneyMap's [settings manager](settings/overview.md)
+- ++f++ Follow your player (re-center the map and keep it centered on you)
+- ++up++ ++down++ ++left++ ++right++ Pan the map 16 blocks in that direction
 
 ## **Buttons**
 
 Around the edge of the full-screen map is a set of buttons, which you can use to customize the full-screen map view and access other areas of the mod. Icons can differ between themes; the below icons come from the themes that are bundled with JourneyMap.
+
+!!! note "Minimal UI"
+
+    The full-screen map has a Minimal UI option that hides most of these
+    buttons for a cleaner view. It can be toggled in the
+    [full-screen map settings](settings/full-screen-map.md). You can also
+    hide the buttons temporarily with the Disable Fullscreen Buttons
+    keybind (unbound by default).
 
 ## **Top Buttons**
 
@@ -70,9 +80,9 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 | ![Waypoints](../img/icons/waypoints.png){: .center} | Open the [waypoint manager](settings/waypoint.md). |
 | ![Options](../img/icons/options.png){: .center}     | Open the [settings manager](settings/overview.md). |
 | ![About](../img/icons/about.png){: .center}         | Open the About screen.                             |
-| ![Browser](../img/icons/browser.png){: .center}     | Open the Webmap, if enabled.                       |
+| ![Browser](../img/icons/browser.png){: .center}     | Open the [Webmap](../webmap/installing.md), if installed and enabled. |
 | ![Theme](../img/icons/theme.png){: .center}         | Cycle through the available themes.                |
-| ![Reset](../img/icons/reset.png){: .center}         | Reset the colour palette.                          |
+| ![Reset](../img/icons/reset.png){: .center}         | Open the [Color Palette](color-palette.md) editor. |
 | ![Delete](../img/icons/delete.png){: .center}       | Delete the map in one or more dimensions.          |
 | ![Save](../img/icons/savemap.png){: .center}        | Save the whole map to a file.                      |
 | ![Auto-Map](../img/icons/automap.png){: .center}    | Map the explored world, in single-player.          |

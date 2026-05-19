@@ -1,12 +1,12 @@
 ## **Home**
 
-JourneyMap is a popular mapping mod for Minecraft. Originally released by techbrew in 2011, it’s gone from strength to strength and today stands as the most popular mapping mod in the world.
+JourneyMap is a popular mapping mod for Minecraft. Originally released by techbrew in 2011, it has gone from strength to strength and today stands as the most popular mapping mod in the world.
 
 ![Background](img/background.jpg){: .center}
 
-JourneyMap includes an in-game minimap and full-screen map, as well as a webmap that can be viewed in a browser.
+JourneyMap includes an in-game minimap and full-screen map. A webmap, viewable in a browser, is also available as a separate [Webmap addon](webmap/installing).
 
-If you’d like a featureful, easy-to-use mapping mod then why not give JourneyMap a try? You can find it on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap) or [Modrinth](https://modrinth.com/mod/journeymap) and install it just like any other [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org), [Forge](https://forums.minecraftforge.net/) or [NeoForge](https://neoforged.net/) mod - or continue reading if you need help.
+If you would like a featureful, easy-to-use mapping mod then why not give JourneyMap a try? You can find it on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap) or [Modrinth](https://modrinth.com/mod/journeymap) and install it just like any other [Fabric](https://fabricmc.net/), [Forge](https://forums.minecraftforge.net/) or [NeoForge](https://neoforged.net/) mod - or continue reading if you need help.
 
 ## **First Steps**
 

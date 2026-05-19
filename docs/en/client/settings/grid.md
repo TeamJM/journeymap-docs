@@ -1,6 +1,6 @@
 # **Grid Settings**
 
-Both minimap presets and the full-screen map may have a configurable grid overlay. You can customize this overlay by clicking on the Edit Grid… button below the settings in each respective category.
+Both minimap presets and the full-screen map may have a configurable grid overlay. You can customize this overlay by clicking on the Edit Grid... button below the settings in each respective category.
 
 You can also reach this from the full-screen map by holding the ++shift++ key and clicking on the grid button at the top.
 

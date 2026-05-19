@@ -4,38 +4,47 @@ The cartography settings allow you to customize how the map is rendered, and wha
 
 ![Cartography-Settings](../../img/settings/client/cartography.png){: .center}
 
+For map color filters and shader options, see [Map Filters](filters.md).
+
 ## **Toggles**
 
 The **bold** toggle settings below are enabled by default.
 
-| Toggle                       | Description                                                                                                     |
-|------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Always Map Caves             | Whether to map caves below you when you’re on the surface                                                       |
-| Always Map Surface           | Whether to map the surface above you when you’re in caves                                                       |
-| **Blend Foliage**            | Whether to apply biome colours to foliage                                                                       |
-| **Blend Grass**              | Whether to apply biome colours to grass                                                                         |
-| Blend Water                  | Whether to apply biome colours to water                                                                         |
-| Clear Unlit Caves            | Unlit and inner slice blocks are rendered clear instead of black. This option only effects newly mapped blocks. |
-| **Ignore Glass Ceilings**    | Whether to remain in surface mode when under a glass ceiling                                                    |
-| **Map Biomes**               | Whether to show biome colours on the map                                                                        |
-| **Map Topography**           | Whether to generate a contour map that shows elevation                                                          |
-| Show Bathymetry              | Whether to show underwater terrain on the map                                                                   |
-| **Show Crops**               | Whether to show crops on the map                                                                                |
-| Show Plant Shadows           | Whether to plants and crops should cast shadows on the map                                                      |
-| Show Plants                  | Whether to show plants on the map                                                                               |
-| **Show Surface Above Caves** | Whether to show a dimmed view of the surface when in cave mode                                                  |
-| Show Water Biome Colours     | Whether to show water colours based on biomes                                                                   |
-| **Use Antialiasing**         | Whether to use anti-aliasing to improve the shading effect used to show elevation                               |
-| **Use Cave Lighting**        | Whether to show lights underground - disable for a fully bright map                                             |
-| **Use Transparency**         | Whether transparent blocks should reveal what’s below them on the map                                           |
+| Toggle                       | Description                                                                                                                                       |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Always Map Caves             | Always map every cave layer in your vertical chunk, even when on the Overworld surface. Disabling this will improve performance.                    |
+| Always Map Surface           | Always map the Overworld surface, even when underground. Disabling this will improve performance.                                                 |
+| **Blend Foliage**            | Blends foliage colors between biomes. Disable to improve performance.                                                                             |
+| **Blend Grass**              | Blends grass colors between biomes. Disable to improve performance.                                                                               |
+| **Blend Water**              | Blends water colors between biomes. Disable to improve performance.                                                                               |
+| Clear Unlit Caves            | Unlit and inner slice blocks are rendered clear instead of black. This option only affects newly mapped blocks.                                   |
+| **Ignore Glass Ceilings**    | Being under a glass roof will not switch to cave mapping                                                                                          |
+| Ignore Heightmaps            | Ignores chunk heightmaps if the top layer of the world is not rendering correctly. This may impact performance.                                    |
+| Ignore Snow Blocks           | Ignores all snow type blocks from mapping. This is an experimental feature and may have weird side effects and may be removed in the future.       |
+| Map only Player Chunk        | Only maps the chunk the player is currently standing in. It ignores any distance setting.                                                         |
+| **Map Biomes**               | Provides a map of biomes.                                                                                                                         |
+| **Map Topography**           | Provides a contour map that shows elevation changes                                                                                               |
+| **Show Map Shadows**         | Blocks will cast shadows on map.                                                                                                                  |
+| Show Bathymetry              | Shows the terrain of the ocean floor and under water                                                                                              |
+| **Show Crops**               | Crops are shown on the map                                                                                                                        |
+| Show Plant Shadows           | Plants and crops will cast shadows on the map                                                                                                     |
+| Show Plants                  | Plants are shown on the map                                                                                                                       |
+| **Show Surface Above Caves** | A dim view of the nearby surface is visible when underground                                                                                      |
+| **Show Water Biome Colors**  | Shows water colors based on biome.                                                                                                                |
+| **Use Antialiasing**         | Enhances the shading effect used to show elevation changes. Disabling may improve performance.                                                     |
+| **Use Cave Lighting**        | Use the actual light levels underground. Disable to use full light.                                                                               |
+| **Use Nether Surface Lighting** | When enabled, uses actual world light levels for the Nether surface map. When disabled, uses maximum brightness so the map is always visible.   |
+| **Use Transparency**         | Transparent blocks will reveal what is below them                                                                                                 |
 
 ## **Other Settings**
 
 The default option for each setting below is marked with **bold text.**
 
-| Setting              | Options                                     | Description                                                                                                                                                                           |
-|----------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reveal Shape         | <ul><li>Square</li><li>**Circle**</li></ul> | Whether to reveal chunks in a circle or square - circle reveals show fewer chunks at once, and so perform better                                                                      |
-| Render Delay         | Range: 0 - 10 (in seconds, Default: **2**)  | How often JourneyMap should try to render the chunks around you - Higher values can result in better performance, but may result in chunks being missed when traveling at high speed |
-| Cave Max Distance    | Range: 0 - 32 (in chunks, Default: **0**)   | The maximum distance within which to attempt to render the map while in a cave - if you set this higher than your render distance, then this will use that instead                    |
-| Surface Max Distance | Range: 0 - 32 (in chunks, default: **0**)   | The maximum distance within which to attempt to render the map while above ground -if you set this higher than your render distance, then this will use that instead                  |
+| Setting                | Options                                          | Description                                                                                                                                                                                                                              |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Reveal Shape           | <ul><li>Square</li><li>**Circle**</li></ul>      | Shape of the map area revealed around you. Circle reveals fewer chunks than Square and will improve performance.                                                                                                                          |
+| Render Delay           | Range: 100 - 60000 (in milliseconds, Default: **500**) | Time (in milliseconds) between render passes. Higher values can improve performance, but may result in missed chunks while travelling.                                                                                              |
+| Cave Distance          | Range: 0 - 32 (in chunks, Default: **0**)        | Radius of chunks around you that are eventually mapped underground or in dimensions with no sky. Lower values can improve performance. Values greater than Minecraft's render distance have no effect. Set to 0 to mirror the video option chunk render range. |
+| Surface Distance       | Range: 0 - 32 (in chunks, Default: **0**)        | Radius of chunks around you that are eventually mapped on the surface in dimensions with a sky. Lower values can improve performance. Values greater than Minecraft's render distance have no effect. Set to 0 to mirror the video option chunk render range.  |
+| Custom Max Topo Height | Range: 0 - 320 (in blocks, Default: **0**)       | The height that topography mapping uses for the max height calculations. Any blocks above this height will be white. Changing this setting may have dramatic effects on the topography map. Set to 0 to use the world default max build height. |
+| Auto Cave Mode Threshold | Range: 1 - 100 (in blocks, Default: **2**)     | How many blocks to switch to cave mode. This is useful for preventing cave mode switching when going in a house.                                                                                                                          |

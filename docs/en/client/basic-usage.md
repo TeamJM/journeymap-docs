@@ -6,18 +6,20 @@ For the most part, JourneyMap works right out of the box. All you need to do to 
 
 ## **Key Mappings**
 
-The following key mappings are available by default when you’re playing on a world or multiplayer server.
+The following key mappings are available by default when you are playing on a world or multiplayer server.
 
-- ++j++ - Show/hide the full-screen map
-- ++ctrl+j++ - Show/hide the minimap
-- ++equal+minus++ - Zoom the minimap in and out respectively
+- ++j++ - Show or hide the full-screen map
+- ++ctrl+j++ - Show or hide the minimap. On Fabric this is ++m++ instead, because Fabric does not support modifier keys for keybinds
+- ++equal++ / ++minus++ - Zoom the minimap in and out
 - ++bracket-left++ - Cycle the map type shown in the minimap
-- ++bar++ - Switch between minimap presets
-- ++b++ - Create [a waypoint](waypoints.md) where you’re currently standing
-- ++ctrl+b++ - Open the [waypoint manager](waypoints.md) (this conflicts with the narrator keybind, so you may want to change or disable that)
-- ++z++ - Toggle the visibility of all waypoints
+- ++backslash++ - Switch between minimap presets
+- ++b++ - Create [a waypoint](waypoints.md) where you are standing
+- ++n++ - Open the [waypoint manager](waypoints.md)
+- ++g++ - Toggle entity name labels
 
-All keys specified in the documentation can be customized in Minecraft’s own settings. Just open the menu (by default, with the ++esc++ key), click on Options and then Controls, and you’ll see two new categories for all of JourneyMap’s keys.
+JourneyMap also has keybinds for toggling waypoint rendering (all waypoints, in-world only, or on-map only). These are unbound by default - assign them in Minecraft's Controls if you want them.
+
+All keys specified in the documentation can be customized in Minecraft's own settings. Just open the menu (by default, with the ++esc++ key), click on Options and then Controls, and you will see two new categories for all of JourneyMap's keys.
 
 ## **Markers**
 
@@ -54,12 +56,12 @@ This is your minimap. By default, it displays the area around your character, as
 
 The minimap can be zoomed in and out at any time by pressing either of the zoom keys (by default, the ++equal++ and ++minus++ keys).
 
-The four lines of text above and below the minimap are known as info slots. By default, they show (in order):
+The text above and below the minimap is shown in info slots. There are four of them. By default they show:
 
-- The current time in real world
-- The current time ingame
-- The coordinate of your character
-- The current biome your character is in
+- Slot 1: nothing (blank)
+- Slot 2: the in-game time
+- Slot 3: your coordinates
+- Slot 4: the biome you are in
 
 The minimap and its info slots may be customized in the [settings manager](settings/minimap.md).
 
@@ -69,14 +71,14 @@ By pressing the full-screen map key (by default, the J key), you can open the fu
 
 ![Full-Screen-Map](../img/full-screen.png){: .center}
 
-This map gives you a scrollable view of all the areas of the map you’ve explored so far, displayed as it was when you discovered them. It also provides access to JourneyMap’s Settings and a number of map display options.
+This map gives you a scrollable view of all the areas of the map you have explored so far, displayed as it was when you discovered them. It also provides access to JourneyMap's Settings and a number of map display options.
 
 For more information on the full-screen map, please see the [full-screen map page](settings/full-screen-map.md).
 
 ## **The Webmap**
 
-Once enabled in the [settings manager](settings/webmap.md), the webmap allows you to view and explore your generated map in a web browser, including accessing it from another device (such as a phone or tablet). This will work as long as the game is running.
+The webmap lets you view and explore your map in a web browser, including from another device such as a phone or tablet, while the game is running. As of JourneyMap 6.0 the webmap is a separate addon mod.
 
 ![Webmap](../img/webmap.png){: .center}
 
-For more information on the webmap map, please see [the webmap page](settings/webmap.md).
+See the [Webmap](../webmap/installing.md) section for how to install and use it.

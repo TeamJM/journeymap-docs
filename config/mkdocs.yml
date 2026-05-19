@@ -85,6 +85,7 @@ plugins:
             Filters: Filters
             Advanced Options: Advanced Options
             Waypoints: Waypoints
+            Waypoint Groups: Waypoint Groups
             Color Palette: Color Palette
             Server Docs: Server Docs
             Installing: Installing
@@ -139,6 +140,7 @@ plugins:
             Filters: Filtres
             Advanced Options: Options Avancées
             Waypoints: Points de Repère
+            Waypoint Groups: Groupes de Points de Repère
             Color Palette: Palette de Couleurs
             Server Docs: Docs Serveur
             Commands: Commandes
@@ -188,6 +190,7 @@ plugins:
             Filters: Filtros
             Advanced Options: Configuración Avanzada
             Waypoints: Puntos de Ruta
+            Waypoint Groups: Grupos de Puntos de Ruta
             Color Palette: Paleta de Colores
             Server Docs: Documentos del Servidor
             Installing: Instalación
@@ -243,6 +246,7 @@ nav:
           - Filters: client/settings/filters.md
           - Advanced Options: client/settings/advanced.md
       - Waypoints: client/waypoints.md
+      - Waypoint Groups: client/waypoint-groups.md
       - Color Palette: client/color-palette.md
   - Server Docs:
       - Installing: server/installing.md
