@@ -82,8 +82,10 @@ plugins:
             Waypoint: Waypoint
             Waypoint Beacons: Waypoint Beacons
             Cartography: Cartography
+            Filters: Filters
             Advanced Options: Advanced Options
             Waypoints: Waypoints
+            Color Palette: Color Palette
             Server Docs: Server Docs
             Installing: Installing
             Basic Usage: Basic Usage
@@ -101,6 +103,7 @@ plugins:
             Waypoint: Waypoint
             Tools & Customisation: Tools & Customisation
             Custom Mob Icons: Custom Mob Icons
+            Waypoint Icons: Waypoint Icons
             Integrate your mod: Integrate your mod
             JourneyMap Tools: JourneyMap Tools
             Map a multiplayer server: Map a multiplayer server
@@ -133,8 +136,10 @@ plugins:
             Waypoint:  Point de Repère
             Waypoint Beacons: Balises de Point de Repère
             Cartography: Cartographie
+            Filters: Filtres
             Advanced Options: Options Avancées
             Waypoints: Points de Repère
+            Color Palette: Palette de Couleurs
             Server Docs: Docs Serveur
             Commands: Commandes
             Global Properties: Propriétés Globales
@@ -146,6 +151,7 @@ plugins:
             Endpoints: Points de Terminaison
             Tools & Customisation: Outils & Personnalisation
             Custom Mob Icons: Icônes de Mobs Personnalisées
+            Waypoint Icons: Icônes de Points de Repère
             Integrate your mod: Intégrez votre mod
             JourneyMap Tools: Outils JourneyMap
             Map a multiplayer server: Cartographier un serveur multijoueur
@@ -179,8 +185,10 @@ plugins:
             Waypoint: Punto de Ruta
             Waypoint Beacons: Balizas de Punto de Ruta
             Cartography: Cartografía
+            Filters: Filtros
             Advanced Options: Configuración Avanzada
             Waypoints: Puntos de Ruta
+            Color Palette: Paleta de Colores
             Server Docs: Documentos del Servidor
             Installing: Instalación
             Basic Usage: Uso Básico
@@ -198,6 +206,7 @@ plugins:
             Waypoint: Punto de Ruta
             Tools & Customisation: Herramientas y Personalización
             Custom Mob Icons: Iconos de Mobs Personalizados
+            Waypoint Icons: Iconos de Puntos de Ruta
             Integrate your mod: Integra Tu Mod
             JourneyMap Tools: Herramientas de JourneyMap
             Map a multiplayer server: Mapa en Servidor Multijugador
@@ -231,8 +240,10 @@ nav:
           - Waypoint: client/settings/waypoint.md
           - Waypoint Beacons: client/settings/waypoint-beacon.md
           - Cartography: client/settings/cartography.md
+          - Filters: client/settings/filters.md
           - Advanced Options: client/settings/advanced.md
       - Waypoints: client/waypoints.md
+      - Color Palette: client/color-palette.md
   - Server Docs:
       - Installing: server/installing.md
       - Basic Usage: server/basic-usage.md
@@ -248,8 +259,13 @@ nav:
       - Multiplayer: server/multiplayer.md
       - Endpoints:
           - Waypoint: server/endpoints/waypoint.md
+  - Webmap:
+      - Installing: webmap/installing.md
+      - Basic Usage: webmap/basic-usage.md
+      - Settings: webmap/settings.md
   - Tools & Customisation:
       - Custom Mob Icons: tools/custom-mob-icons.md
+      - Waypoint Icons: tools/waypoint-icons.md
       - Integrate your mod: tools/integration.md
       - JourneyMap Tools: tools/journeymap-tools.md
       - Map a multiplayer server: tools/multiplayer-server.md
