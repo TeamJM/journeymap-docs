@@ -1,6 +1,6 @@
 ## **Overview**
 
-You don't have to have JourneyMap Server installed to use the JourneyMap Client. It simply provides a way for server admins to restrict some features, and/or support Bukkit Multiworld and BungeeCord installations. Some features may not be available in both Forge and Bukkit server environments, however, so please read the information on this page and the changelogs for each release to get specific information on features for your server.
+You don't have to have JourneyMap installed on the server to use the JourneyMap client. Installing it on the server gives admins a way to restrict some client features, manage waypoints, and support multi-world and proxy (BungeeCord / Velocity) setups. JourneyMap server runs on Fabric, NeoForge, and Forge servers, and on Paper servers (Minecraft 26.1 line). See [Installing](installing.md) for details.
 
 ## **Server Admin Config**
 
@@ -12,9 +12,9 @@ If the button does not appear, you may need to log out and back into your server
 
 By default, all Opped users have access to the Server Admin screen. This can be changed via a config file on the server. 
 
-The config file location for Fabric Servers: `(server_folder)/configs/journeymap_server.cfg`.
+The config file location for Fabric servers: `(server_folder)/configs/journeymap_server.cfg`.
 
-The config file location for Forge Servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
+The config file location for NeoForge and Forge servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
 ```text
     server {

@@ -2,6 +2,13 @@
 
 The External Waypoint Packet Listener is a feature that allows the server to send waypoints to the client. This is useful for server admins who want to provide waypoints to players without requiring an addon mod.
 
+!!! note "Stable API"
+
+    This packet is a stable, public interface intended for Bukkit and
+    Paper plugins. Its channel and payload shape are kept backwards
+    compatible, so plugins built against it continue to work across
+    JourneyMap releases.
+
 ## **Examples**
 
 Below is an example of what the packet json looks like and what information the server sends to the client to process and interpret.
