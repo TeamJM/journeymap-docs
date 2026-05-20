@@ -1,29 +1,41 @@
-# **Dimension : minecraft:the_end**
+# **Dimension: minecraft:the_end**
 
-La catégorie **Dimension : minecraft:the_end** contient des paramètres qui seront les paramètres par défaut pour la dimension de l'End.
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
+
+The Dimension: minecraft:the_end category contains settings that will be the default settings for the end dimension.
 
 ![Dimension-Minecraft-End](../../img/settings/server/dimension-minecraft-end.png){: .center}
 
-## **Commutateurs**
+## **Toggles**
 
-| Commutateur                | Description                                                                              |
-|----------------------------|------------------------------------------------------------------------------------------|
-| Activer                    | Activer cette dimension remplacera les propriétés globales pour cette dimension.         |
-| Téléportation de Point de Repère | Permet ou empêche la téléportation via le gestionnaire de points de repère et le menu contextuel plein écran. |
-| Radar des Joueurs          | Indique si les joueurs peuvent voir d'autres joueurs sur la carte.                     |
-| Radar des Villageois       | Indique si les joueurs peuvent voir des villageois sur la carte.                       |
-| Radar des Animaux          | Indique si les joueurs peuvent voir des animaux sur la carte.                          |
-| Radar des Monstres/Hostiles| Indique si les joueurs peuvent voir des monstres ou des entités hostiles sur la carte. |
+| Toggle                  | Description                                                                                                                                                                              |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable                  | Enabling this dimension will override the global properties for this dimension.                                                                                                           |
+| Allow Minimap           | Enable or disable the minimap.                                                                                                                                                           |
+| Hide Coordinate Display | Hides all coordinate displays, prevents editing of coordinate values for waypoints. Replaces most coordinate displays with "Unknown Location" text. Does not affect existing waypoint names. |
+| Global Waypoints Only   | When enabled, players can only view and toggle the visibility of global waypoints. Creating, editing, and deleting personal waypoints is disabled.                                        |
+| Allow All Teleporting   | Allows Waypoint and Fullscreen Context menu teleporting. Waypoint Only Teleporting takes priority.                                                                                        |
+| Dimension Teleport      | Enable Cross Dimension Waypoint teleporting for non-op users. OP users can use it always.                                                                                                |
+| Player Radar            | If players can see other players on the map.                                                                                                                                             |
+| Player Names            | If players can see other player's names on the map.                                                                                                                                      |
+| Villager Radar          | If players can see villagers on the map.                                                                                                                                                 |
+| Animal Radar            | If players can see animals on the map.                                                                                                                                                   |
+| Monster/Hostile Radar   | If players can see monsters or hostile entities on the map.                                                                                                                              |
 
-## **Autres Paramètres**
+## **Other Settings**
 
-L'option par défaut pour chaque paramètre ci-dessous est marquée par un texte **gras**.
+The default option for each setting below is marked with **bold** text.
 
-| Paramètre                    | Options                                           | Description                                                                                                                                              |
-|------------------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Forcer la Portée de Rendu de Carte Max | <ul><li>Portée : 0 - 32 **Par défaut 0**</li></ul>  | Force tous les joueurs à une distance maximale de rendu de chunk pour la carte.                                                                            |
-| Cartographie de Surface       | <ul><li>**Tout**</li><li>Administrateur</li><li>Aucun</li></ul> | Cartographie de Surface pour Tout, Administrateurs, Aucun                                                                                                          |
-| Cartographie de Biome         | <ul><li>**Tout**</li><li>Administrateur</li><li>Aucun</li></ul> | Cartographie de Biome pour Tout, Administrateurs, Aucun.                                                                                                           |
-| Cartographie de Topographie    | <ul><li>**Tout**</li><li>Administrateur</li><li>Aucun</li></ul> | Cartographie de Topographie pour Tout, Administrateurs, Aucun.                                                                                                      |
-| Cartographie de Grottes       | <ul><li>**Tout**</li><li>Administrateur</li><li>Aucun</li></ul> | Cartographie de Grottes pour Tout, Administrateurs, Aucun.                                                                                                          |
-| Radar Général                 | <ul><li>**Tout**</li><li>Administrateur</li><li>Aucun</li></ul> | <ul><li>Tout : Le radar fonctionne pour tout le monde</li><li>Administrateur : Désactive complètement le radar pour tout le monde sauf les utilisateurs OP</li><li>Aucun : Le radar est désactivé pour tout le monde.</li></ul> |
+| Setting                            | Options                                           | Description                                                                                                                                                                                                                                              |
+|-------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Force Map Surface Render Range Max  | <ul><li>Range: 0 - 32 **Default is 0**</li></ul>  | Force all players to a maximum chunk surface render distance for the map. 0 to use client settings. This setting only forces the max, it does not increase their render range. This value is not reflected in the client's Cartography options.            |
+| Force Map Cave Render Range Max     | <ul><li>Range: 0 - 32 **Default is 0**</li></ul>  | Force all players to a maximum chunk cave render distance for the map. 0 to use client settings. This setting only forces the max, it does not increase their render range. This value is not reflected in the client's Cartography options.               |
+| Surface Mapping                     | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Surface Mapping for All, Ops, None.                                                                                                                                                                                                                      |
+| Topography Mapping                  | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Topography Mapping for All, Ops, None.                                                                                                                                                                                                                   |
+| Biome Mapping                       | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Biome Mapping for All, Ops, None.                                                                                                                                                                                                                        |
+| Cave Mapping                        | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Cave Mapping for All, Ops, None.                                                                                                                                                                                                                         |
+| Radar General                       | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | <ul><li>All: Radar works for everyone, use individual check boxes to disable specific.</li><li>Op: Fully disables radar for everyone but OP users, check boxes work for Ops.</li><li>None: Radar is disabled for everyone.</li></ul>                       |

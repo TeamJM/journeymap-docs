@@ -1,25 +1,46 @@
-## **Paramètres de la Webmap**
+# **Webmap Settings**
 
-La webmap est une manière totalement différente de voir votre carte - dans un navigateur web au lieu de directement depuis Minecraft. Cela vous permet d'avoir une vue de la carte visible sur un autre écran, ou même sur un autre appareil!
+!!! warning "Translation needed for 6.0"
 
-![Paramètres de la Webmap](../../img/settings/client/webmap.png){: .center}
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-!!! info "Important"
+The webmap is a different way to view your map: in a web browser instead
+of in-game. This lets you keep a map view on a second monitor or another
+device on your network.
 
-    Il y a beaucoup de paramètres dans cette catégorie qui ne font rien pour le moment. À la place, la webmap est configurée en utilisant sa propre interface - voir la page de la webmap pour plus d'informations à ce sujet.
+![Webmap-Settings](../../img/settings/client/webmap.png){: .center}
 
-    C'est pourquoi seuls les paramètres qui font réellement quelque chose sont documentés ci-dessous.
+!!! info "Requires the Webmap addon"
 
-## **Bascules**
+    As of JourneyMap 6.0 the webmap is a separate addon mod. This
+    settings category is always shown, but the settings only take effect
+    when the JourneyMap Webmap addon is installed. If the addon is not
+    installed, the settings are disabled.
 
-Par défaut, **aucun** des paramètres de bascule suivants n'est activé. Vous devrez activer la webmap avant de pouvoir l'utiliser.
+    See the [Webmap](../../webmap/installing.md) section for how to
+    install and use it.
 
-| Bascule         | Description                                         |
-|-----------------|-----------------------------------------------------|
-| Activer la Webmap | Que la webmap soit activée et accessible            |
+## **Toggles**
 
-!!! note "Note"
+This toggle is **off** by default.
 
-    Bien qu'il y ait une entrée pour fournir un port pour que la webmap l'utilise, elle est actuellement ignorée. JourneyMap essaiera d'utiliser le port 8080 par défaut - si celui-ci n'est pas disponible, il tentera de trouver un port qui l'est.
+| Toggle         | Description                                          |
+|----------------|------------------------------------------------------|
+| Enable Web Map | Whether the webmap server is enabled and accessible. |
 
-    Le port correct est toujours affiché dans le chat lorsque la webmap est activée.
+## **Other Settings**
+
+| Setting | Options                               | Description                                  |
+|---------|---------------------------------------|----------------------------------------------|
+| Port    | Range: 80 - 65535 (Default: **8080**) | The port the webmap server tries to bind to. |
+
+!!! note "Port selection"
+
+    If the configured port is already in use, the webmap falls back to a
+    free port chosen by the operating system instead of failing to
+    start, so the port actually used can differ from what you set. If
+    the Announce Mod advanced option is enabled (the default), JourneyMap
+    posts the webmap address in chat once when you join a world. The
+    resolved port is also written to the game log.

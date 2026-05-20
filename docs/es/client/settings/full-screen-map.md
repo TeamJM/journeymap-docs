@@ -1,53 +1,75 @@
-# **Configuración del Mapa en Pantalla Completa**
+# **Full-Screen Map Settings**
 
-El mapa en pantalla completa proporciona una vista grande y desplazable de todo el mapa. Al igual que los ajustes preestablecidos del minimapa, se puede personalizado en gran medida.
+!!! warning "Translation needed for 6.0"
 
-Para abrir el mapa en pantalla completa, presione la tecla del mapa en pantalla completa (la tecla ++j++ de forma predeterminada).
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-![Configuración-de-pantalla-completa](../../img/settings/client/full-screen.png){: .center}
+The full-screen map provides a large, scrollable view of your entire map. Just like the minimap presets, it can be
+customized to a great deal.
 
-!!! note "Nota"
+To switch open the full-screen map, press the full-screen map key (the ++j++ key by default).
 
- Algunas de las siguientes opciones también están disponibles como botones en la vista del mapa en pantalla completa. Para obtener más información sobre esto, consulte la [página del mapa en pantalla completa](../full-screen-map.md).
+![Full-Screen-Settings](../../img/settings/client/full-screen.png){: .center}
 
-## **Alternar**
+!!! note "Note"
 
-De forma predeterminada, todas las siguientes configuraciones de alternancia están habilitadas.
+    A handful of the following options are also available as buttons on the full-screen map view itself. For more information on this, please see the [full-screen map page](../full-screen-map.md).
 
-| Alternar | Descripción |
-|---------------------|-------------------------- -----------------------------------------|
-| Ubicación del mouse | Mostrar la ubicación del bloque del mouse encima de los botones |
-| Ubicación del jugador | Mostrar la ubicación del jugador debajo de los botones superiores |
-| Mostrar animales | Mostrar u ocultar animales en el mapa |
-| Mostrar Cuevas | Alternar el cambio automático al modo cueva cuando esté bajo tierra o en interiores |
-| Mostrar nombres de entidades | Mostrar u ocultar nombres de entidades en el mapa |
-| Mostrar cuadrícula | Mostrar u ocultar la cuadrícula superpuesta en el mapa |
-| Mostrar teclas | Mostrar u ocultar las combinaciones de teclas y descripciones en el mapa |
-| Mostrar orientación de los mobs | Alternar mostrar en qué dirección están mirando los mobs en el mapa |
-| Mostrar mobs | Mostrar u ocultar mobs en el mapa |
-| Mostrar mascotas | Mostrar u ocultar mascotas en el mapa |
-| Mostrar orientación de los jugadores | Alternar mostrar en qué dirección miran otros jugadores en el mapa |
-| Mostrar jugadores | Mostrar u ocultar otros jugadores en el mapa |
-| Mostrar al jugador | Muestra u oculta tu propia ubicación y rumbo en el mapa |
-| Mostrar aldeanos | Mostrar u ocultar aldeanos en el mapa |
-| Mostrar las etiquetas de puntos de ruta | Mostrar u ocultar los nombres de los puntos de ruta en el mapa |
-| Mostrar puntos de ruta | Mostrar u ocultar todos los puntos de ruta en el mapa |
-| Ubicación detallada | Alternar entre una forma larga o corta de sus coordenadas actuales |
+## **Toggles**
 
-## **Otras Configuraciones**
+The default state of each toggle is shown in the table below. Toggles that are **bold** are enabled by default.
 
-La opción predeterminada para cada configuración a continuación está marcada con texto **negrita**.
+| Toggle                       | Description                                                                                                  |
+|------------------------------|--------------------------------------------------------------------------------------------------------------|
+| **Mouse Location**           | Show mouse block location above the buttons                                                                  |
+| **Pause Game**               | Pauses the game while the fullscreen map is open. Only affects singleplayer worlds                           |
+| **Player Location**          | Show player location below the top buttons                                                                   |
+| **Show Animals**             | Nearby passive mobs are shown on the map                                                                     |
+| Show Ambient Creatures       | Nearby ambient creatures, like bats, are shown on the map                                                    |
+| **Show Caves**               | Switch to Cave map when underground or indoors                                                               |
+| Show Entity Names            | Show names of pets, NPCs, etc. on the map                                                                    |
+| **Show Grid**                | Show a grid of chunk boundaries on the map                                                                   |
+| Show Hostile Mob Names       | Show names of hostile mobs on the map                                                                        |
+| **Show Keys**                | Show key bindings and descriptions                                                                           |
+| Show Mob Headings            | Show which direction mobs are looking                                                                        |
+| **Show Mobs**                | Nearby hostile mobs are shown on the map                                                                     |
+| Show NPC Names               | Show names of NPCs on the map                                                                                |
+| Show No Icon Entity Names    | Show names for entities that have no icon. This overrides all other show name fields                         |
+| **Show Off-Screen Players**  | Visible players that are offscreen will have their icon rendered on the border of the map                    |
+| Show Ambient Creature Names  | Show names of ambient creatures on the map                                                                   |
+| Show Passive Mob Names       | Show names of passive mobs on the map                                                                        |
+| Show Pet Names               | Show names of pets on the map                                                                                |
+| **Show Pets**                | Nearby pets are shown on the map                                                                             |
+| Show Player Headings         | Show which direction other players are looking                                                               |
+| Show Player Names            | Show names of players on the map                                                                             |
+| **Show Players**             | Nearby players are shown on the map                                                                          |
+| **Show Self**                | Your locator icon is shown on the map                                                                        |
+| **Show Team Names**          | Show names of teams on the map                                                                               |
+| **Show Theme Button**        | Shows the theme selection button on the fullscreen map                                                       |
+| Show Villager Names          | Show names of villagers on the map                                                                           |
+| **Show Villagers**           | Nearby villagers are shown on the map                                                                        |
+| **Show Waypoint Labels**     | Show waypoint labels on the map                                                                              |
+| **Show Waypoints**           | Nearby waypoints are shown on the map                                                                        |
+| **Verbose Location**         | Location shows coordinate names (x, y, z) with the numbers                                                   |
 
-| Configuración | Opciones | Descripción |
-|---------------------|-------------------------- -------------------------------------------------- -------------------------------------------------- ----------------------|--------------------- -------------------------------------------------- -------------------------------------------------- ---------------------------------------|
-| Escala de la fuente | <ul><li>Rango: 0,5 - 5 **El valor predeterminado es 1**</li></ul> | La escala de fuentes para etiquetas y texto |
-| Ubicación | <ul><li>**x, z, y (v)**</li><li>x, y, (v), z</li><li>x, z, y</li> <li>x, y, z</li><li>x, z</li></ul> | El formato de sus coordenadas, como se muestra en el mapa. |
-| Mostrar mobs | <ul><li>**Puntos**</li><li>Iconos</li></ul> | Cómo se deben mostrar los mobs en el mapa. |
-| Escala de visualización de los mobs | <ul><li>Rango: 0,01 - 5 <br>**El valor predeterminado es 1**</li></ul> | La escala de los iconos y puntos de Mobs en el mapa. |
-| Pantalla del jugador | <ul><li>**Puntos**</li><li>Iconos</li></ul> | Cómo deberían aparecer otros jugadores en el mapa. |
-| Escala de visualización del jugador | <ul><li>Rango: 0,01 - 5 <br>**El valor predeterminado es 1**</li></ul> | La escala de los iconos y puntos del jugador en el mapa. |
-| Escala de visualización automática | <ul><li>Rango: 0,01 - 5 <br>**El valor predeterminado es 1**</li></ul> | La escala de tu propio icono en el mapa. |
-| Diseño de la interfaz | <ul><li>**OceanMonument**</li><li>Templo del Desierto</li><li>EndCity</li><li>ForestMansion</li><li>NetherFortress</li><li >Purista</li><li>Fortaleza</li></ul> | Cambie el tema de los botones alrededor del mapa en pantalla completa - **Nota**: Si tiene temas adicionales instalados, habrá más para alternar de los que se muestran aquí |
-| Escala del icono de punto de ruta | <ul><li>Rango: 1 - 5 <br>**El valor predeterminado es 1**</li></ul> | La escala de los iconos de puntos de ruta en el mapa. |
-| Escala de etiqueta del punto de ruta | <ul><li>Rango: 0,5 - 5 <br>**El valor predeterminado es 1**</li></ul> | La escala de fuente para las etiquetas de puntos de ruta en el mapa. |
-| Arrasstrar escala | <ul><li>Rango: 1 - 5 <br>**El valor predeterminado es 1**</li></ul> | Escala de arrastre personalizada, un número mayor lo ralentiza. Esto es útil cuando su sistema operativo muestra escala, principalmente pantallas retina OSX. |
+!!! note "Minimal UI"
+
+    Minimal UI is a new fullscreen-only toggle in JourneyMap 6.0. It is **disabled** by default. When enabled, it hides a bunch of the buttons to make the fullscreen map UI a bit more minimal.
+
+## **Other Settings**
+
+The default option for each setting below is marked with **bold** text.
+
+| Setting              | Options                                                                                            | Description                                                       |
+|----------------------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Font Scale           | <ul><li>Range: 0.5 - 5 <br>**Default is 1**</li></ul>                                              | The font scale for labels and text                                |
+| Location             | <ul><li>**x, z, y (v)**</li><li>x, y (v), z</li><li>x, z, y</li><li>x, y, z</li><li>x, z</li></ul> | Format of how location coordinates are displayed. 'v' stands for vertical chunk |
+| Mob Display          | <ul><li>Dots</li><li>Icons</li><li>Outlined Icons</li><li>Dots and Icons</li><li>**Dots and Outlined Icons**</li></ul> | Show mobs as icons or colored dots                |
+| Mob Display Scale    | <ul><li>Range: 0.01 - 5 <br>**Default is 1**</li></ul>                                             | The scale for Mob icons and dots                                  |
+| Player Display       | <ul><li>Dots</li><li>Icons</li><li>**Outlined Icons**</li><li>Dots and Icons</li><li>Dots and Outlined Icons</li></ul> | Show players as icons or colored dots          |
+| Player Display Scale | <ul><li>Range: 0.01 - 5 <br>**Default is 1**</li></ul>                                             | The scale for Player icons and dots                               |
+| Self Display Scale   | <ul><li>Range: 0.01 - 5 <br>**Default is 1**</li></ul>                                             | The scale for the self icon                                       |
+| Waypoint Icon Scale  | <ul><li>Range: 1 - 5 <br>**Default is 1**</li></ul>                                                | The scale for waypoint icons on the map                           |
+| Waypoint Label Scale | <ul><li>Range: 0.5 - 5 <br>**Default is 1**</li></ul>                                              | The font scale for waypoint labels on the map                     |

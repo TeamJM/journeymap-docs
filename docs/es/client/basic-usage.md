@@ -1,23 +1,31 @@
 ## **Uso básico**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 Una vez que tenga JourneyMap [instalado](installing.md), todo lo que necesita hacer es unirse a un servidor o cargar un mundo para un solo jugador.
 
 En su mayor parte, JourneyMap funciona desde el primer momento. ¡Todo lo que necesitas hacer para empezar  a mapear tu mundo es comenzar a explorarlo! El área a su alrededor se mapeará automáticamente a medida que viaje y será visible en cada uno de los tres tipos de mapas que admite JourneyMap.
 
 ## **Asignaciones de Teclas**
 
-Las siguientes asignaciones de teclas están disponibles de forma predeterminada cuando juegas en un servidor mundial o multijugador.
+The following key mappings are available by default when you are playing on a world or multiplayer server.
 
-- ++j++ - Mostrar/ocultar el mapa en pantalla completa
-- ++ctrl+j++ - Mostrar/ocultar el mini-mapa
-- ++equal+minus++ - Acerca y aleja el mini-mapa respectivamente
-- ++bracket-left++ - Cambia el tipo de mapa que se muestra en el mini-mapa
-- ++bar++ - Cambiar entre ajustes preestablecidos de mini-mapa
-- ++b++ - Crea [un punto de ruta](waypoints.md) donde estás parado actualmente
-- ++ctrl+b++ - Abra el [administrador de puntos de ruta](waypoints.md) (esto entra en conflicto con la combinación de teclas del narrador, por lo que es posible que desee cambiarla o desactivarla)
-- ++z++ - Alterna la visibilidad de todos los puntos de ruta
+- ++j++ - Show or hide the full-screen map
+- ++ctrl+j++ - Show or hide the minimap. On Fabric this is ++m++ instead, because Fabric does not support modifier keys for keybinds
+- ++equal++ / ++minus++ - Zoom the minimap in and out
+- ++bracket-left++ - Cycle the map type shown in the minimap
+- ++backslash++ - Switch between minimap presets
+- ++b++ - Create [a waypoint](waypoints.md) where you are standing
+- ++n++ - Open the [waypoint manager](waypoints.md)
+- ++g++ - Toggle entity name labels
 
-Todas las teclas especificadas en la documentación se pueden personalizar en la configuración propia de Minecraft. Simplemente abra el menú (de forma predeterminada, con la tecla ++esc++), haga clic en Opciones y luego en Controles, y verá dos nuevas categorías para todas las teclas de JourneyMap.
+JourneyMap also has keybinds for toggling waypoint rendering (all waypoints, in-world only, or on-map only). These are unbound by default - assign them in Minecraft's Controls if you want them.
+
+All keys specified in the documentation can be customized in Minecraft's own settings. Just open the menu (by default, with the ++esc++ key), click on Options and then Controls, and you will see two new categories for all of JourneyMap's keys.
 
 ## **Marcadores**
 
@@ -54,12 +62,12 @@ Este es tu mini-mapa. De forma predeterminada, muestra el área alrededor de tu 
 
 El mini-mapa se puede acercar y alejar en cualquier momento presionando cualquiera de las teclas de zoom (por defecto, las teclas ++equal++ y ++minus++).
 
-Las cuatro líneas de texto encima y debajo del mini-mapa se conocen como espacios de información. De forma predeterminada, muestran (en orden):
+The text above and below the minimap is shown in info slots. There are four of them. By default they show:
 
-- La hora actual en el mundo real.
-- La hora actual en el juego.
-- La coordenada de tu personaje.
-- El bioma actual en el que se encuentra tu personaje.
+- Slot 1: nothing (blank)
+- Slot 2: the in-game time
+- Slot 3: your coordinates
+- Slot 4: the biome you are in
 
 El mini-mapa y sus espacios de información se pueden personalizar en el [administrador de configuración](settings/minimap.md).
 
@@ -69,14 +77,14 @@ Al presionar la tecla del mapa de pantalla completa (de forma predeterminada, la
 
 ![Full-Screen-Map](../img/full-screen.png){: .center}
 
-Este mapa le brinda una vista desplazable de todas las áreas del mapa que ha explorado hasta ahora, mostradas como estaban cuando las descubrió. También proporciona acceso a la configuración de JourneyMap y a una serie de opciones de visualización de mapas.
+This map gives you a scrollable view of all the areas of the map you have explored so far, displayed as it was when you discovered them. It also provides access to JourneyMap's Settings and a number of map display options.
 
 Para obtener más información sobre el mapa en pantalla completa, consulte la [página del mapa en pantalla completa](settings/full-screen-map.md).
 
 ## **Mapa Web**
 
-Una vez habilitado en el [administrador de configuración](settings/webmap.md), el mapa web le permite ver y explorar su mapa generado en un navegador web, incluido el acceso a él desde otro dispositivo (como un teléfono o tableta). Esto funcionará mientras el juego esté funcionando.
+The webmap lets you view and explore your map in a web browser, including from another device such as a phone or tablet, while the game is running. As of JourneyMap 6.0 the webmap is a separate addon mod.
 
 ![Mapa web](../img/webmap.png){: .center}
 
-Para obtener más información sobre el mapa web, consulte [página del mapa web](settings/webmap.md).
+See the [Webmap](../webmap/installing.md) section for how to install and use it.

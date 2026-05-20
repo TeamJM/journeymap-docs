@@ -1,47 +1,60 @@
-# **Configuración Avanzada**
+# **Advanced Settings**
 
-Esta sección contiene configuraciones avanzadas para usuarios avanzados y aquellos que deseen modificar algunas de las partes internas de JourneyMap.
+!!! warning "Translation needed for 6.0"
 
-!!! warning "Advertencia"
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
- La configuración de esta sección puede tener efectos extremos en el rendimiento de su cliente. No recomendamos tocar estas configuraciones a menos que comprenda bien lo que está haciendo o que un miembro del personal de soporte de JourneyMap se lo indique.
+This section contains advanced settings for power users and those that may wish to tweak some of JourneyMap's internals.
 
- Si modificar estas configuraciones bloquea su cliente o hace que su computadora se retrase terriblemente, no diga que no le avisamos.
+!!! warning "Warning"
 
-![Configuración-avanzada](../../img/settings/client/advanced-options.png){: .center}
+    The settings in this section can have extreme effects on the performance of your client. We don't recommend touching these settings unless you have a good understanding of what you're doing, or you're directed to do so by a member of the JourneyMap support staff.
 
-## **Alternar**
+    If tweaking these settings crashes your client or causes your computer to lag horribly, don't say we didn't warn you.
 
-Las configuraciones de alternancia en **negrita** que aparecen a continuación están habilitadas de forma predeterminada.
+![Advanced-Settings](../../img/settings/client/advanced-options.png){: .center}
 
-| Alternar | Descripción |
-|----------------------------|-------------------- -------------------------------------------------- -------------------------------------------------- ---------------------------------|
-| **Anuncios del Mod** | Si anunciar en el chat cuando JourneyMap esté listo para usarse |
-| **Comprobar actualizaciones del mod** | Si JourneyMap debería buscar actualizaciones sobre Curse |
-| **Almacenamiento en caché de fragmentos de datos** | Habilita o deshabilita el almacenamiento en caché de fragmentos |
-| Comprobación de errores GL | Activa o desactiva la comprobación de errores de OpenGL |
-| **Ocultar entidades agachadas** | Si las entidades que se esconden o se agachan deben ocultarse |
-| Ocultar espectadores | Si los espectadores deberían permanecer ocultos en el radar |
-| **Mostrar en alta calidad** | Desmarque para mejorar el rendimiento del zoom y el uso de la memoria, pero reduce la calidad de visualización y el rendimiento de la rotación del minimapa cuando se establece en “Mi rumbo” |
-| Soporte multimundial | Habilita o deshabilita el soporte multimundo. Nota: es posible que esto no funcione para todos los servidores. |
-| Registro de estadísticas de caché | Esto está destinado a probadores beta: habilite el registro de estadísticas para cada caché |
+## **Toggles**
 
-## **Otras Configuraciones**
+The **bold** toggle settings below are enabled by default.
 
-La opción predeterminada para cada configuración a continuación está marcada con **texto en negrita**.
+| Toggle                          | Description                                                                                                                                          |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Announce Mod**                | Announces in the chat window that JourneyMap is ready                                                                                                |
+| **Check for Mod Updates**       | Turning this off means you won't be notified when there's a new version of JourneyMap available                                                      |
+| **Chunk Data Caching**          | Enables or disables chunk caching - when disabled, teleporting or creating waypoints outside of your render range will default to sea level y=64      |
+| GL Error Checking               | Enables OpenGL error checking - enabling can decrease performance, and a restart is required after changing this value                               |
+| **Hide Sneaking Entities**      | Whether to hide creatures that are trying to sneak (crouch)                                                                                          |
+| Hide Spectators                 | Whether to hide spectators on the radar                                                                                                              |
+| **LOD Tiles**                   | Enable LOD (level-of-detail) tile rendering when zoomed out on the map - disabling and saving will delete LOD cache files from disk                  |
+| **Minimap Preset Number Overlay** | Show or hide the number overlay displayed when switching minimap presets                                                                           |
+| **Mob Icon Fade**               | Enable or disable mob icons fading based on vertical distance from the player                                                                        |
+| Multi World Support             | Experimental: prevents map overwriting in multi-world server setups - only takes effect after rejoining the server                                   |
+| **Player Icon Fade**            | Enable or disable player icons fading based on vertical distance from the player                                                                     |
+| Record Cache Statistics         | Whether to enable caches to record their statistics - may slightly hurt performance if enabled - intended for beta testers                           |
+| **Render Minimap behind Screens** | Allow the minimap to render behind open screens                                                                                                    |
+| Use Legacy Icons                | Use the mob icons that come with JourneyMap instead of automatically generated ones or those that come in resource packs                             |
+| Use Server IP                   | Use the server IP address in data saving to help keep maps unique - only takes effect after rejoining the server                                     |
 
-| Configuración | Opciones | Descripción |
-|--------------------------------|------------------------ -------------------------------------------------- -----------------------------------------|-- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ---|
-| Nivel de registro | <ul><li>**INFO**</li><li>TODO</li><li>DEPURACIÓN</li><li>ERROR</li><li>FATAL</li><li> APAGADO</li><li>RASTREO</li><li>ADVERTENCIA</li></ul> | Establezca qué tan detallados son los registros de JourneyMap, pero tenga en cuenta que algunos niveles de registro pueden causar graves problemas de rendimiento.
-| Frecuencia del mapa automatico | Rango: 500 - 10000 (en ms) <br>El valor predeterminado es **2000** | Retraso entre tareas de región de mapa automático: valores más bajos harán que el mapa se genere más rápido, pero causarán caídas significativas en el rendimiento durante el mapeo |
-| Caché de animales | Rango: 1000 - 10000 (en ms) <br>El valor predeterminado es **3100** | Durante cuánto tiempo se almacenan en caché los datos de radar de los animales: valores más bajos afectarán el rendimiento |
-| Caché de mobs | Rango: 1000 - 10000 (en ms) <br>El valor predeterminado es **3000** | Durante cuánto tiempo se almacenan en caché los datos de radar de los mobs: valores más bajos afectarán el rendimiento |
-| Caché del jugador | Rango: 500 - 2000 (en ms) <br>El valor predeterminado es **1000** | Durante cuánto tiempo se almacenan en caché los datos de tu personaje: valores más bajos afectarán el rendimiento |
-| Caché de jugadores | Rango: 1000 - 10000 (en ms) <br>El valor predeterminado es **2000** | Durante cuánto tiempo se almacenan en caché los datos de radar de otros jugadores: valores más bajos afectarán el rendimiento |
-| Tipo de render para los fragmentos de mapa | Rango: 1 - 4 <br>El valor predeterminado es **1** | Cambie la estrategia de representación de los mosaicos del mapa si aparecen borrosos en su tarjeta de video:<ol type="1"><li>Lineal y reflejado</li><li>Lineal y fijado</li><li>Más cercano y reflejado </li><li>Más cercano y fijado</li></ol> |
-| Máximo de animales | Rango: 1 - 128 <br>El valor predeterminado es **32** | Número máximo de animales mostrados en el radar |
-| Máximo de mobs | Rango: 1 - 128 <br>El valor predeterminado es **32** | Número máximo de mobs mostrados en el radar |
-| Máximo de jugadores | Rango: 1 - 128 <br>El valor predeterminado es **32** | Número máximo de jugadores mostrados en el radar |
-| Máximo de aldeanos | Rango: 1 - 128 <br>El valor predeterminado es **32** | Número máximo de aldeanos mostrados en el radar |
-| Rango lateral del radar  | Rango: 16 - 512 (en bloques) <br>El valor predeterminado es **64** | Distancia lateral para buscar entidades para mostrar en el radar: valores altos provocarán un impacto significativo en el rendimiento |
-| Rango vertical del radar | Rango: 8 - 256 (en bloques) <br>El valor predeterminado es **16** | Distancia vertical para buscar entidades para mostrar en el radar: los valores altos provocarán un impacto significativo en el rendimiento |
+## **Other Settings**
+
+The default option for each setting below is marked with **bold text.**
+
+| Setting                | Options                                                                                                                | Description                                                                                                                       |
+|------------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Logging Level          | <ul><li>**INFO**</li><li>ALL</li><li>DEBUG</li><li>ERROR</li><li>FATAL</li><li>OFF</li><li>TRACE</li><li>WARN</li></ul> | Set how verbose JourneyMap's logs are - caution, some logging levels will hurt performance, keep the default unless instructed     |
+| AutoMap Poll Frequency | Range: 500 - 10000 (in ms) <br>Default is **2000**                                                                     | Delay between AutoMap region tasks - lower values will decrease time to AutoMap, but can hurt performance                          |
+| Cache Animals          | Range: 1000 - 10000 (in ms) <br>Default is **3100**                                                                    | Duration radar data is cached before checking for new animals - lower values can hurt performance                                 |
+| Cache Mobs             | Range: 1000 - 10000 (in ms) <br>Default is **3000**                                                                    | Duration radar data is cached before checking for new mobs - lower values can hurt performance                                    |
+| Cache Player           | Range: 500 - 2000 (in ms) <br>Default is **1000**                                                                      | Duration status data about you is cached before being rechecked - lower values can hurt performance                               |
+| Cache Players          | Range: 1000 - 10000 (in ms) <br>Default is **2000**                                                                    | Duration radar data is cached before checking for new players - lower values can hurt performance                                 |
+| Cache Villagers        | Range: 1000 - 10000 (in ms) <br>Default is **2200**                                                                    | Duration radar data is cached before checking for new villagers - lower values can hurt performance                               |
+| Maximum Animals        | Range: 1 - 128 <br>Default is **32**                                                                                   | The maximum number of passive mobs displayed on the radar - larger numbers may cause lag                                          |
+| Maximum Ambient Creatures | Range: 1 - 128 <br>Default is **32**                                                                                | The maximum number of ambient mobs displayed on the radar - larger numbers may cause lag                                          |
+| Maximum Mobs           | Range: 1 - 128 <br>Default is **32**                                                                                   | The maximum number of hostile mobs displayed on the radar - larger numbers may cause lag                                          |
+| Maximum Players        | Range: 1 - 128 <br>Default is **32**                                                                                   | The maximum number of players displayed on the radar - larger numbers may cause lag                                               |
+| Maximum Villagers      | Range: 1 - 128 <br>Default is **32**                                                                                   | The maximum number of villagers displayed on the radar - larger numbers may cause lag                                             |
+| Radar Range Lateral    | Range: 16 - 512 (in blocks) <br>Default is **64**                                                                      | Lateral distance to search for and display entities on the radar - larger numbers may cause significant lag                       |
+| Radar Range Vertical   | Range: 8 - 320 (in blocks) <br>Default is **16**                                                                       | Vertical distance to search for and display entities on the radar - larger numbers may cause significant lag                      |

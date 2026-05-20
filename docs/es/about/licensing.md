@@ -1,5 +1,11 @@
 # **Licencias**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 JourneyMap se distribuye bajo una licencia Todos los derechos reservados. Esto significa que no puede modificar, alojar ni distribuir JourneyMap usted mismo.
 
 ## **Lo que PUEDES hacer**
@@ -40,11 +46,15 @@ Todos los siguientes lanzadores están explícitamente aprobados para su uso con
 
 - [El Lanzador Pixelmon](https://pixelmonmod.com/downloads.php) tiene permiso para vincularse a JourneyMap en CurseForge en modpacks públicos y privados.
 
-- [El Lanzador SKCraft](https://github.com/SKCraft/Launcher) (o una bifurcación, suponiendo que cumpla con las condiciones anteriores) recibe permiso para usar el [mecanismo de URL personalizado](https://github.com /SKCraft/Launcher/wiki/Creating-Modpacks#download-from-a-custom-url) para vincular a JourneyMap en CurseForge en modpacks públicos y privados.
+- [El Lanzador SKCraft](https://github.com/SKCraft/Launcher) (o una bifurcación, suponiendo que cumpla con las condiciones anteriores) recibe permiso para usar el [mecanismo de URL personalizado](https://github.com/SKCraft/Launcher/wiki/Creating-Modpacks#download-from-a-custom-url) para vincular a JourneyMap en CurseForge en modpacks públicos y privados.
 
-- [El Lanzador Technic](https://www.technicpack.net/), siempre que el modpack sea un Solder modpack configurado [siguiendo estas instrucciones](https://github.com/bochen415/JourneyMap-TechnicSolder-Tutorial /wiki/JourneyMap-TechnicSolder-Tutorial). No puedes volver a alojar JourneyMap directamente usando Solder, así que asegúrate de seguir las  instrucciones vinculadas correctamente.
+- [El Lanzador Technic](https://www.technicpack.net/), siempre que el modpack sea un Solder modpack configurado [siguiendo estas instrucciones](https://github.com/bochen415/JourneyMap-TechnicSolder-Tutorial/wiki/JourneyMap-TechnicSolder-Tutorial). No puedes volver a alojar JourneyMap directamente usando Solder, así que asegúrate de seguir las  instrucciones vinculadas correctamente.
 
 - [El Lanzador de CurseForge](https://download.curseforge.com/) tiene permiso para incluir JourneyMap en paquetes de modificaciones públicos y privados.
+
+- [Modrinth](https://modrinth.com/) is granted permission to host modpacks containing JourneyMap, provided the modpacks download JourneyMap from Modrinth.
+
+- [The Modrinth App](https://modrinth.com/app) is granted permission to install modpacks containing JourneyMap, provided the modpacks are in Modrinth format and download JourneyMap from Modrinth.
 
 ## **Otras Notas**
 

@@ -1,34 +1,45 @@
-# **Configuración de Baliza de Punto de ruta**
+# **Waypoint Beacon Settings**
 
-De forma predeterminada, los puntos de referencia se muestran en el mundo mediante un haz de baliza en la distancia, lo que le permite ver dónde están desde cualquier parte del mundo. Puedes mirar hacia el haz y ver también el icono y la etiqueta del punto de ruta. Este comportamiento se puede personalizar a continuación.
+!!! warning "Translation needed for 6.0"
 
-![Configuración de baliza](../../img/settings/client/waypoint-beacons.png){: .center}
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-## **Alternar**
+By default, waypoints are displayed in the world using a beacon beam in the distance, which allows you to see where they are from anywhere in the world. You can look towards the beam and see the waypoint's icon and label as well. This behaviour can be customized below.
 
-Las configuraciones de alternancia en **negrita** que aparecen a continuación están habilitadas de forma predeterminada.
+![Beacon-Settings](../../img/settings/client/waypoint-beacons.png){: .center}
 
-| Alternar | Descripción |
-|-----------------------------|------------------- -----------------------------------------|
-| **Habilitar balizas de punto de ruta** | Muestra balizas en el juego de tus puntos de referencia |
-| Eliminación automática de puntos de muerte | Elimina automáticamente los puntos de referencia de la muerte a medida que te acercas a ellos |
-| **Ocultar etiquetas automáticamente** | Ocultar etiquetas de puntos de ruta cuando no estés mirando hacia ellas |
-| Etiqueta en negrita | Utilice etiquetas de puntos de ruta en negrita en las balizas |
-| **Rotacion del haz** | Utilice un haz exterior giratorio para balizas de punto de ruta |
-| **Mostrar distancia del punto de ruta** | Mostrar la distancia al punto de ruta en su etiqueta |
-| **Mostrar icono del punto de ruta** | Mostrar el icono de un punto de ruta con su baliza |
-| **Mostrar el nombre del punto de ruta** | Mostrar el nombre de un punto de ruta en su baliza |
-| **Icono pequeño** | Utilice un icono pequeño para balizas de puntos de ruta |
-| **Haz estatico** | Utilice un haz interior estatico para balizas de punto de ruta |
+## **Toggles**
 
-## **Otras Configuraciones**
+The **bold** toggle settings below are enabled by default.
 
-La opción predeterminada para cada configuración a continuación está marcada con **texto en negrita**.
+| Toggle                          | Description                                                                                                                                                              |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Render World Waypoints**      | Disables/Enables rendering of all waypoints in world. This does not change whether waypoints are enabled or disabled                                                      |
+| **Enable Waypoint Beacons**     | Show in-game beacons of your waypoints                                                                                                                                    |
+| Auto-Hide Icon                  | Auto-Hides the Waypoint icon, if disabled it will always show.                                                                                                            |
+| Ignore Render Distance          | Ignore the vanilla render distance setting, enabling this feature is useful when mods that expand beyond visuals vanilla render distance are present.                      |
+| **Stationary Beam**             | Use a stationary inner beam for the waypoint beacons                                                                                                                      |
+| **Rotating Beam**               | Use a rotating outer beam for the waypoint beacons                                                                                                                        |
+| **Show Name**                   | Show the name of the waypoint in its label                                                                                                                               |
+| **Show Distance**               | Show the distance (in blocks/meters) to the waypoint in its label                                                                                                        |
+| **Auto-Hide Label (Horizontal)** | Hide waypoint labels when you're not looking toward them horizontally.                                                                                                   |
+| **Auto-Hide Label (Vertical)**  | Hide waypoint labels when you're not looking toward them vertically.                                                                                                      |
+| Bold Label                      | Use bold waypoint labels on beacons                                                                                                                                      |
+| **Show Label Background**       | Show the background rectangle behind waypoint beacon labels                                                                                                              |
+| **Small Icon**                  | Use a small icon for the waypoint beacons                                                                                                                                |
+| Shader Beacon                   | Lets shaders do their thing on waypoint beacons. May have unexpected results. (Fabric only)                                                                              |
 
-| Configuración | Opciones | Descripción |
-|-----------------------------------------|---------- ------------------------------------------------|- -------------------------------------------------- ------------------|
-| Escala de la fuente | <ul><li>Rango: 0,5 - 5 <br>**El valor predeterminado es 1**</li></ul> | La escala de fuentes para etiquetas y texto |
-| Eliminar automáticamente la distancia del punto de muerte | <ul><li>Rango: 2 - 64 <br>**El valor predeterminado es 2**</li></ul> | La distancia a los puntos de ruta de muerte para eliminarlos automáticamente |
-| Distancia máxima | <ul><li>Rango: 0 - 100000 <br>**El valor predeterminado es 0**</li></ul> | La distancia máxima para mostrar puntos de ruta en |
-| Distancia mínima | <ul><li>Rango: 0 - 64 <br>**El valor predeterminado es 4**</li></ul> | La distancia mínima para mostrar puntos de ruta en |
-| Distancia de eliminación de punto de ruta temporal | <ul><li>Rango: 0 - 64 <br>**El valor predeterminado es 0**</li></ul> | La distancia desde el jugador cuando los puntos de referencia temporales se eliminan automáticamente. |
+## **Other Settings**
+
+The default option for each setting below is marked with **bold text.**
+
+| Setting                          | Options                                                   | Description                                                                                                                                                              |
+|----------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Auto-Hide Icon Range             | <ul><li>Range: 1 - 180 <br>**Default is 5**</li></ul>     | Adjust the angle in which the icon will auto hide.                                                                                                                       |
+| Auto-Hide Label Horizontal Range | <ul><li>Range: 1 - 180 <br>**Default is 5**</li></ul>     | Adjust the horizontal angle in which the label will auto hide.                                                                                                           |
+| Auto-Hide Label Vertical Range   | <ul><li>Range: 1 - 90 <br>**Default is 10**</li></ul>     | Adjust the vertical angle in which the label will auto hide.                                                                                                             |
+| Font Scale                       | <ul><li>Range: 0.5 - 5 <br>**Default is 2**</li></ul>     | The font scale for labels and text                                                                                                                                       |
+| Maximum Distance                 | <ul><li>Range: 0 - 10000 <br>**Default is 0**</li></ul>   | The maximum distance from you (in blocks/meters) that a waypoint should be displayed. Affects both waypoints on maps and waypoint beacons. Set to 0 for no maximum.       |
+| Minimum Distance                 | <ul><li>Range: 0 - 64 <br>**Default is 4**</li></ul>      | The minimum distance from you (in blocks/meters) that a waypoint beacon should be displayed. Set to 0 for no minimum.                                                     |

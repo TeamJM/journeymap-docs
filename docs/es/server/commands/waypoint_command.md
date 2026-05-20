@@ -1,42 +1,74 @@
-# **Comandos de Punto de Ruta**
+# **Waypoint Command**
 
-Comandos te permite crear y eliminar waypoints del chat.
+!!! warning "Translation needed for 6.0"
 
-Nota: <u>No se trasladará a versiones anteriores</u>
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-- Comando: punto de ruta
-- Alias: wp
+When JourneyMap is installed on the server, server admins can create and
+delete waypoints on players' clients from the chat.
 
-**Crear Punto de Ruta**
+All JourneyMap server commands live under the `/jm` prefix. The waypoint
+command is `/jm waypoint`, with `/jm wp` as a shorter alias.
 
-```text
-Los campos en [] son ​​opcionales ->
-[player] es el jugador objetivo, si no se especifica ningún jugador, mostrará un error.
-[announce] es si el jugador tiene una notificación de que se está creando un punto de ruta; si no se especifica, el valor predeterminado es falso y se crea de forma silenciosa.
-- /waypoint create "nombre" dimension x y z color [player] [announce]
-- /waypoint delete "nombre" [player] [announce]
-```
+## **Permissions**
 
-**Ejemplos**
+The command can be used by:
 
-```text
--   /waypoint create "Spawn" minecraft:overworld 1 50 12 aqua
--   /waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew
--   /waypoint create "Home" minecraft:overworld 1 50 12 aqua true~~  actualmente con errores en v5.8.x
--   /waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew true
-```
+- Players at permission level 2 (GAMEMASTERS) or higher.
+- Players in the JourneyMap server admin list.
+- Anyone in single-player.
 
-**Eliminar Punto de Ruta**
-
-Nota: <u>Solo elimina punto de ruta creados por comando</u>
+## **Create a waypoint**
 
 ```text
-/waypoint delete "NombrePuntoDeRuta"
-/waypoint delete "NombrePuntoDeRuta" true
-/waypoint delete "NombrePuntoDeRuta" mysticdrew
-/waypoint delete "NombrePuntoDeRuta" mysticdrew true
+/jm waypoint create "name" <dimension> <x> <y> <z> <color> <players> [announce]
 ```
 
-**A Partir de JourneyMap 5.9.0**
+- `"name"` - the waypoint name, in quotes.
+- `<dimension>` - the dimension id, for example `minecraft:overworld`.
+- `<x> <y> <z>` - the waypoint coordinates.
+- `<color>` - a Minecraft color name, for example `aqua`.
+- `<players>` - the target player or players. Accepts a player name, a
+  list of players, or `@a` for everyone. This argument is required.
+- `[announce]` - optional. `true` notifies the player that a waypoint
+  was created; defaults to `false` (created silently).
 
-Todos los comandos de waypoint requieren el uso del campo del jugador. Se necesita un jugador o una lista de jugadores o `@a` tanto para crear como para eliminar.
+### Examples
+
+```text
+/jm waypoint create "Spawn" minecraft:overworld 1 50 12 aqua @a
+/jm waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew
+/jm waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew true
+```
+
+## **Create a temporary waypoint**
+
+Add `temp` before `create` to create a temporary waypoint, which is not
+saved to disk:
+
+```text
+/jm waypoint temp create "name" <dimension> <x> <y> <z> <color> <players> [announce]
+```
+
+## **Delete a waypoint**
+
+```text
+/jm waypoint delete "name" <players> [announce]
+```
+
+- `"name"` - the name of the waypoint to delete.
+- `<players>` - the target player or players. Required.
+- `[announce]` - optional. `true` notifies the player; defaults to
+  `false`.
+
+Only waypoints created by the command can be deleted by the command.
+
+### Examples
+
+```text
+/jm waypoint delete "Home" @a
+/jm waypoint delete "Home" mysticdrew
+/jm waypoint delete "Home" mysticdrew true
+```

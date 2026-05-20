@@ -1,368 +1,143 @@
-## **Aperçu**
+# **UI Themes**
 
-L'apparence des barres d'outils peut être modifiée à l'aide du bouton Thème UI (icône d'une palette de peinture). Vous pouvez également créer de nouveaux thèmes avec vos propres images, icônes et couleurs.
+!!! warning "Translation needed for 6.0"
 
-## **Thèmes Disponibles**
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-- [Vault](https://minecraft.curseforge.com/projects/journeymap/files/2303051) (Fallout Pipboy)
+The look of JourneyMap's toolbars, buttons, and minimap frame is set by
+a UI theme. You can switch themes with the UI Theme button (the paint
+palette icon) on the full-screen map, and you can create your own theme
+with your own images and colors.
 
-**Si vous créez un thème vraiment sympa et souhaitez le partager avec le monde, envoyez un message privé à techbrew sur MinecraftForums (ou tweetez [@JourneyMapMod](https://twitter.com/journeymapmod) sur Twitter).**
+## **Bundled themes**
 
-## **Comment Créer un Thème UI : Début Facile**
+JourneyMap ships with two theme families:
 
-1. Copiez **.minecraft/journeymap/icon/theme/Victorian** et collez la copie dans le dossier **/theme** avec un nouveau nom, par ex. : ("MonThème")
-2. Dans votre nouveau dossier de thème :
-    1. Supprimez **Purist.theme.json**
-    2. Renommez **Victorian.theme.json** en quelque chose de nouveau (Ex : "MonThème.theme.json")
-    3. Modifiez votre nouveau fichier theme.json avec un éditeur de texte et changez le nom du répertoire, le nom du thème et les propriétés de l'auteur pour correspondre à votre dossier et fichier.
-    4. Parcourez les images dans votre répertoire de thème et voyez comment elles se rapportent aux boutons et barres d'outils dans JourneyMap.
-    5. Remplacez les images dans votre répertoire de thème par vos propres créations - sauf pour les images dans **icon/**, et assurez-vous que vos remplacements soient de la même taille que celles que vous remplacez.
-3. Utilisez le bouton Thème UI dans la Carte Plein Écran (avec l'icône d'une palette de peinture) pour passer à votre nouveau Thème.
-4. Partagez votre thème avec d'autres en compressant simplement votre dossier de thème et en le leur donnant. Lorsqu'ils le décompressent dans **.minecraft/journeymap/icon/theme/**, ils peuvent l'utiliser en appuyant sur le bouton Thème UI.
+- **Flat** - a set of flat-styled themes: Purist (the default), Desert
+  Temple, EndCity, Forest Mansion, Nether Fortress, Ocean Monument, and
+  Stronghold. These all live in the `flat` theme folder.
+- **Victorian** - a more ornate theme, in the `victorian_` theme folder.
 
-## **Comment Créer un Thème UI : Conseils Avancés**
+Use the UI Theme button to cycle through the themes available in your
+installed version.
 
-Le fichier theme.json utilise des conventions très similaires aux feuilles de style en cascade (CSS). Les images comme les icônes de bouton peuvent être colorées à l'aide de couleurs hexadécimales RGB standard, tout comme vous le feriez en CSS.
+## **Theme files**
 
-Les tailles d'image n'ont pas besoin d'être exactement les mêmes que celles que vous trouverez dans le thème Victorian. Cependant, vous devrez modifier le fichier theme.json et commencer à changer les dimensions des images pour correspondre à votre création.
+Themes live in the JourneyMap theme folder:
 
-Créez des images 2x plus grandes que les tailles que vous spécifiez dans le fichier theme.json. Cela permet d'avoir des écrans à plus haute résolution et aux personnes utilisant l'échelle GUI Auto (ou Grande) de Minecraft de disposer toujours de boutons de bonne apparence.
+```text
+.minecraft/journeymap/icon/theme/
+```
 
-## **Comment Désigner un Thème UI par Défaut dans les Modpacks**
+Each theme is a folder containing a theme definition file plus the
+images it uses. The definition file is JSON and ends in
+`.theme2.json`. JourneyMap extracts the bundled themes into this folder
+the first time it runs, so you can open them to see how a complete
+theme is built.
 
-Les modpacks peuvent fournir un thème pour les utilisateurs en créant un dossier de thème exactement comme ci-dessus. Si un auteur de modpack le souhaite, il peut également désigner ce thème comme le thème par défaut pour les utilisateurs qui utilisent JourneyMap 5 pour la première fois.
+!!! note "Theme schema 2"
 
-Cela peut être fait en créant ce fichier : .minecraft/journeymap/icon/theme/default.theme.config
+    JourneyMap 6.0 uses version 2 of the theme format. Theme files end
+    in `.theme2.json` and contain a `"schema": 2` property. Themes
+    written for older versions of JourneyMap are not compatible and
+    need to be rebuilt.
 
-Le contenu du fichier fournit le nom du dossier du thème, le nom du fichier json et le nom désigné dans le fichier json, comme suit :
+## **Creating a theme: easy start**
+
+1. Open `.minecraft/journeymap/icon/theme/` and copy one of the bundled
+   theme folders (for example `victorian_`) to a new folder with your
+   own name, for example `MyTheme`.
+2. In your new folder, rename the `.theme2.json` file to match, for
+   example `MyTheme.theme2.json`.
+3. Open that file in a text editor and change the `name`, `directory`,
+   and `author` values so they match your folder and your name. The
+   `directory` value must be the exact name of your theme folder.
+4. Replace the images in the folder with your own artwork. Keep the
+   image dimensions consistent with what the `.theme2.json` file
+   declares, or update those dimensions in the file to match your art.
+5. Use the UI Theme button on the full-screen map to switch to your
+   theme.
+6. To share your theme, zip up the theme folder and give it to others.
+   They unzip it into `.minecraft/journeymap/icon/theme/` and select it
+   with the UI Theme button.
+
+## **The theme file structure**
+
+A `.theme2.json` file is read with GSON. You edit the values, but you
+cannot change the structure. The top level has:
+
+- `schema` - the theme format version. Must be `2`.
+- `author`, `name`, `directory` - identifying information.
+- `container` - toolbar specs (see below).
+- `control` - button and toggle specs.
+- `fullscreen` - full-screen map background and status label colors.
+- `icon` - the default size and color for icons in the `icon` folder.
+- `minimap` - the minimap frame specs, with separate `circle` and
+  `square` sections.
+
+### Color and image values
+
+Two value types appear throughout the file:
+
+- A **color value** is an object with a `color` hex string (`#rrggbb`)
+  and an `alpha` value. Use `#ffffff` for color to leave an image's own
+  colors unchanged.
+- An **image spec** declares a `width` and `height`, and may also carry
+  a `color` and `alpha`.
+
+### Containers and controls
+
+- `container.toolbar.horizontal` and `container.toolbar.vertical`
+  describe the toolbars. A toolbar is built from a `begin` image, a
+  repeating `inner` image (one repeat per button), and an `end` image.
+  Each has `useThemeImages`, a filename `prefix`, `margin`, and
+  `padding`.
+- `control.button` and `control.toggle` describe the button and toggle
+  controls: their `width`, `height`, tooltip styles, and the color
+  values used for the icon and button in each state (on, off, hover,
+  disabled).
+
+### Minimap
+
+`minimap.circle` and `minimap.square` describe the circular and square
+minimap frames. Each defines the rim and mask image sizes, the top and
+bottom label styles, compass point images and which compass points to
+show, and the reticle and frame colors.
+
+The bundled themes are the best reference for exact filenames and
+sizes - copy one and compare its `.theme2.json` to the images in its
+folder.
+
+## **Image guidance**
+
+Create your images at 2x the sizes declared in the `.theme2.json` file.
+This keeps buttons looking sharp on high-resolution displays and for
+players using Minecraft's larger GUI scales.
+
+## **Setting a default theme in a modpack**
+
+A modpack can ship a theme and make it the default for players opening
+JourneyMap for the first time. Place the theme folder in
+`.minecraft/journeymap/icon/theme/` as usual, then create this file:
+
+```text
+.minecraft/journeymap/icon/theme/default.theme.config
+```
+
+Its contents point at the theme folder, the theme file, and the theme
+name:
 
 ```json
- {
-  "directory": "Victorian",
-  "filename": "Victorian",
-  "name": "Victorian"
- }
+{
+  "directory": "MyTheme",
+  "filename": "MyTheme",
+  "name": "MyTheme"
+}
 ```
 
-## **Code et Commentaires pour les Thèmes**
+## **Sharing your theme**
 
-Chaque fichier theme.json est lu par JourneyMap via GSON et crée une simple hiérarchie de classes Java utilisée pour construire les éléments de l'interface utilisateur. **Vous ne pouvez pas changer la structure des fichiers json de quelque manière que ce soit, seulement modifier les valeurs fournies.**
-
-Voici le code source de la classe Java utilisée pour générer les fichiers theme.json. Les commentaires sont destinés à vous donner un aperçu de l'utilisation de chaque propriété :
-
-```java
- /**
-  * Spécification du thème pour JourneyMap 5.0
-  */
- public class Theme implements Comparable<Theme>
- {
-    /**
-     * Version actuelle de cette spécification
-     */
-    public static final int VERSION = 1; 
- 
-    /**
-     * Auteur du thème.
-     */
-    @Since(1)
-    public String author; 
- 
-    /**
-     * Nom du thème.
-     */
-    @Since(1)
-    public String name; 
- 
-    /**
-     * Nom du répertoire parent des fichiers de thème.
-     */
-    @Since(1)
-    public String directory; 
- 
-    /**
-     * Spécifications des conteneurs pour les images dans le répertoire /container.
-     * Actuellement juste Toolbar.
-     */
-    @Since(1)
-    public Container container = new Container(); 
- 
-    /**
-     * Spécifications du contrôle UI pour les images dans le répertoire /control.
-     * Actuellement : Button & Toggle.
-     */
-    @Since(1)
-    public Control control = new Control(); 
- 
-    /**
-     * Spécifications de la carte FullMap pour les images dans le répertoire /fullscreen.
-     */
-    @Since(1)
-    public Fullscreen fullscreen = new Fullscreen(); 
- 
-    /**
-     * Taille générale pour toutes les icônes dans le répertoire /icon
-     */
-    @Since(1)
-    public ImageSpec icon = new ImageSpec(); 
- 
-    /**
-     * Spécifications de la minimap circulaire pour les images dans le répertoire /minimap/circle.
-     */
-    @Since(1)
-    public Minimap minimap = new Minimap(); 
- 
-    /**
-     * Classe de conteneur pour les images dans /container.
-     */
-    public static class Container
-    {
-        /**
-         * Spécifications pour les images de la barre d'outils dans /container.
-         */
-        @Since(1)
-        public Toolbar toolbar = new Toolbar(); 
- 
-        /**
-         * Classe Toolbar pour les images de la barre d'outils dans /container.
-         */
-        public static class Toolbar
-        {
-            /**
-             * Spécifications pour les images de la barre d'outils horizontale.
-             */
-            @Since(1)
-            public ToolbarSpec horizontal = new ToolbarSpec(); 
- 
-            /**
-             * Spécifications pour les images de la barre d'outils verticale.
-             */
-            @Since(1)
-            public ToolbarSpec vertical = new ToolbarSpec(); 
- 
-            /**
-             * Classe ToolbarSpec. Une barre d'outils se compose d'une image de début, d'une
-             * image intérieure répétée (une répétition par bouton) et d'une image de fin.
-             * <p/>
-             * Les noms de fichiers attendus par le chargeur de Thème sont :
-             * toolbar_begin.png, toolbar_inner.png, toolbar_end.png
-             */
-            public static class ToolbarSpec
-            {
-                /**
-                 * True pour utiliser les images du thème, faux pour invisible.
-                 */
-                @Since(1)
-                public boolean useThemeImages; 
- 
-                /**
-                 * Préfixe de nom de fichier. Exemple : "h" pour horizontal, "v" pour vertical.
-                 */
-                @Since(1)
-                public String prefix = ""; 
- 
-                /**
-                 * Marge en pixels autour de la barre d'outils.
-                 */
-                @Since(1)
-                public int margin; 
- 
-                /**
-                 * Espacement en pixels entre les boutons de la barre d'outils.
-                 */
-                @Since(1)
-                public int padding; 
- 
-                /**
-                 * Dimensions de l'image pour le début de la barre d'outils.
-                 */
-                @Since(1)
-                public ImageSpec begin; 
- 
-                /**
-                 * Dimensions de l'image pour la section intérieure répétée de la barre d'outils.
-                 */
-                @Since(1)
-                public ImageSpec inner; 
- 
-                /**
-                 * Dimensions de l'image pour la fin de la barre d'outils.
-                 */
-                @Since(1)
-                public ImageSpec end;
-            }
-        }
-    } 
- 
-    /**
-     * Classe de contrôle pour les images dans /control
-     */
-    public static class Control
-    {
-        /**
-         * Spécifications pour un bouton normal.
-         */
-        @Since(1)
-        public ButtonSpec button = new ButtonSpec(); 
- 
-        /**
-         * Spécifications pour un bouton bascule.
-         */
-        @Since(1)
-        public ButtonSpec toggle = new ButtonSpec(); 
- 
-        /**
-         * Spécification pour un bouton.
-         * Les noms de fichiers attendus par le chargeur de Thème sont :
-         * on.png, off.png, hover.png, disabled.png
-         */
-        public static class ButtonSpec
-        {
-            /**
-             * True pour utiliser les images du thème. Faux pour utiliser la texture de bouton du pack de ressources actuel.
-             */
-            @Since(1)
-            public boolean useThemeImages; 
- 
-            /**
-             * Largeur du bouton.
-             */
-            @Since(1)
-            public int width; 
- 
-            /**
-             * Hauteur du bouton.
-             */
-            @Since(1)
-            public int height; 
- 
-            /**
-             * Préfixe de nom de fichier. Facultatif.
-             */
-            @Since(1)
-            public String prefix = ""; 
- 
-            /**
-             * Style de format de chaîne (
-
-style CSS). 
-             * Utilisé pour le texte sur les boutons.
-             */
-            @Since(1)
-            public String fontStyle; 
-        }
-    } 
- 
-    /**
-     * Spécifications de la carte FullMap.
-     * Images attendues dans le répertoire /fullscreen
-     */
-    public static class Fullscreen
-    {
-        /**
-         * Taille par défaut pour l'image FullMap.
-         */
-        @Since(1)
-        public ImageSpec defaultSize; 
- 
-        /**
-         * Spécifications pour le marqueur.
-         * Images dans le répertoire /fullscreen/marker
-         */
-        @Since(1)
-        public MarkerSpec marker; 
- 
-        /**
-         * Images du marqueur sur la carte.
-         */
-        public static class MarkerSpec
-        {
-            /**
-             * True pour utiliser les images du thème, faux pour invisible.
-             */
-            @Since(1)
-            public boolean useThemeImages; 
- 
-            /**
-             * Taille des marqueurs pour le mode hors ligne.
-             */
-            @Since(1)
-            public int offlineSize; 
- 
-            /**
-             * Taille des marqueurs pour le mode en ligne.
-             */
-            @Since(1)
-            public int onlineSize; 
-        }
-    } 
- 
-    /**
-     * Spécifications de la minimap.
-     * Images dans le répertoire /minimap
-     */
-    public static class Minimap
-    {
-        /**
-         * Images de la minimap.
-         */
-        public Circle circle; 
- 
-        /**
-         * Images de la minimap circulaire.
-         */
-        public static class Circle
-        {
-            /**
-             * True pour utiliser les images du thème, faux pour invisible.
-             */
-            @Since(1)
-            public boolean useThemeImages; 
- 
-            /**
-             * Taille de la minimap.
-             */
-            @Since(1)
-            public int size; 
- 
-            /**
-             * Taille de l'image pour les icônes dans le répertoire /icon.
-             */
-            @Since(1)
-            public ImageSpec icon; 
-        }
-    } 
- 
-    /**
-     * Spécifications de l'image de l'icône.
-     */
-    public static class ImageSpec
-    {
-        /**
-         * Largeur de l'image.
-         */
-        @Since(1)
-        public int width; 
- 
-        /**
-         * Hauteur de l'image.
-         */
-        @Since(1)
-        public int height; 
- 
-        /**
-         * Préfixe du nom de fichier. Exemple : "icon-" pour les icônes.
-         */
-        @Since(1)
-        public String prefix = ""; 
-    }
-    
-    /**
-     * Fonction de comparaison pour le tri.
-     */
-    @Override
-    public int compareTo(Theme o)
-    {
-        return 0;
-    }
- }
-```
+If you create a theme and would like to share it, drop by the
+[JourneyMap Discord server](https://discord.gg/eP8gE69).

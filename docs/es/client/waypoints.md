@@ -1,114 +1,263 @@
-# **Puntos de Ruta**
+# **Waypoints**
 
-Los puntos de ruta le permiten marcar ubicaciones específicas en su mapa, para realizar un seguimiento de esas ubicaciones o encontrar fácilmente el camino de regreso a ellas más tarde.
+!!! warning "Translation needed for 6.0"
 
-Además, los puntos de muerte se crean cuando, por ejemplo, [un esqueleto con una trompeta](https://www.curseforge.com/minecraft/mc-mods/trumpet-skeleton-redefinido) te arroja por el borde de un acantilado.
-De forma predeterminada, se muestran usando un haz de baliza de color, el nombre y ícono del punto de ruta se mostrarán cuando mires hacia él, pero este comportamiento se puede cambiar en el [administrador de configuración](settings/overview.md). Los puntos de muerte también se pueden desactivar allí, si se prefiere.
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-!!! warning "Advertencia"
+Waypoints let you mark specific locations on your map so you can keep
+track of them or find your way back to them later.
 
- Si está utilizando OptiFine, es probable que no pueda ver los puntos de ruta en el mundo. No estamos seguros de qué causa esto. Para obtener más información, consulte nuestra página de solución de problemas.
+Death waypoints are created automatically when you die, so you can
+return to collect your items. Death waypoints can be disabled in the
+[settings manager](settings/waypoint.md) if you prefer.
 
-![Punto de Ruta](../img/waypoint.png){: .center}
+By default a waypoint is shown in the world as a colored beacon beam,
+with its name and icon displayed when you look towards it. This and
+many other behaviors can be changed in the
+[Waypoint settings](settings/waypoint.md) and
+[Waypoint Beacon settings](settings/waypoint-beacon.md).
 
-Puede crear puntos de ruta utilizando uno de los siguientes métodos:
+![Waypoint](../img/waypoint.png){: .center}
 
-- Presionando ++b++ dentro del juego para crear uno donde estás parado
-- Al hacer doble clic o presionar ++b++ en el [mapa de pantalla completa](full-screen-map.md) para crear un punto de ruta en el cursor
-- Abriendo el administrador de puntos de ruta y creandolo manualmente.
+## **Creating Waypoints**
 
-## **Gestión de Puntos de Ruta**
+You can create a waypoint in any of these ways:
 
-El administrador de puntos de ruta proporciona un lugar único para, como es de esperar, administrar sus puntos de ruta. Puedes abrirlo de las siguientes maneras:
+- Press ++b++ in-game to create a waypoint where you are standing.
+- Double-click, or press ++b++, in the [full-screen map](full-screen-map.md)
+  to create a waypoint at the cursor.
+- Open the Waypoint Manager and use the **New** button.
 
-- Presionando ++ctrl+b++ dentro del juego
-- Abriendo el [mapa de pantalla completa](full-screen-map.md) y haciendo clic en el botón del administrador de puntos de ruta en la parte inferior
+Each method opens the [Waypoint Editor](#the-waypoint-editor) so you can
+name and customize the waypoint before saving it.
 
-![Punto-de-Ruta-Manager](../img/waypoint-manager.png){: .center}
+## **The Waypoint Manager**
 
-El administrador de puntos de ruta le brinda una lista de todos sus puntos de ruta y ofrece algunas opciones para administrarlos. En la parte inferior se encuentran los siguientes botones:
+The Waypoint Manager is a single place to manage all of your waypoints
+and waypoint groups. Open it in either of these ways:
 
-- **Opciones**: abra el [administrador de configuración](settings/overview.md)
-- **Nuevo**: crea un nuevo punto de ruta
-- **Dimensión**: filtrar los puntos de ruta mostrados según la dimensión
-- **Cerrar**: cierra el administrador de puntos de ruta.
+- Press ++n++ in-game or on the full-screen map.
+- Open the [full-screen map](full-screen-map.md) and click the Waypoint
+  Manager button.
 
-Cada punto de ruta tiene las siguientes opciones disponibles:
+![Waypoint-Manager](../img/waypoint-manager.png){: .center}
 
-- **Teletransporte**: si el servidor lo permite, teletransporta directamente al punto de ruta
-- **Buscar**: busque el punto de ruta en el [mapa de pantalla completa](full-screen-map.md)
-- **Activado/Desactivado**: alterna la visibilidad del punto de ruta dentro del juego
-- **Eliminar**: elimina el punto de ruta
-- **Editar**: abre el editor de puntos de ruta
-- **Chat**: Copie la información del punto de ruta en el cuadro de chat, como se muestra:
-![Punto-de-Ruta-Chat](../img/waypoint-chat.png){: .center}
+The manager has two panels: a list of [groups](#waypoint-groups) on one
+side and the waypoints in the selected group on the other. A search box
+filters the list as you type.
 
-## **Edición de Puntos de Ruta**
+### Manager buttons
 
-Al crear o editar un punto de ruta, se muestra la siguiente pantalla:
+| Button             | Action                                                            |
+|--------------------|-------------------------------------------------------------------|
+| New                | Create a new waypoint.                                            |
+| New Group          | Create a new waypoint group.                                      |
+| Options            | Open the [settings manager](settings/overview.md).                |
+| Dimension          | Filter the shown waypoints by dimension.                          |
+| Import             | Import waypoints from a `.dat` file.                              |
+| Import External    | Import waypoints from Xaero's Minimap, if detected.               |
+| Export             | Export your waypoints to a file (you choose the format).          |
+| Pending            | Review waypoints other players have shared with you.              |
+| Close              | Close the Waypoint Manager.                                       |
 
-![Punto-de-Ruta-Editar](../img/waypoint-edit.png){: .center}
+### Per-waypoint actions
 
-El editor de punto de ruta proporciona las siguientes configuraciones para cada punto de ruta:
+Each waypoint in the list has these actions:
 
-- **Nombre**: este nombre para mostrar para el punto de ruta
-- **Ubicación**: la posición de este punto de ruta
-- **Dimensiones**: alterna las dimensiones dentro de las cuales debe habilitarse el punto de ruta.
-- **Habilitado**: si este punto de ruta está habilitado y debe ser visible
-- **Color**: el color del punto de ruta, expresado en valores rojo, verde y azul.
+- **Teleport** - if allowed by the server, teleport directly to the waypoint.
+- **Find** - locate the waypoint on the [full-screen map](full-screen-map.md).
+- **On/Off** - toggle the waypoint's visibility.
+- **Edit** - open the [Waypoint Editor](#the-waypoint-editor).
+- **Remove** - delete the waypoint.
+- **Chat** - share the waypoint (see [Sharing Waypoints](#sharing-waypoints)).
 
-También puedes hacer clic en la rueda de colores para elegir un color, o hacer clic en el botón Color aleatorio para obtener un color nuevo.
+### Selecting multiple waypoints
 
-Esto es lo que hace cada uno de los otros botones:
+Use **Select All**, or select individual waypoints, to act on several at
+once. With a selection active you can **Toggle Selected**,
+**Share Selected**, or **Delete Selected**.
 
-- **Eliminar**: elimina el punto de ruta por completo
-- **Restablecer**: deshace las ediciones del punto de ruta actual
-- **Guardar**: guarda los cambios que has realizado en el punto de ruta.
-- **Cerrar**: cierra el editor y descarta tus cambios.
+## **The Waypoint Editor**
 
-## **Compartir Puntos de Ruta**
+The Waypoint Editor opens whenever you create or edit a waypoint.
 
-A partir de JourneyMap 5.2, ahora puedes compartir fácilmente puntos de ruta y ubicaciones con otros jugadores en el servidor. El objetivo de esta característica era agregar comodidad para todos los que usan JourneyMap, pero no lo hagas molesto para las personas que no lo saben. Si un jugador no tiene JourneyMap, seguirá viendo la ubicación en su chat en un formato amigable para los humanos.
+![Waypoint-Edit](../img/waypoint-edit.png){: .center}
 
-Cuando aparece una ubicación con el formato adecuado en el chat de Minecraft, puedes **hacer clic** en ella (para crear un punto de ruta) o **controlar y hacer clic** en ella (para ver la ubicación en tu mapa en pantalla completa).
+The editor provides these fields:
 
-## **Comandos de Punto de Ruta**
+- **Name** - the display name for the waypoint.
+- **Location** - the X, Y, and Z coordinates. You can switch between
+  separate X / Y / Z fields and a single combined `X, Y, Z` field using
+  the Coordinate Layout option (see below).
+- **Dimensions** - toggles for the dimensions the waypoint is shown in.
+- **Group** - the [group](#waypoint-groups) this waypoint belongs to.
+  You can also create a new group from here.
+- **Enable** - whether the waypoint is enabled and visible.
+- **Color** - the waypoint color. Click the color wheel to pick a color,
+  or use **Randomize** for a new random color.
+- **Icon** - click the icon button to choose the waypoint's icon. See
+  [Waypoint Icons](#waypoint-icons).
+- **Description** - opens a popup for a longer free-text description.
 
-En JourneyMap 5.8.5, se agregó un nuevo comando que le permite crear, eliminar y recargar puntos de ruta desde el chat.
+Buttons:
 
-**Recargar Puntos de Ruta**
+- **Reset** - undo your unsaved edits to this waypoint.
+- **Save** - save your changes.
+- **Close** - close the editor without saving.
 
-- Recarga puntos de ruta. en el directorio de puntos de ruta. sin tener que reiniciar.
-- Se utiliza principalmente al colocar archivos de puntos de ruta en la carpeta mientras se ejecuta el juego.
+### Editor options
 
-```texto
-/jm reload
-```
+The **Waypoint Editor Options** button configures the editor itself
+rather than a single waypoint. It includes the **Coordinate Layout**
+option, which switches between separate X / Y / Z input fields and a
+single combined `X, Y, Z` field.
 
-Los comandos de creación y eliminación solo están disponibles cuando el servidor tiene JourneyMap instalado y si el jugador tiene op. Puede encontrar más información sobre los comandos para agregar y eliminar [aquí](../Server%20Docs/Commands/waypoint_command.md).
+## **Waypoint Groups**
 
-## **Cómo Compartir Puntos de Ruta y Ubicaciones**
+Waypoint groups let you organize waypoints into named sets - for example
+`Bases`, `Mining`, or `Villages`. A group can be enabled or disabled as
+a whole, given its own icon, and marked as the default group for new
+waypoints.
 
-Puedes compartir Puntos de Ruta y ubicaciones de una de estas tres maneras:
+JourneyMap has several built-in groups: `Default` (where new waypoints
+go unless you choose otherwise), `Death` (death waypoints), and `Temp`
+(temporary waypoints). The `All` view shows every waypoint regardless of
+group.
 
-1. En Administrador de Puntos de Ruta, presione el nuevo botón **Chat** junto a un Punto de Ruta. La ubicación se pegará en la interfaz de usuario del chat. Agregue algo de contexto si lo desea y luego presione Entrar. Puede usar esto con /msg o canales de servidor (si están presentes).
-2. En la interfaz de usuario del chat, escriba <code>/jm ~</code> y presione Entrar. El comando será reemplazado con su ubicación actual. Agregue información o edite según sea necesario, luego presione Entrar.
-3. En la interfaz de usuario del chat, escriba manualmente una ubicación entre corchetes. Vea las opciones de formato de ubicación a continuación:
+!!! note "More detail"
 
-## **Formato de Ubicación**
+    Groups are a large feature with their own management screen. Full
+    coverage lives on the [Waypoint Groups](waypoint-groups.md) page.
 
-Una ubicación debe tener como mínimo las coordenadas x y z, pero cualquiera de las siguientes es posible y el orden que uses no importa:
+## **Waypoint Icons**
 
-- [x:#,z:#]
-- [x:#, y:#, z:#]
-- [x:#, y:#, z:#, dim:#]
-- [x:#, y:#, z:#, dim:#, nombre:texto]
-- [nombre:texto, dim:#, x:#, z:#, y:#]
+JourneyMap ships with a set of built-in waypoint icons, selectable from
+the icon button in the Waypoint Editor. When many icons are available
+(for example from a resource pack) JourneyMap shows a dedicated icon
+selection menu so you can browse them.
 
-Una ubicación consta de 2 o más pares ''nombre:valor'', separados por comas. Se admite cualquiera de los siguientes valores:
+You can add your own waypoint icons with a resource pack. See
+[Waypoint Icons (Resource Packs)](../tools/waypoint-icons.md).
 
-- x (entero) **obligatorio**
-- y (entero)
-- z (entero) **obligatorio**
-- dim (entero)
-- nombre (cadena, sin comillas, sin comas)
+## **Server-Managed Waypoints**
+
+When you play on a server that runs JourneyMap, the server can manage
+waypoints itself. In that case waypoints have a **scope**:
+
+- **Personal** - your own waypoints, visible only to you.
+- **Global** - waypoints managed by the server and shared with players,
+  set up by server admins.
+
+The Waypoint Manager shows a scope selector when server-managed
+waypoints are available. See
+[Server Multiplayer settings](../server/multiplayer.md) for the
+server-side options.
+
+## **Teleporting to Waypoints**
+
+If the server allows it, the **Teleport** action in the Waypoint Manager
+takes you directly to a waypoint. Teleporting is controlled per
+dimension by server admins, so it may be available in some dimensions
+and not others. In single-player it is always available.
+
+The teleport command JourneyMap uses can be customized, and there is an
+option to strip decimal places from the coordinates it sends. See the
+[Waypoint settings](settings/waypoint.md).
+
+## **Sharing Waypoints**
+
+You can share a waypoint or location with other players. Players who do
+not have JourneyMap still see the location in chat in a readable format.
+
+There are three ways to share:
+
+1. In the Waypoint Manager, use the **Chat** button next to a waypoint
+   (or **Share Selected** for several). The location is placed in the
+   chat input for you - add a message if you like, then press Enter.
+2. In the chat input, type `/jm ~` and press Enter. It is replaced with
+   your current location.
+3. Type a location manually in chat between square brackets (see
+   [Location Format](#location-format) below).
+
+When a properly formatted location appears in chat, **click** it to
+create a waypoint, or **control-click** it to view the location on the
+full-screen map.
+
+![Waypoint-Chat](../img/waypoint-chat.png){: .center}
+
+Waypoints shared directly with you arrive as **Pending** waypoints. Open
+the **Pending** button in the Waypoint Manager to **Accept** or
+**Decline** each one.
+
+### Location Format
+
+A location must have at least the x and z coordinates. The order of the
+values does not matter:
+
+- `[x:#, z:#]`
+- `[x:#, y:#, z:#]`
+- `[x:#, y:#, z:#, dim:#]`
+- `[x:#, y:#, z:#, dim:#, name:text]`
+- `[name:text, dim:#, x:#, z:#, y:#]`
+
+A location is two or more `name:value` pairs separated by commas. The
+supported values are:
+
+- `x` (integer) **required**
+- `y` (integer)
+- `z` (integer) **required**
+- `dim` (integer)
+- `name` (string, no quotes, no commas)
+
+## **Waypoint Commands**
+
+JourneyMap's chat commands live under the `/jm` prefix.
+
+`/jm reload` reloads the waypoint files from disk without restarting the
+game. This is mainly useful after dropping waypoint files into the
+waypoint folder while the game is running.
+
+When the server runs JourneyMap, server-side waypoint commands are also
+available under `/jm waypoint` (or `/jm wp`). See the
+[server waypoint command](../server/commands/waypoint_command.md) page.
+
+## **Backups and Importing**
+
+JourneyMap protects your waypoint data in several ways:
+
+- **Rolling backups** - JourneyMap keeps recent backups of your waypoint
+  data and automatically loads the most recent good backup if the main
+  file is found to be damaged.
+- **Import / Export** - use the Import and Export buttons in the
+  Waypoint Manager to back up your waypoints to a file or restore them.
+- **Drop-in merge** - drop a waypoint `.dat` file into the waypoint
+  folder and JourneyMap merges its waypoints into your existing data.
+  Run `/jm reload`, or reconnect, to pick up files added while playing.
+- **Import from Xaero's** - if Xaero's Minimap waypoints are detected,
+  the **Import External** button imports them.
+
+## **Show On Locator Bar**
+
+!!! info "26.1 only"
+
+    The locator bar is a Minecraft 1.21.6+ feature, so this option is
+    only present in JourneyMap for Minecraft 26.1. It is not available
+    on the 1.21.1 line.
+
+Waypoints can be shown on Minecraft's locator bar. This is controlled by
+a **Show On Locator Bar** option, available both globally and per
+[group](waypoint-groups.md). Disabled waypoints are not shown on the
+locator bar.
+
+![Locator-Bar](../img/client/locator-bar.png){: .center}
+
+## **Settings**
+
+Waypoint behavior is configured in two settings categories:
+
+- [Waypoint settings](settings/waypoint.md) - death waypoints, the
+  teleport command, sharing, and more.
+- [Waypoint Beacon settings](settings/waypoint-beacon.md) - how waypoint
+  beacons and labels are drawn in the world.

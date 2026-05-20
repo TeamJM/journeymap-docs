@@ -1,28 +1,60 @@
-## **Mobs personnalisés sur la carte (radar de mobs)**
 
-- Assurez-vous que vos EntityCreatures implémentent au moins une de ces interfaces principales de Minecraft : IAnimal, IMob, INpc ou IWaterMob.
-- Si vous souhaitez fournir vos propres icônes de mobs, consultez [Ensembles d'icônes de mobs personnalisés](custom-mob-icons.md).
-- Les EntityCreatures avec une cible hostile seront affichées comme hostiles.
-- Les EntityCreatures définies comme invisibles (cachées) ne seront pas visibles sur le radar.
+!!! warning "Translation needed for 6.0"
 
-## **Créer des suggestions de points de passage dans le chat**
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-Les joueurs peuvent ajouter des points de passage en cliquant sur un texte formaté spécialement dans le chat. (Pratique pour donner des quêtes, des messages de bienvenue, etc.)
+## **Custom Mobs on the map (mob radar)**
 
-Par exemple :
+JourneyMap categorizes entities for the radar by their Minecraft entity type and category, not by any custom interface you implement.
 
-`Le PNJ dit : "Voici où j'ai enterré mon butin :" [name:"trésor", x:1212, y:70, z:456, dim:0]`
+- Hostile, passive, ambient, and NPC entities are recognized automatically from their vanilla entity class (for example `PathfinderMob`, `Animal`, `WaterAnimal`, `Villager`, and the `Enemy` and `Npc` marker interfaces).
+- An entity that currently has an attack target is shown as hostile, even if it is normally passive.
+- Entities that are invisible to the player (including sneaking players) are hidden on the radar.
+- If you want to provide your own mob icons, see [Custom Mob Icon Sets](custom-mob-icons.md).
 
-Le texte du chat lui-même n'est pas modifié, mais il est transformé en lien pour les joueurs utilisant JourneyMap. Le texte survolé indique qu'il peut être cliqué pour créer un point de passage, ou shift-cliqué pour s'afficher sur la carte en plein écran.
+!!! note "Note"
 
-!!! note "Remarque"
+    If your mod uses an unusual entity class that JourneyMap does not pick up automatically, you can register it through the JourneyMap API (see below) using the entity registration event.
 
-    ''name'' et ''dim'' sont facultatifs. Si ''dim'' est omis, la dimension du joueur est supposée.
+## **Create waypoint suggestions in chat**
 
-## **Afficher des formes, du texte ou des points de passage personnalisés sur la carte**
+Players can add waypoints by clicking on specially-formatted text in chat.  (Handy for giving quests, welcome messages, etc.)
 
-Il existe une [API JourneyMap](https://github.com/TeamJM/journeymap-api) (pour Minecraft 1.9.4 et versions ultérieures) qui vous permet de gérer des points de passage personnalisés et d'ajouter des superpositions sur la minicarte, la carte en plein écran ou la carte web.
+For example:
 
-## **En cas de doute, contactez-nous !**
+`NPC says: "Here's where I buried my loot:" [name:treasure, x:1212, y:70, z:456, dim:0]`
 
-Prenez contact avec l'équipe JourneyMap @Developers sur le serveur public [JourneyMap Discord](https://discord.gg/eP8gE69).
+The chat text itself is not changed, but is turned into a link for players with JourneyMap.  Hover text shows it can be clicked to create a waypoint, or shift-clicked to show on the full screen map.
+
+A location is two or more `name:value` pairs inside square brackets, separated by commas.  The `x` and `z` coordinates are required; `y`, `dim`, and `name` are optional.  The order of the pairs does not matter.  See [Sharing Waypoints](../client/waypoints.md#location-format) on the client Waypoints page for the full format.
+
+!!! note "Note"
+
+    If `dim` is omitted, the dimension of the player is assumed.
+
+## **Display custom shapes, text, or waypoints on the map**
+
+The [JourneyMap API](https://github.com/TeamJM/journeymap-api) gives mod authors the ability to manage custom waypoints and draw overlays (polygons, markers, and images) on the minimap, fullscreen map, and webmap.
+
+Add the API as a dependency, implement a plugin class, and register for the events you care about.  The API repository includes an example mod that demonstrates a working integration.
+
+## **What is new for integrators in 6.0**
+
+JourneyMap 6.0 ships a reworked API.  Highlights for mod authors:
+
+- **API v2** - the API now lives under the `journeymap.api.v2` package.  Update your imports and plugin registration accordingly.
+- **More events** - new client and server events cover waypoint lifecycle (create, update, delete), waypoint groups, group transfer, the entity radar, fullscreen rendering, popup menus, and server-side global waypoints and waypoint groups.  Register through the v2 event registries.
+- **Component-based InfoSlot registration** - addons register custom info slots through the registry event.  Slot labels are now Minecraft chat `Component`s rather than plain strings.
+- **Keyed custom data on waypoints and waypoint groups** - waypoints and groups support typed, keyed custom data so addons can attach their own values without colliding with each other or with JourneyMap.  The older single-value custom data accessors are deprecated.
+- **ShapeProperties.strokePosition** - shape overlays can set where the stroke is drawn relative to the edge (inside, centered, or outside).
+- **EntityDTO icons** - entity icon paths are exposed as Minecraft resource locations, making it easier to point at your own icon textures.
+
+!!! note "Note"
+
+    This page is an overview.  For exact class and method names, see the API source and the example mod in the [journeymap-api repository](https://github.com/TeamJM/journeymap-api), which is the authoritative reference and tracks each release.
+
+## **When in doubt, talk to us!**
+
+Get in touch with the JourneyMap @Developers team on the public [JourneyMap Discord server](https://discord.gg/eP8gE69).

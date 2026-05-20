@@ -1,5 +1,11 @@
 # **Licence**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 JourneyMap est distribué sous une licence Tous Droits Réservés. Cela signifie que vous ne pouvez pas modifier, héberger ou distribuer JourneyMap par vous-même.
 
 ## **Ce que vous POUVEZ faire**
@@ -45,6 +51,10 @@ Les lanceurs suivants sont tous explicitement approuvés pour une utilisation av
 - [The Technic launcher](https://www.technicpack.net/), à condition que le modpack soit un modpack Solder configuré en [suivant ces instructions](https://github.com/bochen415/JourneyMap-TechnicSolder-Tutorial/wiki/JourneyMap-TechnicSolder-Tutorial). Vous ne pouvez pas directement ré-héberger JourneyMap en utilisant Solder, donc assurez-vous de suivre correctement les instructions liées.
 
 - [The CurseForge Launcher](https://download.curseforge.com/) à l'autorisation d'inclure JourneyMap dans les modpacks publics et privés.
+
+- [Modrinth](https://modrinth.com/) is granted permission to host modpacks containing JourneyMap, provided the modpacks download JourneyMap from Modrinth.
+
+- [The Modrinth App](https://modrinth.com/app) is granted permission to install modpacks containing JourneyMap, provided the modpacks are in Modrinth format and download JourneyMap from Modrinth.
 
 ## **Autres notes**
 

@@ -41,7 +41,7 @@ The config file location for NeoForge and Forge servers: `(server_folder)/world/
 
 ## **Modpack Usage**
 
-The JourneyMap Client mod is governed by a [different modpack policy](../About/licensing.md) than the server.  
+The JourneyMap Client mod is governed by a [different modpack policy](../about/licensing.md) than the server.  
 
 The following applies to the server mod only:
 

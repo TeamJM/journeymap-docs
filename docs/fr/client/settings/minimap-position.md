@@ -1,24 +1,32 @@
-## **Paramètres de Position de la Minicarte**
+# **Minimap Position Settings**
 
-JourneyMap vous permet de configurer l'emplacement à la fois des icônes d'effets et de la minicarte elle-même. Cela vous permet, en tant qu'utilisateur, de déplacer la minicarte et les icônes d'effets où vous voulez sur l'écran.
+!!! warning "Translation needed for 6.0"
 
-![Position de la Minicarte](../../img/settings/client/minimap-position.png){: .center}
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-## **Bascules**
+JourneyMap allows you configure the placement for both the effect icons and the actual minimap. This allows you as a user to move the minimap and the effect icons wherever you want on the screen
 
-Les paramètres de bascule **en gras** ci-dessous sont activés par défaut.
+![Minimap-Position](../../img/settings/client/minimap-position.png){: .center}
 
-| Bascule                           | Description                                                                    |
-|-----------------------------------|--------------------------------------------------------------------------------|
-| **Déplacer les Icônes d'Effets**  | Permet de déplacer les effets de potion loin de la minicarte.                  |
-| Inversion du Rendu des Icônes d'Effets | Rendu inversé des icônes. Vertical du bas vers le haut, horizontal de gauche à droite |
-| Rendu Vertical des Icônes d'Effets | Rendu vertical des icônes en premier, de haut en bas.                          |
+## **Toggles**
 
-## **Autres Paramètres**
+The **bold** toggle settings below are enabled by default.
 
-L'option par défaut pour chaque paramètre ci-dessous est marquée en **gras**.
+| Toggle                         | Description                                                                       |
+|--------------------------------|-----------------------------------------------------------------------------------|
+| **Move Effect Icons**          | Enables moving the potion effects away from the minimap.                          |
+| Hide Effect Icons              | Hides effect icons.                                                               |
+| Reverse Effect Icon Rendering  | Reversed Rendering of Icons. Vertical bottom to top, non Vertical left to right.   |
+| Vertical Effect Icon Rendering | Vertical Rendering of the icons first from top to bottom.                          |
 
-| Paramètre                         | Options                                                                                                                                    | Description                                                                                                                |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Décalage en Pixels du Mouvement de la Minicarte | <ul><li>Plage : 0.001 - 0.025 <br>**Par défaut 0.001**</li></ul>                                                                             | Lors du déplacement de la minicarte avec les touches fléchées, cette option contrôle combien de pixels par pression de touche pour aider à ajuster précisément l'emplacement. |
-| Position                          | <ul><li>**Haut Droit**</li><li>Bas Droit</li><li>Bas Gauche</li><li>Haut Gauche</li><li>Haut Centre</li><li>Centre</li><li>Personnalisé</li></ul> | Réglez sur **Personnalisé** pour faire glisser la minicarte à l'emplacement souhaité.                                      |
+## **Other Settings**
+
+The default option for each setting below is marked with **bold** text.
+
+| Setting                       | Options                                                                                                                                                  | Description                                                                                                                |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Minimap Key Move Pixel Offset | <ul><li>Range: 0.001 - 0.025 <br>**Default is 0.001**</li></ul>                                                                                          | When moving the minimap with arrow keys, this option controls how may pixels per key press to help fine tune the location. |
+| Layer                         | <ul><li>First</li><li>Before Effects</li><li>After Effects</li><li>Before Scoreboard</li><li>After Scoreboard</li><li>**Last**</li></ul>                  | Controls where in the HUD rendering order the minimap is drawn. Earlier layers render below later ones.                     |
+| Position                      | <ul><li>**Top Right**</li><li>Bottom Right</li><li>Bottom Left</li><li>Top Left</li><li>Top Center</li><li>Center</li><li>Custom</li></ul>                | Set to **Custom** to drag the minimap to your desired location.                                                            |

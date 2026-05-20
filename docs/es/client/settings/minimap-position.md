@@ -1,24 +1,32 @@
-# **Configuración de Posición del Minimapa**
+# **Minimap Position Settings**
 
-JourneyMap le permite configurar la ubicación tanto de los íconos de efectos como del minimapa real. Esto le permite a usted, como usuario, mover el minimapa y los íconos de efectos a donde desee en la pantalla.
+!!! warning "Translation needed for 6.0"
 
-![Posición-minimapa](../../img/settings/client/minimap-position.png){: .center}
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-## **Alternar**
+JourneyMap allows you configure the placement for both the effect icons and the actual minimap. This allows you as a user to move the minimap and the effect icons wherever you want on the screen
 
-Las configuraciones de alternancia en **negrita** que aparecen a continuación están habilitadas de forma predeterminada.
+![Minimap-Position](../../img/settings/client/minimap-position.png){: .center}
 
-| Alternar | Descripción |
-|--------------------------------|---------------- -------------------------------------------------- -------------|
-| **Mover iconos de efectos** | Permite alejar los efectos de la poción del minimapa. |
-| Representación de iconos de efecto inverso | Representación invertida de iconos. Vertical de abajo hacia arriba, Horizontal de izquierda a derecha |
-| Representación de iconos de efecto vertical | Representación vertical de los iconos primero de arriba a abajo. |
+## **Toggles**
 
-## **Otras Configuraciones**
+The **bold** toggle settings below are enabled by default.
 
-La opción predeterminada para cada configuración a continuación está marcada con texto **negrita**.
+| Toggle                         | Description                                                                       |
+|--------------------------------|-----------------------------------------------------------------------------------|
+| **Move Effect Icons**          | Enables moving the potion effects away from the minimap.                          |
+| Hide Effect Icons              | Hides effect icons.                                                               |
+| Reverse Effect Icon Rendering  | Reversed Rendering of Icons. Vertical bottom to top, non Vertical left to right.   |
+| Vertical Effect Icon Rendering | Vertical Rendering of the icons first from top to bottom.                          |
 
-| Configuración | Opciones | Descripción |
-|-------------------------------|----------------- -------------------------------------------------- -------------------------------------------------- -----------------------|-------------------------- -------------------------------------------------- ------------------------------------------------|
-| Tecla del minimapa Mover desplazamiento de píxeles | <ul><li>Rango: 0,001 - 0,025 <br>**El valor predeterminado es 0,001**</li></ul> | Al mover el minimapa con las teclas de flecha, esta opción controla la cantidad de píxeles por pulsación de tecla para ayudar a ajustar la ubicación. |
-| Posición | <ul><li>**Arriba derecha**</li><li>Abajo derecha</li><li>Abajo izquierda</li><li>Arriba izquierda</li><li>Arriba centro</ li><li>Centro</li><li>Personalizado</li></ul> | Configúrelo en **Personalizado** para arrastrar el minimapa a la ubicación deseada. |
+## **Other Settings**
+
+The default option for each setting below is marked with **bold** text.
+
+| Setting                       | Options                                                                                                                                                  | Description                                                                                                                |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Minimap Key Move Pixel Offset | <ul><li>Range: 0.001 - 0.025 <br>**Default is 0.001**</li></ul>                                                                                          | When moving the minimap with arrow keys, this option controls how may pixels per key press to help fine tune the location. |
+| Layer                         | <ul><li>First</li><li>Before Effects</li><li>After Effects</li><li>Before Scoreboard</li><li>After Scoreboard</li><li>**Last**</li></ul>                  | Controls where in the HUD rendering order the minimap is drawn. Earlier layers render below later ones.                     |
+| Position                      | <ul><li>**Top Right**</li><li>Bottom Right</li><li>Bottom Left</li><li>Top Left</li><li>Top Center</li><li>Center</li><li>Custom</li></ul>                | Set to **Custom** to drag the minimap to your desired location.                                                            |

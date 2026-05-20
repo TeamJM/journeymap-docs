@@ -1,6 +1,12 @@
 ## **Aperçu**
 
-Il n'est pas nécessaire d'installer le serveur JourneyMap pour utiliser le client JourneyMap. Cela fournit simplement un moyen pour les administrateurs de serveur de restreindre certaines fonctionnalités et/ou de prendre en charge les installations Bukkit Multiworld et BungeeCord. Certaines fonctionnalités peuvent ne pas être disponibles dans les environnements de serveur Forge et Bukkit, veuillez donc lire les informations sur cette page et les journaux de modifications pour chaque version afin d'obtenir des informations spécifiques sur les fonctionnalités de votre serveur.
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
+You don't have to have JourneyMap installed on the server to use the JourneyMap client. Installing it on the server gives admins a way to restrict some client features, manage waypoints, and support multi-world and proxy (BungeeCord / Velocity) setups. JourneyMap server runs on Fabric, NeoForge, and Forge servers, and on Paper servers (Minecraft 26.1 line). See [Installing](installing.md) for details.
 
 ## **Configuration de l'Administrateur de Serveur**
 
@@ -14,7 +20,7 @@ Par défaut, tous les utilisateurs Opped ont accès à l'écran d'administration
 
 Emplacement du fichier de configuration pour les serveurs Fabric : `(server_folder)/configs/journeymap_server.cfg`.
 
-Emplacement du fichier de configuration pour les serveurs Forge : `(server_folder)/world/serverconfig/journeymap_server.cfg`.
+The config file location for NeoForge and Forge servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
 ```text
     server {
@@ -41,7 +47,7 @@ Emplacement du fichier de configuration pour les serveurs Forge : `(server_folde
 
 ## **Utilisation de Modpack**
 
-Le mod client JourneyMap est régi par une [politique de modpack différente](../About/licensing.md) de celle du serveur.
+Le mod client JourneyMap est régi par une [politique de modpack différente](../about/licensing.md) de celle du serveur.
 
 Les éléments suivants s'appliquent uniquement au mod du serveur :
 

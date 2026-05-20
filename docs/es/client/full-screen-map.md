@@ -1,5 +1,11 @@
 # **Mapa en Pantalla Completa**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 Al presionar la tecla del mapa de pantalla completa (de forma predeterminada, la tecla ++j++), puede abrir el mapa en pantalla completa.
 
 ![Full-Screen](../img/full-screen.png){: .center}
@@ -19,10 +25,20 @@ Las siguientes combinaciones de teclas están disponibles y se pueden cambiar en
 - ++c++ Copia las coordenadas del bloque al que apunta tu cursor en el cuadro de chat
 - ++b++ Crea un [punto de ruta](waypoints.md) en el bloque al que apunta el cursor
 - ++o++ Abra el [administrador de configuración](settings/overview.md) de JourneyMap 
+- ++f++ Follow your player (re-center the map and keep it centered on you)
+- ++up++ ++down++ ++left++ ++right++ Pan the map 16 blocks in that direction
 
 ## **Botones**
 
 Alrededor del borde del mapa de pantalla completa hay un conjunto de botones que puedes usar para personalizar la vista del mapa de pantalla completa y acceder a otras áreas del mod. Los iconos pueden diferir según el tema; Los iconos a continuación provienen de los temas incluidos con JourneyMap.
+
+!!! note "Minimal UI"
+
+    The full-screen map has a Minimal UI option that hides most of these
+    buttons for a cleaner view. It can be toggled in the
+    [full-screen map settings](settings/full-screen-map.md). You can also
+    hide the buttons temporarily with the Disable Fullscreen Buttons
+    keybind (unbound by default).
 
 ## **Botones Superiores**
 
@@ -70,9 +86,9 @@ Alrededor del borde del mapa de pantalla completa hay un conjunto de botones que
 | ![Puntos de ruta](../img/icons/waypoints.png){: .center} | Abra el [administrador de puntos de ruta](settings/waypoint.md). |
 | ![Opciones](../img/icons/options.png){: .center} | Abra el [administrador de configuración](settings/overview.md). |
 | ![Acerca de](../img/icons/about.png){: .center} | Abra la pantalla Acerca de. |
-| ![Navegador](../img/icons/browser.png){: .center} | Abra el mapa web, si está habilitado. |
+| ![Navegador](../img/icons/browser.png){: .center} | Open the [Webmap](../webmap/installing.md), if installed and enabled. |
 | ![Tema](../img/icons/theme.png){: .center} | Recorra los temas disponibles. |
-| ![Restablecer](../img/icons/reset.png){: .center} | Restablecer la paleta de colores. |
+| ![Restablecer](../img/icons/reset.png){: .center} | Open the [Color Palette](color-palette.md) editor. |
 | ![Eliminar](../img/icons/delete.png){: .center} | Elimina el mapa en una o más dimensiones. |
 | ![Guardar](../img/icons/savemap.png){: .center} | Guarde el mapa completo en un archivo. |
 | ![Mapa automático](../img/icons/automap.png){: .center} | Mapea el mundo explorado, en un jugador. |

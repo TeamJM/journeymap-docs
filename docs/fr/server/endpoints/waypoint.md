@@ -1,6 +1,19 @@
 # **Points de Repère**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 Le **Listener de Paquet de Point de Repère Externe** est une fonctionnalité qui permet au serveur d'envoyer des points de repère au client. Cela est utile pour les administrateurs de serveur qui souhaitent fournir des points de repère aux joueurs sans nécessiter un mod d'extension.
+
+!!! note "Stable API"
+
+    This packet is a stable, public interface intended for Bukkit and
+    Paper plugins. Its channel and payload shape are kept backwards
+    compatible, so plugins built against it continue to work across
+    JourneyMap releases.
 
 ## **Exemples**
 

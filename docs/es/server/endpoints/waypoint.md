@@ -1,6 +1,19 @@
 # **Puntos de Ruta**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 El oyente de paquetes del punto de ruta externo es una función que permite al servidor enviar puntos de ruta al cliente. Esto es útil para los administradores de servidores que desean proporcionar puntos de ruta a los jugadores sin necesidad de un mod adicional.
+
+!!! note "Stable API"
+
+    This packet is a stable, public interface intended for Bukkit and
+    Paper plugins. Its channel and payload shape are kept backwards
+    compatible, so plugins built against it continue to work across
+    JourneyMap releases.
 
 ## **Ejemplos**
 

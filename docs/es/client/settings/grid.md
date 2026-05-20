@@ -1,6 +1,6 @@
 # **Configuración de Cuadrícula**
 
-Tanto los ajustes preestablecidos del minimapa como el mapa de pantalla completa pueden tener una superposición de cuadrícula configurable. Puede personalizar esta superposición haciendo clic en el botón Editar cuadrícula… debajo de la configuración en cada categoría respectiva.
+Tanto los ajustes preestablecidos del minimapa como el mapa de pantalla completa pueden tener una superposición de cuadrícula configurable. Puede personalizar esta superposición haciendo clic en el botón Editar cuadrícula... debajo de la configuración en cada categoría respectiva.
 
 También puedes acceder a él desde el mapa en pantalla completa manteniendo presionada la tecla ++shift++ y haciendo clic en el botón de cuadrícula en la parte superior.
 

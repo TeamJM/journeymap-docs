@@ -1,5 +1,11 @@
 # **Ajustes**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 La sección Multijugador es una sección diseñada para brindar a los usuarios control sobre cómo se ven en otros clientes usando el mod JourneyMap y cómo se muestran en el mapa. Esta sección solo se desbloquea cuando el servidor ejecuta el mod JourneyMap y el servidor puede desactivarla.
 
 ![Descripción general](../img/settings/multiplayer/overview.png){: .center}
@@ -14,7 +20,11 @@ La sección Opciones de radar es una sección para controlar cómo te ven los de
 
 ## **Alternar**
 
-| Alternar | Descripción |
-|----------------------|------------------------- -------------------------------------------------- -------------------------------------------------- -------|
-| Visible para otros | Escóndete para que no te vean en el mapa. Nota: Los operadores aún pueden ver a los jugadores incluso si se han desactivado del radar de otros |
-| Ocultarse bajo tierra | Impide que otros te vean cuando estés bajo tierra. |
+| Toggle                    | Description                                                                                  |
+|---------------------------|----------------------------------------------------------------------------------------------|
+| **Visible to Others**     | Uncheck to hide yourself from being seen on the map. Note: Ops can still see you.             |
+| Hide Self Underground     | Disable others from seeing you when you're underground.                                      |
+
+## **Server Waypoints**
+
+JourneyMap 6.0 lets servers manage waypoints. When a server you are connected to manages waypoints, you receive "global" waypoints shared by the server in addition to your own personal waypoints. There are no toggles for this in the Multiplayer section - it is controlled by the server. See [Waypoints](../client/waypoints.md) for details on how global waypoints appear and behave.

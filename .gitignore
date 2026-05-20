@@ -5,3 +5,6 @@
 
 #OSX Stuff
 .DS_Store
+
+# MkDocs build output
+/config/site/

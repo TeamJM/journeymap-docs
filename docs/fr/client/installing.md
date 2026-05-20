@@ -1,38 +1,67 @@
-## **Installation**
 
-JourneyMap est disponible sur [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap) et [Modrinth](https://modrinth.com/mod/journeymap). Ce sont les seuls endroits légitimes pour le télécharger - si vous le trouvez sur un autre site, évitez de le télécharger. Les copies de JourneyMap obtenues à partir de sources non officielles peuvent être obsolètes, corrompues ou contenir des virus, et elles enfreignent notre licence.
+!!! warning "Translation needed for 6.0"
 
-## **Guide Vidéo**
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-Si vous préférez un guide vidéo, la vidéo ci-dessous vous montrera comment installer Forge [pour le lanceur officiel de Minecraft](https://www.minecraft.net/download). Vous pouvez appliquer ces instructions à n'importe quelle version de Minecraft, pas seulement à Minecraft 1.15.2.
+## **Installing**
 
-Cette vidéo est réalisée par [The Breakdown](https://www.youtube.com/channel/UC6Ec5NXzcESo60F3UgtgQRA).
+JourneyMap can be found on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap) and [Modrinth](https://modrinth.com/mod/journeymap). These are the only legitimate places to download it from - if you see it on another website then please avoid downloading it from there. Copies of JourneyMap obtained from unofficial sources may be old, broken or contain viruses, and they break our license.
+
+## **Requirements**
+
+JourneyMap 6.0 is released for two Minecraft lines. Download the file that matches your Minecraft version and mod loader, and make sure you have the right version of Java installed.
+
+| Minecraft version | Java    | Mod loaders               |
+|-------------------|---------|---------------------------|
+| 1.21.1            | Java 21 | Fabric, NeoForge, Forge   |
+| 26.1              | Java 25 | Fabric, NeoForge, Forge   |
+
+If you do not have the right version of Java, you can download a copy from the [Adoptium website](https://adoptium.net/temurin/releases/).
+
+!!! note "Which loader?"
+
+    JourneyMap is built for Fabric, NeoForge, and Forge. Pick whichever
+    loader the rest of your modpack uses - JourneyMap does not require a
+    specific one. The CurseForge and Modrinth pages list a separate file
+    for each loader.
+
+## **Video Guide**
+
+If you prefer a video guide, the video below walks through installing a mod loader and mods for [the official Minecraft launcher](https://www.minecraft.net/download). It uses an older version of Minecraft as its example, but the process is the same on current versions.
+
+This video is by [The Breakdown](https://www.youtube.com/channel/UC6Ec5NXzcESo60F3UgtgQRA).
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/71Co8ygepxo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## **Guide Textuel**
+## **Textual Guide**
 
-Si vous préférez un guide plus complet que vous pouvez suivre à votre rythme, vous pouvez suivre ces instructions :
+If you prefer a more complete guide you can read and follow along with at your own pace, then you can follow these instructions:
 
-1. Décidez comment vous allez utiliser Minecraft. Voici quelques options (de la plus simple à la plus compliquée) :
-    - [Le lanceur CurseForge](https://download.curseforge.com/)
-    - [MultiMC](https://multimc.org/)
-    - [Le lanceur officiel de Minecraft](https://www.minecraft.net/download)
+1. Decide how you're going to work with Minecraft. Some options include (from easiest to hardest):
+    - [The CurseForge Launcher](https://download.curseforge.com/)
+    - [Prism Launcher](https://prismlauncher.org/)
+    - [The official Minecraft Launcher](https://www.minecraft.net/download)
 
-    Nous recommandons MultiMC pour sa facilité d'utilisation, mais tout lanceur fonctionnera correctement.
+    We recommend Prism Launcher for ease of use, but any launcher will work just fine.
 
-2. Assurez-vous d'avoir une copie de Java installée. Si ce n'est pas le cas, vous pouvez en télécharger une depuis le [site Adoptium](https://adoptium.net/temurin/releases/).
+2. Ensure that you have the right version of Java installed for your Minecraft version (see the table above). If not, you can download a copy from the [Adoptium website](https://adoptium.net/temurin/releases/).
 
-3. Installez Forge. Vous devez toujours utiliser la version recommandée de Forge pour votre version de Minecraft. Vous pouvez également consulter le changelog de la version de JourneyMap que vous téléchargez pour voir quelle version de Forge a été utilisée.
-    - Si vous utilisez [le lanceur officiel de Minecraft](https://www.minecraft.net/download), vous pouvez suivre ce guide à partir de...
-    - Si vous utilisez [MultiMC](https://multimc.org/), créez une nouvelle instance pour la version de Minecraft que vous souhaitez utiliser. Modifiez cette instance, sélectionnez Version à gauche, puis cliquez sur Installer Forge à droite et sélectionnez la version que vous voulez utiliser.
-    - Si vous utilisez [le lanceur CurseForge](https://download.curseforge.com/), cliquez sur Mods en haut, sélectionnez Minecraft, puis créez un nouveau profil avec la version de Minecraft souhaitée.
+3. Install your mod loader. Use Fabric, NeoForge, or Forge - whichever your modpack uses. You can check the changelog for the version of JourneyMap you're downloading to see which loader version we built and tested against.
+    - If you're using [the official Minecraft launcher](https://www.minecraft.net/download), run the installer for your chosen loader and select the version of Minecraft you want.
+    - If you're using [Prism Launcher](https://prismlauncher.org/), create a new instance for the Minecraft version you wish to use, edit that instance, select Version on the left, and add your chosen mod loader.
+    - If you're using [the CurseForge Launcher](https://download.curseforge.com/), click on Mods at the top, select Minecraft, and create a new profile with the version of Minecraft and loader you want.
 
-4. Allez sur la [page des fichiers sur CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap/files) et téléchargez la dernière version de JourneyMap pour votre version de Minecraft.
-    - Si vous utilisez [le lanceur CurseForge](https://download.curseforge.com/), vous pouvez cliquer sur le bouton Installer à côté de la version que vous souhaitez utiliser et elle sera installée pour vous. Sinon, cliquez sur le bouton de téléchargement et attendez que le fichier JAR soit téléchargé.
-    - Si vous utilisez [MultiMC](https://multimc.org/), modifiez l'instance que vous utilisez, sélectionnez Mods de chargeur à gauche, puis faites glisser et déposez le fichier JAR que vous avez téléchargé dans la liste à droite.
-    - Si vous utilisez [le lanceur officiel de Minecraft](https://www.minecraft.net/download), trouvez le dossier mods pour votre profil Forge et copiez-y le fichier JAR que vous avez téléchargé.
+4. Download JourneyMap from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap/files) or [Modrinth](https://modrinth.com/mod/journeymap), choosing the file for your Minecraft version and mod loader.
+    - If you're using [the CurseForge Launcher](https://download.curseforge.com/), you can click the Install button next to the version you'd like to use and it will be installed for you. Otherwise, click the download button and wait for the JAR to finish downloading.
+    - If you're using [Prism Launcher](https://prismlauncher.org/), edit the instance you're using, select Mods on the left, and drag-and-drop the JAR you downloaded into the list on the right.
+    - If you're using [the official Minecraft launcher](https://www.minecraft.net/download), find the `mods` folder for your modded profile and copy the JAR you downloaded into it.
 
-    S'il n'y a pas de téléchargement disponible pour votre version de Minecraft, c'est que nous n'avons pas encore publié de version ! Soyez patient - JourneyMap est un mod volumineux et complexe, et il nous faut beaucoup de temps pour le porter sur de nouvelles versions de Minecraft.
+    If no download is available for your version of Minecraft, then we haven't released one yet! Please have patience - JourneyMap is a large, complicated mod and it takes a long time for us to port it to new versions of Minecraft.
 
-5. C'est tout, vous avez terminé - lancez le jeu et JourneyMap devrait être disponible !
+5. That's everything, you're done - launch the game and JourneyMap should be available!
+
+## **Webmap**
+
+The Webmap, which lets you view your map in a web browser, used to be built into JourneyMap. As of JourneyMap 6.0 it is a separate addon mod. If you want it, install it alongside JourneyMap - see [Webmap > Installing](../webmap/installing.md).

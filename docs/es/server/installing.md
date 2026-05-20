@@ -1,9 +1,43 @@
-## **Instalación**
 
-La instalación de JourneyMap en el servidor para Forge o Fabric agrega alguna utilidad opcional para los administradores del servidor. Nota: Las versiones de Forge o Fabric pueden conectarse a JourneyMap en el servidor, sin importar si es Forge o Fabric.
+!!! warning "Translation needed for 6.0"
 
-## **Guía Textual**
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-1. Coloque JourneyMap.jar en su carpeta **mods del servidor**: ```(carpeta del servidor)/mods```
-2. La primera vez que inicie el servidor después de instalar JourneyMap, se generará un nuevo archivo de configuración en ```(carpeta del servidor)/journeymap/server/<version>/journeymap.server.minecraft~<world>.config`` `
-3. Los clientes que estén conectados se conectarán automáticamente al worldid. Esto da como resultado la creación de una nueva carpeta por parte del cliente para almacenar waypoints e imágenes de mapas: ```.minecraft/journeymap/data/mp/(server_worldid)```
+## **Installing**
+
+Installing JourneyMap on the server is optional. It adds utility for
+server admins: it lets them restrict some client features per dimension,
+manage waypoints, and support multi-world setups. JourneyMap clients on
+any loader can connect to a server running JourneyMap regardless of
+which loader the server uses.
+
+## **Fabric, NeoForge, and Forge servers**
+
+1. Put the JourneyMap jar in your server's `mods` folder:
+   `(server folder)/mods`
+2. The first time you start the server after installing JourneyMap, a
+   config file is generated under
+   `(server folder)/journeymap/server/<version>/`.
+3. Connected clients are automatically associated with the server's
+   world id. Each client creates a folder to store its waypoints and
+   map images: `.minecraft/journeymap/data/mp/(server_worldid)`
+
+## **Paper servers**
+
+!!! info "26.1 only"
+
+    The Paper build of JourneyMap is part of the Minecraft 26.1 line of
+    JourneyMap 6.0. It is not available for the 1.21.1 line.
+
+On Paper servers, JourneyMap ships as a plugin rather than a mod. Place
+the JourneyMap Paper jar in your server's `plugins` folder instead of
+`mods`. The config and per-world behavior are otherwise the same as the
+mod-loader builds.
+
+## **Server commands**
+
+JourneyMap's server commands live under the `/jm` prefix. The main one
+is the waypoint command, `/jm waypoint` (alias `/jm wp`), documented on
+the [Waypoint Command](commands/waypoint_command.md) page.

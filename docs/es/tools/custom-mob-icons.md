@@ -1,93 +1,77 @@
-## **Conjuntos de Iconos de Mob Personalizados**
 
-JourneyMap solo viene con íconos de mobs para Minecraft Vanilla. (No existe una forma mágica de derivar íconos de mobs agregados por mods). Sin embargo, a partir de JourneyMap 5.3, los autores de mods y paquetes de recursos pueden proporcionar sus propios íconos de mobs para que los use JourneyMap. Consulte las [Instrucciones para autores de mods](#instrucciones-para-autores-de-mods) e [Instrucciones para autores de paquetes de recursos](#instrucciones-para-autores-de-paquetes-de-recursos) a continuación.
+!!! warning "Translation needed for 6.0"
 
-## **Fuentes de Iconos de los Mobs**
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
 
-JourneyMap 5.3+ ya no utiliza carpetas de iconos. En cambio, utiliza íconos de mobs a través de la ubicación de recursos estándar, como cualquier otra textura en Minecraft. Esto es para que **los mods puedan proporcionar sus propios íconos de los mobs; los paquetes de recursos pueden proporcionar o anular los íconos de los mobs** como todo lo demás en el juego.
+## **Custom Mob Icons**
 
-JourneyMap 5.3+ utiliza la ubicación del recurso de textura de entidad de los mobs y sustituye "/entity/" por "/entity_icon/" para buscar el ícono de los mobs. De este modo:
+JourneyMap shows an icon for each mob on the map and the entity radar.
 
-- Textura de entidad Mob: `minecraft:textures/entity/pig/pig.png`
-- Textura del icono de los mobs: `minecraft:textures/entity_icon/pig/pig.png`
+As of JourneyMap 6.0, JourneyMap **automatically generates an icon** for
+every mob, including modded mobs, from the mob's model. You no longer
+need to provide icons just to get something to show up. You can still
+provide your own icons to replace the generated ones, and you are no
+longer restricted to a mod-specific texture path to do it.
 
-    o
+## **Icon path**
 
-- Textura de entidad Mob: `enderzoo:textures/entity/wither_cat.png`
-- Textura del icono de los mobs: `enderzoo:textures/entity_icon/wither_cat.png`
-
-!!! nota "Nota"
-
- Si eres un jugador y quieres proporcionar tus propios íconos similares a las versiones anteriores de JourneyMap, necesitarás crear un [paquete de recursos simple](http://minecraft.gamepedia.com/Tutorials/Creating_a_resource_pack) en un archivo zip. Consulte las instrucciones para los autores del paquete de recursos a continuación.
-
-## **Instrucciones para Autores de Mods**
-
-Ahora puedes proporcionar íconos a JourneyMap para los mobs de tu mod. He aquí cómo:
-
-- JourneyMap 5.3+ buscará en su archivo mod íconos en `/assets/modname/textures/entity_icon`.
-- Los iconos deben ser archivos PNG transparentes. Generalmente se admiten otros tamaños, pero se recomiendan 16x16 píxeles.
-- La estructura de carpetas y los nombres de archivos de tus íconos deben reflejar la estructura de carpetas y el nombre de archivo de tus texturas de mob en `/assets/modname/textures/entity`.
-
-Por ejemplo:
+Custom mob icons live under the `journeymap` namespace at this path:
 
 ```text
-  coolmod-1.0.jar
-   └───assets
-       └───coolmod
-           └───textures
-               └───entity
-               │   │   owlbear.png
-               │   └───kobold
-               │       │   kobold_green.png
-               │       │   kobold_blue.png
-               └───entity_icon
-                   │   owlbear.png
-                   └───kobold
-                       │   kobold_green.png
-                       │   kobold_blue.png
+assets/journeymap/icon/entity/{mod_id}/{mob_name}.png
 ```
 
-¿Por qué es necesario lo anterior? JourneyMap utiliza ResourceLocation devuelto por `net.minecraft.client.renderer.entity.Render.getEntityTexture()` como forma única de identificar un mob para cualquier mod. Proporcionar íconos con una misma ruta y nombre similar mantiene las cosas lo más simples posible.
+- `{mod_id}` is the id of the mod the mob belongs to, or `minecraft`
+  for a vanilla mob.
+- `{mob_name}` is the name of the mob.
 
-## **Instrucciones para Autores de Paquetes de Recursos**
-
-Puedes usar un paquete de recursos para proporcionar íconos a JourneyMap 5.3+ para cualquier mobs de Minecraft o mobs mod. He aquí cómo:
-
-- JourneyMap buscará en el zip de su paquete de recursos íconos en `/assets/<modname>/textures/entity_icon`.
-- Los iconos deben ser archivos PNG transparentes. Generalmente se admiten otros tamaños, pero se recomiendan 16x16 píxeles.
-- La estructura de carpetas y los nombres de archivos de tus íconos deben reflejar la estructura de carpetas y el nombre de archivo de las texturas de mob en Minecraft u otras modificaciones en `/assets/<modname>/textures/entity`.
-
-Por ejemplo, si desea proporcionar íconos personalizados tanto para los mobs de Minecraft como para un mod llamado "coolmod", las texturas de los mobs para ambos serían las siguientes:
+For example, a custom creeper icon goes at:
 
 ```text
- minecraft.jar                         coolmod-1.0.jar
-   └───assets                               └───assets
-       └───minecraft                            └───coolmod
-           └───textures                             └───textures
-               └───entity                               └───entity
-                   │   bat.png                              │   owlbear.png
-                   │   chicken.png                          └───kobold
-                   └───zombie                                   |   kobold_green.png
-                       |   zombie.png                           |   kobold_blue.png
+assets/journeymap/icon/entity/minecraft/creeper.png
 ```
 
-Por lo tanto, en su paquete de recursos, debería reflejar los árboles de archivos anteriores, reemplazando "entidad" con "entity_icon" para almacenar sus archivos de iconos de mob personalizados:
+This path is the same whether you are a mod author bundling icons in
+your mod jar or a resource pack author shipping them in a resource pack.
+
+## **Image size**
+
+The recommended icon size is 16x16. Icons can be any size, but they
+have to fit inside the marker's circle to display correctly. If you use
+a larger image, put transparent pixels in the corners so they do not
+stick out past the circle.
+
+## **Outlined icons**
+
+JourneyMap has an icon "outlined" display option. Resource packs can
+provide an outlined variant of an icon by adding a second file with an
+`_outline.png` suffix, for example:
 
 ```text
- awesomepack.zip                    
-   └───assets                              
-       ├───minecraft                       
-       │   └───textures                    
-       │       └───entity_icon      
-       │           │   bat.png             
-       │           │   chicken.png         
-       │           └───zombie              
-       │               |   zombie.png      
-       └───coolmod                         
-           └───textures                    
-               └───entity_icon      
-                   │   owlbear.png         
-                   └───kobold              
-                       |   kobold_green.png
-                       |   kobold_blue.png
+assets/journeymap/icon/entity/minecraft/creeper.png
+assets/journeymap/icon/entity/minecraft/creeper_outline.png
 ```
+
+The outlined variant is optional. If the outlined display option is
+enabled and no `_outline.png` variant exists, JourneyMap uses the
+regular icon instead. So if a resource pack replaces `creeper.png` but
+not `creeper_outline.png`, the outlined option will use the replaced
+`creeper.png`.
+
+## **Adding icons without a resource pack**
+
+You can also drop icons straight into JourneyMap's icon folder, without
+making a resource pack:
+
+```text
+{minecraft}/journeymap/icon/entity/{mod_id}/{mob_name}.png
+```
+
+Icons added this way require a client restart to be picked up.
+
+The icons JourneyMap generates automatically are stored under
+`{minecraft}/journeymap/icon/entity/`. You can browse that folder to see
+the mob names JourneyMap uses and to use the generated icons as a
+starting point for your own.

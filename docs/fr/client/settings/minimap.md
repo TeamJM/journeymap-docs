@@ -1,83 +1,120 @@
-## **Paramètres de la Minicarte**
+# **Minimap Settings**
 
-JourneyMap vous permet d'avoir deux préréglages de minicarte. Chaque préréglage représente un ensemble distinct de paramètres, vous permettant essentiellement d'avoir deux minicartes distinctes entre lesquelles vous pouvez basculer.
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0 in English. Translation
+    is pending; the content shown is the English source. See
+    Contributing to help translate the docs.
+
+JourneyMap allows you to have two minimap presets. Each preset represents a separate set of settings - essentially allowing you to have two distinct minimaps available to switch between.
 
 !!! note "Note"
 
-    Les paramètres pour chaque minicarte sont identiques, nous ne couvrirons donc qu'un seul préréglage ci-dessous.
+    The settings for each minimap are identical, so we'll only cover a single preset below.
 
-Pour basculer entre les préréglages de minicarte, appuyez sur la touche de changement de préréglage de minicarte (la touche ++backslash++ par défaut).
+To switch between minimap presets, press the switch minimap preset key (the ++backslash++ key by default).
 
-![Paramètres de la Minicarte](../../img/settings/client/minimap.png){: .center}
+![Minimap-Settings](../../img/settings/client/minimap.png){: .center}
 
-## **Bascules**
+## **Toggles**
 
-Par défaut, tous les paramètres de bascule suivants sont activés.
+The toggles whose names are shown in **bold** are enabled by default.
 
-| Bascule                 | Description                                                                 |
-|-------------------------|-----------------------------------------------------------------------------|
-| Activer la Minicarte    | Activer ou désactiver ce préréglage de minicarte                            |
-| Montrer les Animaux     | Afficher ou cacher les animaux                                              |
-| Montrer les Grottes     | Basculer automatiquement en mode grotte                                     |
-| Montrer la Boussole     | Basculer l'affichage des points cardinaux autour du bord de la minicarte    |
-| Montrer Jour/Nuit       | Basculer automatiquement entre le mode jour et nuit                         |
-| Montrer les Noms des Entités | Afficher ou cacher les noms des entités                                     |
-| Montrer la Grille       | Afficher ou cacher la superposition de grille                               |
-| Montrer les Directions des Mobs | Basculer l'affichage de la direction des mobs                               |
-| Montrer les Mobs        | Afficher ou cacher les mobs                                                 |
-| Montrer les Animaux Domestiques | Afficher ou cacher les animaux domestiques                                 |
-| Montrer les Directions des Joueurs | Basculer l'affichage de la direction des autres joueurs                     |
-| Montrer les Joueurs     | Afficher ou cacher les autres joueurs                                       |
-| Montrer le Réticule     | Afficher ou cacher les lignes pointant vers le centre de la minicarte       |
-| Montrer Soi-même        | Afficher ou cacher votre propre emplacement et direction                    |
-| Montrer les Villageois  | Afficher ou cacher les villageois                                           |
-| Montrer les Étiquettes des Points de Repère | Afficher ou cacher les noms des points de repère                           |
-| Montrer les Points de Repère | Afficher ou cacher tous les points de repère                               |
-| Emplacement Verbeux     | Basculer entre une forme longue ou courte de vos coordonnées actuelles      |
+| Toggle                       | Description                                                                       |
+|------------------------------|-----------------------------------------------------------------------------------|
+| **Enable MiniMap**           | Display the MiniMap in-game                                                       |
+| **Show Day/Night**           | Switch to Day or Night map automatically                                          |
+| **Show Caves**               | Switch to Cave map when underground or indoors                                    |
+| **Show Compass**             | Show compass points on the MiniMap frame                                          |
+| **Show Reticle**             | Show a reticle (crosshairs) on the MiniMap                                         |
+| **Show Grid**                | Show a grid of chunk boundaries on the map                                        |
+| **Show Self**                | Your locator icon is shown on the map                                             |
+| **Show Player Headings**     | Show which direction other players are looking                                    |
+| **Show Mob Headings**        | Show which direction mobs are looking                                             |
+| **Show Mobs**                | Nearby hostile mobs are shown on the map                                          |
+| **Show Animals**             | Nearby passive mobs are shown on the map                                          |
+| Show Ambient Creatures       | Nearby ambient creatures, like bats, are shown on the map                         |
+| **Show Villagers**           | Nearby villagers are shown on the map                                             |
+| **Show Pets**                | Nearby pets are shown on the map                                                  |
+| **Show Players**             | Nearby players are shown on the map                                               |
+| **Show Off-Screen Players**  | Visible players that are off-screen have their icon rendered on the minimap border |
+| **Show Waypoints**           | Nearby waypoints are shown on the map                                             |
+| **Show Waypoint Labels**     | Show waypoint labels on the map                                                   |
+| **Verbose Location**         | Location shows coordinate names (x, y, z) with the numbers                        |
+| **Show Player Names**        | Show names of players on the map                                                  |
+| **Show Team Names**          | Show names of teams on the map                                                    |
+| Show Entity Names            | Show names of pets, NPCs, etc. on the map                                         |
+| Show Hostile Mob Names       | Show names of hostile mobs on the map                                             |
+| Show Passive Mob Names       | Show names of passive mobs on the map                                             |
+| Show Ambient Creature Names  | Show names of ambient creatures on the map                                        |
+| Show Pet Names               | Show names of pets on the map                                                     |
+| Show NPC Names               | Show names of NPCs on the map                                                     |
+| Show Villager Names          | Show names of villagers on the map                                                |
+| **Show No Icon Entity Names**| Show names for entities that have no icon. This overrides all other name toggles  |
 
-## **Emplacements d'Info**
+## **Info Slots**
 
-Les emplacements d'info sont des zones de texte au-dessus et en dessous de la minicarte qui affichent des informations contextuelles supplémentaires. Il y en a quatre,
-numérotés de haut en bas.
+Info slots are text areas above and below the minimap that show extra contextual information. There are four of
+them, numbered 1 through 4. Each slot has its own label source (what it shows) and a position (Top or Bottom of
+the minimap).
 
-![Emplacements Minicarte](../../img/minimap-slots.png){: .center}
+![Minimap-Slots](../../img/minimap-slots.png){: .center}
 
-Tous les emplacements d'info peuvent être réglés sur l'un des suivants :
+Each info slot label source can be set to one of the following:
 
-- **Vide** : Rien, masquer cet emplacement d'info
-- **Biome** : Le biome dans lequel vous vous trouvez actuellement
-- **Dimension** : La dimension dans laquelle vous vous trouvez actuellement
-- **FPS** : Le compteur FPS du jeu
-- **Temps de Jeu** : L'heure actuelle dans le jeu, telle que représentée par le cycle jour/nuit de Minecraft
-- **Temps de Jeu Réel** : L'heure actuelle dans le jeu, ajustée pour correspondre à une horloge réelle
-- **Niveau de Lumière** : Le niveau de lumière du bloc sur lequel vous vous tenez
-- **Emplacement** : Vos coordonnées actuelles
-- **Région** : Vos coordonnées de région actuelles
-- **Heure Système** : L'heure réelle actuelle, selon votre ordinateur
+- **Blank**: Nothing, hide this info slot
+- **Biome**: The biome of your location
+- **Dimension**: The dimension you are currently in
+- **FPS**: The current Frames Per Second
+- **Game Time**: The world time (20 minute cycle), with a new day at 6am. This is the default Minecraft time
+- **Game Time with Offset**: The world time offset by 6 hours, so a new day starts at midnight
+- **Light Level**: The light level of the block at your feet
+- **Location**: Your current coordinates
+- **Minecraft Day**: The current day number in the world
+- **Moon Phase**: The current moon phase
+- **Movement Speed**: Your movement speed in blocks per second
+- **Region**: Your current region coordinates
+- **System Time**: The current time according to your computer's clock
+- **Weather**: The current weather for the dimension
 
-## **Autres Paramètres**
+Each info slot also has a position setting:
 
-L'option par défaut pour chaque paramètre ci-dessous est marquée en **gras**.
+| Setting              | Options                                  | Description                          |
+|----------------------|------------------------------------------|--------------------------------------|
+| Info Slot 1 Position | <ul><li>**Top**</li><li>Bottom</li></ul>  | Whether Info Slot 1 sits above or below the minimap |
+| Info Slot 2 Position | <ul><li>**Top**</li><li>Bottom</li></ul>  | Whether Info Slot 2 sits above or below the minimap |
+| Info Slot 3 Position | <ul><li>Top</li><li>**Bottom**</li></ul>  | Whether Info Slot 3 sits above or below the minimap |
+| Info Slot 4 Position | <ul><li>Top</li><li>**Bottom**</li></ul>  | Whether Info Slot 4 sits above or below the minimap |
 
-| Paramètre                      | Options                                                                                                                                                                                                  | Description                                                                                         |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Échelle de Police de la Boussole | <ul><li>Plage : 0.5 - 4 **Par défaut 1**</li></ul>                                                                                                                                                       | L'échelle de police utilisée pour les étiquettes des points cardinaux                                |
-| Échelle de Police               | <ul><li>Plage : 0.5 - 5 **Par défaut 1**</li></ul>                                                                                                                                                       | L'échelle de police pour les étiquettes et le texte                                                  |
-| Opacité du Fond des Emplacements d'Info | <ul><li>Plage : 0 - 1 <br>**Par défaut 0.7**</li></ul>                                                                                                                                                   | Ajuster l'opacité du fond des emplacements d'info.                                                   |
-| Emplacement                     | <ul><li>**x, z, y (v)**</li><li>x, y, (v), z</li><li>x, z, y</li><li>x, y, z</li><li>x, z</li></ul>                                                                                                      | Le format de vos coordonnées, tel qu'affiché sur la carte.                                           |
-| Opacité du Fond de la Carte      | <ul><li>Plage : 0 - 1 <br>**Par défaut 0.8**</li></ul>                                                                                                                                                   | Ajuster l'opacité du cadre de la MiniCarte (en pourcentage)                                 |
-| Orientation de la Carte         | <ul><li>**Nord**</li><li>Nord Ancien</li><li>Ma Direction</li></ul>                                                                                                                                      | L'orientation (rotation) de la MiniCarte. Note : Seule la forme Circulaire supporte "Ma Direction". |
-| Affichage des Mobs              | <ul><li>**Points**</li><li>Icônes</li></ul>                                                                                                                                                              | Comment les mobs doivent être affichés sur la carte.                                                 |
-| Échelle d'Affichage des Mobs     | <ul><li>Plage : 0.01 - 5 <br>**Par défaut 1**</li></ul>                                                                                                                                                  | L'échelle des icônes et points des mobs sur la carte.                                                |
-| Affichage des Joueurs           | <ul><li>**Points**</li><li>Icônes</li></ul>                                                                                                                                                              | Comment les autres joueurs doivent être affichés sur la carte.                                       |
-| Échelle d'Affichage des Joueurs  | <ul><li>Plage : 0.01 - 5 <br>**Par défaut 1**</li></ul>                                                                                                                                                  | L'échelle des icônes et points des joueurs sur la carte.                                             |
-| Format du Temps de Jeu Réel      | <ul><li>**HH:mm:ss**</li><li>H:mm:ss</li><li>HH:mm</li><li>H:mm</li><li>hh:mm:ss a</li><li>h:mm:ss a</li><li>hh:mm:ss</li><li>h:mm:ss</li><li>h:mm a</li><li>h:mm a</li><li>hh:mm</li><li>h:mm</li></ul>   | Le format de texte du temps de jeu réel, tel qu'affiché dans un emplacement d'info.                   |
-| Orientation du Réticule         | <ul><li>**Boussole**</li><li>Ma Direction</li></ul>                                                                                                                                                      | Changer l'orientation du réticule.                                                                   |
-| Échelle d'Affichage de Soi       | <ul><li>Plage : 0.01 - 5 <br>**Par défaut 1**</li></ul>                                                                                                                                                  | L'échelle de votre propre icône sur la carte.                                                        |
-| Forme                           | <ul><li>**Cercle**</li><li>Carré</li><li>Rectangle</li></ul>                                                                                                                                             | Changer la forme de la minicarte.                                                                   |
-| Format de l'Heure Système        | <ul><li>**HH:mm:ss**</li><li>H:mm:ss</li><li>HH:mm</li><li>H:mm</li><li>hh:mm:ss a</li><li>h:mm:ss a</li><li>hh:mm:ss</li><li>h:mm:ss</li><li>h:mm a</li><li>h:mm a</li><li>hh:mm</li><li>h:mm</li></ul>   | Le format de texte de l'heure système, tel qu'affiché dans un emplacement d'info.                    |
-| Échelle des Icônes des Points de Repère | <ul><li> Plage : 1 - 5 <br>**Par défaut 1**</li></ul>                                                                                                                                                     | L'échelle des icônes des points de repère sur la carte.                                             |
-| Échelle des Étiquettes des Points de Repère | <ul><li>Plage : 0.5 - 5 <br>**Par défaut 1**</li></ul>                                                                                                                                                   | L'échelle de police pour les étiquettes des points de repère sur la carte.                          |
-| Opacité du Cadre                | <ul><li>Plage 0 - 100 <br>**Par défaut 100**</li><ul>                                                                                                                                                   | À quel point le cadre autour de la minicarte doit être opaque                                         |
-| Opacité de la Carte             | <ul><li>Plage 0 - 100 <br>**Par défaut 100**</li><ul>                                                                                                                                                   | À quel point la vue de la carte elle-même doit être opaque                                           |
-| Taille                          | <ul><li>Plage 0 - 100 <br>**Par défaut 30**</li><ul>                                                                                                                                                     | Quelle taille la minicarte doit avoir, en pourcentage de la taille de la fenêtre                     |
+By default, Info Slot 1 is Blank, Info Slot 2 shows Game Time, Info Slot 3 shows Location, and Info Slot 4 shows
+Biome.
+
+## **Other Settings**
+
+The default option for each setting below is marked with **bold** text.
+
+| Setting                      | Options                                                                                                                                                                                                  | Description                                                                                                |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| Map Type                     | <ul><li>**Default**</li><li>Day</li><li>Night</li><li>Cave/Underground</li><li>Topo</li><li>Biome</li></ul>                                                                                               | Locks the Map Type to this value. (Nether is always cave, but you can force a slice when set to underground) |
+| Cave Layer                   | <ul><li>Range: -4 - 15 <br>**Default is 4**</li></ul>                                                                                                                                                    | The vertical slice to lock the minimap to when Map Type is set to underground. Disabled otherwise.          |
+| Shape                        | <ul><li>**Circle**</li><li>Square</li><li>Horizontal Rectangle</li><li>Vertical Rectangle</li></ul>                                                                                                      | The shape of the MiniMap. Note: Only Circle supports the "My Heading" Map Heading.                          |
+| Size                         | <ul><li>Range: 1 - 100 <br>**Default is 30**</li></ul>                                                                                                                                                   | The size of the MiniMap, as a percentage of the window size. Sizes over 768px may hurt performance.        |
+| Map Heading                  | <ul><li>**North**</li><li>Old North</li><li>My Heading</li></ul>                                                                                                                                         | The orientation (rotation) of the MiniMap. Note: Only Circle supports the "My Heading" Map Heading.        |
+| Reticle Heading              | <ul><li>**Compass**</li><li>My Heading</li></ul>                                                                                                                                                         | The orientation (rotation) of the reticle on the MiniMap.                                                  |
+| Frame Opacity                | <ul><li>Range: 0 - 100 <br>**Default is 100**</li></ul>                                                                                                                                                  | How opaque the MiniMap frame is (as a percentage).                                                         |
+| Map Opacity                  | <ul><li>Range: 0 - 100 <br>**Default is 100**</li></ul>                                                                                                                                                  | How opaque the map is (as a percentage).                                                                   |
+| Map Background Opacity       | <ul><li>Range: 0 - 1 <br>**Default is 0.8**</li></ul>                                                                                                                                                    | How opaque the map background is.                                                                          |
+| Compass Font Scale           | <ul><li>Range: 0.5 - 4 <br>**Default is 1**</li></ul>                                                                                                                                                    | The font scale used for compass point labels.                                                              |
+| Font Scale                   | <ul><li>Range: 0.5 - 5 <br>**Default is 1**</li></ul>                                                                                                                                                    | The font scale for labels and text.                                                                        |
+| Info Slot Font Scale         | <ul><li>Range: 0.5 - 5 <br>**Default is 1**</li></ul>                                                                                                                                                    | The font scale used for info slots.                                                                        |
+| Info Slot Background Opacity | <ul><li>Range: 0 - 1 <br>**Default is 0.7**</li></ul>                                                                                                                                                    | The opacity of the Info Slot background.                                                                   |
+| Info Slot Game Time Format   | <ul><li>**HH:mm:ss**</li><li>H:mm:ss</li><li>HH:mm</li><li>H:mm</li><li>hh:mm:ss a</li><li>h:mm:ss a</li><li>hh:mm:ss</li><li>h:mm:ss</li><li>hh:mm a</li><li>h:mm a</li><li>hh:mm</li><li>h:mm</li></ul> | Time format for the game time info slot.                                                                   |
+| System Time Format           | <ul><li>**HH:mm:ss**</li><li>H:mm:ss</li><li>HH:mm</li><li>H:mm</li><li>hh:mm:ss a</li><li>h:mm:ss a</li><li>hh:mm:ss</li><li>h:mm:ss</li><li>hh:mm a</li><li>h:mm a</li><li>hh:mm</li><li>h:mm</li></ul> | Time format for the System Time info slot.                                                                 |
+| Location                     | <ul><li>**x, z, y (v)**</li><li>x, y (v), z</li><li>x, z, y</li><li>x, y, z</li><li>x, z</li></ul>                                                                                                       | The format of how location coordinates are displayed. Note: 'v' stands for vertical chunk.                 |
+| Mob Display                  | <ul><li>**Dots and Outlined Icons**</li><li>Dots</li><li>Icons</li><li>Outlined Icons</li><li>Dots and Icons</li></ul>                                                                                    | How mobs should be displayed on the map.                                                                   |
+| Mob Display Scale            | <ul><li>Range: 0.01 - 5 <br>**Default is 1**</li></ul>                                                                                                                                                   | The scale for Mob icons and dots.                                                                          |
+| Player Display               | <ul><li>**Outlined Icons**</li><li>Dots</li><li>Icons</li><li>Dots and Icons</li><li>Dots and Outlined Icons</li></ul>                                                                                    | How other players should be displayed on the map.                                                          |
+| Player Display Scale         | <ul><li>Range: 0.01 - 5 <br>**Default is 1**</li></ul>                                                                                                                                                   | The scale for Player icons and dots.                                                                       |
+| Self Display Scale           | <ul><li>Range: 0.01 - 5 <br>**Default is 1**</li></ul>                                                                                                                                                   | The scale for your own icon.                                                                               |
+| Waypoint Icon Scale          | <ul><li>Range: 1 - 5 <br>**Default is 1**</li></ul>                                                                                                                                                      | The scale for waypoint icons on the map.                                                                   |
+| Waypoint Label Scale         | <ul><li>Range: 0.5 - 5 <br>**Default is 1**</li></ul>                                                                                                                                                    | The font scale for waypoint labels on the map.                                                             |

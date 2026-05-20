@@ -1,4 +1,10 @@
-## **Carte en Plein Écran**
+# **Carte en Plein Écran**
+
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
 
 En appuyant sur la touche de la carte en plein écran (par défaut, la touche ++j++), vous pouvez ouvrir la carte en plein écran.
 
@@ -18,11 +24,21 @@ Les raccourcis clavier suivants sont disponibles, et ils peuvent être modifiés
 
 - ++c++ Copier les coordonnées du bloc sur lequel votre curseur pointe vers la boîte de chat
 - ++b++ Créer un [point de repère](waypoints.md) au bloc sur lequel votre curseur pointe
-- ++o++ Ouvrir le [gestionnaire de paramètres](settings/overview.md) de JourneyMap
+- ++o++ Open JourneyMap's [settings manager](settings/overview.md)
+- ++f++ Follow your player (re-center the map and keep it centered on you)
+- ++up++ ++down++ ++left++ ++right++ Pan the map 16 blocks in that direction
 
 ## **Boutons**
 
 Autour du bord de la carte en plein écran se trouve un ensemble de boutons, que vous pouvez utiliser pour personnaliser la vue de la carte en plein écran et accéder à d'autres zones du mod. Les icônes peuvent différer entre les thèmes ; les icônes ci-dessous proviennent des thèmes qui sont fournis avec JourneyMap.
+
+!!! note "Minimal UI"
+
+    The full-screen map has a Minimal UI option that hides most of these
+    buttons for a cleaner view. It can be toggled in the
+    [full-screen map settings](settings/full-screen-map.md). You can also
+    hide the buttons temporarily with the Disable Fullscreen Buttons
+    keybind (unbound by default).
 
 ## **Boutons Supérieurs**
 
@@ -70,9 +86,9 @@ Autour du bord de la carte en plein écran se trouve un ensemble de boutons, que
 | ![Points de Repère](../img/icons/waypoints.png){: .center} | Ouvrir le [gestionnaire de points de repère](settings/waypoint.md). |
 | ![Options](../img/icons/options.png){: .center}      | Ouvrir le [gestionnaire de paramètres](settings/overview.md). |
 | ![À Propos](../img/icons/about.png){: .center}       | Ouvrir l'écran À propos.                            |
-| ![Navigateur](../img/icons/browser.png){: .center}  | Ouvrir la [Webmap](../settings/webmap.md), si activée.                       |
+| ![Navigateur](../img/icons/browser.png){: .center}  | Open the [Webmap](../webmap/installing.md), if installed and enabled. |
 | ![Thème](../img/icons/theme.png){: .center}          | Passer à travers les thèmes disponibles.           |
-| ![Réinitialiser](../img/icons/reset.png){: .center}  | Réinitialiser la palette de couleurs.              |
+| ![Réinitialiser](../img/icons/reset.png){: .center}  | Open the [Color Palette](color-palette.md) editor. |
 | ![Supprimer](../img/icons/delete.png){: .center}     | Supprimer la carte dans une ou plusieurs dimensions. |
 | ![Sauvegarder](../img/icons/savemap.png){: .center}  | Sauvegarder toute la carte dans un fichier.        |
 | ![Auto-Carte](../img/icons/automap.png){: .center}   | Cartographier le monde exploré, en solo.           |

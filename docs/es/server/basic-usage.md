@@ -1,6 +1,12 @@
 ## **Descripción General**
 
-No es necesario tener instalado JourneyMap Server para utilizar JourneyMap Cliente. Simplemente proporciona una manera para que los administradores del servidor restrinjan algunas funciones y/o admitan instalaciones de Bukkit Multiworld y BungeeCord. Sin embargo, es posible que algunas funciones no estén disponibles en los entornos de servidor Forge y Bukkit, así que lea la información en esta página y los registros de cambios de cada versión para obtener información específica sobre las funciones de su servidor.
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
+You don't have to have JourneyMap installed on the server to use the JourneyMap client. Installing it on the server gives admins a way to restrict some client features, manage waypoints, and support multi-world and proxy (BungeeCord / Velocity) setups. JourneyMap server runs on Fabric, NeoForge, and Forge servers, and on Paper servers (Minecraft 26.1 line). See [Installing](installing.md) for details.
 
 ## **Configuración de Administrador del Servidor**
 
@@ -12,9 +18,9 @@ Si el botón no aparece, es posible que deba cerrar sesión y volver a ingresar 
 
 De forma predeterminada, todos los usuarios Op tienen acceso a la pantalla de administración del servidor. Esto se puede cambiar mediante un archivo de configuración en el servidor.
 
-La ubicación del archivo de configuración para los servidores Fabric: `(server_folder)/configs/journeymap_server.cfg`.
+The config file location for Fabric servers: `(server_folder)/configs/journeymap_server.cfg`.
 
-La ubicación del archivo de configuración para Forge Servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
+The config file location for NeoForge and Forge servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
 ```text
     server {
@@ -41,7 +47,7 @@ La ubicación del archivo de configuración para Forge Servers: `(server_folder)
 
 ## **Uso del Paquete de Modificaciones**
 
-El mod JourneyMap Client se rige por una [política de modpack diferente](../About/licensing.md) que el servidor.
+El mod JourneyMap Client se rige por una [política de modpack diferente](../about/licensing.md) que el servidor.
 
 Lo siguiente se aplica únicamente al mod del servidor:
 

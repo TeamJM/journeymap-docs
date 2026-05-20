@@ -1,5 +1,11 @@
 # **Traduire la documentation**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 Si vous souhaitez contribuer à JourneyMap, une bonne façon de le faire est de traduire la documentation et le mod. Cela peut aider les personnes qui ne parlent pas ou qui ne savent pas lire l'anglais à pouvoir lire la documentation de JourneyMap ou à jouer au mod JourneyMap dans leur propre langue.
 
 Les instructions sur la manière de traduire le mod peuvent être trouvées [ici](translate-mod.md).
@@ -96,18 +102,24 @@ Maintenant que vous vous êtes configuré, vous pouvez commencer à traduire la 
 ```text
 ├─ docs/
 │    ├─ en/
-│    │   ├─ About/
-│    │   ├─ Client Docs/
-│    │   ├─ Server Docs/
-│    │   ├─ Tools and Customisation/
+│    │   ├─ about/
+│    │   ├─ client/
+│    │   ├─ server/
+│    │   ├─ tools/
+│    │   ├─ webmap/
+│    │   ├─ contributing/
+│    │   ├─ img/
 │    │   ├─ changelogs.md
 │    │   └─ index.md
 │    │
 │    └─ fr/
-│        ├─ About/
-│        ├─ Client Docs/
-│        ├─ Server Docs/
-│        ├─ Tools and Customisation/
+│        ├─ about/
+│        ├─ client/
+│        ├─ server/
+│        ├─ tools/
+│        ├─ webmap/
+│        ├─ contributing/
+│        ├─ img/
 │        ├─ changelogs.md
 │        └─ index.md
 ```

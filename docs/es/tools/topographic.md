@@ -1,5 +1,11 @@
 ## **Terminología**
 
+!!! warning "Translation needed for 6.0"
+
+    This page was updated for JourneyMap 6.0. Some sections shown are
+    the English source pending translation. See Contributing to help
+    translate the docs.
+
 - **Mapa Topográfico**: Representación gráfica de la posición, escala, forma, relieve y distribución de características naturales y culturales seleccionadas de un área de la superficie de la Tierra.
 - **Línea de Contorno**: Línea dibujada en un mapa topográfico que conecta dos puntos de igual elevación sobre el nivel del mar.
 - **Intervalo de Contorno**: La distancia vertical entre dos líneas de contorno adyacentes.
@@ -8,21 +14,30 @@
 
 ## **Descripción General de los Mapas Topográficos en JourneyMap**
 
-Los mapas topográficos de JourneyMap le permiten ver los contornos de elevación de su mundo. Puedes personalizar las propiedades y los colores del mapa topográfico en (`.minecraft/journeymap/config/5.2/journeymap.topo.config`) según lo que te parezca mejor o lo que quieras enfatizar.
+JourneyMap's Topographic Maps let you see the elevation contours of your world.  You can customize the topographic map properties and colors in (`.minecraft/journeymap/config/6.0/journeymap.topo.config`) according to what looks best to you, or what you want to emphasize.
 
-Así Es Como Funciona:
+Here's how it works:
 
-**{Altura mundial} ÷ {Número de colores} = {Intervalo de contorno}**
+**{World height} / {Number of colors} = {Contour interval}**
 
-Entonces, dada una **altura mundial de 256** bloques, una paleta de **32 colores** creará 32 contornos de elevación, cada uno con un **intervalo de contorno de 8** bloques de altura.
+So, given a **world height of 384** blocks, a palette of **32 colors** will create 32 elevation contours, each with a **contour interval of 12** blocks high.
 
-- 1er color: y 0-7
-- 2do color: y 8-15
+- 1st color: the lowest 12 blocks
+- 2nd color: the next 12 blocks
 - etc.
+
+!!! note "Custom Max Topo Height"
+
+    By default the topographic map uses the world's full build height
+    for the contour math. The [Cartography settings](../client/settings/cartography.md)
+    have a **Custom Max Topo Height** option that lets you cap the
+    height used, which is useful for emphasizing contours in a height
+    range you care about. Any blocks above the cap are drawn in the
+    top color.
 
 ## **Personalización**
 
-El archivo de configuración de mapas topográficos `.minecraft/journeymap/config/5.2/journeymap.topo.config` se puede editar con un simple editor de texto. Puede realizar cambios, guardarlo y ver los resultados inmediatamente en JourneyMap sin necesidad de reiniciar.
+The topographic maps config file `.minecraft/journeymap/config/6.0/journeymap.topo.config` can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
 
 El archivo tiene las siguientes propiedades:
 
