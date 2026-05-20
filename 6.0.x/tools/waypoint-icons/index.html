@@ -1961,6 +1961,45 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#custom-icon-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom icon sets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom icon sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-the-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naming the set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#folder-layout_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Folder layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2333,6 +2372,45 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#custom-icon-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom icon sets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom icon sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-the-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naming the set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#folder-layout_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Folder layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2400,6 +2478,52 @@ waypoint marker.</p>
  │                   │   portal.png
  └───pack.mcmeta
 </code></pre></div>
+<h2 id="custom-icon-sets"><strong>Custom icon sets</strong></h2>
+<p>Icons placed directly in <code>textures/waypoint/icon/</code> appear in the
+<strong>JourneyMap</strong> set. To ship your icons as their own named set, put them in a
+<strong>subfolder</strong>:</p>
+<div class="highlight"><pre><span></span><code>assets/journeymap/textures/waypoint/icon/&lt;set&gt;/&lt;name&gt;.png
+</code></pre></div>
+<p>Each subfolder becomes its own tab in the icon picker's "Icon Sets" panel. The
+subfolder name (<code>&lt;set&gt;</code>) is the set's identifier.</p>
+<h3 id="naming-the-set">Naming the set</h3>
+<p>By default the tab is labelled with the raw subfolder name. To give it a
+friendly, localizable name, add this translation key to your resource pack's
+language files:</p>
+<div class="highlight"><pre><span></span><code>waypoint.iconset.&lt;set&gt;.name
+</code></pre></div>
+<p>For example, a <code>houses</code> subfolder:</p>
+<p><code>assets/journeymap/lang/en_us.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"waypoint.iconset.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cool Houses"</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>assets/journeymap/lang/es_es.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"waypoint.iconset.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casas Geniales"</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The key is optional. Without it, the tab shows the subfolder name (<code>houses</code>).</p>
+<h3 id="folder-layout_1">Folder layout</h3>
+<div class="highlight"><pre><span></span><code>my-waypoint-icons.zip
+ └───assets
+ │   └───journeymap
+ │       ├───lang
+ │       │   │   en_us.json
+ │       │   │   es_es.json
+ │       └───textures
+ │           └───waypoint
+ │               └───icon
+ │                   │   castle.png          (JourneyMap set)
+ │                   │   portal.png          (JourneyMap set)
+ │                   └───houses
+ │                       │   cabin.png       (Cool Houses set)
+ │                       │   manor.png       (Cool Houses set)
+ └───pack.mcmeta
+</code></pre></div>
+<p>Icons in a set placed under the <code>journeymap</code> namespace (the path shown above)
+are tinted by the waypoint color, like JourneyMap's built-in icons. Use 16x16
+transparent PNG files, as for the JourneyMap set.</p>
 
 
 
