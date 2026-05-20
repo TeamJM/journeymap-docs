@@ -84,6 +84,7 @@ plugins:
             Cartography: Cartography
             Filters: Filters
             Advanced Options: Advanced Options
+            Advanced Map Rendering: Advanced Map Rendering
             Waypoints: Waypoints
             Waypoint Groups: Waypoint Groups
             Color Palette: Color Palette
@@ -139,6 +140,7 @@ plugins:
             Cartography: Cartographie
             Filters: Filtres
             Advanced Options: Options Avancées
+            Advanced Map Rendering: Rendu de Carte Avancé
             Waypoints: Points de Repère
             Waypoint Groups: Groupes de Points de Repère
             Color Palette: Palette de Couleurs
@@ -189,6 +191,7 @@ plugins:
             Cartography: Cartografía
             Filters: Filtros
             Advanced Options: Configuración Avanzada
+            Advanced Map Rendering: Renderizado de Mapa Avanzado
             Waypoints: Puntos de Ruta
             Waypoint Groups: Grupos de Puntos de Ruta
             Color Palette: Paleta de Colores
@@ -245,6 +248,7 @@ nav:
           - Cartography: client/settings/cartography.md
           - Filters: client/settings/filters.md
           - Advanced Options: client/settings/advanced.md
+          - Advanced Map Rendering: client/settings/advanced-rendering.md
       - Waypoints: client/waypoints.md
       - Waypoint Groups: client/waypoint-groups.md
       - Color Palette: client/color-palette.md
