@@ -97,18 +97,24 @@ Now that you have set yourself up, you can now start translating the actual docs
 ```text
 ├─ docs/
 │    ├─ en/
-│    │   ├─ About/
-│    │   ├─ Client Docs/
-│    │   ├─ Server Docs/
-│    │   ├─ Tools and Customisation/
+│    │   ├─ about/
+│    │   ├─ client/
+│    │   ├─ server/
+│    │   ├─ tools/
+│    │   ├─ webmap/
+│    │   ├─ contributing/
+│    │   ├─ img/
 │    │   ├─ changelogs.md
 │    │   └─ index.md
 │    │
 │    └─ fr/
-│        ├─ About/
-│        ├─ Client Docs/
-│        ├─ Server Docs/
-│        ├─ Tools and Customisation/
+│        ├─ about/
+│        ├─ client/
+│        ├─ server/
+│        ├─ tools/
+│        ├─ webmap/
+│        ├─ contributing/
+│        ├─ img/
 │        ├─ changelogs.md
 │        └─ index.md
 ```

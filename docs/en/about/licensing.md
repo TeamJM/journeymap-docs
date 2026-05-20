@@ -6,7 +6,7 @@ JourneyMap is distributed under an All Rights Reserved license. This means that 
 
 - Create a modpack containing JourneyMap, as long as JourneyMap is downloaded from CurseForge or Modrinth as part of the modpack installation or launch process. This includes modpacks hosted directly on CurseForge or Modrinth.
 
-- If you’re using solder.io with Technic to allow each user to download the mod directly from CurseForge, you may also include JourneyMap. Just ensure that you’re [following these directions](https://github.com/bochen415/JourneyMap-TechnicSolder-Tutorial/wiki/JourneyMap-TechnicSolder-Tutorial).
+- If you're using solder.io with Technic to allow each user to download the mod directly from CurseForge, you may also include JourneyMap. Just ensure that you're [following these directions](https://github.com/bochen415/JourneyMap-TechnicSolder-Tutorial/wiki/JourneyMap-TechnicSolder-Tutorial).
 
 - Interact and make use of our open-source projects [on GitHub](https://github.com/TeamJM/) under the terms of the individual licenses of those projects.
 
@@ -20,7 +20,7 @@ JourneyMap is distributed under an All Rights Reserved license. This means that 
 
 - Re-host, redistribute or bundle the mod in any way, including as part of a larger distribution such as a modpack. This includes Technic modpacks, which bundle all of the mods into a single zip file.
 
-If you’re unhappy with the way Technic handles this, please feel free to drop a comment on this [GitHub issue](https://github.com/TechnicPack/TechnicSolder/issues/424).
+If you're unhappy with the way Technic handles this, please feel free to drop a comment on this [GitHub issue](https://github.com/TechnicPack/TechnicSolder/issues/424).
 
 - Decompile our mod or extract the contents of the JAR and make use of the code or assets therein for any purpose.
 
@@ -46,8 +46,12 @@ The following launchers are all explicitly approved for use with JourneyMap, pro
 
 - [The CurseForge Launcher](https://download.curseforge.com/) is granted permission to include JourneyMap in both public and private modpacks.
 
+- [Modrinth](https://modrinth.com/) is granted permission to host modpacks containing JourneyMap, provided the modpacks download JourneyMap from Modrinth.
+
+- [The Modrinth App](https://modrinth.com/app) is granted permission to install modpacks containing JourneyMap, provided the modpacks are in Modrinth format and download JourneyMap from Modrinth.
+
 ## **Other notes**
 
-You don’t need to notify us if you make use of JourneyMap in your modpack, but we do like to hear from users that enjoy our work and it helps us to know how JourneyMap is being used. If you like, feel free to send a tweet to [@JourneyMapMod](https://twitter.com/JourneyMapMod) with the name of your modpack and the launcher you’re using!
+You don't need to notify us if you make use of JourneyMap in your modpack, but we do like to hear from users that enjoy our work and it helps us to know how JourneyMap is being used. If you like, feel free to send a tweet to [@JourneyMapMod](https://twitter.com/JourneyMapMod) with the name of your modpack and the launcher you're using!
 
 If you have any questions about our licensing (or wish to report a violation), please feel free to contact us directly [on Discord](https://discord.gg/eP8gE69).

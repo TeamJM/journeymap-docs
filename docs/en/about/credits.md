@@ -12,6 +12,16 @@ JourneyMap includes and/or makes use of the following software under their respe
 - Content and materials are trademarks and copyrights of Mojang AB. All rights reserved. 
 - End-User License Agreement: <http://minecraft.net/terms>
 
+**Fabric**
+
+- <https://fabricmc.net/>
+- Apache License 2.0: <http://www.apache.org/licenses/LICENSE-2.0>
+
+**NeoForge**
+
+- <https://neoforged.net/>
+- GNU Lesser General Public License 2.1: <http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
+
 **Forge**
 
 - <http://www.minecraftforge.net/>

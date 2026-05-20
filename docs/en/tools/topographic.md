@@ -8,21 +8,30 @@
 
 ## **Overview of Topographic Maps in JourneyMap**
 
-JourneyMap's Topographic Maps let you see the elevation contours of your world.  You can customize the topographic map properties and colors in (`.minecraft/journeymap/config/5.2/journeymap.topo.config`) according to what looks best to you, or what you want to emphasize.  
+JourneyMap's Topographic Maps let you see the elevation contours of your world.  You can customize the topographic map properties and colors in (`.minecraft/journeymap/config/6.0/journeymap.topo.config`) according to what looks best to you, or what you want to emphasize.  
 
 Here's how it works:
 
-**{World height} ÷ {Number of colors} = {Contour interval}**
+**{World height} / {Number of colors} = {Contour interval}**
 
-So, given a **world height of 256** blocks, a palette of **32 colors** will create 32 elevation contours, each with a **contour interval of 8** blocks high.
+So, given a **world height of 384** blocks, a palette of **32 colors** will create 32 elevation contours, each with a **contour interval of 12** blocks high.
 
-- 1st color: y 0-7
-- 2nd color: y 8-15
+- 1st color: the lowest 12 blocks
+- 2nd color: the next 12 blocks
 - etc.
+
+!!! note "Custom Max Topo Height"
+
+    By default the topographic map uses the world's full build height
+    for the contour math. The [Cartography settings](../client/settings/cartography.md)
+    have a **Custom Max Topo Height** option that lets you cap the
+    height used, which is useful for emphasizing contours in a height
+    range you care about. Any blocks above the cap are drawn in the
+    top color.
 
 ## **Customization**
 
-The topographic maps config file `.minecraft/journeymap/config/5.2/journeymap.topo.config` can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
+The topographic maps config file `.minecraft/journeymap/config/6.0/journeymap.topo.config` can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
 
 The file has the following properties:
 
