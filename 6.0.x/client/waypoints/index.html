@@ -1163,6 +1163,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#the-waypoint-settings-popup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Waypoint Settings popup
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2518,6 +2529,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#the-waypoint-settings-popup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Waypoint Settings popup
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2767,10 +2789,16 @@ once. With a selection active you can <strong>Toggle Selected</strong>,
 <li><strong>Group</strong> - the <a href="#waypoint-groups">group</a> this waypoint belongs to.
   You can also create a new group from here.</li>
 <li><strong>Enable</strong> - whether the waypoint is enabled and visible.</li>
-<li><strong>Color</strong> - the waypoint color. Click the color wheel to pick a color,
-  or use <strong>Randomize</strong> for a new random color.</li>
+<li><strong>Color</strong> - the waypoint's color. Click the color wheel to pick a
+  color, or use <strong>Randomize</strong> for a new random color. This sets the
+  icon, beacon, and label colors together; to set them separately, use
+  the Settings popup.</li>
 <li><strong>Icon</strong> - click the icon button to choose the waypoint's icon. See
   <a href="#waypoint-icons">Waypoint Icons</a>.</li>
+<li><strong>Settings</strong> - opens the
+  <a href="#the-waypoint-settings-popup">Waypoint Settings popup</a>, where you can
+  set the icon, beacon, and label colors individually and choose where
+  the waypoint is shown.</li>
 <li><strong>Description</strong> - opens a popup for a longer free-text description.</li>
 </ul>
 <p>Buttons:</p>
@@ -2784,6 +2812,63 @@ once. With a selection active you can <strong>Toggle Selected</strong>,
 rather than a single waypoint. It includes the <strong>Coordinate Layout</strong>
 option, which switches between separate X / Y / Z input fields and a
 single combined <code>X, Y, Z</code> field.</p>
+<h3 id="the-waypoint-settings-popup">The Waypoint Settings popup</h3>
+<p>The <strong>Settings</strong> button in the editor opens the Waypoint Settings popup,
+which controls the waypoint's colors and where it is shown.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/waypoint-settings.png" data-desc-position="bottom"><img alt="Waypoint-Settings" class="center" src="../../img/client/waypoint-settings.png"></a></p>
+<p><strong>Colors.</strong> The popup has a three-row color table - <strong>Icon</strong>, <strong>Beacon</strong>,
+and <strong>Label</strong>:</p>
+<ul>
+<li>Each row has a color picker. The Icon row also has an icon button for
+  choosing the <a href="#waypoint-icons">icon</a>.</li>
+<li>The Beacon and Label colors follow the Icon color until you set them
+  individually, so by default all three match.</li>
+<li>Each row's <strong>Clear</strong> button removes that color, drawing the element
+  with no tint.</li>
+<li><strong>Reset Colors</strong> returns all three rows to the icon's color.</li>
+</ul>
+<p><strong>Visibility.</strong> A column of checkboxes controls where the waypoint is
+shown:</p>
+<table>
+<thead>
+<tr>
+<th>Toggle</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show on Map</td>
+<td>Show the waypoint on the minimap and full-screen map.</td>
+</tr>
+<tr>
+<td>Show in World</td>
+<td>Show the waypoint in the world.</td>
+</tr>
+<tr>
+<td>Show Label</td>
+<td>Show the waypoint's name label.</td>
+</tr>
+<tr>
+<td>Show Beacon</td>
+<td>Show the in-world beacon beam.</td>
+</tr>
+<tr>
+<td>Show Icon</td>
+<td>Show the waypoint's icon.</td>
+</tr>
+<tr>
+<td>Show Deviation</td>
+<td>Show the deviation readout next to the label.</td>
+</tr>
+<tr>
+<td>Show on Locator Bar</td>
+<td>Show the waypoint on the vanilla locator bar.</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Show on Locator Bar</strong> toggle is only present in JourneyMap for
+Minecraft 26.1 (see <a href="#show-on-locator-bar">Show On Locator Bar</a>).</p>
 <h2 id="waypoint-groups"><strong>Waypoint Groups</strong></h2>
 <p>Waypoint groups let you organize waypoints into named sets - for example
 <code>Bases</code>, <code>Mining</code>, or <code>Villages</code>. A group can be enabled or disabled as
@@ -2799,11 +2884,21 @@ group.</p>
 coverage lives on the <a href="../waypoint-groups/">Waypoint Groups</a> page.</p>
 </div>
 <h2 id="waypoint-icons"><strong>Waypoint Icons</strong></h2>
-<p>JourneyMap ships with a set of built-in waypoint icons, selectable from
-the icon button in the Waypoint Editor. When many icons are available
-(for example from a resource pack) JourneyMap shows a dedicated icon
-selection menu so you can browse them.</p>
-<p>You can add your own waypoint icons with a resource pack. See
+<p>Click the icon button in the Waypoint Editor (or in the Icon row of the
+<a href="#the-waypoint-settings-popup">Settings popup</a>) to open the icon picker.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/waypoint-icon-picker.png" data-desc-position="bottom"><img alt="Waypoint-Icon-Picker" class="center" src="../../img/client/waypoint-icon-picker.png"></a></p>
+<p>The picker groups icons into tabs:</p>
+<ul>
+<li><strong>All</strong> - every available icon.</li>
+<li><strong>JourneyMap</strong> - the built-in JourneyMap icons.</li>
+<li><strong>Minecraft</strong> - vanilla Minecraft item textures.</li>
+<li><strong>Map Deco</strong> - vanilla map marker icons.</li>
+<li>One tab for each named icon set supplied by a resource pack.</li>
+</ul>
+<p>The picker also has a color picker, so you can set the icon's color while
+choosing it, and a <strong>Clear</strong> button to remove the color.</p>
+<p>You can add your own waypoint icons, and your own named icon sets, with a
+resource pack. See
 <a href="../../tools/waypoint-icons/">Waypoint Icons (Resource Packs)</a>.</p>
 <h2 id="server-managed-waypoints"><strong>Server-Managed Waypoints</strong></h2>
 <p>When you play on a server that runs JourneyMap, the server can manage
