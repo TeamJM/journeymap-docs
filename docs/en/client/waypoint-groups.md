@@ -50,11 +50,28 @@ and provides these options:
 | Option              | Description                                                                                                |
 |---------------------|------------------------------------------------------------------------------------------------------------|
 | Name                | The group's display name. Locked (native) groups cannot be renamed.                                        |
-| Color Override      | When enabled, every waypoint in the group uses the group's color instead of its own.                       |
-| Icon Override       | When enabled, every waypoint in the group uses the group's icon instead of its own.                        |
+| Settings            | Opens the [group Settings popup](#group-settings-and-overrides) for the group's colors, icon, and visibility, including the override toggles. |
 | Default             | Marks this group as the default group for new waypoints. Only one group can be the default at a time.       |
 | Tag                 | Text prefixed onto every waypoint name in the group, both on the map and in the world. Can be left blank.   |
 | Locked              | Shown for native groups whose name cannot be edited.                                                       |
+
+### Group settings and overrides
+
+![Group-Settings](../img/client/group-settings.png){: .center}
+
+The **Settings** button opens the same
+[Waypoint Settings popup](waypoints.md#the-waypoint-settings-popup) used
+for individual waypoints - the Icon/Beacon/Label color table and the
+visibility toggles - applied to the group. In group mode it adds two
+extra checkboxes:
+
+- **Override Colors** - when enabled, every waypoint in the group uses
+  the group's colors and icon instead of its own.
+- **Override Settings** - when enabled, every waypoint in the group uses
+  the group's visibility toggles instead of its own.
+
+With both left off, each waypoint keeps its own colors and settings and
+the group's are ignored.
 
 ### Show on Locator Bar
 
@@ -64,8 +81,9 @@ and provides these options:
     only present in JourneyMap for Minecraft 26.1. It is not available
     on the 1.21.1 line.
 
-The Edit Group screen also has a **Show on Locator Bar** option, which
-shows the group's waypoints on the vanilla locator bar above the hotbar.
+**Show on Locator Bar** is one of the visibility toggles in the group's
+Settings popup. It shows the group's waypoints on the vanilla locator bar
+above the hotbar.
 
 ## **Default group**
 

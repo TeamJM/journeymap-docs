@@ -70,8 +70,10 @@ Icons placed directly in `textures/waypoint/icon/` appear in the
 assets/journeymap/textures/waypoint/icon/<set>/<name>.png
 ```
 
-Each subfolder becomes its own tab in the icon picker's "Icon Sets" panel. The
-subfolder name (`<set>`) is the set's identifier.
+Each subfolder becomes its own tab in the icon picker. The subfolder name
+(`<set>`) is the set's identifier. Resource-pack sets appear alongside
+JourneyMap's built-in tabs - **All**, **JourneyMap**, **Minecraft**
+(vanilla item textures), and **Map Deco** (map markers).
 
 ### Naming the set
 

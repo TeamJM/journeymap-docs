@@ -89,10 +89,16 @@ The editor provides these fields:
 - **Group** - the [group](#waypoint-groups) this waypoint belongs to.
   You can also create a new group from here.
 - **Enable** - whether the waypoint is enabled and visible.
-- **Color** - the waypoint color. Click the color wheel to pick a color,
-  or use **Randomize** for a new random color.
+- **Color** - the waypoint's color. Click the color wheel to pick a
+  color, or use **Randomize** for a new random color. This sets the
+  icon, beacon, and label colors together; to set them separately, use
+  the Settings popup.
 - **Icon** - click the icon button to choose the waypoint's icon. See
   [Waypoint Icons](#waypoint-icons).
+- **Settings** - opens the
+  [Waypoint Settings popup](#the-waypoint-settings-popup), where you can
+  set the icon, beacon, and label colors individually and choose where
+  the waypoint is shown.
 - **Description** - opens a popup for a longer free-text description.
 
 Buttons:
@@ -107,6 +113,40 @@ The **Waypoint Editor Options** button configures the editor itself
 rather than a single waypoint. It includes the **Coordinate Layout**
 option, which switches between separate X / Y / Z input fields and a
 single combined `X, Y, Z` field.
+
+### The Waypoint Settings popup
+
+The **Settings** button in the editor opens the Waypoint Settings popup,
+which controls the waypoint's colors and where it is shown.
+
+![Waypoint-Settings](../img/client/waypoint-settings.png){: .center}
+
+**Colors.** The popup has a three-row color table - **Icon**, **Beacon**,
+and **Label**:
+
+- Each row has a color picker. The Icon row also has an icon button for
+  choosing the [icon](#waypoint-icons).
+- The Beacon and Label colors follow the Icon color until you set them
+  individually, so by default all three match.
+- Each row's **Clear** button removes that color, drawing the element
+  with no tint.
+- **Reset Colors** returns all three rows to the icon's color.
+
+**Visibility.** A column of checkboxes controls where the waypoint is
+shown:
+
+| Toggle              | Effect                                                |
+|---------------------|-------------------------------------------------------|
+| Show on Map         | Show the waypoint on the minimap and full-screen map. |
+| Show in World       | Show the waypoint in the world.                       |
+| Show Label          | Show the waypoint's name label.                       |
+| Show Beacon         | Show the in-world beacon beam.                        |
+| Show Icon           | Show the waypoint's icon.                             |
+| Show Deviation      | Show the deviation readout next to the label.         |
+| Show on Locator Bar | Show the waypoint on the vanilla locator bar.         |
+
+The **Show on Locator Bar** toggle is only present in JourneyMap for
+Minecraft 26.1 (see [Show On Locator Bar](#show-on-locator-bar)).
 
 ## **Waypoint Groups**
 
@@ -127,12 +167,24 @@ group.
 
 ## **Waypoint Icons**
 
-JourneyMap ships with a set of built-in waypoint icons, selectable from
-the icon button in the Waypoint Editor. When many icons are available
-(for example from a resource pack) JourneyMap shows a dedicated icon
-selection menu so you can browse them.
+Click the icon button in the Waypoint Editor (or in the Icon row of the
+[Settings popup](#the-waypoint-settings-popup)) to open the icon picker.
 
-You can add your own waypoint icons with a resource pack. See
+![Waypoint-Icon-Picker](../img/client/waypoint-icon-picker.png){: .center}
+
+The picker groups icons into tabs:
+
+- **All** - every available icon.
+- **JourneyMap** - the built-in JourneyMap icons.
+- **Minecraft** - vanilla Minecraft item textures.
+- **Map Deco** - vanilla map marker icons.
+- One tab for each named icon set supplied by a resource pack.
+
+The picker also has a color picker, so you can set the icon's color while
+choosing it, and a **Clear** button to remove the color.
+
+You can add your own waypoint icons, and your own named icon sets, with a
+resource pack. See
 [Waypoint Icons (Resource Packs)](../tools/waypoint-icons.md).
 
 ## **Server-Managed Waypoints**
