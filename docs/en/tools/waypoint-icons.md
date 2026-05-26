@@ -82,7 +82,7 @@ friendly, localizable name, add this translation key to your resource pack's
 language files:
 
 ```text
-waypoint.iconset.<set>.name
+waypoint.icon.set.<set>.name
 ```
 
 For example, a `houses` subfolder:
@@ -91,7 +91,7 @@ For example, a `houses` subfolder:
 
 ```json
 {
-  "waypoint.iconset.houses.name": "Cool Houses"
+  "waypoint.icon.set.houses.name": "Cool Houses"
 }
 ```
 
@@ -99,11 +99,43 @@ For example, a `houses` subfolder:
 
 ```json
 {
-  "waypoint.iconset.houses.name": "Casas Geniales"
+  "waypoint.icon.set.houses.name": "Casas Geniales"
 }
 ```
 
 The key is optional. Without it, the tab shows the subfolder name (`houses`).
+
+### Tooltip for the set
+
+To show a hover tooltip on the set's tab, add a second translation key
+alongside the name:
+
+```text
+waypoint.icon.set.<set>.name.tooltip
+```
+
+For the same `houses` subfolder:
+
+`assets/journeymap/lang/en_us.json`:
+
+```json
+{
+  "waypoint.icon.set.houses.name": "Cool Houses",
+  "waypoint.icon.set.houses.name.tooltip": "Player-built houses and bases."
+}
+```
+
+`assets/journeymap/lang/es_es.json`:
+
+```json
+{
+  "waypoint.icon.set.houses.name": "Casas Geniales",
+  "waypoint.icon.set.houses.name.tooltip": "Casas y bases construidas por jugadores."
+}
+```
+
+The tooltip key is optional. Without it (or with an empty value), the tab
+shows no tooltip on hover.
 
 ### Folder layout
 
