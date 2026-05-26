@@ -1985,6 +1985,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#tooltip-for-the-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tooltip for the set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#folder-layout_1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2396,6 +2407,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#tooltip-for-the-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tooltip for the set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#folder-layout_1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2492,20 +2514,40 @@ JourneyMap's built-in tabs - <strong>All</strong>, <strong>JourneyMap</strong>, 
 <p>By default the tab is labelled with the raw subfolder name. To give it a
 friendly, localizable name, add this translation key to your resource pack's
 language files:</p>
-<div class="highlight"><pre><span></span><code>waypoint.iconset.&lt;set&gt;.name
+<div class="highlight"><pre><span></span><code>waypoint.icon.set.&lt;set&gt;.name
 </code></pre></div>
 <p>For example, a <code>houses</code> subfolder:</p>
 <p><code>assets/journeymap/lang/en_us.json</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">"waypoint.iconset.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cool Houses"</span>
+<span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cool Houses"</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><code>assets/journeymap/lang/es_es.json</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">"waypoint.iconset.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casas Geniales"</span>
+<span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casas Geniales"</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>The key is optional. Without it, the tab shows the subfolder name (<code>houses</code>).</p>
+<h3 id="tooltip-for-the-set">Tooltip for the set</h3>
+<p>To show a hover tooltip on the set's tab, add a second translation key
+alongside the name:</p>
+<div class="highlight"><pre><span></span><code>waypoint.icon.set.&lt;set&gt;.name.tooltip
+</code></pre></div>
+<p>For the same <code>houses</code> subfolder:</p>
+<p><code>assets/journeymap/lang/en_us.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cool Houses"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name.tooltip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Player-built houses and bases."</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>assets/journeymap/lang/es_es.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casas Geniales"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name.tooltip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casas y bases construidas por jugadores."</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The tooltip key is optional. Without it (or with an empty value), the tab
+shows no tooltip on hover.</p>
 <h3 id="folder-layout_1">Folder layout</h3>
 <div class="highlight"><pre><span></span><code>my-waypoint-icons.zip
  └───assets
