@@ -68,6 +68,8 @@ plugins:
             Credits: Credits
             Licensing: Licensing
             Support: Support
+            Mappy2 Terms: Mappy2 Terms
+            Mappy2 Privacy Policy: Mappy2 Privacy Policy
             Client Docs: Client Docs
             Installing: Installing
             Basic Usage: Basic Usage
@@ -125,6 +127,8 @@ plugins:
             Credits: Crédits
             Licensing: Licence
             Support: Support
+            Mappy2 Terms: Mappy2 Terms
+            Mappy2 Privacy Policy: Mappy2 Privacy Policy
             Client Docs: Docs Client
             Installing: Installation
             Basic Usage: Utilisation de Base
@@ -175,6 +179,8 @@ plugins:
             Credits: Creditos
             Licensing: Licencias
             Support: Soporte
+            Mappy2 Terms: Mappy2 Terms
+            Mappy2 Privacy Policy: Mappy2 Privacy Policy
             Client Docs: Documentos del Cliente
             Installing: Instalación
             Basic Usage: Uso Básico
@@ -232,6 +238,8 @@ nav:
       - Credits: about/credits.md
       - Licensing: about/licensing.md
       - Support: about/support.md
+      - Mappy2 Terms: about/mappy2-terms.md
+      - Mappy2 Privacy Policy: about/mappy2-privacy.md
   - Client Docs:
       - Installing: client/installing.md
       - Basic Usage: client/basic-usage.md
@@ -283,5 +291,4 @@ nav:
       - Translate the mod: contributing/translate-mod.md
       - Translate the docs: contributing/translate-docs.md
   - Changelogs: changelogs.md
-
 
