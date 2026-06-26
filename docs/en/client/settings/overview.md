@@ -35,3 +35,10 @@ Folders**.
 
 This is handy for moving your explored map and waypoints between
 computers, or for restoring them after reinstalling.
+
+## **Open Folder**
+
+The settings manager also has an **Open Folder** button, which opens
+JourneyMap's folder in your system file browser. This is the quickest
+way to reach `journeymap.log`, the `config` folder, or your waypoint
+files when backing them up or troubleshooting.

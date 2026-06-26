@@ -50,11 +50,14 @@ filters the list as you type.
 | New Group          | Create a new waypoint group.                                      |
 | Options            | Open the [settings manager](settings/overview.md).                |
 | Dimension          | Filter the shown waypoints by dimension.                          |
-| Import             | Import waypoints from a `.dat` file.                              |
-| Import External    | Import waypoints from Xaero's Minimap, if detected.               |
+| Import External    | Import waypoints from Xaero's Minimap. **Only appears when Xaero's waypoints are detected** for your current world - see [Importing from Xaero's Minimap](#importing-from-xaeros-minimap). |
 | Export             | Export your waypoints to a file (you choose the format).          |
 | Pending            | Review waypoints other players have shared with you.              |
 | Close              | Close the Waypoint Manager.                                       |
+
+To import or restore JourneyMap's own waypoint files (a dropped-in
+`.dat`, or a backup), see [Backups and Importing](#backups-and-importing)
+below - that is separate from the Import External button.
 
 ### Per-waypoint actions
 
@@ -84,7 +87,10 @@ The editor provides these fields:
 - **Name** - the display name for the waypoint.
 - **Location** - the X, Y, and Z coordinates. You can switch between
   separate X / Y / Z fields and a single combined `X, Y, Z` field using
-  the Coordinate Layout option (see below).
+  the Coordinate Layout option (see below). A **Sync** checkbox next to
+  the Y field, when enabled, fills the Y value from the cached surface
+  height for that X/Z (if that chunk has been mapped), so the waypoint
+  sits on the surface.
 - **Dimensions** - toggles for the dimensions the waypoint is shown in.
 - **Group** - the [group](#waypoint-groups) this waypoint belongs to.
   You can also create a new group from here.
@@ -121,16 +127,18 @@ which controls the waypoint's colors and where it is shown.
 
 ![Waypoint-Settings](../img/client/waypoint-settings.png){: .center}
 
-**Colors.** The popup has a three-row color table - **Icon**, **Beacon**,
-and **Label**:
+**Colors.** The popup has a four-row color table - **Icon**,
+**Icon Color**, **Beacon**, and **Label**:
 
-- Each row has a color picker. The Icon row also has an icon button for
-  choosing the [icon](#waypoint-icons).
-- The Beacon and Label colors follow the Icon color until you set them
-  individually, so by default all three match.
+- The **Icon** row has an icon button for choosing the
+  [icon](#waypoint-icons), along with a color picker.
+- The **Icon Color**, **Beacon**, and **Label** rows each have a color
+  picker for that element.
+- The Icon Color, Beacon, and Label colors follow the icon's color until
+  you set them individually, so by default they match.
 - Each row's **Clear** button removes that color, drawing the element
   with no tint.
-- **Reset Colors** returns all three rows to the icon's color.
+- **Reset Colors** returns all rows to the icon's color.
 
 **Visibility.** A column of checkboxes controls where the waypoint is
 shown:
@@ -146,7 +154,7 @@ shown:
 | Show on Locator Bar | Show the waypoint on the vanilla locator bar.         |
 
 The **Show on Locator Bar** toggle is only present in JourneyMap for
-Minecraft 26.1 (see [Show On Locator Bar](#show-on-locator-bar)).
+Minecraft 26.1 and newer (see [Show On Locator Bar](#show-on-locator-bar)).
 
 ## **Waypoint Groups**
 
@@ -281,16 +289,40 @@ JourneyMap protects your waypoint data in several ways:
 - **Drop-in merge** - drop a waypoint `.dat` file into the waypoint
   folder and JourneyMap merges its waypoints into your existing data.
   Run `/jm reload`, or reconnect, to pick up files added while playing.
-- **Import from Xaero's** - if Xaero's Minimap waypoints are detected,
-  the **Import External** button imports them.
+- **Import from Xaero's** - if Xaero's Minimap waypoints are detected for
+  your current world, an **Import External** button appears in the
+  Waypoint Manager. See [Importing from Xaero's Minimap](#importing-from-xaeros-minimap).
+
+### Importing from Xaero's Minimap
+
+JourneyMap can import waypoints from **Xaero's Minimap**, currently the
+only supported external source. The **Import External** button appears in
+the Waypoint Manager toolbar **only when** JourneyMap detects Xaero's
+waypoints for the world or server you are on; if there are none for the
+current world, the button is hidden.
+
+![Import-Button](../img/client/waypoint-import.png){: .center}
+
+Clicking it opens the **Import External Waypoints** screen, where you can
+review the detected waypoints and import them. JourneyMap reads Xaero's
+own data folder, matching by singleplayer world, server address, or
+Realm.
+
+![Import-External-Waypoints](../img/client/waypoint-import-external.png){: .center}
+
+This is separate from the
+[Import / Export data tools](settings/overview.md#import-export) and from
+the drop-in `.dat` merge above: those handle JourneyMap's own files,
+while this reads Xaero's.
 
 ## **Show On Locator Bar**
 
-!!! info "26.1 only"
+!!! info "26.1 and newer"
 
     The locator bar is a Minecraft 1.21.6+ feature, so this option is
-    only present in JourneyMap for Minecraft 26.1. It is not available
-    on the 1.21.1 line.
+    only present in JourneyMap for Minecraft 26.1 and newer (the 26.x
+    line, including 26.2). It is not available on the 1.21.1 line
+    (1.21.1 / 1.21.11).
 
 Waypoints can be shown on Minecraft's locator bar. This is controlled by
 a **Show On Locator Bar** option, available both globally and per

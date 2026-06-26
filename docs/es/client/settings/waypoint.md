@@ -30,12 +30,13 @@ The **bold** toggle settings below are enabled by default.
 | **Display Death Waypoint Label <br>on map overlay** | Whether to show the name for death waypoints on your minimap and <br>full-screen map.                                                    |
 | **Double Click to Create**                          | Double clicking on the fullscreen map will create a waypoint at the location.                                                            |
 
-!!! info "26.1 only"
+!!! info "26.1 and newer"
 
     This category also has a **Show on Locator Bar** toggle, which shows
     waypoints on the vanilla locator bar above the hotbar. The locator
     bar is a Minecraft 1.21.6+ feature, so this option is only present in
-    JourneyMap for Minecraft 26.1, not on the 1.21.1 line.
+    JourneyMap for Minecraft 26.1 and newer (the 26.x line), not on the
+    1.21.1 line.
 
 ## **Other Settings**
 

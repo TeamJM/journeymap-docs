@@ -87,3 +87,24 @@ Around the edge of the full-screen map is a set of buttons, which you can use to
 | ![Save](../img/icons/savemap.png){: .center}        | Save the whole map to a file.                      |
 | ![Auto-Map](../img/icons/automap.png){: .center}    | Map the explored world, in single-player.          |
 | ![Disable](../img/icons/disable.png){: .center}     | Toggle mapping on and off.                         |
+
+!!! note "Auto-Map options"
+
+    Opening **Auto-Map** shows a dialog of mapping options. When cave
+    mapping is enabled it includes a **Map All Layers** option, which
+    maps every surface map type (Day/Night, Topography, Biome) and every
+    cave layer in a single pass. It is thorough but takes significantly
+    longer and uses more disk space.
+
+    ![Auto-Map](../img/client/automap.png){: .center}
+
+!!! note "Invalidate Zoom LODs"
+
+    The **Delete** map popup has an **Invalidate Zoom LODs** option, for
+    the current dimension or all dimensions. Zoom LODs are the
+    lower-detail tiles shown when the map is zoomed out; invalidating
+    them forces them to regenerate from your full-detail tiles as you
+    view the map. Use it to fix rare cases where the zoomed-out map looks
+    wrong, without deleting your actual map data.
+
+    ![Delete-Map](../img/client/delete-map.png){: .center}

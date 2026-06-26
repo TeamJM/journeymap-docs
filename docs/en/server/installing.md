@@ -19,10 +19,11 @@ which loader the server uses.
 
 ## **Paper servers**
 
-!!! info "26.1 only"
+!!! info "Minecraft 26.1 and 26.2 only"
 
-    The Paper build of JourneyMap is part of the Minecraft 26.1 line of
-    JourneyMap 6.0. It is not available for the 1.21.1 line.
+    The Paper build of JourneyMap is available for the Minecraft 26.1 and
+    26.2 builds of JourneyMap 6.0. It is not available for the 1.21.1 or
+    1.21.11 builds.
 
 On Paper servers, JourneyMap ships as a plugin rather than a mod. Place
 the JourneyMap Paper jar in your server's `plugins` folder instead of

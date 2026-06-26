@@ -1,6 +1,6 @@
 ## **Overview**
 
-You don't have to have JourneyMap installed on the server to use the JourneyMap client. Installing it on the server gives admins a way to restrict some client features, manage waypoints, and support multi-world and proxy (BungeeCord / Velocity) setups. JourneyMap server runs on Fabric, NeoForge, and Forge servers, and on Paper servers (Minecraft 26.1 line). See [Installing](installing.md) for details.
+You don't have to have JourneyMap installed on the server to use the JourneyMap client. Installing it on the server gives admins a way to restrict some client features, manage waypoints, and support multi-world and proxy (BungeeCord / Velocity) setups. JourneyMap server runs on Fabric, NeoForge, and Forge servers, and on Paper servers (Minecraft 26.1 and 26.2). See [Installing](installing.md) for details.
 
 ## **Server Admin Config**
 

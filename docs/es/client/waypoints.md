@@ -56,11 +56,14 @@ filters the list as you type.
 | New Group          | Create a new waypoint group.                                      |
 | Options            | Open the [settings manager](settings/overview.md).                |
 | Dimension          | Filter the shown waypoints by dimension.                          |
-| Import             | Import waypoints from a `.dat` file.                              |
-| Import External    | Import waypoints from Xaero's Minimap, if detected.               |
+| Import External    | Import waypoints from Xaero's Minimap. **Only appears when Xaero's waypoints are detected** for your current world - see [Importing from Xaero's Minimap](#importing-from-xaeros-minimap). |
 | Export             | Export your waypoints to a file (you choose the format).          |
 | Pending            | Review waypoints other players have shared with you.              |
 | Close              | Close the Waypoint Manager.                                       |
+
+To import or restore JourneyMap's own waypoint files (a dropped-in
+`.dat`, or a backup), see [Backups and Importing](#backups-and-importing)
+below - that is separate from the Import External button.
 
 ### Per-waypoint actions
 
@@ -90,15 +93,24 @@ The editor provides these fields:
 - **Name** - the display name for the waypoint.
 - **Location** - the X, Y, and Z coordinates. You can switch between
   separate X / Y / Z fields and a single combined `X, Y, Z` field using
-  the Coordinate Layout option (see below).
+  the Coordinate Layout option (see below). A **Sync** checkbox next to
+  the Y field, when enabled, fills the Y value from the cached surface
+  height for that X/Z (if that chunk has been mapped), so the waypoint
+  sits on the surface.
 - **Dimensions** - toggles for the dimensions the waypoint is shown in.
 - **Group** - the [group](#waypoint-groups) this waypoint belongs to.
   You can also create a new group from here.
 - **Enable** - whether the waypoint is enabled and visible.
-- **Color** - the waypoint color. Click the color wheel to pick a color,
-  or use **Randomize** for a new random color.
+- **Color** - the waypoint's color. Click the color wheel to pick a
+  color, or use **Randomize** for a new random color. This sets the
+  icon, beacon, and label colors together; to set them separately, use
+  the Settings popup.
 - **Icon** - click the icon button to choose the waypoint's icon. See
   [Waypoint Icons](#waypoint-icons).
+- **Settings** - opens the
+  [Waypoint Settings popup](#the-waypoint-settings-popup), where you can
+  set the icon, beacon, and label colors individually and choose where
+  the waypoint is shown.
 - **Description** - opens a popup for a longer free-text description.
 
 Buttons:
@@ -113,6 +125,42 @@ The **Waypoint Editor Options** button configures the editor itself
 rather than a single waypoint. It includes the **Coordinate Layout**
 option, which switches between separate X / Y / Z input fields and a
 single combined `X, Y, Z` field.
+
+### The Waypoint Settings popup
+
+The **Settings** button in the editor opens the Waypoint Settings popup,
+which controls the waypoint's colors and where it is shown.
+
+![Waypoint-Settings](../img/client/waypoint-settings.png){: .center}
+
+**Colors.** The popup has a four-row color table - **Icon**,
+**Icon Color**, **Beacon**, and **Label**:
+
+- The **Icon** row has an icon button for choosing the
+  [icon](#waypoint-icons), along with a color picker.
+- The **Icon Color**, **Beacon**, and **Label** rows each have a color
+  picker for that element.
+- The Icon Color, Beacon, and Label colors follow the icon's color until
+  you set them individually, so by default they match.
+- Each row's **Clear** button removes that color, drawing the element
+  with no tint.
+- **Reset Colors** returns all rows to the icon's color.
+
+**Visibility.** A column of checkboxes controls where the waypoint is
+shown:
+
+| Toggle              | Effect                                                |
+|---------------------|-------------------------------------------------------|
+| Show on Map         | Show the waypoint on the minimap and full-screen map. |
+| Show in World       | Show the waypoint in the world.                       |
+| Show Label          | Show the waypoint's name label.                       |
+| Show Beacon         | Show the in-world beacon beam.                        |
+| Show Icon           | Show the waypoint's icon.                             |
+| Show Deviation      | Show the deviation readout next to the label.         |
+| Show on Locator Bar | Show the waypoint on the vanilla locator bar.         |
+
+The **Show on Locator Bar** toggle is only present in JourneyMap for
+Minecraft 26.1 and newer (see [Show On Locator Bar](#show-on-locator-bar)).
 
 ## **Waypoint Groups**
 
@@ -133,12 +181,24 @@ group.
 
 ## **Waypoint Icons**
 
-JourneyMap ships with a set of built-in waypoint icons, selectable from
-the icon button in the Waypoint Editor. When many icons are available
-(for example from a resource pack) JourneyMap shows a dedicated icon
-selection menu so you can browse them.
+Click the icon button in the Waypoint Editor (or in the Icon row of the
+[Settings popup](#the-waypoint-settings-popup)) to open the icon picker.
 
-You can add your own waypoint icons with a resource pack. See
+![Waypoint-Icon-Picker](../img/client/waypoint-icon-picker.png){: .center}
+
+The picker groups icons into tabs:
+
+- **All** - every available icon.
+- **JourneyMap** - the built-in JourneyMap icons.
+- **Minecraft** - vanilla Minecraft item textures.
+- **Map Deco** - vanilla map marker icons.
+- One tab for each named icon set supplied by a resource pack.
+
+The picker also has a color picker, so you can set the icon's color while
+choosing it, and a **Clear** button to remove the color.
+
+You can add your own waypoint icons, and your own named icon sets, with a
+resource pack. See
 [Waypoint Icons (Resource Packs)](../tools/waypoint-icons.md).
 
 ## **Server-Managed Waypoints**
@@ -235,16 +295,40 @@ JourneyMap protects your waypoint data in several ways:
 - **Drop-in merge** - drop a waypoint `.dat` file into the waypoint
   folder and JourneyMap merges its waypoints into your existing data.
   Run `/jm reload`, or reconnect, to pick up files added while playing.
-- **Import from Xaero's** - if Xaero's Minimap waypoints are detected,
-  the **Import External** button imports them.
+- **Import from Xaero's** - if Xaero's Minimap waypoints are detected for
+  your current world, an **Import External** button appears in the
+  Waypoint Manager. See [Importing from Xaero's Minimap](#importing-from-xaeros-minimap).
+
+### Importing from Xaero's Minimap
+
+JourneyMap can import waypoints from **Xaero's Minimap**, currently the
+only supported external source. The **Import External** button appears in
+the Waypoint Manager toolbar **only when** JourneyMap detects Xaero's
+waypoints for the world or server you are on; if there are none for the
+current world, the button is hidden.
+
+![Import-Button](../img/client/waypoint-import.png){: .center}
+
+Clicking it opens the **Import External Waypoints** screen, where you can
+review the detected waypoints and import them. JourneyMap reads Xaero's
+own data folder, matching by singleplayer world, server address, or
+Realm.
+
+![Import-External-Waypoints](../img/client/waypoint-import-external.png){: .center}
+
+This is separate from the
+[Import / Export data tools](settings/overview.md#import-export) and from
+the drop-in `.dat` merge above: those handle JourneyMap's own files,
+while this reads Xaero's.
 
 ## **Show On Locator Bar**
 
-!!! info "26.1 only"
+!!! info "26.1 and newer"
 
     The locator bar is a Minecraft 1.21.6+ feature, so this option is
-    only present in JourneyMap for Minecraft 26.1. It is not available
-    on the 1.21.1 line.
+    only present in JourneyMap for Minecraft 26.1 and newer (the 26.x
+    line, including 26.2). It is not available on the 1.21.1 line
+    (1.21.1 / 1.21.11).
 
 Waypoints can be shown on Minecraft's locator bar. This is controlled by
 a **Show On Locator Bar** option, available both globally and per

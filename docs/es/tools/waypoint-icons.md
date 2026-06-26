@@ -66,3 +66,104 @@ my-waypoint-icons.zip
  │                   │   portal.png
  └───pack.mcmeta
 ```
+
+## **Custom icon sets**
+
+Icons placed directly in `textures/waypoint/icon/` appear in the
+**JourneyMap** set. To ship your icons as their own named set, put them in a
+**subfolder**:
+
+```text
+assets/journeymap/textures/waypoint/icon/<set>/<name>.png
+```
+
+Each subfolder becomes its own tab in the icon picker. The subfolder name
+(`<set>`) is the set's identifier. Resource-pack sets appear alongside
+JourneyMap's built-in tabs - **All**, **JourneyMap**, **Minecraft**
+(vanilla item textures), and **Map Deco** (map markers).
+
+### Naming the set
+
+By default the tab is labelled with the raw subfolder name. To give it a
+friendly, localizable name, add this translation key to your resource pack's
+language files:
+
+```text
+waypoint.icon.set.<set>.name
+```
+
+For example, a `houses` subfolder:
+
+`assets/journeymap/lang/en_us.json`:
+
+```json
+{
+  "waypoint.icon.set.houses.name": "Cool Houses"
+}
+```
+
+`assets/journeymap/lang/es_es.json`:
+
+```json
+{
+  "waypoint.icon.set.houses.name": "Casas Geniales"
+}
+```
+
+The key is optional. Without it, the tab shows the subfolder name (`houses`).
+
+### Tooltip for the set
+
+To show a hover tooltip on the set's tab, add a second translation key
+alongside the name:
+
+```text
+waypoint.icon.set.<set>.name.tooltip
+```
+
+For the same `houses` subfolder:
+
+`assets/journeymap/lang/en_us.json`:
+
+```json
+{
+  "waypoint.icon.set.houses.name": "Cool Houses",
+  "waypoint.icon.set.houses.name.tooltip": "Player-built houses and bases."
+}
+```
+
+`assets/journeymap/lang/es_es.json`:
+
+```json
+{
+  "waypoint.icon.set.houses.name": "Casas Geniales",
+  "waypoint.icon.set.houses.name.tooltip": "Casas y bases construidas por jugadores."
+}
+```
+
+The tooltip key is optional. Without it (or with an empty value), the tab
+shows no tooltip on hover.
+
+### Folder layout
+
+```text
+my-waypoint-icons.zip
+ └───assets
+ │   └───journeymap
+ │       ├───lang
+ │       │   │   en_us.json
+ │       │   │   es_es.json
+ │       └───textures
+ │           └───waypoint
+ │               └───icon
+ │                   │   castle.png          (JourneyMap set)
+ │                   │   portal.png          (JourneyMap set)
+ │                   └───houses
+ │                       │   cabin.png       (Cool Houses set)
+ │                       │   manor.png       (Cool Houses set)
+ └───pack.mcmeta
+```
+
+Icons in a set placed under the `journeymap` namespace (the path shown above)
+are tinted by the waypoint color, like JourneyMap's built-in icons. Use 16x16
+transparent PNG files, as for the JourneyMap set.

@@ -11,14 +11,21 @@ JourneyMap can be found on [CurseForge](https://www.curseforge.com/minecraft/mc-
 
 ## **Requirements**
 
-JourneyMap 6.0 is released for two Minecraft lines. Download the file that matches your Minecraft version and mod loader, and make sure you have the right version of Java installed.
+JourneyMap 6.0 is released for several Minecraft versions. Download the file that matches your Minecraft version and mod loader, and make sure you have the right version of Java installed.
 
 | Minecraft version | Java    | Mod loaders               |
 |-------------------|---------|---------------------------|
 | 1.21.1            | Java 21 | Fabric, NeoForge, Forge   |
+| 1.21.11           | Java 21 | Fabric, NeoForge, Forge   |
 | 26.1              | Java 25 | Fabric, NeoForge, Forge   |
+| 26.2              | Java 25 | Fabric, NeoForge, Forge   |
 
 If you do not have the right version of Java, you can download a copy from the [Adoptium website](https://adoptium.net/temurin/releases/).
+
+!!! note "Renderer"
+
+    The 1.21.1, 1.21.11, and 26.1 builds use Minecraft's OpenGL
+    renderer. The 26.2 build uses Minecraft's new Vulkan renderer.
 
 !!! note "Which loader?"
 

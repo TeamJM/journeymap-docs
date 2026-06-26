@@ -42,6 +42,11 @@ The file has the following properties:
 - **water**: Quoted, comma-delimited list of hex colors (#rrggbb) for water.  The number of colors determines the contour intervals (see Overview above).
 - **configVersion**: Used by JourneyMap to track configuration changes. You can ignore this, and don't need to change it.
 
+!!! note "Color count"
+
+    The **land** and **water** gradients each support up to **2048**
+    colors, so you can build very fine-grained contour gradients.
+
 If you get the file hopelessly broken, don't panic.  Simply delete it and restart Minecraft, and a new one will be created for you.
 
 ## **Choosing Good Colors**

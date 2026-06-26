@@ -56,22 +56,47 @@ and provides these options:
 | Option              | Description                                                                                                |
 |---------------------|------------------------------------------------------------------------------------------------------------|
 | Name                | The group's display name. Locked (native) groups cannot be renamed.                                        |
-| Color Override      | When enabled, every waypoint in the group uses the group's color instead of its own.                       |
-| Icon Override       | When enabled, every waypoint in the group uses the group's icon instead of its own.                        |
+| Settings            | Opens the [group Settings popup](#group-settings-and-overrides) for the group's colors, icon, and visibility, including the override toggles. |
 | Default             | Marks this group as the default group for new waypoints. Only one group can be the default at a time.       |
 | Tag                 | Text prefixed onto every waypoint name in the group, both on the map and in the world. Can be left blank.   |
 | Locked              | Shown for native groups whose name cannot be edited.                                                       |
 
+### Group settings and overrides
+
+![Group-Settings](../img/client/group-settings.png){: .center}
+
+The **Settings** button opens the same
+[Waypoint Settings popup](waypoints.md#the-waypoint-settings-popup) used
+for individual waypoints - the Icon/Beacon/Label color table and the
+visibility toggles - applied to the group. In group mode it adds an
+**Override** checkbox to each color row, plus an **Override Settings**
+checkbox below the table:
+
+- **Override** (one per color row - Icon, Icon Color, Beacon, Label) -
+  when a row's Override is checked, every waypoint in the group uses the
+  group's value for that row instead of its own. The **Icon** row covers
+  the group's icon image, **Icon Color** the icon's color, and **Beacon**
+  and **Label** those colors. Rows left unchecked let each waypoint keep
+  its own, so you can override just the icon, just a color, or any
+  combination.
+- **Override Settings** - when enabled, every waypoint in the group uses
+  the group's visibility toggles instead of its own.
+
+With every override left off, each waypoint keeps its own colors and
+settings and the group's are ignored.
+
 ### Show on Locator Bar
 
-!!! info "26.1 only"
+!!! info "26.1 and newer"
 
     The locator bar is a Minecraft 1.21.6+ feature, so this option is
-    only present in JourneyMap for Minecraft 26.1. It is not available
-    on the 1.21.1 line.
+    only present in JourneyMap for Minecraft 26.1 and newer (the 26.x
+    line, including 26.2). It is not available on the 1.21.1 line
+    (1.21.1 / 1.21.11).
 
-The Edit Group screen also has a **Show on Locator Bar** option, which
-shows the group's waypoints on the vanilla locator bar above the hotbar.
+**Show on Locator Bar** is one of the visibility toggles in the group's
+Settings popup. It shows the group's waypoints on the vanilla locator bar
+above the hotbar.
 
 ## **Default group**
 
