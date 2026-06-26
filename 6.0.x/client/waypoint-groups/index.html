@@ -2605,22 +2605,29 @@ and provides these options:</p>
 <p>The <strong>Settings</strong> button opens the same
 <a href="../waypoints/#the-waypoint-settings-popup">Waypoint Settings popup</a> used
 for individual waypoints - the Icon/Beacon/Label color table and the
-visibility toggles - applied to the group. In group mode it adds two
-extra checkboxes:</p>
+visibility toggles - applied to the group. In group mode it adds an
+<strong>Override</strong> checkbox to each color row, plus an <strong>Override Settings</strong>
+checkbox below the table:</p>
 <ul>
-<li><strong>Override Colors</strong> - when enabled, every waypoint in the group uses
-  the group's colors and icon instead of its own.</li>
+<li><strong>Override</strong> (one per color row - Icon, Icon Color, Beacon, Label) -
+  when a row's Override is checked, every waypoint in the group uses the
+  group's value for that row instead of its own. The <strong>Icon</strong> row covers
+  the group's icon image, <strong>Icon Color</strong> the icon's color, and <strong>Beacon</strong>
+  and <strong>Label</strong> those colors. Rows left unchecked let each waypoint keep
+  its own, so you can override just the icon, just a color, or any
+  combination.</li>
 <li><strong>Override Settings</strong> - when enabled, every waypoint in the group uses
   the group's visibility toggles instead of its own.</li>
 </ul>
-<p>With both left off, each waypoint keeps its own colors and settings and
-the group's are ignored.</p>
+<p>With every override left off, each waypoint keeps its own colors and
+settings and the group's are ignored.</p>
 <h3 id="show-on-locator-bar">Show on Locator Bar</h3>
 <div class="admonition info">
-<p class="admonition-title">26.1 only</p>
+<p class="admonition-title">26.1 and newer</p>
 <p>The locator bar is a Minecraft 1.21.6+ feature, so this option is
-only present in JourneyMap for Minecraft 26.1. It is not available
-on the 1.21.1 line.</p>
+only present in JourneyMap for Minecraft 26.1 and newer (the 26.x
+line, including 26.2). It is not available on the 1.21.1 line
+(1.21.1 / 1.21.11).</p>
 </div>
 <p><strong>Show on Locator Bar</strong> is one of the visibility toggles in the group's
 Settings popup. It shows the group's waypoints on the vanilla locator bar
