@@ -1,41 +1,33 @@
-# **Dimension: minecraft:the_end**
+# **Dimension : minecraft:the_end**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-The Dimension: minecraft:the_end category contains settings that will be the default settings for the end dimension.
+La catégorie Dimension : minecraft:the_end contient des paramètres qui seront les paramètres par défaut pour la dimension de fin.
 
 ![Dimension-Minecraft-End](../../img/settings/server/dimension-minecraft-end.png){: .center}
 
 ## **Toggles**
 
-| Toggle                  | Description                                                                                                                                                                              |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable                  | Enabling this dimension will override the global properties for this dimension.                                                                                                           |
-| Allow Minimap           | Enable or disable the minimap.                                                                                                                                                           |
-| Hide Coordinate Display | Hides all coordinate displays, prevents editing of coordinate values for waypoints. Replaces most coordinate displays with "Unknown Location" text. Does not affect existing waypoint names. |
-| Global Waypoints Only   | When enabled, players can only view and toggle the visibility of global waypoints. Creating, editing, and deleting personal waypoints is disabled.                                        |
-| Allow All Teleporting   | Allows Waypoint and Fullscreen Context menu teleporting. Waypoint Only Teleporting takes priority.                                                                                        |
-| Dimension Teleport      | Enable Cross Dimension Waypoint teleporting for non-op users. OP users can use it always.                                                                                                |
-| Player Radar            | If players can see other players on the map.                                                                                                                                             |
-| Player Names            | If players can see other player's names on the map.                                                                                                                                      |
-| Villager Radar          | If players can see villagers on the map.                                                                                                                                                 |
-| Animal Radar            | If players can see animals on the map.                                                                                                                                                   |
-| Monster/Hostile Radar   | If players can see monsters or hostile entities on the map.                                                                                                                              |
+| Basculer | Descriptif |
+|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Activer | L'activation de cette dimension remplacera les propriétés globales de cette dimension.                                                                                                           |
+| Autoriser la mini-carte | Activez ou désactivez la mini-carte.                                                                                                                                                           |
+| Masquer l'affichage des coordonnées | Masque tous les affichages de coordonnées, empêche la modification des valeurs de coordonnées pour les waypoints. Remplace la plupart des affichages de coordonnées par le texte « Emplacement inconnu ». N'affecte pas les noms de waypoints existants. |
+| Waypoints mondiaux uniquement | Lorsqu'il est activé, les joueurs peuvent uniquement afficher et activer la visibilité des waypoints globaux. La création, la modification et la suppression de waypoints personnels sont désactivées.                                        |
+| Autoriser toutes les téléportations | Permet la téléportation des waypoints et du menu contextuel plein écran. La téléportation par waypoint uniquement est prioritaire.                                                                                        |
+| Téléportation dimensionnelle | Activez la téléportation Cross Dimension Waypoint pour les utilisateurs non opérationnels. Les utilisateurs OP peuvent toujours l'utiliser.                                                                                                |
+| Radar des joueurs | Si les joueurs peuvent voir d'autres joueurs sur la carte.                                                                                                                                             |
+| Noms des joueurs | Si les joueurs peuvent voir les noms des autres joueurs sur la carte.                                                                                                                                      |
+| Radar villageois | Si les joueurs peuvent voir les villageois sur la carte.                                                                                                                                                 |
+| Radars pour animaux | Si les joueurs peuvent voir des animaux sur la carte.                                                                                                                                                   || Radar monstre/hostile | Si les joueurs peuvent voir des monstres ou des entités hostiles sur la carte.                                                                                                                              |
 
-## **Other Settings**
+## **Autres paramètres**
 
-The default option for each setting below is marked with **bold** text.
+L'option par défaut pour chaque paramètre ci-dessous est marquée d'un texte **gras**.
 
-| Setting                            | Options                                           | Description                                                                                                                                                                                                                                              |
-|-------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Force Map Surface Render Range Max  | <ul><li>Range: 0 - 32 **Default is 0**</li></ul>  | Force all players to a maximum chunk surface render distance for the map. 0 to use client settings. This setting only forces the max, it does not increase their render range. This value is not reflected in the client's Cartography options.            |
-| Force Map Cave Render Range Max     | <ul><li>Range: 0 - 32 **Default is 0**</li></ul>  | Force all players to a maximum chunk cave render distance for the map. 0 to use client settings. This setting only forces the max, it does not increase their render range. This value is not reflected in the client's Cartography options.               |
-| Surface Mapping                     | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Surface Mapping for All, Ops, None.                                                                                                                                                                                                                      |
-| Topography Mapping                  | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Topography Mapping for All, Ops, None.                                                                                                                                                                                                                   |
-| Biome Mapping                       | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Biome Mapping for All, Ops, None.                                                                                                                                                                                                                        |
-| Cave Mapping                        | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | Cave Mapping for All, Ops, None.                                                                                                                                                                                                                         |
-| Radar General                       | <ul><li>**All**</li><li>Op</li><li>None</li></ul> | <ul><li>All: Radar works for everyone, use individual check boxes to disable specific.</li><li>Op: Fully disables radar for everyone but OP users, check boxes work for Ops.</li><li>None: Radar is disabled for everyone.</li></ul>                       |
+| Paramètre | Options | Descriptif |
+|---------------------------------------------------|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Forcer la plage de rendu de surface de la carte Max | <ul><li>Plage : 0 - 32 **La valeur par défaut est 0**</li></ul> | Forcer tous les joueurs à respecter une distance maximale de rendu de surface pour la carte. 0 pour utiliser les paramètres client. Ce paramètre force uniquement le maximum, il n'augmente pas leur plage de rendu. Cette valeur n'est pas reflétée dans les options de Cartographie du client.            |
+| Force Map Cave Render Range Max | <ul><li>Plage : 0 - 32 **La valeur par défaut est 0**</li></ul> | Forcez tous les joueurs à respecter une distance maximale de rendu de la grotte pour la carte. 0 pour utiliser les paramètres client. Ce paramètre force uniquement le maximum, il n'augmente pas leur plage de rendu. Cette valeur n'est pas reflétée dans les options de Cartographie du client.               |
+| Cartographie des surfaces | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie de surface pour tous, opérations, aucun.                                                                                                                                                                                                                      |
+| Cartographie topographique | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie topographique pour tous, opérations, aucun.                                                                                                                                                                                                                   |
+| Cartographie du biome | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie du biome pour tous, opérations, aucun.                                                                                                                                                                                                                        |
+| Cartographie des grottes | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie des grottes pour tous, opérations, aucun.                                                                                                                                                                                                                         || Radar général | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | <ul><li>All : le radar fonctionne pour tout le monde, utilisez des cases à cocher individuelles pour désactiver des éléments spécifiques.</li><li>Op : désactive complètement le radar pour tout le monde sauf les utilisateurs OP, les cases à cocher fonctionnent pour Ops.</li><li>None : le radar est désactivé pour tout le monde.</li></ul> |

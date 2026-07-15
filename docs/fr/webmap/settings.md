@@ -1,44 +1,38 @@
-# **Webmap Settings**
+# **Paramètres de la carte Web**
 
-!!! warning "Translation needed for 6.0"
+La carte Web est configurée à partir des options de JourneyMap, sous la **Webmap**
+catégorie. Ouvrez les options de JourneyMap (appuyez sur `O` ou utilisez les options
+sur la carte en plein écran) et sélectionnez **Carte Web**.
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-The Webmap is configured from JourneyMap's options, under the **Webmap**
-category. Open JourneyMap's options (press `O`, or use the Options
-button on the fullscreen map) and select **Webmap**.
-
-![Webmap-Settings](../img/settings/client/webmap.png){: .center}
+![Webmap-Paramètres](../img/settings/client/webmap.png){: .center}
 
 ## **Toggles**
 
-This toggle is **off** by default.
+Cette bascule est **désactivée** par défaut.
 
-| Toggle         | Description                                          |
+| Basculer | Descriptif |
 |----------------|------------------------------------------------------|
-| Enable Web Map | Whether the Webmap server is enabled and accessible. |
+| Activer la carte Web | Si le serveur Webmap est activé et accessible. |
 
-## **Other Settings**
+## **Autres paramètres**
 
-| Setting | Options                                  | Description                                  |
-|---------|------------------------------------------|----------------------------------------------|
-| Port    | Range: 80 - 65535 (Default: **8080**)    | The port the Webmap server tries to bind to. |
+| Paramètre | Options | Descriptif |
+|---------|------------------------------------------|--------------------------------------------------|
+| Port | Plage : 80 - 65 535 (par défaut : **8080**) | Le port auquel le serveur Webmap tente de se lier. |
 
 ## **How port selection works**
 
-When the Webmap starts, it tries to bind the port you configured
-(8080 by default).
+Lorsque la carte Web démarre, elle essaie de lier le port que vous avez configuré
+(8080 par défaut).
 
-If that port is already in use, the Webmap falls back to a free port
-chosen by the operating system instead of failing to start. This means
-the port the Webmap ends up on can differ from the one you set.
+Si ce port est déjà utilisé, la carte Web revient à un port libre
+choisi par le système d'exploitation au lieu de ne pas démarrer. Cela signifie
+le port sur lequel la carte Web aboutit peut différer de celui que vous avez défini.
 
-To find the port actually in use:
+Pour trouver le port réellement utilisé :
 
-- If the **Announce Mod** advanced option is enabled (it is by
-  default), JourneyMap posts the Webmap address in chat once when you
-  join a world.
-- The resolved port is also written to the game log
+- Si l'option avancée **Annonce Mod** est activée (c'est par
+  par défaut), JourneyMap publie l'adresse de la carte Web dans le chat une fois lorsque vous
+  rejoindre un monde.
+- Le port résolu est également écrit dans le journal de jeu
   (`WebMap is now listening on port ...`).

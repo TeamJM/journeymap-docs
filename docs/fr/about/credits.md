@@ -1,11 +1,5 @@
 # **Crédits**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
-
 > "Il est incroyable ce que vous pouvez accomplir si vous ne vous souciez pas de qui reçoit le crédit." - Harry S. Truman
 
 # **Traduction Française**

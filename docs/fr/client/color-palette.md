@@ -1,111 +1,105 @@
-# **Color Palette**
+# **Palette de couleurs**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-The Color Palette is a client-side editor for the colors JourneyMap uses
-when rendering the map. You can recolor individual blocks, biome tints
-(foliage, grass, water, fog), and the dot and label colors used for mobs
-and players on the map.
+La palette de couleurs est un éditeur côté client pour les couleurs utilisées par JourneyMap.
+lors du rendu de la carte. Vous pouvez recolorer des blocs individuels, des teintes de biome
+(feuillage, herbe, eau, brouillard) et les couleurs des points et des étiquettes utilisées pour les foules
+et les joueurs sur la carte.
 
 ![Color-Palette](../img/client/color-palette.png){: .center}
 
-## **Opening the Color Palette**
+## **Ouverture de la palette de couleurs**
 
-Open the fullscreen map (default key `J`) and click the **Color Palette**
-button in the action bar.
+Ouvrez la carte en plein écran (touche par défaut `J`) et cliquez sur la **Palette de couleurs**
+dans la barre d'action.
 
-This opens the **Manage Colors** screen. From there, the **Manage
-Palettes** button (bottom of the screen) opens the higher-level palette
-management screen described in the [Managing Palettes](#managing-palettes)
-section below.
+Cela ouvre l'écran **Gérer les couleurs**. À partir de là, le **Gérer
+Le bouton Palettes** (en bas de l'écran) ouvre la palette de niveau supérieur
+écran de gestion décrit dans la section [Gestion des palettes](#managing-palettes)
+section ci-dessous.
 
 ## **Manage Colors**
 
-The Manage Colors screen lists every block, biome, or entity color the
-map renderer can use. You can filter the list, edit individual colors,
-and bulk-edit the entries shown.
+L'écran Gérer les couleurs répertorie chaque couleur de bloc, de biome ou d'entité
+le moteur de rendu de carte peut utiliser. Vous pouvez filtrer la liste, modifier des couleurs individuelles,
+et modifiez en masse les entrées affichées.
 
 ### Modes
 
-| Mode    | Shows                                                                                                  |
+| Mode | Spectacles |
 |---------|--------------------------------------------------------------------------------------------------------|
-| Blocks  | Every block (and block state) JourneyMap has a color for. Block colors drive the base map render.      |
-| Biomes  | Per-biome tints used by foliage, grass, water, and fog overlays.                                       |
+| Blocs | Chaque bloc (et état de bloc) JourneyMap a une couleur pour laquelle. Les couleurs des blocs déterminent le rendu de la carte de base.      |
+| Biomes | Teintes par biome utilisées par les superpositions de feuillage, d'herbe, d'eau et de brouillard.                                       |
 
-### Mobs and Players
+### Mobs et joueurs
 
-The **Mobs and Players...** button opens a focused editor for the
-non-block entries: Hostile Dot/Label, Passive Dot/Label, Pet Dot/Label,
-Player Dot/Label, Villager Dot/Label, and the Self Arrow. Use this to
-change the colors used for entity dots and name labels on the map.
+Le bouton **Mobs and Players...** ouvre un éditeur ciblé pour le
+entrées non bloquantes : Hostile Dot/Label, Passive Dot/Label, Pet Dot/Label,
+Player Dot/Label, Villager Dot/Label et l’auto-flèche. Utilisez ceci pour
+modifiez les couleurs utilisées pour les points d'entité et les étiquettes de nom sur la carte.
 
 ### Filters
 
-- **Search** - free-text filter against the visible list.
-- **Domain** - filter by mod ID, or pick `All`, `Resource Packs`, or
-  `Mods` to widen or narrow the scope.
-- **Palette** - choose the palette to edit (see Domain Scopes below).
-- **Sort** - sort by Name or ID, ascending or descending.
+- **Recherche** - filtre de texte libre sur la liste visible.
+- **Domaine** - filtrez par ID de mod ou choisissez `All`, `Resource Packs` ou
+  `Mods` pour élargir ou réduire la portée.
+- **Palette** - choisissez la palette à modifier (voir Étendues de domaine ci-dessous).
+- **Trier** - trier par nom ou ID, croissant ou décroissant.
 
-### Editing a single entry
+### Modification d'une seule entrée
 
-Click **Edit** next to any entry to open the color picker for that
-entry. For blocks, the picker lets you set the color for each block
-state. For biomes, you set the foliage, grass, water, and fog tints
-independently. Save back to either the Global or the World palette.
+Cliquez sur **Modifier** à côté de n'importe quelle entrée pour ouvrir le sélecteur de couleurs correspondant.
+entrée. Pour les blocs, le sélecteur vous permet de définir la couleur de chaque bloc
+état. Pour les biomes, vous définissez les teintes du feuillage, de l'herbe, de l'eau et du brouillard.
+indépendamment. Enregistrez à nouveau dans la palette Global ou Monde.
 
 ![Color-Picker](../img/client/color-picker.png){: .center}
 
 ## **Domain Scopes**
 
-JourneyMap stores up to two palettes:
+JourneyMap stocke jusqu'à deux palettes :
 
-| Palette  | Scope                                              |
+| Palettes | Portée |
 |----------|----------------------------------------------------|
-| Global   | Applied across every world you open with JourneyMap. |
-| World    | Applied only to the currently loaded singleplayer world or server save. World palette overrides Global where both define a color. |
+| Mondial | Appliqué dans tous les mondes que vous ouvrez avec JourneyMap. |
+| Monde | Appliqué uniquement au monde solo ou à la sauvegarde du serveur actuellement chargé. La palette Monde remplace Global où les deux définissent une couleur. |
 
-The active scope is shown in the palette dropdown. Saving an edit to
-the World palette only affects the current world; saving to Global
-applies it everywhere.
+La portée active est affichée dans la liste déroulante de la palette. Enregistrer une modification dans
+la palette Monde n'affecte que le monde actuel ; enregistrer dans Global
+l'applique partout.
 
 ## **Managing Palettes**
 
-The **Manage Palettes** screen (reached via the button on Manage
-Colors) shows the Global and World palettes side by side, with the
-total block / state / biome counts each one defines.
+L'écran **Gérer les palettes** (accessible via le bouton sur Gérer
+Couleurs) affiche les palettes Global et Monde côte à côte, avec le
+le nombre total de blocs/états/biomes est défini par chacun.
 
 ![Manage-Palettes](../img/client/manage-palettes.png){: .center}
 
 ### Actions per palette
 
-| Action            | Effect                                                                                       |
-|-------------------|----------------------------------------------------------------------------------------------|
-| Delete all        | Removes every color from that palette (asks for confirmation).                               |
-| Fill with default | Copies any missing colors from the JourneyMap default palette into this palette.             |
-| Copy >            | Copy from Global to World, with a sub-mode choice (all and replace, existing only, non-existing only). |
-| < Copy            | Copy from World to Global, same sub-mode choices.                                            |
+| Actions | Effet |
+|-----------------------|--------------------------------------------------------------------------------------------------------|
+| Supprimer tout | Supprime toutes les couleurs de cette palette (demande une confirmation).                               |
+| Remplir avec la valeur par défaut | Copie toutes les couleurs manquantes de la palette par défaut JourneyMap dans cette palette.             |
+| Copier > | Copiez de Global vers World, avec un choix de sous-mode (tout et remplacer, existant uniquement, non existant uniquement). |
+| < Copier | Copiez du monde vers le global, mêmes choix de sous-mode.                                            |
 
 ### Copy modes
 
-When copying between palettes, you choose how existing entries are
-treated:
+Lors de la copie entre palettes, vous choisissez la façon dont les entrées existantes sont
+traité :
 
-- **Copy all and replace existing** - overwrite every entry in the
-  destination with the source's value.
-- **Copy and replace only existing ones** - update destination entries
-  whose key already exists; do not add new keys.
-- **Copy only non-existing ones** - fill in missing keys only; never
-  change a destination entry that already has a value.
+- **Copier tout et remplacer les existants** - écraser chaque entrée du
+  destination avec la valeur de la source.
+- **Copier et remplacer uniquement ceux existants** - mettre à jour les entrées de destination
+  dont la clé existe déjà ; n'ajoutez pas de nouvelles clés.
+- **Copier uniquement celles qui n'existent pas** - remplissez uniquement les clés manquantes ; jamais
+  modifier une entrée de destination qui a déjà une valeur.
 
 ## **Storage**
 
-Palettes are saved on disk as JourneyMap color palette files. The
-World palette lives alongside the world's JourneyMap data; the Global
-palette lives in the top-level JourneyMap config folder. If a palette
-file is corrupted, JourneyMap surfaces an error rather than silently
-discarding your colors.
+Les palettes sont enregistrées sur le disque sous forme de fichiers de palette de couleurs JourneyMap. Le
+La palette mondiale cohabite avec les données JourneyMap du monde ; le Mondial
+La palette se trouve dans le dossier de configuration JourneyMap de niveau supérieur. Si une palette
+le fichier est corrompu, JourneyMap fait apparaître une erreur plutôt que silencieusement
+jeter vos couleurs.

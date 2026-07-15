@@ -1,19 +1,13 @@
 # **Points de Repère**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
-
 Le **Listener de Paquet de Point de Repère Externe** est une fonctionnalité qui permet au serveur d'envoyer des points de repère au client. Cela est utile pour les administrateurs de serveur qui souhaitent fournir des points de repère aux joueurs sans nécessiter un mod d'extension.
 
 !!! note "Stable API"
 
-    This packet is a stable, public interface intended for Bukkit and
-    Paper plugins. Its channel and payload shape are kept backwards
-    compatible, so plugins built against it continue to work across
-    JourneyMap releases.
+    Ce paquet est une interface publique stable destinée à Bukkit et
+    Plugins papier. Son canal et sa forme de charge utile sont conservés vers l'arrière
+    compatible, donc les plugins construits avec lui continuent de fonctionner partout
+    Sorties de JourneyMap.
 
 ## **Exemples**
 
@@ -60,7 +54,7 @@ this.announce = buf.readBoolean();
   "b": 255,
   "persistent": false,
   "dimensions": [
-    "minecraft:overworld"
+"minecraft:overworld"
   ]
 }
 ```
@@ -96,45 +90,45 @@ Le nom du point de repère est tout ce qui est requis pour supprimer le point de
 
 ```java
 public static void createWaypoint(Player player, String name, IntVector3 pos, WaypointType type, ChatColor color) {
-    Color rgb = color.getColor();
-    JsonObject obj = new JsonObject();
-    obj.addProperty("id", name + '_' + pos.getX() + ',' + pos.getY() + ',' + pos.getZ());
-    obj.addProperty("name", name);
-    obj.addProperty("icon", "waypoint-normal.png");
-    obj.addProperty("enable", true);
-    obj.addProperty("type", type.type);
-    obj.addProperty("origin", "external");
-    obj.addProperty("x", pos.getX());
-    obj.addProperty("y", pos.getY());
-    obj.addProperty("z", pos.getZ());
-    obj.addProperty("r", rgb.getRed());
-    obj.addProperty("g", rgb.getGreen());
-    obj.addProperty("b", rgb.getBlue());
-    obj.addProperty("persistent", false);
+Color rgb = color.getColor();
+JsonObject obj = new JsonObject();
+obj.addProperty("id", name + '_' + pos.getX() + ',' + pos.getY() + ',' + pos.getZ());
+obj.addProperty("name", name);
+obj.addProperty("icon", "waypoint-normal.png");
+obj.addProperty("enable", true);
+obj.addProperty("type", type.type);
+obj.addProperty("origin", "external");
+obj.addProperty("x", pos.getX());
+obj.addProperty("y", pos.getY());
+obj.addProperty("z", pos.getZ());
+obj.addProperty("r", rgb.getRed());
+obj.addProperty("g", rgb.getGreen());
+obj.addProperty("b", rgb.getBlue());
+obj.addProperty("persistent", false);
 
-    JsonArray dimensions = new JsonArray(1);
-    dimensions.add("minecraft:" + player.getWorld().getName());
-    obj.add("dimensions", dimensions);
+JsonArray dimensions = new JsonArray(1);
+dimensions.add("minecraft:" + player.getWorld().getName());
+obj.add("dimensions", dimensions);
 
-    PacketDataSerializer out = new PacketDataSerializer(Unpooled.buffer());
-    out.writeByte(0); // Octet supplémentaire pour Forge
-    out.a(obj.toString()); // Charge utile
-    out.a(CREATE); // Action
-    out.writeBoolean(false); // Annonce
-    player.sendPacket(new PacketPlayOutCustomPayload(WAYPOINT_KEY, out));
+PacketDataSerializer out = new PacketDataSerializer(Unpooled.buffer());
+out.writeByte(0); // Octet supplémentaire pour Forge
+out.a(obj.toString()); // Charge utile
+out.a(CREATE); // Action
+out.writeBoolean(false); // Annonce
+player.sendPacket(new PacketPlayOutCustomPayload(WAYPOINT_KEY, out));
 }
 
 public static void deleteWaypoint(Player player, String name) {
-    JsonObject obj = new JsonObject();
-    obj.addProperty("name", name);
-    obj.addProperty("origin", "external");
+JsonObject obj = new JsonObject();
+obj.addProperty("name", name);
+obj.addProperty("origin", "external");
 
-    PacketDataSerializer out = new PacketDataSerializer(Unpooled.buffer());
-    out.writeByte(0); // Octet supplémentaire pour Forge
-    out.a(obj.toString()); // Charge utile
-    out.a(DELETE); // Action
-    out.writeBoolean(false); // Annonce
-    player.sendPacket(new PacketPlayOutCustomPayload(WAYPOINT_KEY, out));
+PacketDataSerializer out = new PacketDataSerializer(Unpooled.buffer());
+out.writeByte(0); // Octet supplémentaire pour Forge
+out.a(obj.toString()); // Charge utile
+out.a(DELETE); // Action
+out.writeBoolean(false); // Annonce
+player.sendPacket(new PacketPlayOutCustomPayload(WAYPOINT_KEY, out));
 }
 ```
 
@@ -143,14 +137,14 @@ Si vous avez le **PacketDataSerializer** (PacketBuffer) désobfusqué, il utilis
 ```java
 public PacketDataSerializer writeString(String s, int byteLimit) {
     
-    byte[] bytes = s.getBytes(StandardCharsets.UTF_8);
-    if (bytes.length > byteLimit) {
+byte[] bytes = s.getBytes(StandardCharsets.UTF_8);
+if (bytes.length > byteLimit) {
         throw new EncoderException("String too big (was " + bytes.length + " bytes encoded, max " + byteLimit + ")");
-    } else {
+} else {
         
         this.writeVarInt(bytes.length);
         this.writeBytes(bytes);
         return this;
-    }
+}
 }
 ```

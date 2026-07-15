@@ -1,133 +1,127 @@
 # **UI Themes**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-The look of JourneyMap's toolbars, buttons, and minimap frame is set by
-a UI theme. You can switch themes with the UI Theme button (the paint
-palette icon) on the full-screen map, and you can create your own theme
-with your own images and colors.
+L'apparence des barres d'outils, des boutons et du cadre de la mini-carte de JourneyMap est définie par
+un thème d'interface utilisateur. Vous pouvez changer de thème avec le bouton Thème de l'interface utilisateur (le bouton Peinture
+icône de la palette) sur la carte en plein écran, et vous pouvez créer votre propre thème
+avec vos propres images et couleurs.
 
 ## **Bundled themes**
 
-JourneyMap ships with two theme families:
+JourneyMap est livré avec deux familles de thèmes :
 
-- **Flat** - a set of flat-styled themes: Purist (the default), Desert
-  Temple, EndCity, Forest Mansion, Nether Fortress, Ocean Monument, and
-  Stronghold. These all live in the `flat` theme folder.
-- **Victorian** - a more ornate theme, in the `victorian_` theme folder.
+- **Flat** - un ensemble de thèmes de style plat : Purist (par défaut), Desert
+  Temple, EndCity, manoir forestier, forteresse du Nether, monument océanique et
+  Forteresse. Tout cela se trouve dans le dossier thématique `flat`.
+- **Victorian** - un thème plus orné, dans le dossier thématique `victorian_`.
 
-Use the UI Theme button to cycle through the themes available in your
-installed version.
+Utilisez le bouton Thème de l'interface utilisateur pour parcourir les thèmes disponibles dans votre
+version installée.
 
 ## **Theme files**
 
-Themes live in the JourneyMap theme folder:
+Les thèmes se trouvent dans le dossier de thèmes JourneyMap :
 
 ```text
 .minecraft/journeymap/icon/theme/
 ```
 
-Each theme is a folder containing a theme definition file plus the
-images it uses. The definition file is JSON and ends in
-`.theme2.json`. JourneyMap extracts the bundled themes into this folder
-the first time it runs, so you can open them to see how a complete
-theme is built.
+Chaque thème est un dossier contenant un fichier de définition de thème ainsi que le
+images qu'il utilise. Le fichier de définition est JSON et se termine par
+`.theme2.json`. JourneyMap extrait les thèmes regroupés dans ce dossier
+la première fois qu'il s'exécute, vous pouvez donc les ouvrir pour voir comment fonctionne un
+le thème est construit.
 
 !!! note "Theme schema 2"
 
-    JourneyMap 6.0 uses version 2 of the theme format. Theme files end
-    in `.theme2.json` and contain a `"schema": 2` property. Themes
-    written for older versions of JourneyMap are not compatible and
-    need to be rebuilt.
+    JourneyMap 6.0 utilise la version 2 du format de thème. Fin des fichiers de thème
+    dans `.theme2.json` et contiennent une propriété `"schema": 2`. Thèmes
+    écrits pour les anciennes versions de JourneyMap ne sont pas compatibles et
+    il faut reconstruire.
 
-## **Creating a theme: easy start**
+## **Créer un thème : démarrage facile**
 
-1. Open `.minecraft/journeymap/icon/theme/` and copy one of the bundled
-   theme folders (for example `victorian_`) to a new folder with your
-   own name, for example `MyTheme`.
-2. In your new folder, rename the `.theme2.json` file to match, for
-   example `MyTheme.theme2.json`.
-3. Open that file in a text editor and change the `name`, `directory`,
-   and `author` values so they match your folder and your name. The
-   `directory` value must be the exact name of your theme folder.
-4. Replace the images in the folder with your own artwork. Keep the
-   image dimensions consistent with what the `.theme2.json` file
-   declares, or update those dimensions in the file to match your art.
-5. Use the UI Theme button on the full-screen map to switch to your
-   theme.
-6. To share your theme, zip up the theme folder and give it to others.
-   They unzip it into `.minecraft/journeymap/icon/theme/` and select it
-   with the UI Theme button.
+1. Ouvrez `.minecraft/journeymap/icon/theme/` et copiez l'un des fichiers fournis
+   dossiers de thème (par exemple `victorian_`) vers un nouveau dossier avec votre
+   propre nom, par exemple `MyTheme`.
+2. Dans votre nouveau dossier, renommez le fichier `.theme2.json` pour qu'il corresponde, par exemple
+   exemple `MyTheme.theme2.json`.
+3. Ouvrez ce fichier dans un éditeur de texte et modifiez les valeurs `name`, `directory`,
+   et `author` afin qu'elles correspondent à votre dossier et à votre nom. Le
+   La valeur `directory` doit être le nom exact de votre dossier de thème.
+4. Remplacez les images du dossier par vos propres illustrations. Gardez le
+   dimensions de l'image conformes à ce que contient le fichier `.theme2.json`
+   déclare, ou mettez à jour ces dimensions dans le fichier pour qu'elles correspondent à votre art.
+5. Utilisez le bouton Thème de l'interface utilisateur sur la carte en plein écran pour passer à votre
+   thème.
+6. Pour partager votre thème, compressez le dossier du thème et donnez-le à d'autres.
+   Ils le décompressent dans `.minecraft/journeymap/icon/theme/` et le sélectionnent
+   avec le bouton Thème de l'interface utilisateur.
 
-## **The theme file structure**
+## **La structure du fichier de thème**
 
-A `.theme2.json` file is read with GSON. You edit the values, but you
-cannot change the structure. The top level has:
+Un fichier `.theme2.json` est lu avec GSON. Vous modifiez les valeurs, mais vous
+ne peut pas changer la structure. Le niveau supérieur comprend :
 
-- `schema` - the theme format version. Must be `2`.
-- `author`, `name`, `directory` - identifying information.
-- `container` - toolbar specs (see below).
-- `control` - button and toggle specs.
-- `fullscreen` - full-screen map background and status label colors.
-- `icon` - the default size and color for icons in the `icon` folder.
-- `minimap` - the minimap frame specs, with separate `circle` and
-  `square` sections.
+- `schema` - la version au format thème. Doit être `2`.
+- `author`, `name`, `directory` - informations d'identification.
+- `container` - spécifications de la barre d'outils (voir ci-dessous).
+- `control` - spécifications des boutons et des bascules.
+- `fullscreen` - couleurs d'arrière-plan de la carte plein écran et d'étiquette d'état.
+- `icon` - la taille et la couleur par défaut des icônes du dossier `icon`.
+- `minimap` - les spécifications du cadre de la mini-carte, avec `circle` et
+  Sections `square`.
 
-### Color and image values
+### Valeurs de couleur et d'image
 
-Two value types appear throughout the file:
+Deux types de valeurs apparaissent dans le fichier :
 
-- A **color value** is an object with a `color` hex string (`#rrggbb`)
-  and an `alpha` value. Use `#ffffff` for color to leave an image's own
-  colors unchanged.
-- An **image spec** declares a `width` and `height`, and may also carry
-  a `color` and `alpha`.
+- Une **valeur de couleur** est un objet avec une chaîne hexadécimale `color` (`#rrggbb`)
+  et une valeur `alpha`. Utilisez `#ffffff` pour que la couleur laisse celle d'une image
+  couleurs inchangées.
+- Une **spécification d'image** déclare un `width` et un `height`, et peut également porter
+  un `color` et un `alpha`.
 
-### Containers and controls
+### Conteneurs et contrôles
 
-- `container.toolbar.horizontal` and `container.toolbar.vertical`
-  describe the toolbars. A toolbar is built from a `begin` image, a
-  repeating `inner` image (one repeat per button), and an `end` image.
-  Each has `useThemeImages`, a filename `prefix`, `margin`, and
+- `container.toolbar.horizontal` et `container.toolbar.vertical`
+  décrire les barres d'outils. Une barre d'outils est construite à partir d'une image `begin`, d'un
+  répétition d'une image `inner` (une répétition par bouton) et d'une image `end`.
+  Chacun a `useThemeImages`, un nom de fichier `prefix`, `margin` et
   `padding`.
-- `control.button` and `control.toggle` describe the button and toggle
-  controls: their `width`, `height`, tooltip styles, and the color
-  values used for the icon and button in each state (on, off, hover,
-  disabled).
+- `control.button` et `control.toggle` décrivent le bouton et la bascule
+  contrôles : leurs `width`, `height`, leurs styles d'info-bulle et la couleur
+  valeurs utilisées pour l'icône et le bouton dans chaque état (on, off, survol,
+  désactivée).
 
 ### Minimap
 
-`minimap.circle` and `minimap.square` describe the circular and square
-minimap frames. Each defines the rim and mask image sizes, the top and
-bottom label styles, compass point images and which compass points to
-show, and the reticle and frame colors.
+`minimap.circle` et `minimap.square` décrivent le cercle et le carré
+cadres de mini-carte. Chacun définit les tailles d'image du bord et du masque, le haut et
+styles d'étiquette du bas, images de points cardinaux et vers lequel pointe la boussole
+spectacle, ainsi que les couleurs du réticule et du cadre.
 
-The bundled themes are the best reference for exact filenames and
-sizes - copy one and compare its `.theme2.json` to the images in its
-folder.
+Les thèmes groupés constituent la meilleure référence pour les noms de fichiers exacts et
+tailles - copiez-en une et comparez son `.theme2.json` aux images de son
+dossier.
 
 ## **Image guidance**
 
-Create your images at 2x the sizes declared in the `.theme2.json` file.
-This keeps buttons looking sharp on high-resolution displays and for
-players using Minecraft's larger GUI scales.
+Créez vos images à 2x les tailles déclarées dans le fichier `.theme2.json`.
+Cela permet aux boutons de rester nets sur les écrans haute résolution et pour
+joueurs utilisant les plus grandes échelles d'interface graphique de Minecraft.
 
-## **Setting a default theme in a modpack**
+## **Définition d'un thème par défaut dans un modpack**
 
-A modpack can ship a theme and make it the default for players opening
-JourneyMap for the first time. Place the theme folder in
-`.minecraft/journeymap/icon/theme/` as usual, then create this file:
+Un modpack peut fournir un thème et en faire le thème par défaut pour l'ouverture des joueurs.
+JourneyMap pour la première fois. Placez le dossier du thème dans
+`.minecraft/journeymap/icon/theme/` comme d'habitude, puis créez ce fichier :
 
 ```text
 .minecraft/journeymap/icon/theme/default.theme.config
 ```
 
-Its contents point at the theme folder, the theme file, and the theme
-name:
+Son contenu pointe vers le dossier du thème, le fichier du thème et le thème
+nom :
 
 ```json
 {
@@ -137,7 +131,7 @@ name:
 }
 ```
 
-## **Sharing your theme**
+## **Partager votre thème**
 
-If you create a theme and would like to share it, drop by the
-[JourneyMap Discord server](https://discord.gg/eP8gE69).
+Si vous créez un thème et souhaitez le partager, passez par le
+[Serveur Discord JourneyMap](https://discord.gg/eP8gE69).

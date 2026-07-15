@@ -1,18 +1,12 @@
 ## **Accueil**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
-
 JourneyMap est un mod de cartographie populaire pour Minecraft. Originellement publié par techbrew en 2011, il est devenu de plus en plus fort et est aujourd'hui le mod de cartographie le plus populaire au monde.
 
 ![Background](img/background.jpg){: .center}
 
-JourneyMap includes an in-game minimap and full-screen map. A webmap, viewable in a browser, is also available as a separate [Webmap addon](webmap/installing.md).
+JourneyMap comprend une mini-carte dans le jeu et une carte plein écran. Une carte Web, visible dans un navigateur, est également disponible sous forme de [module complémentaire de carte Web](webmap/installing.md).
 
-If you would like a featureful, easy-to-use mapping mod then why not give JourneyMap a try? You can find it on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap) or [Modrinth](https://modrinth.com/mod/journeymap) and install it just like any other [Fabric](https://fabricmc.net/), [Forge](https://forums.minecraftforge.net/) or [NeoForge](https://neoforged.net/) mod - or continue reading if you need help.
+Si vous souhaitez un module de cartographie fonctionnel et facile à utiliser, pourquoi ne pas essayer JourneyMap ? Vous pouvez le trouver sur [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap) ou [Modrinth](https://modrinth.com/mod/journeymap) et l'installer comme n'importe quel autre mod [Fabric](https://fabricmc.net/), [Forge](https://forums.minecraftforge.net/) ou [NeoForge](https://neoforged.net/) - ou continuer à lire si vous avez besoin d'aide.
 
 ## **Premiers Pas**
 

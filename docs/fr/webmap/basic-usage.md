@@ -1,49 +1,43 @@
 # **Webmap Basic Usage**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-Once the [Webmap addon is installed](installing.md), you enable it from
-JourneyMap's options and open it in any web browser.
+Une fois le module complémentaire [Webmap installé](installing.md), vous l'activez depuis
+Options de JourneyMap et ouvrez-le dans n'importe quel navigateur Web.
 
 ![Webmap](../img/webmap.png){: .center}
 
-## **Enabling the Webmap**
+## **Activation de la carte Web**
 
-1. Open JourneyMap's options (press `O`, or open the fullscreen map and
-   click Options).
-2. Go to the **Webmap** category.
-3. Turn on **Enable Web Map**.
+1. Ouvrez les options de JourneyMap (appuyez sur `O` ou ouvrez la carte en plein écran et
+   cliquez sur Options).
+2. Accédez à la catégorie **Carte Web**.
+3. Activez **Activer la carte Web**.
 
-If the **Announce Mod** advanced option is enabled (the default),
-JourneyMap posts the Webmap address in chat once when you join a world.
-The resolved port is also written to the game log.
+Si l'option avancée **Annonce Mod** est activée (valeur par défaut),
+JourneyMap publie l'adresse de la carte Web dans le chat une fois lorsque vous rejoignez un monde.
+Le port résolu est également écrit dans le journal de jeu.
 
-See [Settings](settings.md) for the port option and how port selection
-works.
+Voir [Paramètres](settings.md) pour l'option de port et comment la sélection du port
+fonctionne.
 
-## **Opening the Webmap**
+## **Ouverture de la carte Web**
 
-Open a web browser and go to:
+Ouvrez un navigateur Web et accédez à :
 
 ```text
 http://localhost:8080/
 ```
 
-Replace `8080` with the port shown in chat if it differs (for example
-if port 8080 was already in use).
+Remplacez `8080` par le port affiché dans le chat s'il diffère (par exemple
+si le port 8080 était déjà utilisé).
 
-To view the map from another device on the same network, replace
-`localhost` with the local IP address of the computer running
-Minecraft, for example `http://192.168.1.20:8080/`.
+Pour afficher la carte depuis un autre appareil sur le même réseau, remplacez
+`localhost` avec l'adresse IP locale de l'ordinateur exécutant
+Minecraft, par exemple `http://192.168.1.20:8080/`.
 
 ## **Controls**
 
-- **Pan** - click and drag.
-- **Zoom** - mouse wheel.
-- **Map type** - switch between day, night, topo, and cave maps.
-- **Dimension** - switch between the dimensions you have explored.
-- **Waypoints** - your waypoints are shown on the web map.
+- **Pan** - cliquez et faites glisser.
+- **Zoom** - molette de la souris.
+- **Type de carte** - basculez entre les cartes de jour, de nuit, topographiques et de grottes.
+- **Dimension** - basculez entre les dimensions que vous avez explorées.
+- **Waypoints** - vos waypoints sont affichés sur la carte Web.

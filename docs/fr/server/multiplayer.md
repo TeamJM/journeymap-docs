@@ -1,11 +1,5 @@
 # **Paramètres**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
-
 La section Multijoueur est conçue pour donner aux utilisateurs le contrôle sur la manière dont ils sont vus par d'autres clients utilisant le mod JourneyMap, et comment ils sont affichés sur la carte. Cette section n'est déverrouillée que lorsque le serveur exécute le mod JourneyMap et peut être désactivée par le serveur.
 
 ![Vue d'ensemble](../img/settings/multiplayer/overview.png){: .center}
@@ -20,11 +14,11 @@ La section Options de Radar permet de contrôler comment les autres vous voient 
 
 ## **Bascules**
 
-| Toggle                    | Description                                                                                  |
-|---------------------------|----------------------------------------------------------------------------------------------|
-| **Visible to Others**     | Uncheck to hide yourself from being seen on the map. Note: Ops can still see you.             |
-| Hide Self Underground     | Disable others from seeing you when you're underground.                                      |
+| Basculer | Descriptif |
+|---------------------------|--------------------------------------------------------------------------------------------------------|
+| **Visible par les autres** | Décochez pour ne pas être vu sur la carte. Remarque : les opérateurs peuvent toujours vous voir.             |
+| Cacher soi-même sous terre | Empêchez les autres de vous voir lorsque vous êtes sous terre.                                      |
 
-## **Server Waypoints**
+## **Points de cheminement du serveur**
 
-JourneyMap 6.0 lets servers manage waypoints. When a server you are connected to manages waypoints, you receive "global" waypoints shared by the server in addition to your own personal waypoints. There are no toggles for this in the Multiplayer section - it is controlled by the server. See [Waypoints](../client/waypoints.md) for details on how global waypoints appear and behave.
+JourneyMap 6.0 permet aux serveurs de gérer les waypoints. Lorsqu'un serveur auquel vous êtes connecté gère des waypoints, vous recevez des waypoints « globaux » partagés par le serveur en plus de vos propres waypoints personnels. Il n'y a pas de bascule pour cela dans la section Multijoueur - elle est contrôlée par le serveur. Voir [Waypoints](../client/waypoints.md) pour plus de détails sur la façon dont les waypoints globaux apparaissent et se comportent.

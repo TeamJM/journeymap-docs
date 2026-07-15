@@ -1,11 +1,5 @@
 ## **Terminologie**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
-
 - **Carte topographique** : Une représentation graphique de la position, de l'échelle, de la forme, du relief et de la distribution des caractéristiques naturelles et culturelles sélectionnées d'une zone de la surface de la Terre.
 - **Ligne de contour** : Une ligne tracée sur une carte topographique reliant deux points d'élévation égale au-dessus du niveau de la mer.
 - **Intervalle de contour** : La distance verticale entre deux lignes de contour adjacentes.
@@ -14,30 +8,30 @@
 
 ## **Aperçu des Cartes Topographiques dans JourneyMap**
 
-JourneyMap's Topographic Maps let you see the elevation contours of your world.  You can customize the topographic map properties and colors in (`.minecraft/journeymap/config/6.0/journeymap.topo.config`) according to what looks best to you, or what you want to emphasize.
+Les cartes topographiques de JourneyMap vous permettent de voir les contours d'élévation de votre monde.  Vous pouvez personnaliser les propriétés et les couleurs de la carte topographique dans (`.minecraft/journeymap/config/6.0/journeymap.topo.config`) en fonction de ce qui vous convient le mieux ou de ce que vous souhaitez mettre en valeur.
 
 Voici comment cela fonctionne :
 
-**{World height} / {Number of colors} = {Contour interval}**
+**{Hauteur du monde} / {Nombre de couleurs} = {Intervalle de contour}**
 
-So, given a **world height of 384** blocks, a palette of **32 colors** will create 32 elevation contours, each with a **contour interval of 12** blocks high.
+Ainsi, étant donné une **hauteur mondiale de 384** blocs, une palette de **32 couleurs** créera 32 contours d'élévation, chacun avec un **intervalle de contour de 12** blocs de haut.
 
-- 1st color: the lowest 12 blocks
-- 2nd color: the next 12 blocks
-- etc.
+- 1ère couleur : les 12 blocs les plus bas
+- 2ème couleur : les 12 blocs suivants
+- etc
 
 !!! note "Custom Max Topo Height"
 
-    By default the topographic map uses the world's full build height
-    for the contour math. The [Cartography settings](../client/settings/cartography.md)
-    have a **Custom Max Topo Height** option that lets you cap the
-    height used, which is useful for emphasizing contours in a height
-    range you care about. Any blocks above the cap are drawn in the
-    top color.
+    Par défaut, la carte topographique utilise toute la hauteur de construction du monde
+    pour les mathématiques de contour. Les [Paramètres de cartographie](../client/settings/cartography.md)
+    avoir une option **Hauteur topographique maximale personnalisée** qui vous permet de limiter la
+    hauteur utilisée, ce qui est utile pour souligner les contours d'une hauteur
+    gamme qui vous tient à cœur. Tous les blocs au-dessus du capuchon sont dessinés dans le
+    couleur supérieure.
 
 ## **Personnalisation**
 
-The topographic maps config file `.minecraft/journeymap/config/6.0/journeymap.topo.config` can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.
+Le fichier de configuration des cartes topographiques `.minecraft/journeymap/config/6.0/journeymap.topo.config` peut être édité avec un simple éditeur de texte.  Vous pouvez y apporter des modifications, l'enregistrer et voir les résultats immédiatement dans JourneyMap sans avoir besoin de redémarrer.
 
 Le fichier contient les propriétés suivantes :
 

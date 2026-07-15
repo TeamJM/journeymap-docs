@@ -1,63 +1,55 @@
 # **Global Properties**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-The Global Properties category contains settings that affect the server side behaviour of the mod. These are the default
-properties for the server.
+La catégorie Propriétés globales contient des paramètres qui affectent le comportement côté serveur du mod. Ce sont les valeurs par défaut
+propriétés du serveur.
 
 ![Global-Properties](../../img/settings/server/global-properties.png){: .center}
 
 ## **Toggles**
 
-The default state for each toggle below is marked with **bold** text.
+L'état par défaut de chaque bascule ci-dessous est marqué d'un texte en **gras**.
 
-| Toggle                      | Description                                                                                                                                                                          |
+| Basculer | Descriptif |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Allow Journeymap**        | Whether to allow journeymap to function for non-ops.                                                                                                                                 |
-| **World ID**                | Enabling will change the save directory for this server's mapping data. The primary use is to prevent maps and settings from being over-written when using a multi-world setup and when users do not give servers unique names. WARNING: If disabled and then enabled on an active server it will reset all user mapping data. |
-| **Allow Server Admin View** | Whether non op users can view the server admin screen in read-only mode.                                                                                                             |
-| **Allow Minimap**           | Whether to allow the client minimap. When disabled the minimap is unavailable to players.                                                                                            |
-| Hide Coordinate Display     | Hides all coordinate displays and prevents editing of coordinate values for waypoints. Replaces most coordinate displays with "Unknown Location" text. Note: This does not affect existing waypoint names. |
-| **Allow Waypoints**         | Whether to allow waypoints. Fully disables map and in-game beacon rendering and associated screens.                                                                                   |
-| **Allow Waypoint Beacons**  | Whether to allow rendering of in-game beacons. (does not disable map waypoints)                                                                                                       |
-| **Allow Death Waypoints**   | Whether to allow Death Waypoints to be created on user death.                                                                                                                        |
-| Global Waypoints Only       | When enabled, players can only view and toggle the visibility of global waypoints. Creating, editing, and deleting personal waypoints is disabled.                                    |
-| Allow All Teleporting       | Allows Waypoint and Fullscreen Context menu teleporting. Waypoint Only Teleporting takes priority!                                                                                    |
-| Waypoint Teleport Only      | When enabled, players may only teleport via waypoints. Arbitrary map right-click teleport is disabled.                                                                                |
-| **Dimension Teleport**      | Enable Cross Dimension Waypoint teleporting for non-op users. OP Users can use it always.                                                                                            |
-| **Player Radar**            | If players can see other players on the map.                                                                                                                                         |
-| **Player Names**            | If players can see other player's names on the map.                                                                                                                                  |
-| **Villager Radar**          | If players can see villagers on the map.                                                                                                                                             |
-| **Animal Radar**            | If players can see animals on the map.                                                                                                                                               |
-| **Monster/Hostile Radar**   | If players can see monsters or hostile entities on the map.                                                                                                                          |
-| Hide Ops                    | Hide Ops on radar when Expanded Radar is enabled.                                                                                                                                    |
-| Hide Spectators             | Whether to hide spectators on the radar.                                                                                                                                             |
+| **Autoriser Journeymap** | S'il faut autoriser Journeymap à fonctionner pour les non-opérateurs.                                                                                                                                 |
+| **Identification mondiale** | L'activation modifiera le répertoire de sauvegarde des données de mappage de ce serveur. L'utilisation principale est d'empêcher l'écrasement des cartes et des paramètres lors de l'utilisation d'une configuration multi-mondes et lorsque les utilisateurs ne donnent pas de noms uniques aux serveurs. AVERTISSEMENT : s'il est désactivé puis activé sur un serveur actif, il réinitialisera toutes les données de mappage utilisateur. |
+| **Autoriser l'affichage de l'administrateur du serveur** | Indique si les utilisateurs non opérationnels peuvent afficher l'écran d'administration du serveur en mode lecture seule.                                                                                                             |
+| **Autoriser la mini-carte** | S'il faut autoriser la mini-carte client. Lorsqu'elle est désactivée, la mini-carte n'est pas disponible pour les joueurs.                                                                                            |
+| Masquer l'affichage des coordonnées | Masque tous les affichages de coordonnées et empêche la modification des valeurs de coordonnées pour les waypoints. Remplace la plupart des affichages de coordonnées par le texte « Emplacement inconnu ». Remarque : Cela n'affecte pas les noms de waypoints existants. |
+| **Autoriser les points de cheminement** | S'il faut autoriser les waypoints. Désactive complètement le rendu de la carte et des balises du jeu ainsi que les écrans associés.                                                                                   |
+| **Autoriser les balises de point de cheminement** | S'il faut autoriser le rendu des balises dans le jeu. (ne désactive pas les waypoints de la carte) |
+| **Autoriser les points de cheminement de la mort** | S'il faut autoriser la création de points de cheminement de la mort au décès de l'utilisateur.                                                                                                                        |
+| Waypoints mondiaux uniquement | Lorsqu'il est activé, les joueurs peuvent uniquement afficher et activer la visibilité des waypoints globaux. La création, la modification et la suppression de waypoints personnels sont désactivées.                                    |
+| Autoriser toutes les téléportations | Permet la téléportation des waypoints et du menu contextuel plein écran. La téléportation par waypoint uniquement est prioritaire !                                                                                    || Téléportation au point de cheminement uniquement | Lorsqu'il est activé, les joueurs ne peuvent se téléporter que via des waypoints. La téléportation arbitraire par clic droit sur la carte est désactivée.                                                                                |
+| **Téléportation dimensionnelle** | Activez la téléportation Cross Dimension Waypoint pour les utilisateurs non opérationnels. Les utilisateurs OP peuvent toujours l'utiliser.                                                                                            |
+| **Radar des joueurs** | Si les joueurs peuvent voir d'autres joueurs sur la carte.                                                                                                                                         |
+| **Noms des joueurs** | Si les joueurs peuvent voir les noms des autres joueurs sur la carte.                                                                                                                                  |
+| **Radar villageois** | Si les joueurs peuvent voir les villageois sur la carte.                                                                                                                                             |
+| **Radar pour animaux** | Si les joueurs peuvent voir des animaux sur la carte.                                                                                                                                               |
+| **Radar monstre/hostile** | Si les joueurs peuvent voir des monstres ou des entités hostiles sur la carte.                                                                                                                          |
+| Masquer les opérations | Masquer les opérations sur le radar lorsque le radar étendu est activé.                                                                                                                                    |
+| Masquer les spectateurs | Que ce soit pour cacher les spectateurs sur le radar.                                                                                                                                             |
 
-## **Other Settings**
+## **Autres paramètres**
 
-The default option for each setting below is marked with **bold** text.
+L'option par défaut pour chaque paramètre ci-dessous est marquée d'un texte **gras**.
 
-| Setting                         | Options                                              | Description                                                                                                                                              |
-|---------------------------------|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Multiplayer Settings            | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | Whether to allow All players, Op players, or No players to use the multiplayer settings menu.                                                            |
-| Radar General                   | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | <ul><li>All: Radar works for everyone</li><li>Op: Fully disables radar for everyone but OP users</li><li>None: Radar is disabled for everyone.</li></ul> |
-| Expanded Radar                  | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | If player radar is enabled, allows the server to track players outside of the client's range. Players can see each other anywhere in the same dimension. |
-| See Underground Players         | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | Expanded Radar only. Whether underground players are visible on the radar. The Nether is unaffected by this setting.                                     |
-| Ticks per player update         | <ul><li>Range: 1 - 20 **Default is 5**</li></ul>     | How often the server will send player location updates.                                                                                                  |
-| Radar Range Lateral             | <ul><li>Range: 16 - 512 **Default is 512**</li></ul> | Lateral distance (in blocks) to search for and display entities on Radar. Larger numbers may cause significant lag.                                       |
-| Radar Range Vertical            | <ul><li>Range: 8 - 320 **Default is 320**</li></ul>  | Vertical distance (in blocks) to search for and display entities on Radar. Larger numbers may cause significant lag.                                      |
-| Maximum Players                 | <ul><li>Range: 1 - 128 **Default is 128**</li></ul>  | The maximum number of players displayed on Radar. Larger numbers may cause lag.                                                                          |
-| Maximum Villagers               | <ul><li>Range: 1 - 128 **Default is 128**</li></ul>  | The maximum number of villagers displayed on Radar. Larger numbers may cause lag.                                                                        |
-| Maximum Animals                 | <ul><li>Range: 1 - 128 **Default is 128**</li></ul>  | The maximum number of passive mobs displayed on Radar. Larger numbers may cause lag.                                                                     |
-| Maximum Ambient Creatures       | <ul><li>Range: 1 - 128 **Default is 128**</li></ul>  | The maximum number of ambient mobs displayed on Radar. Larger numbers may cause lag.                                                                     |
-| Maximum Mobs                    | <ul><li>Range: 1 - 128 **Default is 128**</li></ul>  | The maximum number of hostile mobs displayed on Radar. Larger numbers may cause lag.                                                                     |
-| Surface Mapping                 | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | Surface Mapping for All, Ops, None.                                                                                                                      |
-| Topography Mapping              | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | Topography Mapping for All, Ops, None.                                                                                                                   |
-| Biome Mapping                   | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | Biome Mapping for All, Ops, None.                                                                                                                        |
-| Cave Mapping                    | <ul><li>**All**</li><li>Op</li><li>None</li></ul>    | Cave Mapping for All, Ops, None.                                                                                                                         |
-| Force Map Surface Render Range Max | <ul><li>Range: 0 - 32 **Default is 0**</li></ul>  | Force all players to a maximum chunk surface render distance for the map. 0 to use client settings. This setting only forces the max, it does not increase render range. |
-| Force Map Cave Render Range Max | <ul><li>Range: 0 - 32 **Default is 0**</li></ul>     | Force all players to a maximum chunk cave render distance for the map. 0 to use client settings. This setting only forces the max, it does not increase render range. |
+| Paramètre | Options | Descriptif |
+|---------------------------------|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Paramètres multijoueurs | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | S'il faut autoriser Tous les joueurs, les joueurs Op ou Aucun joueur à utiliser le menu des paramètres multijoueurs.                                                            |
+| Radar général | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | <ul><li>All : le radar fonctionne pour tout le monde</li><li>Op : désactive complètement le radar pour tout le monde sauf les utilisateurs OP</li><li>Aucun : le radar est désactivé pour tout le monde.</li></ul> |
+| Radar étendu | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Si le radar des joueurs est activé, permet au serveur de suivre les joueurs en dehors de la portée du client. Les joueurs peuvent se voir n'importe où dans la même dimension. |
+| Voir les joueurs underground | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Radar étendu uniquement. Si les acteurs underground sont visibles sur le radar. Le Nether n'est pas affecté par ce paramètre.                                     |
+| Mise à jour des ticks par joueur | <ul><li>Plage : 1 - 20 **La valeur par défaut est 5**</li></ul> | À quelle fréquence le serveur enverra des mises à jour de localisation des joueurs.                                                                                                  |
+| Portée radar latérale | <ul><li>Plage : 16 - 512 **La valeur par défaut est 512**</li></ul> | Distance latérale (en blocs) pour rechercher et afficher des entités sur le radar. Des nombres plus élevés peuvent entraîner un décalage important.                                       |
+| Portée radar verticale | <ul><li>Plage : 8 - 320 **La valeur par défaut est 320**</li></ul> | Distance verticale (en blocs) pour rechercher et afficher des entités sur le radar. Des nombres plus élevés peuvent entraîner un décalage important.                                      |
+| Nombre maximum de joueurs | <ul><li>Plage : 1 - 128 **La valeur par défaut est 128**</li></ul> | Le nombre maximum de joueurs affichés sur Radar. Des nombres plus élevés peuvent entraîner un décalage.                                                                          |
+| Villageois maximum | <ul><li>Plage : 1 - 128 **La valeur par défaut est 128**</li></ul> | Le nombre maximum de villageois affichés sur le radar. Des nombres plus élevés peuvent entraîner un décalage.                                                                        || Animaux maximum | <ul><li>Plage : 1 - 128 **La valeur par défaut est 128**</li></ul> | Le nombre maximum de monstres passifs affichés sur le radar. Des nombres plus élevés peuvent entraîner un décalage.                                                                     |
+| Créatures ambiantes maximales | <ul><li>Plage : 1 - 128 **La valeur par défaut est 128**</li></ul> | Le nombre maximum de monstres ambiants affichés sur le radar. Des nombres plus élevés peuvent entraîner un décalage.                                                                     |
+| Nombre maximum de foules | <ul><li>Plage : 1 - 128 **La valeur par défaut est 128**</li></ul> | Le nombre maximum de monstres hostiles affichés sur le radar. Des nombres plus élevés peuvent entraîner un décalage.                                                                     |
+| Cartographie des surfaces | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie de surface pour tous, opérations, aucun.                                                                                                                      |
+| Cartographie topographique | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie topographique pour tous, opérations, aucun.                                                                                                                   |
+| Cartographie du biome | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie du biome pour tous, opérations, aucun.                                                                                                                        |
+| Cartographie des grottes | <ul><li>**Tous**</li><li>Op</li><li>Aucun</li></ul> | Cartographie des grottes pour tous, opérations, aucun.                                                                                                                         |
+| Forcer la plage de rendu de surface de la carte Max | <ul><li>Plage : 0 - 32 **La valeur par défaut est 0**</li></ul> | Forcer tous les joueurs à respecter une distance maximale de rendu de surface pour la carte. 0 pour utiliser les paramètres client. Ce paramètre force uniquement le maximum, il n'augmente pas la plage de rendu. |
+| Force Map Cave Render Range Max | <ul><li>Plage : 0 - 32 **La valeur par défaut est 0**</li></ul> | Forcez tous les joueurs à respecter une distance maximale de rendu de la grotte pour la carte. 0 pour utiliser les paramètres client. Ce paramètre force uniquement le maximum, il n'augmente pas la plage de rendu. |

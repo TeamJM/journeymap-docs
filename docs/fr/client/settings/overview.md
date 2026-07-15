@@ -12,26 +12,26 @@ Pour accéder au gestionnaire de paramètres, ouvrez la carte en plein écran et
 
 ## **Import / Export**
 
-The settings manager has an **Import/Export** button. It opens the
-Import/Export JourneyMap Data dialog, which lets you back up and restore
-JourneyMap's data for a world: the generated map tiles and waypoints.
+Le gestionnaire de paramètres dispose d'un bouton **Importer/Exporter**. Il ouvre le
+Boîte de dialogue Importer/Exporter des données JourneyMap, qui vous permet de sauvegarder et de restaurer
+Les données de JourneyMap pour un monde : les tuiles de carte et les waypoints générés.
 
 ![Import-Export](../../img/settings/client/import-export.png){: .center}
 
 ### Exporting
 
-Choose **Export JourneyMap World** to back up the current world. Select
-which folders (for example the individual dimensions) to include, then
-use **Create Export** to write them out to a zip file.
+Choisissez **Export JourneyMap World** pour sauvegarder le monde actuel. Sélectionnez
+quels dossiers (par exemple les dimensions individuelles) inclure, puis
+utilisez **Create Export** pour les écrire dans un fichier zip.
 
-![Export-World](../../img/settings/client/export-world.png){: .center}
+![Export-Monde](../../img/settings/client/export-world.png){: .center}
 
 ### Importing
 
-To restore a backup, choose either **Import Zip** to import from a zip
-file or **Import World** to import from a folder. Select the source,
-choose which folders to bring in, and confirm with **Import Selected
-Folders**.
+Pour restaurer une sauvegarde, choisissez **Import Zip** pour importer à partir d'un zip
+ou **Import World** pour importer à partir d'un dossier. Sélectionnez la source,
+choisissez les dossiers à importer et confirmez avec **Importer la sélection
+Dossiers**.
 
-This is handy for moving your explored map and waypoints between
-computers, or for restoring them after reinstalling.
+Ceci est pratique pour déplacer votre carte explorée et vos waypoints entre
+ordinateurs, ou pour les restaurer après une réinstallation.
