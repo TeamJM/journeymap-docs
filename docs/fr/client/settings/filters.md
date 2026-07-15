@@ -1,41 +1,35 @@
-# **Map Filters**
+# **Filtres de carte**
 
-!!! warning "Translation needed for 6.0"
+La catégorie Filtres de carte vous permet d'appliquer un shader de filtre de couleur à chaque carte.
+tapez indépendamment. Les filtres sont uniquement une superposition côté client ; ils ne le font pas
+modifier les données cartographiques enregistrées sur le disque.
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-The Map Filters category lets you apply a color filter shader to each map
-type independently. Filters are a client-side overlay only; they do not
-modify the map data saved to disk.
-
-![Map-Filters-Settings](../../img/settings/client/filters.png){: .center}
+![Carte-Filtres-Paramètres](../../img/settings/client/filters.png){: .center}
 
 ## **Filter slots**
 
-There is one filter dropdown per map type. Each can be set independently,
-so you can keep your day map in default colors and apply a sepia filter
-only to the night map, for example.
+Il existe une liste déroulante de filtres par type de carte. Chacun peut être réglé indépendamment,
+afin que vous puissiez conserver votre carte journalière dans les couleurs par défaut et appliquer un filtre sépia
+uniquement à la carte de nuit, par exemple.
 
-| Setting               | Description                                  |
+| Paramètre | Descriptif |
 |-----------------------|----------------------------------------------|
-| Day Map Filter        | Filter applied to the day map.               |
-| Night Map Filter      | Filter applied to the night map.             |
-| Biome Filter          | Filter applied to the biome map.             |
-| Topography Map Filter | Filter applied to the topography map.        |
-| Cave Map Filter       | Filter applied to the cave map.              |
-| Nether Map Filter     | Filter applied to the nether cave map.       |
+| Filtre de carte de jour | Filtre appliqué à la carte journalière.               |
+| Filtre de carte de nuit | Filtre appliqué à la carte de nuit.             |
+| Filtre biome | Filtre appliqué à la carte du biome.             |
+| Filtre de carte topographique | Filtre appliqué à la carte topographique.        |
+| Filtre de carte de grotte | Filtre appliqué à la carte de la grotte.              |
+| Filtre de carte du Néant | Filtre appliqué à la carte des grottes du Nether.       |
 
 ## **Available filters**
 
-The same set of filter presets is available in every slot.
+Le même ensemble de préréglages de filtres est disponible dans chaque emplacement.
 
-| Filter           | Effect                                                 |
+| Filtrer | Effet |
 |------------------|--------------------------------------------------------|
-| **Default**      | No filter applied (default colors).                    |
-| Gray Scale       | Renders the map in grayscale.                          |
-| Sepia Variant 1  | Sepia color filter.                                    |
-| Sepia Variant 2  | A second sepia variant.                                |
-| Sepia Variant 3  | A third sepia variant.                                 |
-| Brightness       | Increases map brightness by 0.2.                       |
+| **Par défaut** | Aucun filtre appliqué (couleurs par défaut).                    |
+| Échelle de gris | Rend la carte en niveaux de gris.                          |
+| Variante sépia 1 | Filtre couleur sépia.                                    |
+| Variante sépia 2 | Une deuxième variante sépia.                                |
+| Variante sépia 3 | Une troisième variante sépia.                                 |
+| Luminosité | Augmente la luminosité de la carte de 0,2.                       |

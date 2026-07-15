@@ -1,45 +1,38 @@
-# **Waypoint Beacon Settings**
+# **Paramètres de la balise de point de cheminement**
 
-!!! warning "Translation needed for 6.0"
+Par défaut, les waypoints sont affichés dans le monde à l'aide d'un faisceau de balise au loin, ce qui vous permet de voir où ils se trouvent depuis n'importe où dans le monde. Vous pouvez regarder vers le faisceau et voir également l'icône et l'étiquette du waypoint. Ce comportement peut être personnalisé ci-dessous.
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-By default, waypoints are displayed in the world using a beacon beam in the distance, which allows you to see where they are from anywhere in the world. You can look towards the beam and see the waypoint's icon and label as well. This behaviour can be customized below.
-
-![Beacon-Settings](../../img/settings/client/waypoint-beacons.png){: .center}
+![Paramètres de balise](../../img/settings/client/waypoint-beacons.png){: .center}
 
 ## **Toggles**
 
-The **bold** toggle settings below are enabled by default.
+Les paramètres de bascule **gras** ci-dessous sont activés par défaut.
 
-| Toggle                          | Description                                                                                                                                                              |
+| Basculer | Descriptif |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Render World Waypoints**      | Disables/Enables rendering of all waypoints in world. This does not change whether waypoints are enabled or disabled                                                      |
-| **Enable Waypoint Beacons**     | Show in-game beacons of your waypoints                                                                                                                                    |
-| Auto-Hide Icon                  | Auto-Hides the Waypoint icon, if disabled it will always show.                                                                                                            |
-| Ignore Render Distance          | Ignore the vanilla render distance setting, enabling this feature is useful when mods that expand beyond visuals vanilla render distance are present.                      |
-| **Stationary Beam**             | Use a stationary inner beam for the waypoint beacons                                                                                                                      |
-| **Rotating Beam**               | Use a rotating outer beam for the waypoint beacons                                                                                                                        |
-| **Show Name**                   | Show the name of the waypoint in its label                                                                                                                               |
-| **Show Distance**               | Show the distance (in blocks/meters) to the waypoint in its label                                                                                                        |
-| **Auto-Hide Label (Horizontal)** | Hide waypoint labels when you're not looking toward them horizontally.                                                                                                   |
-| **Auto-Hide Label (Vertical)**  | Hide waypoint labels when you're not looking toward them vertically.                                                                                                      |
-| Bold Label                      | Use bold waypoint labels on beacons                                                                                                                                      |
-| **Show Label Background**       | Show the background rectangle behind waypoint beacon labels                                                                                                              |
-| **Small Icon**                  | Use a small icon for the waypoint beacons                                                                                                                                |
-| Shader Beacon                   | Lets shaders do their thing on waypoint beacons. May have unexpected results. (Fabric only)                                                                              |
+| **Rendu les waypoints du monde** | Désactive/Active le rendu de tous les waypoints du monde. Cela ne change pas si les waypoints sont activés ou désactivés |
+| **Activer les balises de point de cheminement** | Afficher les balises dans le jeu de vos waypoints |
+| Icône de masquage automatique | Masque automatiquement l'icône du point de cheminement. Si elle est désactivée, elle s'affichera toujours.                                                                                                            |
+| Ignorer la distance de rendu | Ignorez le paramètre de distance de rendu Vanilla, l'activation de cette fonctionnalité est utile lorsque des mods qui s'étendent au-delà de la distance de rendu Vanilla visuelle sont présents.                      |
+| **Poutre stationnaire** | Utiliser un faisceau intérieur fixe pour les balises de waypoint |
+| **Faisceau rotatif** | Utiliser un faisceau extérieur rotatif pour les balises de waypoint |
+| **Afficher le nom** | Afficher le nom du waypoint dans son étiquette |
+| **Afficher la distance** | Afficher la distance (en blocs/mètres) jusqu'au waypoint dans son étiquette |
+| **Masquer automatiquement l'étiquette (horizontale)** | Masquez les étiquettes des waypoints lorsque vous ne les regardez pas horizontalement.                                                                                                   |
+| **Masquer automatiquement l'étiquette (verticale)** | Masquez les étiquettes des waypoints lorsque vous ne les regardez pas verticalement.                                                                                                      |
+| Étiquette audacieuse | Utiliser des étiquettes de waypoint en gras sur les balises || **Afficher l'arrière-plan de l'étiquette** | Afficher le rectangle d'arrière-plan derrière les étiquettes des balises de waypoint |
+| **Petite icône** | Utiliser une petite icône pour les balises de waypoint |
+| Balise shader | Permet aux shaders de faire leur travail sur les balises de waypoint. Peut avoir des résultats inattendus. (Tissu uniquement) |
 
-## **Other Settings**
+## **Autres paramètres**
 
-The default option for each setting below is marked with **bold text.**
+L'option par défaut pour chaque paramètre ci-dessous est marquée d'un **texte en gras.**
 
-| Setting                          | Options                                                   | Description                                                                                                                                                              |
-|----------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Auto-Hide Icon Range             | <ul><li>Range: 1 - 180 <br>**Default is 5**</li></ul>     | Adjust the angle in which the icon will auto hide.                                                                                                                       |
-| Auto-Hide Label Horizontal Range | <ul><li>Range: 1 - 180 <br>**Default is 5**</li></ul>     | Adjust the horizontal angle in which the label will auto hide.                                                                                                           |
-| Auto-Hide Label Vertical Range   | <ul><li>Range: 1 - 90 <br>**Default is 10**</li></ul>     | Adjust the vertical angle in which the label will auto hide.                                                                                                             |
-| Font Scale                       | <ul><li>Range: 0.5 - 5 <br>**Default is 2**</li></ul>     | The font scale for labels and text                                                                                                                                       |
-| Maximum Distance                 | <ul><li>Range: 0 - 10000 <br>**Default is 0**</li></ul>   | The maximum distance from you (in blocks/meters) that a waypoint should be displayed. Affects both waypoints on maps and waypoint beacons. Set to 0 for no maximum.       |
-| Minimum Distance                 | <ul><li>Range: 0 - 64 <br>**Default is 4**</li></ul>      | The minimum distance from you (in blocks/meters) that a waypoint beacon should be displayed. Set to 0 for no minimum.                                                     |
+| Paramètre | Options | Descriptif |
+|-----------------------------------|-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Plage d'icônes masquées automatiquement | <ul><li>Plage : 1 - 180 <br>**La valeur par défaut est 5**</li></ul> | Ajustez l'angle dans lequel l'icône sera automatiquement masquée.                                                                                                                       |
+| Masquer automatiquement la plage horizontale des étiquettes | <ul><li>Plage : 1 - 180 <br>**La valeur par défaut est 5**</li></ul> | Ajustez l'angle horizontal dans lequel l'étiquette sera automatiquement masquée.                                                                                                           |
+| Masquer automatiquement la plage verticale des étiquettes | <ul><li>Plage : 1 - 90 <br>**La valeur par défaut est 10**</li></ul> | Ajustez l'angle vertical dans lequel l'étiquette sera automatiquement masquée.                                                                                                             |
+| Échelle de police | <ul><li>Plage : 0,5 - 5 <br>**La valeur par défaut est 2**</li></ul> | L'échelle de police pour les étiquettes et le texte |
+| Distance maximale | <ul><li>Plage : 0 - 10000 <br>**La valeur par défaut est 0**</li></ul> | La distance maximale de vous (en blocs/mètres) à laquelle un waypoint doit être affiché. Affecte à la fois les waypoints sur les cartes et les balises de waypoint. Réglé sur 0 pour aucun maximum.       |
+| Distance minimale | <ul><li>Plage : 0 - 64 <br>**La valeur par défaut est 4**</li></ul> | La distance minimale de vous (en blocs/mètres) à laquelle une balise de point de cheminement doit être affichée. Réglé sur 0 sans minimum.                                                     |

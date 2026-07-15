@@ -1,39 +1,33 @@
-# **Waypoint Command**
+# **Commande de point de cheminement**
 
-!!! warning "Translation needed for 6.0"
+Lorsque JourneyMap est installé sur le serveur, les administrateurs du serveur peuvent créer et
+supprimez les waypoints sur les clients des joueurs du chat.
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-When JourneyMap is installed on the server, server admins can create and
-delete waypoints on players' clients from the chat.
-
-All JourneyMap server commands live under the `/jm` prefix. The waypoint
-command is `/jm waypoint`, with `/jm wp` as a shorter alias.
+Toutes les commandes du serveur JourneyMap vivent sous le préfixe `/jm`. Le point de cheminement
+La commande est `/jm waypoint`, avec `/jm wp` comme alias plus court.
 
 ## **Permissions**
 
-The command can be used by:
+La commande peut être utilisée par :
 
-- Players at permission level 2 (GAMEMASTERS) or higher.
-- Players in the JourneyMap server admin list.
-- Anyone in single-player.
+- Joueurs au niveau d'autorisation 2 (GAMEMASTERS) ou supérieur.
+- Joueurs dans la liste des administrateurs du serveur JourneyMap.
+- N'importe qui en mode solo.
 
-## **Create a waypoint**
+## **Créer un waypoint**
 
 ```text
 /jm waypoint create "name" <dimension> <x> <y> <z> <color> <players> [announce]
 ```
 
-- `"name"` - the waypoint name, in quotes.
-- `<dimension>` - the dimension id, for example `minecraft:overworld`.
-- `<x> <y> <z>` - the waypoint coordinates.
-- `<color>` - a Minecraft color name, for example `aqua`.
-- `<players>` - the target player or players. Accepts a player name, a
-  list of players, or `@a` for everyone. This argument is required.
-- `[announce]` - optional. `true` notifies the player that a waypoint
-  was created; defaults to `false` (created silently).
+- `"name"` - le nom du waypoint, entre guillemets.
+- `<dimension>` - l'identifiant de dimension, par exemple `minecraft:overworld`.
+- `<x> <y> <z>` - les coordonnées du waypoint.
+- `<color>` - un nom de couleur Minecraft, par exemple `aqua`.
+- `<players>` - le ou les joueurs cibles. Accepte un nom de joueur, un
+  liste des joueurs, ou `@a` pour tout le monde. Cet argument est nécessaire.
+- `[announce]` - en option. `true` informe le joueur qu'un waypoint
+  a été créé; la valeur par défaut est `false` (créé silencieusement).
 
 ### Examples
 
@@ -43,27 +37,27 @@ The command can be used by:
 /jm waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew true
 ```
 
-## **Create a temporary waypoint**
+## **Créer un waypoint temporaire**
 
-Add `temp` before `create` to create a temporary waypoint, which is not
-saved to disk:
+Ajoutez `temp` avant `create` pour créer un waypoint temporaire, qui n'est pas
+enregistré sur le disque :
 
 ```text
 /jm waypoint temp create "name" <dimension> <x> <y> <z> <color> <players> [announce]
 ```
 
-## **Delete a waypoint**
+## **Supprimer un waypoint**
 
 ```text
 /jm waypoint delete "name" <players> [announce]
 ```
 
-- `"name"` - the name of the waypoint to delete.
-- `<players>` - the target player or players. Required.
-- `[announce]` - optional. `true` notifies the player; defaults to
+- `"name"` - le nom du waypoint à supprimer.
+- `<players>` - le ou les joueurs cibles. Requis.
+- `[announce]` - en option. `true` informe le joueur ; par défaut
   `false`.
 
-Only waypoints created by the command can be deleted by the command.
+Seuls les waypoints créés par la commande peuvent être supprimés par la commande.
 
 ### Examples
 

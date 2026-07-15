@@ -1,260 +1,254 @@
-# **Waypoints**
+# **Points de cheminement**
 
-!!! warning "Translation needed for 6.0"
+Les waypoints vous permettent de marquer des emplacements spécifiques sur votre carte afin que vous puissiez garder
+suivez-les ou retrouvez votre chemin vers eux plus tard.
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
+Les waypoints de mort sont créés automatiquement lorsque vous mourez, vous pouvez donc
+revenez récupérer vos objets. Les waypoints de la mort peuvent être désactivés dans le
+[gestionnaire de paramètres](settings/waypoint.md) si vous préférez.
 
-Waypoints let you mark specific locations on your map so you can keep
-track of them or find your way back to them later.
-
-Death waypoints are created automatically when you die, so you can
-return to collect your items. Death waypoints can be disabled in the
-[settings manager](settings/waypoint.md) if you prefer.
-
-By default a waypoint is shown in the world as a colored beacon beam,
-with its name and icon displayed when you look towards it. This and
-many other behaviors can be changed in the
-[Waypoint settings](settings/waypoint.md) and
-[Waypoint Beacon settings](settings/waypoint-beacon.md).
+Par défaut, un waypoint est affiché dans le monde sous la forme d'un faisceau de balise coloré,
+avec son nom et son icône affichés lorsque vous regardez vers lui. Ceci et
+de nombreux autres comportements peuvent être modifiés dans le
+[Paramètres des waypoints](settings/waypoint.md) et
+[Paramètres de la balise de point de cheminement](settings/waypoint-beacon.md).
 
 ![Waypoint](../img/waypoint.png){: .center}
 
-## **Creating Waypoints**
+## **Création de points de cheminement**
 
-You can create a waypoint in any of these ways:
+Vous pouvez créer un waypoint de l'une des manières suivantes :
 
-- Press ++b++ in-game to create a waypoint where you are standing.
-- Double-click, or press ++b++, in the [full-screen map](full-screen-map.md)
-  to create a waypoint at the cursor.
-- Open the Waypoint Manager and use the **New** button.
+- Appuyez sur ++b++ dans le jeu pour créer un waypoint où vous vous trouvez.
+- Double-cliquez ou appuyez sur ++b++ dans la [carte plein écran](full-screen-map.md)
+  pour créer un waypoint au niveau du curseur.
+- Ouvrez le Waypoint Manager et utilisez le bouton **Nouveau**.
 
-Each method opens the [Waypoint Editor](#the-waypoint-editor) so you can
-name and customize the waypoint before saving it.
+Chaque méthode ouvre l'[Waypoint Editor](#the-waypoint-editor) afin que vous puissiez
+nommez et personnalisez le waypoint avant de l’enregistrer.
 
-## **The Waypoint Manager**
+## **Le gestionnaire de points de cheminement**
 
-The Waypoint Manager is a single place to manage all of your waypoints
-and waypoint groups. Open it in either of these ways:
+Le Waypoint Manager est un endroit unique pour gérer tous vos waypoints
+et les groupes de points de cheminement. Ouvrez-le de l'une des manières suivantes :
 
-- Press ++n++ in-game or on the full-screen map.
-- Open the [full-screen map](full-screen-map.md) and click the Waypoint
-  Manager button.
+- Appuyez sur ++n++ dans le jeu ou sur la carte en plein écran.
+- Ouvrez la [carte plein écran](full-screen-map.md) et cliquez sur le Waypoint
+  Bouton Gestionnaire.
 
 ![Waypoint-Manager](../img/waypoint-manager.png){: .center}
 
-The manager has two panels: a list of [groups](#waypoint-groups) on one
-side and the waypoints in the selected group on the other. A search box
-filters the list as you type.
+Le gestionnaire dispose de deux panneaux : une liste de [groupes](#waypoint-groups) sur un
+d’un côté et les waypoints du groupe sélectionné de l’autre. Un champ de recherche
+filtre la liste au fur et à mesure que vous tapez.
 
 ### Manager buttons
 
-| Button             | Action                                                            |
-|--------------------|-------------------------------------------------------------------|
-| New                | Create a new waypoint.                                            |
-| New Group          | Create a new waypoint group.                                      |
-| Options            | Open the [settings manager](settings/overview.md).                |
-| Dimension          | Filter the shown waypoints by dimension.                          |
-| Import External    | Import waypoints from Xaero's Minimap. **Only appears when Xaero's waypoints are detected** for your current world - see [Importing from Xaero's Minimap](#importing-from-xaeros-minimap). |
-| Export             | Export your waypoints to a file (you choose the format).          |
-| Pending            | Review waypoints other players have shared with you.              |
-| Close              | Close the Waypoint Manager.                                       |
+| Bouton | Actions |
+|----------------------------------|-------------------------------------------------------------------|
+| Nouveau | Créez un nouveau waypoint.                                            |
+| Nouveau groupe | Créez un nouveau groupe de waypoints.                                      |
+| Options | Ouvrez le [gestionnaire de paramètres](settings/overview.md).                |
+| Dimensions | Filtrez les waypoints affichés par dimension.                          |
+| Importer externe | Importez des waypoints à partir de la mini-carte de Xaero. **Apparaît uniquement lorsque les waypoints de Xaero sont détectés** pour votre monde actuel - voir [Importation depuis la Minimap](#importing-from-xaeros-minimap) de Xaero. |
+| Exporter | Exportez vos waypoints dans un fichier (vous choisissez le format).          |
+| En attente | Passez en revue les waypoints que d’autres joueurs ont partagés avec vous.              |
+| Fermer | Fermez le gestionnaire de points de cheminement.                                       |
 
-To import or restore JourneyMap's own waypoint files (a dropped-in
-`.dat`, or a backup), see [Backups and Importing](#backups-and-importing)
-below - that is separate from the Import External button.
+Pour importer ou restaurer les propres fichiers de waypoints de JourneyMap (un fichier
+`.dat`, ou une sauvegarde), voir [Sauvegardes et importation](#backups-and-importing)
+ci-dessous - qui est distinct du bouton Importer externe.
 
-### Per-waypoint actions
+### Actions par waypoint
 
-Each waypoint in the list has these actions:
+Chaque waypoint de la liste comporte ces actions :
 
-- **Teleport** - if allowed by the server, teleport directly to the waypoint.
-- **Find** - locate the waypoint on the [full-screen map](full-screen-map.md).
-- **On/Off** - toggle the waypoint's visibility.
-- **Edit** - open the [Waypoint Editor](#the-waypoint-editor).
-- **Remove** - delete the waypoint.
-- **Chat** - share the waypoint (see [Sharing Waypoints](#sharing-waypoints)).
+- **Téléportation** - si le serveur l'autorise, téléportez-vous directement au waypoint.
+- **Rechercher** - localisez le waypoint sur la [carte plein écran](full-screen-map.md).
+- **On/Off** - bascule la visibilité du waypoint.
+- **Modifier** - ouvrez l'[Waypoint Editor](#the-waypoint-editor).
+- **Supprimer** - supprime le waypoint.
+- **Chat** - partagez le waypoint (voir [Partage des waypoints](#sharing-waypoints)).
 
-### Selecting multiple waypoints
+### Sélection de plusieurs waypoints
 
-Use **Select All**, or select individual waypoints, to act on several at
-once. With a selection active you can **Toggle Selected**,
-**Share Selected**, or **Delete Selected**.
+Utilisez **Sélectionner tout** ou sélectionnez des waypoints individuels pour agir sur plusieurs à la fois.
+une fois. Avec une sélection active, vous pouvez **Basculer la sélection**,
+**Partager la sélection** ou **Supprimer la sélection**.
 
-## **The Waypoint Editor**
+## **L'éditeur de waypoints**
 
-The Waypoint Editor opens whenever you create or edit a waypoint.
+L'éditeur de waypoints s'ouvre chaque fois que vous créez ou modifiez un waypoint.
 
 ![Waypoint-Edit](../img/waypoint-edit.png){: .center}
 
-The editor provides these fields:
+L'éditeur fournit ces champs :
 
-- **Name** - the display name for the waypoint.
-- **Location** - the X, Y, and Z coordinates. You can switch between
-  separate X / Y / Z fields and a single combined `X, Y, Z` field using
-  the Coordinate Layout option (see below). A **Sync** checkbox next to
-  the Y field, when enabled, fills the Y value from the cached surface
-  height for that X/Z (if that chunk has been mapped), so the waypoint
-  sits on the surface.
-- **Dimensions** - toggles for the dimensions the waypoint is shown in.
-- **Group** - the [group](#waypoint-groups) this waypoint belongs to.
-  You can also create a new group from here.
-- **Enable** - whether the waypoint is enabled and visible.
-- **Color** - the waypoint's color. Click the color wheel to pick a
-  color, or use **Randomize** for a new random color. This sets the
-  icon, beacon, and label colors together; to set them separately, use
-  the Settings popup.
-- **Icon** - click the icon button to choose the waypoint's icon. See
-  [Waypoint Icons](#waypoint-icons).
-- **Settings** - opens the
-  [Waypoint Settings popup](#the-waypoint-settings-popup), where you can
-  set the icon, beacon, and label colors individually and choose where
-  the waypoint is shown.
-- **Description** - opens a popup for a longer free-text description.
+- **Nom** - le nom d'affichage du waypoint.
+- **Emplacement** - les coordonnées X, Y et Z. Vous pouvez basculer entre
+  des champs X / Y / Z séparés et un seul champ `X, Y, Z` combiné en utilisant
+  l’option Disposition des coordonnées (voir ci-dessous). Une case à cocher **Sync** à côté de
+  le champ Y, lorsqu'il est activé, remplit la valeur Y de la surface mise en cache
+  hauteur pour ce X/Z (si ce morceau a été cartographié), donc le waypoint
+  se trouve à la surface.
+- **Dimensions** - active les dimensions dans lesquelles le waypoint est affiché.
+- **Groupe** - le [groupe](#waypoint-groups) auquel appartient ce waypoint.
+  Vous pouvez également créer un nouveau groupe à partir d'ici.
+- **Activer** - si le waypoint est activé et visible.
+- **Couleur** - la couleur du waypoint. Cliquez sur la roue chromatique pour choisir un
+  couleur, ou utilisez **Randomize** pour une nouvelle couleur aléatoire. Ceci définit le
+  couleurs d'icône, de balise et d'étiquette ensemble ; pour les définir séparément, utilisez
+  la fenêtre contextuelle Paramètres.
+- **Icône** - cliquez sur le bouton icône pour choisir l'icône du waypoint. Voir
+  [Icônes de points de cheminement](#waypoint-icons).
+- **Paramètres** - ouvre le
+  [popup Paramètres de waypoint](#the-waypoint-settings-popup), où vous pouvez
+  définissez les couleurs des icônes, des balises et des étiquettes individuellement et choisissez où
+  le waypoint est affiché.
+- **Description** - ouvre une fenêtre contextuelle pour une description en texte libre plus longue.
 
 Buttons:
 
-- **Reset** - undo your unsaved edits to this waypoint.
-- **Save** - save your changes.
-- **Close** - close the editor without saving.
+- **Réinitialiser** - annulez vos modifications non enregistrées sur ce waypoint.
+- **Enregistrer** - enregistrez vos modifications.
+- **Fermer** - ferme l'éditeur sans enregistrer.
 
-### Editor options
+### Options de l'éditeur
 
-The **Waypoint Editor Options** button configures the editor itself
-rather than a single waypoint. It includes the **Coordinate Layout**
-option, which switches between separate X / Y / Z input fields and a
-single combined `X, Y, Z` field.
+Le bouton **Options de l'éditeur de waypoint** configure l'éditeur lui-même
+plutôt qu'un seul waypoint. Il comprend la **Mise en page des coordonnées**
+option, qui bascule entre des champs de saisie X / Y / Z séparés et un
+champ `X, Y, Z` combiné unique.
 
-### The Waypoint Settings popup
+### La fenêtre contextuelle Paramètres du point de cheminement
 
-The **Settings** button in the editor opens the Waypoint Settings popup,
-which controls the waypoint's colors and where it is shown.
+Le bouton **Paramètres** dans l'éditeur ouvre la fenêtre contextuelle Paramètres du point de cheminement,
+qui contrôle les couleurs du waypoint et l'endroit où il est affiché.
 
-![Waypoint-Settings](../img/client/waypoint-settings.png){: .center}
+![Paramètres de waypoint](../img/client/waypoint-settings.png){: .center}
 
-**Colors.** The popup has a four-row color table - **Icon**,
-**Icon Color**, **Beacon**, and **Label**:
+**Couleurs.** La fenêtre contextuelle a une table de couleurs à quatre lignes - **Icône**,
+**Couleur de l'icône**, **Beacon** et **Étiquette** :
 
-- The **Icon** row has an icon button for choosing the
-  [icon](#waypoint-icons), along with a color picker.
-- The **Icon Color**, **Beacon**, and **Label** rows each have a color
-  picker for that element.
-- The Icon Color, Beacon, and Label colors follow the icon's color until
-  you set them individually, so by default they match.
-- Each row's **Clear** button removes that color, drawing the element
-  with no tint.
-- **Reset Colors** returns all rows to the icon's color.
+- La ligne **Icône** comporte un bouton icône permettant de choisir le
+  [icon](#waypoint-icons), avec un sélecteur de couleurs.
+- Les lignes **Icon Color**, **Beacon** et **Label** ont chacune une couleur.
+  sélecteur pour cet élément.
+- Les couleurs de l'icône, de la balise et de l'étiquette suivent la couleur de l'icône jusqu'à ce que
+  vous les définissez individuellement, donc par défaut ils correspondent.
+- Le bouton **Effacer** de chaque ligne supprime cette couleur, dessinant l'élément
+  sans teinte.
+- **Réinitialiser les couleurs** renvoie toutes les lignes à la couleur de l'icône.
 
-**Visibility.** A column of checkboxes controls where the waypoint is
-shown:
+**Visibilité.** Une colonne de cases à cocher contrôle l'emplacement du waypoint.
+montré:
 
-| Toggle              | Effect                                                |
-|---------------------|-------------------------------------------------------|
-| Show on Map         | Show the waypoint on the minimap and full-screen map. |
-| Show in World       | Show the waypoint in the world.                       |
-| Show Label          | Show the waypoint's name label.                       |
-| Show Beacon         | Show the in-world beacon beam.                        |
-| Show Icon           | Show the waypoint's icon.                             |
-| Show Deviation      | Show the deviation readout next to the label.         |
-| Show on Locator Bar | Show the waypoint on the vanilla locator bar.         |
+| Basculer | Effet |
+|-----------|-------------------------------------------------------|
+| Afficher sur la carte | Affichez le waypoint sur la mini-carte et la carte en plein écran. |
+| Afficher dans le monde | Afficher le waypoint dans le monde.                       |
+| Afficher l'étiquette | Afficher l'étiquette du nom du waypoint.                       |
+| Afficher la balise | Montrez le faisceau de balise dans le monde.                        |
+| Afficher l'icône | Afficher l'icône du waypoint.                             |
+| Afficher l'écart | Afficher l’affichage de l’écart à côté de l’étiquette.         |
+| Afficher sur la barre de localisation | Affichez le waypoint sur la barre de localisation vanille.         |
 
-The **Show on Locator Bar** toggle is only present in JourneyMap for
-Minecraft 26.1 and newer (see [Show On Locator Bar](#show-on-locator-bar)).
+La bascule **Afficher sur la barre de localisation** n'est présente dans JourneyMap que pour
+Minecraft 26.1 et versions ultérieures (voir [Afficher sur la barre de localisation](#show-on-locator-bar)).
 
-## **Waypoint Groups**
+## **Groupes de points de cheminement**
 
-Waypoint groups let you organize waypoints into named sets - for example
-`Bases`, `Mining`, or `Villages`. A group can be enabled or disabled as
-a whole, given its own icon, and marked as the default group for new
-waypoints.
+Les groupes de waypoints vous permettent d'organiser les waypoints en ensembles nommés - par exemple
+`Bases`, `Mining` ou `Villages`. Un groupe peut être activé ou désactivé selon
+un tout, doté de sa propre icône et marqué comme groupe par défaut pour les nouveaux
+points de cheminement.
 
-JourneyMap has several built-in groups: `Default` (where new waypoints
-go unless you choose otherwise), `Death` (death waypoints), and `Temp`
-(temporary waypoints). The `All` view shows every waypoint regardless of
-group.
+JourneyMap possède plusieurs groupes intégrés : `Default` (où les nouveaux waypoints
+allez sauf si vous en décidez autrement), `Death` (points de cheminement de la mort) et `Temp`
+(waypoints temporaires). La vue `All` affiche chaque waypoint, quel que soit le
+groupe.
 
-!!! note "More detail"
+!!! remarque "Plus de détails"
 
-    Groups are a large feature with their own management screen. Full
-    coverage lives on the [Waypoint Groups](waypoint-groups.md) page.
+    Les groupes constituent une fonctionnalité importante avec leur propre écran de gestion. Plein
+    la couverture se trouve sur la page [Waypoint Groups](waypoint-groups.md)».
 
-## **Waypoint Icons**
+## **Icônes de points de cheminement**
 
-Click the icon button in the Waypoint Editor (or in the Icon row of the
-[Settings popup](#the-waypoint-settings-popup)) to open the icon picker.
+Cliquez sur le bouton icône dans l'éditeur de waypoints (ou sur la rangée d'icônes de l'éditeur de waypoints).
+[Paramètres popup](#the-waypoint-settings-popup)) pour ouvrir le sélecteur d'icônes.
 
 ![Waypoint-Icon-Picker](../img/client/waypoint-icon-picker.png){: .center}
 
-The picker groups icons into tabs:
+Le sélecteur regroupe les icônes en onglets :
 
-- **All** - every available icon.
-- **JourneyMap** - the built-in JourneyMap icons.
-- **Minecraft** - vanilla Minecraft item textures.
-- **Map Deco** - vanilla map marker icons.
-- One tab for each named icon set supplied by a resource pack.
+- **Tous** - toutes les icônes disponibles.
+- **JourneyMap** - les icônes JourneyMap intégrées.
+- **Minecraft** - textures d'objets Minecraft vanille.
+- **Map Deco** - icônes de marqueurs de carte vanille.
+- Un onglet pour chaque jeu d'icônes nommé fourni par un pack de ressources.
 
-The picker also has a color picker, so you can set the icon's color while
-choosing it, and a **Clear** button to remove the color.
+Le sélecteur dispose également d'un sélecteur de couleurs, vous pouvez donc définir la couleur de l'icône tout en
+en le choisissant, et un bouton **Effacer** pour supprimer la couleur.
 
-You can add your own waypoint icons, and your own named icon sets, with a
-resource pack. See
-[Waypoint Icons (Resource Packs)](../tools/waypoint-icons.md).
+Vous pouvez ajouter vos propres icônes de waypoint et vos propres jeux d'icônes nommés, avec un
+pack de ressources. Voir
+[Icônes de points de cheminement (packs de ressources)](../tools/waypoint-icons.md).
 
-## **Server-Managed Waypoints**
+## **Waypoints gérés par le serveur**
 
-When you play on a server that runs JourneyMap, the server can manage
-waypoints itself. In that case waypoints have a **scope**:
+Lorsque vous jouez sur un serveur qui exécute JourneyMap, le serveur peut gérer
+waypoints lui-même. Dans ce cas, les waypoints ont une **portée** :
 
-- **Personal** - your own waypoints, visible only to you.
-- **Global** - waypoints managed by the server and shared with players,
-  set up by server admins.
+- **Personnel** - vos propres waypoints, visibles uniquement par vous.
+- **Global** - waypoints gérés par le serveur et partagés avec les joueurs,
+  configuré par les administrateurs du serveur.
 
-The Waypoint Manager shows a scope selector when server-managed
-waypoints are available. See
-[Server Multiplayer settings](../server/multiplayer.md) for the
-server-side options.
+Le Waypoint Manager affiche un sélecteur de portée lorsqu'il est géré par le serveur
+des waypoints sont disponibles. Voir
+[Paramètres du serveur multijoueur](../server/multiplayer.md) pour le
+options côté serveur.
 
-## **Teleporting to Waypoints**
+## **Téléportation vers des waypoints**
 
-If the server allows it, the **Teleport** action in the Waypoint Manager
-takes you directly to a waypoint. Teleporting is controlled per
-dimension by server admins, so it may be available in some dimensions
-and not others. In single-player it is always available.
+Si le serveur le permet, l'action **Téléporter** dans le Waypoint Manager
+vous amène directement à un waypoint. La téléportation est contrôlée par
+dimension par les administrateurs du serveur, il peut donc être disponible dans certaines dimensions
+et pas les autres. En mode solo, il est toujours disponible.
 
-The teleport command JourneyMap uses can be customized, and there is an
-option to strip decimal places from the coordinates it sends. See the
-[Waypoint settings](settings/waypoint.md).
+La commande de téléportation utilisée par JourneyMap peut être personnalisée, et il existe un
+option pour supprimer les décimales des coordonnées qu’il envoie. Voir le
+[Paramètres des points de cheminement](settings/waypoint.md).
 
-## **Sharing Waypoints**
+## **Partage de points de cheminement**
 
-You can share a waypoint or location with other players. Players who do
-not have JourneyMap still see the location in chat in a readable format.
+Vous pouvez partager un waypoint ou un emplacement avec d'autres joueurs. Les joueurs qui le font
+JourneyMap ne voit toujours pas l'emplacement dans le chat dans un format lisible.
 
-There are three ways to share:
+Il existe trois façons de partager :
 
-1. In the Waypoint Manager, use the **Chat** button next to a waypoint
-   (or **Share Selected** for several). The location is placed in the
-   chat input for you - add a message if you like, then press Enter.
-2. In the chat input, type `/jm ~` and press Enter. It is replaced with
-   your current location.
-3. Type a location manually in chat between square brackets (see
-   [Location Format](#location-format) below).
+1. Dans le Waypoint Manager, utilisez le bouton **Chat** à côté d'un waypoint.
+   (ou **Partager la sélection** pour plusieurs). L'emplacement est placé dans le
+   entrée de chat pour vous - ajoutez un message si vous le souhaitez, puis appuyez sur Entrée.
+2. Dans la saisie du chat, tapez `/jm ~` et appuyez sur Entrée. Il est remplacé par
+   votre emplacement actuel.
+3. Saisissez manuellement un emplacement dans le chat entre crochets (voir
+   [Format d'emplacement](#location-format) ci-dessous).
 
-When a properly formatted location appears in chat, **click** it to
-create a waypoint, or **control-click** it to view the location on the
-full-screen map.
+Lorsqu'un emplacement correctement formaté apparaît dans le chat, **cliquez** dessus pour
+créez un waypoint, ou **contrôlez-cliquez** dessus pour afficher l'emplacement sur le
+carte en plein écran.
 
 ![Waypoint-Chat](../img/waypoint-chat.png){: .center}
 
-Waypoints shared directly with you arrive as **Pending** waypoints. Open
-the **Pending** button in the Waypoint Manager to **Accept** or
-**Decline** each one.
+Les waypoints partagés directement avec vous arrivent en tant que waypoints **En attente**. Ouvert
+le bouton **En attente** dans le Waypoint Manager pour **Accepter** ou
+**Refusez** chacun.
 
 ### Location Format
 
-A location must have at least the x and z coordinates. The order of the
-values does not matter:
+Un emplacement doit avoir au moins les coordonnées x et z. L'ordre du
+les valeurs n'ont pas d'importance :
 
 - `[x:#, z:#]`
 - `[x:#, y:#, z:#]`
@@ -262,8 +256,8 @@ values does not matter:
 - `[x:#, y:#, z:#, dim:#, name:text]`
 - `[name:text, dim:#, x:#, z:#, y:#]`
 
-A location is two or more `name:value` pairs separated by commas. The
-supported values are:
+Un emplacement est constitué de deux ou plusieurs paires `name:value` séparées par des virgules. Le
+les valeurs prises en charge sont :
 
 - `x` (integer) **required**
 - `y` (integer)
@@ -271,77 +265,77 @@ supported values are:
 - `dim` (integer)
 - `name` (string, no quotes, no commas)
 
-## **Waypoint Commands**
+## **Commandes de points de cheminement**
 
-JourneyMap's chat commands live under the `/jm` prefix.
+Les commandes de discussion de JourneyMap vivent sous le préfixe `/jm`.
 
-`/jm reload` reloads the waypoint files from disk without restarting the
-game. This is mainly useful after dropping waypoint files into the
-waypoint folder while the game is running.
+`/jm reload` recharge les fichiers de waypoints depuis le disque sans redémarrer le
+jeu. Ceci est principalement utile après avoir déposé des fichiers de waypoints dans le
+dossier waypoint pendant que le jeu est en cours d'exécution.
 
-When the server runs JourneyMap, server-side waypoint commands are also
-available under `/jm waypoint` (or `/jm wp`). See the
-[server waypoint command](../server/commands/waypoint_command.md) page.
+Lorsque le serveur exécute JourneyMap, les commandes de waypoint côté serveur sont également
+disponible sous `/jm waypoint` (ou `/jm wp`). Voir le
+[page ](../server/commands/waypoint_command.md) de commande de point de cheminement du serveur.
 
-## **Backups and Importing**
+## **Sauvegardes et importation**
 
-JourneyMap protects your waypoint data in several ways:
+JourneyMap protège vos données de waypoint de plusieurs manières :
 
-- **Rolling backups** - JourneyMap keeps recent backups of your waypoint
-  data and automatically loads the most recent good backup if the main
-  file is found to be damaged.
-- **Import / Export** - use the Import and Export buttons in the
-  Waypoint Manager to back up your waypoints to a file or restore them.
-- **Drop-in merge** - drop a waypoint `.dat` file into the waypoint
-  folder and JourneyMap merges its waypoints into your existing data.
-  Run `/jm reload`, or reconnect, to pick up files added while playing.
-- **Import from Xaero's** - if Xaero's Minimap waypoints are detected for
-  your current world, an **Import External** button appears in the
-  Waypoint Manager. See [Importing from Xaero's Minimap](#importing-from-xaeros-minimap).
+- **Sauvegardes continues** - JourneyMap conserve des sauvegardes récentes de votre waypoint
+  données et charge automatiquement la bonne sauvegarde la plus récente si le principal
+  le fichier s'avère endommagé.
+- **Importer/Exporter** - utilisez les boutons Importer et Exporter dans le
+  Waypoint Manager pour sauvegarder vos waypoints dans un fichier ou les restaurer.
+- **Fusion directe** - déposez un fichier de point de cheminement `.dat` dans le point de cheminement
+  dossier et JourneyMap fusionne ses waypoints dans vos données existantes.
+  Exécutez `/jm reload` ou reconnectez-vous pour récupérer les fichiers ajoutés pendant la lecture.
+- **Importer depuis Xaero** - si les waypoints Minimap de Xaero sont détectés pour
+  votre monde actuel, un bouton **Importer externe** apparaît dans le
+  Gestionnaire de points de cheminement. Voir [Importation à partir de Minimap](#importing-from-xaeros-minimap) de Xaero.
 
-### Importing from Xaero's Minimap
+### Importation depuis la mini-carte de Xaero
 
-JourneyMap can import waypoints from **Xaero's Minimap**, currently the
-only supported external source. The **Import External** button appears in
-the Waypoint Manager toolbar **only when** JourneyMap detects Xaero's
-waypoints for the world or server you are on; if there are none for the
-current world, the button is hidden.
+JourneyMap peut importer des waypoints à partir de **la mini-carte de Xaero**, actuellement la
+seule source externe prise en charge. Le bouton **Importer externe** apparaît dans
+la barre d'outils Waypoint Manager **uniquement lorsque** JourneyMap détecte le Xaero
+des waypoints pour le monde ou le serveur sur lequel vous vous trouvez ; s'il n'y en a pas pour le
+monde actuel, le bouton est masqué.
 
 ![Import-Button](../img/client/waypoint-import.png){: .center}
 
-Clicking it opens the **Import External Waypoints** screen, where you can
-review the detected waypoints and import them. JourneyMap reads Xaero's
-own data folder, matching by singleplayer world, server address, or
-Realm.
+En cliquant dessus, vous ouvrez l'écran **Importer des waypoints externes**, où vous pouvez
+examinez les waypoints détectés et importez-les. JourneyMap lit celui de Xaero
+propre dossier de données, correspondant par monde solo, adresse de serveur ou
+Royaume.
 
-![Import-External-Waypoints](../img/client/waypoint-import-external.png){: .center}
+![Importer-Waypoints-Externes](../img/client/waypoint-import-external.png){: .center}
 
-This is separate from the
-[Import / Export data tools](settings/overview.md#import-export) and from
-the drop-in `.dat` merge above: those handle JourneyMap's own files,
-while this reads Xaero's.
+Ceci est distinct du
+[Outils d'importation/exportation de données](settings/overview.md#import-export) et depuis
+la fusion drop-in `.dat` ci-dessus : celles-ci gèrent les propres fichiers de JourneyMap,
+pendant que ceci lit celui de Xaero.
 
-## **Show On Locator Bar**
+## **Afficher sur la barre de localisation**
 
-!!! info "26.1 and newer"
+!!! informations "26.1 et plus récent"
 
-    The locator bar is a Minecraft 1.21.6+ feature, so this option is
-    only present in JourneyMap for Minecraft 26.1 and newer (the 26.x
-    line, including 26.2). It is not available on the 1.21.1 line
+    La barre de localisation est une fonctionnalité de Minecraft 1.21.6+, cette option est donc
+    présent uniquement dans JourneyMap pour Minecraft 26.1 et versions ultérieures (le 26.x
+    ligne, dont 26.2). Il n'est pas disponible sur la ligne 1.21.1
     (1.21.1 / 1.21.11).
 
-Waypoints can be shown on Minecraft's locator bar. This is controlled by
-a **Show On Locator Bar** option, available both globally and per
-[group](waypoint-groups.md). Disabled waypoints are not shown on the
-locator bar.
+Les waypoints peuvent être affichés sur la barre de localisation de Minecraft. Ceci est contrôlé par
+une option **Afficher sur la barre de localisation**, disponible à la fois globalement et par
+[groupe](waypoint-groups.md). Les waypoints désactivés ne sont pas affichés sur le
+barre de localisation.
 
 ![Locator-Bar](../img/client/locator-bar.png){: .center}
 
-## **Settings**
+## **Paramètres**
 
-Waypoint behavior is configured in two settings categories:
+Le comportement du waypoint est configuré dans deux catégories de paramètres :
 
-- [Waypoint settings](settings/waypoint.md) - death waypoints, the
-  teleport command, sharing, and more.
-- [Waypoint Beacon settings](settings/waypoint-beacon.md) - how waypoint
-  beacons and labels are drawn in the world.
+- [Paramètres des waypoints](settings/waypoint.md) - waypoints de mort, le
+  commande de téléportation, partage et bien plus encore.
+- [Paramètres de la balise de point de cheminement](settings/waypoint-beacon.md) - comment le point de cheminement
+  des balises et des étiquettes sont dessinées dans le monde.

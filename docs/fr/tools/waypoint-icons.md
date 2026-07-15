@@ -1,56 +1,50 @@
 
-!!! warning "Translation needed for 6.0"
+## **Packs de ressources d'icônes de point de cheminement**
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
+JourneyMap est livré avec un ensemble d'icônes de waypoints intégrées, mais vous pouvez ajouter
+les vôtres en les expédiant dans un pack de ressources Minecraft. Choix de JourneyMap
+les icônes s'affichent automatiquement et elles apparaissent dans le sélecteur d'icônes dans le
+éditeur de waypoints.
 
-## **Waypoint Icon Resource Packs**
-
-JourneyMap ships with a set of built-in waypoint icons, but you can add
-your own by shipping them in a Minecraft resource pack. JourneyMap picks
-the icons up automatically and they appear in the icon picker in the
-waypoint editor.
-
-For mob and entity icons (a different system), see
-[Custom Mob Icons](custom-mob-icons.md).
+Pour les icônes de foule et d'entité (un système différent), voir
+[Icônes de foule personnalisées](custom-mob-icons.md).
 
 ## **Resource pack path**
 
-Place your waypoint icons inside a resource pack at this path:
+Placez vos icônes de waypoint dans un pack de ressources sur ce chemin :
 
 ```text
 assets/journeymap/textures/waypoint/icon/<name>.png
 ```
 
-`<name>` becomes the icon's name in the waypoint editor's icon picker,
-so use something descriptive.
+`<name>` devient le nom de l'icône dans le sélecteur d'icône de l'éditeur de waypoints,
+alors utilisez quelque chose de descriptif.
 
-In code / resource location terms this path is
+En termes de code/emplacement de ressource, ce chemin est
 `journeymap:textures/waypoint/icon/<name>.png`.
 
 ## **Image size**
 
-Waypoint icons must be **16x16** pixels. Images of other sizes will not
-render correctly. Use transparent PNG files so the icon blends with the
-waypoint marker.
+Les icônes de waypoint doivent mesurer **16x16** pixels. Les images d'autres tailles ne le seront pas
+rendre correctement. Utilisez des fichiers PNG transparents pour que l'icône se fonde avec le
+marqueur de point de cheminement.
 
 ## **Example resource pack**
 
-A starter resource pack is available to use as a template:
+Un pack de ressources de démarrage est disponible pour être utilisé comme modèle :
 
 [icons_test.zip](https://github.com/user-attachments/files/26309255/icons_test.zip)
 
-To use it:
+Pour l'utiliser :
 
-1. Open the zip in 7-Zip, WinZip, WinRAR, or any zip tool.
-2. Edit the `description` in `pack.mcmeta`.
-3. Delete the help files included in the example.
-4. Put your 16x16 PNG images in
-   `assets/journeymap/textures/waypoint/icon` inside the zip.
-5. Rename the zip to whatever you want the pack to be called.
-6. Drop the zip into your `resourcepacks` folder and enable it in
-   Minecraft's Resource Packs screen.
+1. Ouvrez le zip dans 7-Zip, WinZip, WinRAR ou tout autre outil zip.
+2. Modifiez le `description` dans `pack.mcmeta`.
+3. Supprimez les fichiers d'aide inclus dans l'exemple.
+4. Mettez vos images PNG 16x16 dans
+   `assets/journeymap/textures/waypoint/icon` à l'intérieur du zip.
+5. Renommez le zip comme vous voulez que le pack soit appelé.
+6. Déposez le zip dans votre dossier `resourcepacks` et activez-le dans
+   Écran des packs de ressources de Minecraft.
 
 ## **Folder layout**
 
@@ -69,30 +63,30 @@ my-waypoint-icons.zip
 
 ## **Custom icon sets**
 
-Icons placed directly in `textures/waypoint/icon/` appear in the
-**JourneyMap** set. To ship your icons as their own named set, put them in a
-**subfolder**:
+Les icônes placées directement dans `textures/waypoint/icon/` apparaissent dans le
+Ensemble **JourneyMap**. Pour expédier vos icônes sous leur propre ensemble nommé, placez-les dans un
+**sous-dossier** :
 
 ```text
 assets/journeymap/textures/waypoint/icon/<set>/<name>.png
 ```
 
-Each subfolder becomes its own tab in the icon picker. The subfolder name
-(`<set>`) is the set's identifier. Resource-pack sets appear alongside
-JourneyMap's built-in tabs - **All**, **JourneyMap**, **Minecraft**
-(vanilla item textures), and **Map Deco** (map markers).
+Chaque sous-dossier devient son propre onglet dans le sélecteur d'icônes. Le nom du sous-dossier
+(`<set>`) est l'identifiant de l'ensemble. Les ensembles de packs de ressources apparaissent à côté
+Onglets intégrés de JourneyMap - **Tous**, **JourneyMap**, **Minecraft**
+(textures d'objets vanille) et **Map Deco** (marqueurs de carte).
 
-### Naming the set
+### Nommer l'ensemble
 
-By default the tab is labelled with the raw subfolder name. To give it a
-friendly, localizable name, add this translation key to your resource pack's
-language files:
+Par défaut, l'onglet porte le nom du sous-dossier brut. Pour lui donner un
+nom convivial et localisable, ajoutez cette clé de traduction au fichier de votre pack de ressources
+fichiers de langue :
 
 ```text
 waypoint.icon.set.<set>.name
 ```
 
-For example, a `houses` subfolder:
+Par exemple, un sous-dossier `houses` :
 
 `assets/journeymap/lang/en_us.json`:
 
@@ -110,18 +104,18 @@ For example, a `houses` subfolder:
 }
 ```
 
-The key is optional. Without it, the tab shows the subfolder name (`houses`).
+La clé est facultative. Sans cela, l'onglet affiche le nom du sous-dossier (`houses`).
 
-### Tooltip for the set
+### Info-bulle pour l'ensemble
 
-To show a hover tooltip on the set's tab, add a second translation key
-alongside the name:
+Pour afficher une info-bulle de survol sur l'onglet de l'ensemble, ajoutez une deuxième clé de traduction
+à côté du nom :
 
 ```text
 waypoint.icon.set.<set>.name.tooltip
 ```
 
-For the same `houses` subfolder:
+Pour le même sous-dossier `houses` :
 
 `assets/journeymap/lang/en_us.json`:
 
@@ -141,8 +135,8 @@ For the same `houses` subfolder:
 }
 ```
 
-The tooltip key is optional. Without it (or with an empty value), the tab
-shows no tooltip on hover.
+La clé d'info-bulle est facultative. Sans cela (ou avec une valeur vide), l'onglet
+n'affiche aucune info-bulle au survol.
 
 ### Folder layout
 
@@ -164,6 +158,6 @@ my-waypoint-icons.zip
  └───pack.mcmeta
 ```
 
-Icons in a set placed under the `journeymap` namespace (the path shown above)
-are tinted by the waypoint color, like JourneyMap's built-in icons. Use 16x16
-transparent PNG files, as for the JourneyMap set.
+Icônes dans un ensemble placé sous l'espace de noms `journeymap` (le chemin indiqué ci-dessus)
+sont teintés par la couleur du waypoint, comme les icônes intégrées de JourneyMap. Utiliser 16x16
+fichiers PNG transparents, comme pour l’ensemble JourneyMap.

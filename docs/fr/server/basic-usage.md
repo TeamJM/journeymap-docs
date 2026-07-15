@@ -1,12 +1,6 @@
 ## **Aperçu**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
-
-You don't have to have JourneyMap installed on the server to use the JourneyMap client. Installing it on the server gives admins a way to restrict some client features, manage waypoints, and support multi-world and proxy (BungeeCord / Velocity) setups. JourneyMap server runs on Fabric, NeoForge, and Forge servers, and on Paper servers (Minecraft 26.1 line). See [Installing](installing.md) for details.
+Il n'est pas nécessaire que JourneyMap soit installé sur le serveur pour utiliser le client JourneyMap. L'installer sur le serveur donne aux administrateurs un moyen de restreindre certaines fonctionnalités du client, de gérer les points de cheminement et de prendre en charge les configurations multi-mondes et proxy (BungeeCord / Velocity). Le serveur JourneyMap fonctionne sur les serveurs Fabric, NeoForge et Forge, ainsi que sur les serveurs Paper (gamme Minecraft 26.1). Voir [Installation de ](installing.md) pour plus de détails.
 
 ## **Configuration de l'Administrateur de Serveur**
 
@@ -20,23 +14,23 @@ Par défaut, tous les utilisateurs Opped ont accès à l'écran d'administration
 
 Emplacement du fichier de configuration pour les serveurs Fabric : `(server_folder)/configs/journeymap_server.cfg`.
 
-The config file location for NeoForge and Forge servers: `(server_folder)/world/serverconfig/journeymap_server.cfg`.
+L'emplacement du fichier de configuration pour les serveurs NeoForge et Forge : `(server_folder)/world/serverconfig/journeymap_server.cfg`.
 
 ```text
-    server {
-    # Les joueurs dans cette liste ont accès au panneau d'administration du serveur de JourneyMap
-    # Ajoutez des utilisateurs par nom ou UUID, privilégiez l'UUID car c'est plus sécurisé !
-    # Chaque valeur sur une nouvelle ligne avec le format d'exemple fourni. (veuillez supprimer les valeurs par défaut)
-    S:"Administrateurs du Serveur Journeymap" <
-    mysticdrew
-    12341234132
-    >
+server {
+# Les joueurs dans cette liste ont accès au panneau d'administration du serveur de JourneyMap
+# Ajoutez des utilisateurs par nom ou UUID, privilégiez l'UUID car c'est plus sécurisé !
+# Chaque valeur sur une nouvelle ligne avec le format d'exemple fourni. (veuillez supprimer les valeurs par défaut)
+S:"Administrateurs du Serveur Journeymap" <
+mysticdrew
+12341234132
+>
     
         # Par défaut, tous les Ops ont accès à l'interface d'administration du serveur dans l'écran des Options.
         # Si défini sur false, seuls les utilisateurs de la liste des administrateurs auront accès.
         # Si défini sur true, tous les ops et les utilisateurs de la liste des administrateurs auront accès.
         B:"Accès Admin Ops"=true
-    }
+}
 ```
 
 ## **Ce que ce n'est pas**

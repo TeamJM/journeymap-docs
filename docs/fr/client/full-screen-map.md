@@ -1,11 +1,5 @@
 # **Carte en Plein Écran**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
-
 En appuyant sur la touche de la carte en plein écran (par défaut, la touche ++j++), vous pouvez ouvrir la carte en plein écran.
 
 ![Plein Écran](../img/full-screen.png){: .center}
@@ -23,10 +17,10 @@ Une fois que vous avez ouvert la carte en plein écran, vous pouvez faire défil
 Les raccourcis clavier suivants sont disponibles, et ils peuvent être modifiés dans les options de Minecraft :
 
 - ++c++ Copier les coordonnées du bloc sur lequel votre curseur pointe vers la boîte de chat
-- ++b++ Créer un [point de repère](waypoints.md) au bloc sur lequel votre curseur pointe
-- ++o++ Open JourneyMap's [settings manager](settings/overview.md)
-- ++f++ Follow your player (re-center the map and keep it centered on you)
-- ++up++ ++down++ ++left++ ++right++ Pan the map 16 blocks in that direction
+- ++b++ Créer un [point de repère](waypoints.md) au bloc sur lequel pointe votre curseur
+- ++o++ Ouvrez le [gestionnaire de paramètres de JourneyMap](settings/overview.md)
+- ++f++ Suivez votre joueur (recentrez la carte et gardez-la centrée sur vous)
+- ++up++ ++down++ ++left++ ++right++ Déplacez la carte sur 16 blocs dans cette direction
 
 ## **Boutons**
 
@@ -34,11 +28,11 @@ Autour du bord de la carte en plein écran se trouve un ensemble de boutons, que
 
 !!! note "Minimal UI"
 
-    The full-screen map has a Minimal UI option that hides most of these
-    buttons for a cleaner view. It can be toggled in the
-    [full-screen map settings](settings/full-screen-map.md). You can also
-    hide the buttons temporarily with the Disable Fullscreen Buttons
-    keybind (unbound by default).
+    La carte en plein écran dispose d'une option d'interface utilisateur minimale qui masque la plupart d'entre elles.
+    boutons pour une vue plus nette. Il peut être activé dans le
+    [paramètres de carte plein écran](settings/full-screen-map.md). Vous pouvez également
+    masquer temporairement les boutons avec l'option Désactiver les boutons plein écran
+    keybind (non lié par défaut).
 
 ## **Boutons Supérieurs**
 

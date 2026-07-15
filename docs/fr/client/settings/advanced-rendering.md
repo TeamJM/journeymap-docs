@@ -1,54 +1,48 @@
-# **Advanced Map Rendering Options**
-
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0. Some sections shown are
-    the English source pending translation. See Contributing to help
-    translate the docs.
+# **Options avancées de rendu de carte**
 
 !!! warning "Caution"
 
-    These options significantly change how the map is rendered. After
-    changing a value it takes time for the change to appear, because
-    every chunk has to be redrawn. Only adjust these if you know what
-    you are doing; use the Reset button to return to the defaults.
+    Ces options modifient considérablement la façon dont la carte est rendue. Après
+    en changeant une valeur, il faut du temps pour que le changement apparaisse, car
+    chaque morceau doit être redessiné. Ne les ajustez que si vous savez quoi
+    vous faites ; utilisez le bouton Réinitialiser pour revenir aux valeurs par défaut.
 
-This category fine-tunes the shading and lighting math the map renderer
-uses. The defaults are tuned to look good in most worlds.
+Cette catégorie affine les calculs d'ombrage et d'éclairage du moteur de rendu de carte.
+utilise. Les valeurs par défaut sont ajustées pour bien paraître dans la plupart des mondes.
 
-![Advanced-Map-Rendering](../../img/settings/client/advanced-rendering.png){: .center}
+![Rendu de carte avancé](../../img/settings/client/advanced-rendering.png){: .center}
 
 ## **Slope shading**
 
-These control the hillshading effect that gives the map its sense of
-elevation.
+Ceux-ci contrôlent l'effet d'ombrage qui donne à la carte son impression de
+élévation.
 
-| Setting                            | Range (Default)   | Description                                                              |
-|-------------------------------------|-------------------|--------------------------------------------------------------------------|
-| shadingSlopeMin                     | 0 - 5 (**0.2**)   | Lower bound for the slope shading range. Slopes below this are flattened. |
-| shadingSlopeMax                     | 0 - 5 (**1.7**)   | Upper bound for the slope shading range. Slopes above this are clamped.   |
-| shadingPrimaryDownslopeMultiplier   | 0 - 5 (**0.65**)  | How much downward-facing slopes are darkened (primary pass).             |
-| shadingPrimaryUpslopeMultiplier     | 0 - 5 (**1.20**)  | How much upward-facing slopes are brightened (primary pass).             |
-| shadingSecondaryDownslopeMultiplier | 0 - 5 (**0.95**)  | Downslope darkening for the secondary shading pass.                      |
-| shadingSecondaryUpslopeMultiplier   | 0 - 5 (**1.05**)  | Upslope brightening for the secondary shading pass.                      |
+| Paramètre | Plage (par défaut) | Descriptif |
+|---------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------|
+| ombrageSlopeMin | 0 - 5 (**0,2**) | Limite inférieure de la plage d'ombrage de la pente. Les pentes en dessous sont aplaties. |
+| ombrageSlopeMax | 0 - 5 (**1,7**) | Limite supérieure de la plage d'ombrage de la pente. Les pentes au-dessus sont bloquées.   |
+| shadingPrimaryDownslopeMultiplier | 0 - 5 (**0,65**) | Dans quelle mesure les pentes orientées vers le bas sont obscurcies (passage primaire).             |
+| shadingPrimaryUpslopeMultiplier | 0 - 5 (**1,20**) | Dans quelle mesure les pentes orientées vers le haut sont-elles éclaircies (passage primaire).             |
+| ombrageSecondaireDownslopeMultiplier | 0 - 5 (**0,95**) | Assombrissement de la pente descendante pour la passe d’ombrage secondaire.                      |
+| shadingSecondaryUpslopeMultiplier | 0 - 5 (**1,05**) | Éclaircissement de la pente ascendante pour la passe d'ombrage secondaire.                      |
 
-## **Light and brightness tweaks**
+## **Ajustements de lumière et de luminosité**
 
-| Setting                       | Range (Default)   | Description                                                            |
-|-------------------------------|-------------------|------------------------------------------------------------------------|
-| tweakMoonlightLevel           | 0 - 5 (**3.5**)   | The light level used as moonlight when rendering the night map.        |
-| tweakBrightenDaylightDiff     | 0 - 5 (**0.06**)  | How much the day map is brightened.                                    |
-| tweakBrightenLightsourceBlock | 0 - 5 (**1.2**)   | How much light-emitting blocks are brightened on the map.              |
-| tweakMinimumDarkenNightWater  | 0 - 5 (**0.25**)  | The minimum amount water is darkened on the night map.                 |
-| tweakWaterColorBlend          | 0 - 5 (**0.5**)   | How strongly water color is blended with the terrain below it.         |
+| Paramètre | Plage (par défaut) | Descriptif |
+|-------------------------------|---------|--------------------------------------------------------------------------------------|
+| modifierMoonlightLevel | 0 - 5 (**3,5**) | Le niveau de lumière utilisé comme clair de lune lors du rendu de la carte nocturne.        |
+| tweakBrightenDaylightDiff | 0 - 5 (**0,06**) | À quel point la carte du jour est éclaircie.                                    |
+| tweakBrightenLightsourceBlock | 0 - 5 (**1,2**) | Combien de blocs électroluminescents sont éclaircis sur la carte.              |
+| tweakMinimumDarkenNightWater | 0 - 5 (**0,25**) | La quantité minimale d'eau est obscurcie sur la carte de nuit.                 |
+| modifierWaterColorBlend | 0 - 5 (**0,5**) | Dans quelle mesure la couleur de l’eau se mélange-t-elle avec le terrain en dessous.         |
 
 ## **Ambient colors**
 
-These set the ambient tint applied to the map in each environment. Each
-value is a hex color (`#rrggbb`).
+Ceux-ci définissent la teinte ambiante appliquée à la carte dans chaque environnement. Chacun
+la valeur est une couleur hexadécimale (`#rrggbb`).
 
-| Setting                 | Default     | Description                                  |
-|-------------------------|-------------|----------------------------------------------|
-| tweakSurfaceAmbientColor | **#00001a** | Ambient tint for the Overworld surface map.  |
-| tweakNetherAmbientColor  | **#330808** | Ambient tint for the Nether map.             |
-| tweakEndAmbientColor     | **#00001a** | Ambient tint for the End map.                |
+| Paramètre | Par défaut | Descriptif |
+|------------------------------|-------------|-------------------------------------------------------|
+| tweakSurfaceAmbientColor | **#00001a** | Teinte ambiante pour la carte de surface Overworld.  |
+| modifierNetherAmbientColor | **#330808** | Teinte ambiante pour la carte du Nether.             |
+| tweakEndAmbientColor | **#00001a** | Teinte ambiante pour la carte de fin.                |

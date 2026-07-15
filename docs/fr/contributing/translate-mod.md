@@ -25,9 +25,9 @@ Si votre langue utilise un jeu de caractères qui doit être géré avec des car
 
 **Exemple** : `"jm.common.saving_map_to_file": "Sauvegarde de la carte %1$s dans un fichier..."`
 
-<span style="color: red">**Incorrect**</span>: <code>"jm.common.saving_map_to_file": "\u8282\u80FD %1$s \u6620\u5C04\u5230\u6587\u4EF6..."</code>
+<span style="color: red">**Incorrect**</span> : <code>"jm.common. saving_map_to_file": "\u8282\u80FD %1$s \u6620\u5C04\u5230\u6587\u4EF6..."</code>
 
-<span style="color: green">**Correct**</span>: <code>"jm.common.saving_map_to_file": "节能 %1$s 映射到文件..."</code>
+<span style="color: green">**Correct**</span> : <code>"jm.common. saving_map_to_file": "节能 %1$s 映射到文件..."</code>
 
 ## **III. Comment traduire le fichier .json**
 

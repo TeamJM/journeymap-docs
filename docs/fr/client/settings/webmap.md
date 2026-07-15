@@ -1,46 +1,40 @@
-# **Webmap Settings**
+# **Paramètres de la carte Web**
 
-!!! warning "Translation needed for 6.0"
+La carte Web est une manière différente d'afficher votre carte : dans un navigateur Web.
+du jeu. Cela vous permet de conserver une vue cartographique sur un deuxième moniteur ou un autre
+appareil sur votre réseau.
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
+![Webmap-Paramètres](../../img/settings/client/webmap.png){: .center}
 
-The webmap is a different way to view your map: in a web browser instead
-of in-game. This lets you keep a map view on a second monitor or another
-device on your network.
+!!! info "Nécessite le module complémentaire Webmap"
 
-![Webmap-Settings](../../img/settings/client/webmap.png){: .center}
+    Depuis JourneyMap 6.0, la carte Web est un module complémentaire distinct. Ceci
+    La catégorie des paramètres est toujours affichée, mais les paramètres ne prennent effet que
+    lorsque le module complémentaire JourneyMap Webmap est installé. Si l'addon n'est pas
+    installé, les paramètres sont désactivés.
 
-!!! info "Requires the Webmap addon"
-
-    As of JourneyMap 6.0 the webmap is a separate addon mod. This
-    settings category is always shown, but the settings only take effect
-    when the JourneyMap Webmap addon is installed. If the addon is not
-    installed, the settings are disabled.
-
-    See the [Webmap](../../webmap/installing.md) section for how to
-    install and use it.
+Voir la section [Webmap](../../webmap/installing.md) pour savoir comment
+installez-le et utilisez-le.
 
 ## **Toggles**
 
-This toggle is **off** by default.
+Cette bascule est **désactivée** par défaut.
 
-| Toggle         | Description                                          |
+| Basculer | Descriptif |
 |----------------|------------------------------------------------------|
-| Enable Web Map | Whether the webmap server is enabled and accessible. |
+| Activer la carte Web | Si le serveur de cartes Web est activé et accessible. |
 
-## **Other Settings**
+## **Autres paramètres**
 
-| Setting | Options                               | Description                                  |
-|---------|---------------------------------------|----------------------------------------------|
-| Port    | Range: 80 - 65535 (Default: **8080**) | The port the webmap server tries to bind to. |
+| Paramètre | Options | Descriptif |
+|--------------|-----------------------------|------------------------------------------------------------|
+| Port | Plage : 80 - 65 535 (par défaut : **8080**) | Le port auquel le serveur de cartes Web tente de se lier. |
 
 !!! note "Port selection"
 
-    If the configured port is already in use, the webmap falls back to a
-    free port chosen by the operating system instead of failing to
-    start, so the port actually used can differ from what you set. If
-    the Announce Mod advanced option is enabled (the default), JourneyMap
-    posts the webmap address in chat once when you join a world. The
-    resolved port is also written to the game log.
+    Si le port configuré est déjà utilisé, la carte Web revient à un
+    port libre choisi par le système d'exploitation au lieu de échouer
+    démarrer, donc le port réellement utilisé peut différer de celui que vous avez défini. Si
+    l'option avancée Announce Mod est activée (par défaut), JourneyMap
+    publie l'adresse de la carte Web dans le chat une fois lorsque vous rejoignez un monde. Le
+    le port résolu est également écrit dans le journal du jeu.

@@ -1,55 +1,49 @@
-# **Installing the Webmap**
+# **Installation de la carte Web**
 
-!!! warning "Translation needed for 6.0"
+La carte Web vous permet d'afficher votre carte JourneyMap dans un navigateur Web au lieu de
+dans le jeu. C'est utile pour afficher la carte sur un deuxième moniteur, une tablette,
+ou tout autre appareil sur votre réseau local.
 
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-The Webmap lets you view your JourneyMap map in a web browser instead of
-in-game. It is useful for showing the map on a second monitor, a tablet,
-or any other device on your local network.
-
-As of JourneyMap 6.0 the Webmap is a separate addon mod. It is no longer
-bundled with JourneyMap itself, so you install two mods: JourneyMap and
-the JourneyMap Webmap addon.
+Depuis JourneyMap 6.0, la carte Web est un module complémentaire distinct. Ce n'est plus
+fourni avec JourneyMap lui-même, vous installez donc deux mods : JourneyMap et
+le module complémentaire JourneyMap Webmap.
 
 !!! info "Client-side only"
 
-    The Webmap is a client-side addon. Adding it to a dedicated server
-    does nothing - it only serves the map data that JourneyMap collects
-    on your own client.
+    La carte Web est un module complémentaire côté client. L'ajouter à un serveur dédié
+    ne fait rien - il ne sert que les données cartographiques collectées par JourneyMap
+    sur votre propre client.
 
 ## **Requirements**
 
-- JourneyMap installed (the Webmap is an addon and will not load without
-  it).
-- The same Minecraft version and mod loader as your JourneyMap install.
-  The Webmap is built for Fabric, NeoForge, and Forge.
+- JourneyMap installé (la Webmap est un module complémentaire et ne se chargera pas sans
+  il).
+- La même version Minecraft et le même chargeur de mod que votre installation JourneyMap.
+  La carte Web est conçue pour Fabric, NeoForge et Forge.
 
 ## **Downloading**
 
-Download the JourneyMap Webmap from either:
+Téléchargez la carte Web JourneyMap à partir de :
 
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/journeymap-web-map)
 - [Modrinth](https://modrinth.com/project/YaZ1fUTg)
 
-Pick the file that matches your Minecraft version and mod loader.
+Choisissez le fichier qui correspond à votre version de Minecraft et à votre chargeur de mod.
 
 ## **Steps**
 
-1. Install JourneyMap as usual (see [Client Docs > Installing](../client/installing.md)).
-2. Download the JourneyMap Webmap addon for the same Minecraft version
-   and loader.
-3. Place the Webmap jar in the same `mods` folder as JourneyMap.
-4. Launch the game. The Webmap is now available; see
-   [Basic Usage](basic-usage.md) for how to enable and open it.
+1. Installez JourneyMap comme d'habitude (voir [Client Docs > Installing](../client/installing.md)).
+2. Téléchargez le module complémentaire JourneyMap Webmap pour la même version de Minecraft
+   et chargeur.
+3. Placez le pot Webmap dans le même dossier `mods` que JourneyMap.
+4. Lancez le jeu. La carte Web est maintenant disponible ; voir
+   [Utilisation de base](basic-usage.md) pour savoir comment l'activer et l'ouvrir.
 
-## **Source code**
+## **Code source**
 
-The JourneyMap Webmap is open source:
+La carte Web JourneyMap est open source :
 
 - [TeamJM/journeymap-webmap](https://github.com/TeamJM/journeymap-webmap) -
-  the mod itself.
-- [TeamJM/webmap-client](https://github.com/TeamJM/webmap-client) - the
-  JavaScript frontend served in the browser.
+  le module lui-même.
+- [TeamJM/webmap-client](https://github.com/TeamJM/webmap-client) - le
+  Frontend JavaScript servi dans le navigateur.

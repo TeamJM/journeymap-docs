@@ -1,124 +1,118 @@
-# **Waypoint Groups**
+# **Groupes de points de cheminement**
 
-!!! warning "Translation needed for 6.0"
-
-    This page was updated for JourneyMap 6.0 in English. Translation
-    is pending; the content shown is the English source. See
-    Contributing to help translate the docs.
-
-Waypoint groups let you organize your waypoints into named sets, such as
-`Bases`, `Mining`, or `Villages`. Groups are managed from the
-[Waypoint Manager](waypoints.md#the-waypoint-manager); the group list is
-the panel on one side of the manager.
+Les groupes de waypoints vous permettent d'organiser vos waypoints en ensembles nommés, tels que
+`Bases`, `Mining` ou `Villages`. Les groupes sont gérés depuis le
+[Gestionnaire de points de cheminement](waypoints.md#the-waypoint-manager) ; la liste des groupes est
+le panneau d'un côté du gestionnaire.
 
 ![Waypoint-Manager](../img/waypoint-manager.png){: .center}
 
 ## **Native groups**
 
-JourneyMap has several built-in groups that always exist:
+JourneyMap possède plusieurs groupes intégrés qui existent toujours :
 
-| Group   | Purpose                                                                 |
+| Groupe | Objectif |
 |---------|-------------------------------------------------------------------------|
-| Default | New waypoints go here unless you pick another group.                    |
-| Death   | Death waypoints created when you die.                                   |
-| Temp    | Temporary waypoints.                                                    |
-| All     | A virtual view that shows every waypoint regardless of its group.       |
+| Par défaut | Les nouveaux waypoints vont ici, sauf si vous choisissez un autre groupe.                    |
+| Mort | Points de cheminement de mort créés lorsque vous mourez.                                   |
+| Temp. | Points de cheminement temporaires.                                                    |
+| Tout | Une vue virtuelle qui montre chaque waypoint quel que soit son groupe.       |
 
-When you play on a server that manages waypoints, a **Global** group is
-also shown for the waypoints the server shares with players.
+Lorsque vous jouez sur un serveur qui gère les waypoints, un groupe **Global** est
+également affiché pour les waypoints que le serveur partage avec les joueurs.
 
-Native groups are **locked**: their names cannot be changed. They can
-still be configured in other ways (see below).
+Les groupes natifs sont **verrouillés** : leurs noms ne peuvent pas être modifiés. Ils peuvent
+toujours être configuré d’une autre manière (voir ci-dessous).
 
-## **Creating a group**
+## **Créer un groupe**
 
-Use the **New Group** button in the Waypoint Manager, or the
-**New Group** option in the [Waypoint Editor](waypoints.md#the-waypoint-editor),
-to create a custom group. Custom groups can be renamed, edited, and
-deleted freely.
+Utilisez le bouton **Nouveau groupe** dans le Waypoint Manager, ou le
+Option **Nouveau groupe** dans [Éditeur de points de cheminement](waypoints.md#the-waypoint-editor),
+pour créer un groupe personnalisé. Les groupes personnalisés peuvent être renommés, modifiés et
+supprimé librement.
 
 ## **Group actions**
 
-Each group in the list has these actions:
+Chaque groupe de la liste a ces actions :
 
-- **Enable / Disable Group** - toggle every waypoint in the group on or
-  off at once.
-- **Edit Group** - open the Edit Group screen (see below).
-- **Delete Group** - delete the group. (Native groups cannot be deleted.)
+- **Activer / Désactiver le groupe** - activez ou activez chaque waypoint du groupe.
+  éteint immédiatement.
+- **Modifier le groupe** - ouvrez l'écran Modifier le groupe (voir ci-dessous).
+- **Supprimer le groupe** - supprime le groupe. (Les groupes natifs ne peuvent pas être supprimés.)
 
-## **Editing a group**
+## **Modifier un groupe**
 
-![Group-Edit](../img/client/group-edit.png){: .center}
+![Groupe-Edit](../img/client/group-edit.png){: .center}
 
-The **Edit Group** screen shows the group's Id, Tag, and waypoint count,
-and provides these options:
+L'écran **Modifier le groupe** affiche l'identifiant, le tag et le nombre de points de cheminement du groupe.
+et propose ces options :
 
-| Option              | Description                                                                                                |
-|---------------------|------------------------------------------------------------------------------------------------------------|
-| Name                | The group's display name. Locked (native) groups cannot be renamed.                                        |
-| Settings            | Opens the [group Settings popup](#group-settings-and-overrides) for the group's colors, icon, and visibility, including the override toggles. |
-| Default             | Marks this group as the default group for new waypoints. Only one group can be the default at a time.       |
-| Tag                 | Text prefixed onto every waypoint name in the group, both on the map and in the world. Can be left blank.   |
-| Locked              | Shown for native groups whose name cannot be edited.                                                       |
+| Options | Descriptif |
+|-----------|------------------------------------------------------------------------------------------------------------|
+| Nom | Le nom d’affichage du groupe. Les groupes verrouillés (natifs) ne peuvent pas être renommés.                                        |
+| Paramètres | Ouvre la [fenêtre contextuelle des paramètres du groupe](#group-settings-and-overrides) pour les couleurs, l'icône et la visibilité du groupe, y compris les bascules de remplacement. |
+| Par défaut | Marque ce groupe comme groupe par défaut pour les nouveaux waypoints. Un seul groupe peut être le groupe par défaut à la fois.       |
+| Étiquette | Texte préfixé sur chaque nom de waypoint du groupe, à la fois sur la carte et dans le monde. Peut être laissé vide.   |
+| Verrouillé | Affiché pour les groupes natifs dont le nom ne peut pas être modifié.                                                       |
 
-### Group settings and overrides
+### Paramètres et remplacements du groupe
 
-![Group-Settings](../img/client/group-settings.png){: .center}
+![Paramètres du groupe](../img/client/group-settings.png){: .center}
 
-The **Settings** button opens the same
-[Waypoint Settings popup](waypoints.md#the-waypoint-settings-popup) used
-for individual waypoints - the Icon/Beacon/Label color table and the
-visibility toggles - applied to the group. In group mode it adds an
-**Override** checkbox to each color row, plus an **Override Settings**
-checkbox below the table:
+Le bouton **Paramètres** s'ouvre de la même manière
+[Poupup contextuel des paramètres de waypoint](waypoints.md#the-waypoint-settings-popup) utilisé
+pour les waypoints individuels - la table des couleurs Icône/Balise/Étiquette et le
+bascules de visibilité - appliquées au groupe. En mode groupe, il ajoute un
+Case à cocher **Remplacer** pour chaque ligne de couleur, plus un **Paramètres de remplacement**
+case à cocher sous le tableau :
 
-- **Override** (one per color row - Icon, Icon Color, Beacon, Label) -
-  when a row's Override is checked, every waypoint in the group uses the
-  group's value for that row instead of its own. The **Icon** row covers
-  the group's icon image, **Icon Color** the icon's color, and **Beacon**
-  and **Label** those colors. Rows left unchecked let each waypoint keep
-  its own, so you can override just the icon, just a color, or any
-  combination.
-- **Override Settings** - when enabled, every waypoint in the group uses
-  the group's visibility toggles instead of its own.
+- **Remplacement** (un par ligne de couleur - Icône, Couleur d'icône, Balise, Étiquette) -
+  lorsque le remplacement d'une ligne est coché, chaque waypoint du groupe utilise le
+  la valeur du groupe pour cette ligne au lieu de la sienne. La ligne **Icône** couvre
+  l'image de l'icône du groupe, **Icon Color** la couleur de l'icône et **Beacon**
+  et **Étiquetez** ces couleurs. Les lignes non cochées laissent chaque waypoint conservé
+  le sien, vous pouvez donc remplacer uniquement l'icône, juste une couleur ou n'importe quel autre
+  combinaison.
+- **Remplacer les paramètres** - lorsqu'il est activé, chaque waypoint du groupe utilise
+  la visibilité du groupe bascule au lieu de la sienne.
 
-With every override left off, each waypoint keeps its own colors and
-settings and the group's are ignored.
+Avec chaque remplacement interrompu, chaque waypoint conserve ses propres couleurs et
+les paramètres et ceux du groupe sont ignorés.
 
-### Show on Locator Bar
+### Afficher sur la barre de localisation
 
-!!! info "26.1 and newer"
+!!! informations "26.1 et plus récent"
 
-    The locator bar is a Minecraft 1.21.6+ feature, so this option is
-    only present in JourneyMap for Minecraft 26.1 and newer (the 26.x
-    line, including 26.2). It is not available on the 1.21.1 line
+    La barre de localisation est une fonctionnalité de Minecraft 1.21.6+, cette option est donc
+    présent uniquement dans JourneyMap pour Minecraft 26.1 et versions ultérieures (le 26.x
+    ligne, dont 26.2). Il n'est pas disponible sur la ligne 1.21.1
     (1.21.1 / 1.21.11).
 
-**Show on Locator Bar** is one of the visibility toggles in the group's
-Settings popup. It shows the group's waypoints on the vanilla locator bar
-above the hotbar.
+**Afficher sur la barre de localisation** est l'un des boutons de visibilité dans la fenêtre du groupe.
+Fenêtre contextuelle des paramètres. Il montre les waypoints du groupe sur la barre de localisation vanille
+au-dessus de la barre de raccourcis.
 
 ## **Default group**
 
-The group marked as **Default** is where new waypoints are placed unless
-you choose a different group while creating them. Setting a new default
-clears the flag from whatever group held it before, so there is always
-exactly one default group.
+Le groupe marqué comme **Par défaut** est celui où les nouveaux waypoints sont placés, à moins que
+vous choisissez un groupe différent lors de leur création. Définir une nouvelle valeur par défaut
+efface le drapeau du groupe qui le détenait auparavant, donc il y a toujours
+exactement un groupe par défaut.
 
-## **Temporary waypoints**
+## **Points de cheminement temporaires**
 
-The `Temp` group holds temporary waypoints. Waypoints can be added to or
-removed from the Temp group, which is handy for short-lived markers you
-do not want cluttering your permanent groups.
+Le groupe `Temp` contient des waypoints temporaires. Des waypoints peuvent être ajoutés ou
+supprimé du groupe Temp, ce qui est pratique pour les marqueurs de courte durée que vous
+ne voulez pas encombrer vos groupes permanents.
 
-## **Group panel settings**
+## **Paramètres du panneau de groupe**
 
-The **Edit Group Settings** screen controls how the group list itself is
-displayed:
+L'écran **Modifier les paramètres du groupe** contrôle la façon dont la liste de groupes elle-même est
+affiché :
 
-| Setting                  | Description                                              |
-|--------------------------|----------------------------------------------------------|
-| Hide All Group           | Hides the `All` group from the group panel.              |
-| Hide Empty Custom Groups | Hides custom groups that contain no waypoints.           |
-| Hide Empty Death Group   | Hides the `Death` group when there are no death points.  |
-| Hide Empty Temp Group    | Hides the `Temp` group when there are no temp waypoints. |
+| Paramètre | Descriptif |
+|--------------------------|-------------------------------------------------------------------------|
+| Masquer tout le groupe | Masque le groupe `All` du panneau de groupe.              |
+| Masquer les groupes personnalisés vides | Masque les groupes personnalisés qui ne contiennent aucun waypoint.           |
+| Masquer le groupe de la mort vide | Masque le groupe `Death` lorsqu'il n'y a aucun point de mort.  |
+| Masquer le groupe temporaire vide | Masque le groupe `Temp` lorsqu'il n'y a pas de waypoints temporaires. |
