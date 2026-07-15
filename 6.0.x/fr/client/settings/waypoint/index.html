@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#waypoint-settings" class="md-skip">
+        <a href="#parametres-des-points-de-cheminement" class="md-skip">
           Aller au contenu
         </a>
       
@@ -973,10 +973,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2321,10 +2321,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2351,126 +2351,110 @@
   
 
 
-<h1 id="waypoint-settings"><strong>Waypoint Settings</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<p>This category allows you to change some settings relating to how <a href="../../waypoints/">waypoints</a> behave and are displayed.
-Waypoints also have a number of individual settings - you can find out about those
-on <a href="../../waypoints/">the waypoints page.</a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/waypoints.png" data-desc-position="bottom"><img alt="Waypoint-Settings" class="center" src="../../../img/settings/client/waypoints.png"></a></p>
+<h1 id="parametres-des-points-de-cheminement"><strong>Paramètres des points de cheminement</strong></h1>
+<p>Cette catégorie vous permet de modifier certains paramètres relatifs au comportement et à l'affichage des <a href="../../waypoints/">waypoints</a>.
+Les waypoints disposent également d'un certain nombre de paramètres individuels - vous pouvez les découvrir
+sur <a href="../../waypoints/">la page des waypoints.</a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/waypoints.png" data-desc-position="bottom"><img alt="Paramètres de waypoint" class="center" src="../../../img/settings/client/waypoints.png"></a></p>
 <h2 id="toggles"><strong>Toggles</strong></h2>
-<p>The <strong>bold</strong> toggle settings below are enabled by default.</p>
+<p>Les paramètres de bascule <strong>gras</strong> ci-dessous sont activés par défaut.</p>
 <table>
 <thead>
 <tr>
-<th>Toggle</th>
-<th>Description</th>
+<th>Basculer</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Enable Waypoint Manager</strong></td>
-<td>Enable the Waypoint Manager. If you use another mod to manage waypoints, you should disable this.</td>
+<td><strong>Activer le gestionnaire de points de cheminement</strong></td>
+<td>Activez le gestionnaire de points de cheminement. Si vous utilisez un autre mod pour gérer les waypoints, vous devez le désactiver.</td>
 </tr>
 <tr>
-<td>Show Delete Confirmation</td>
-<td>Show a confirmation prompt before deleting a waypoint. This can also be toggled from the delete dialog itself.</td>
+<td>Afficher la confirmation de suppression</td>
+<td>Afficher une invite de confirmation avant de supprimer un waypoint. Cela peut également être activé à partir de la boîte de dialogue de suppression elle-même.</td>
 </tr>
 <tr>
-<td>Disable Share</td>
-<td>Disables the share button in the Waypoint Manager and in the fullscreen popup menu Chat Position.</td>
+<td>Désactiver le partage</td>
+<td>Désactive le bouton de partage dans le Waypoint Manager et dans le menu contextuel plein écran Chat Position.</td>
 </tr>
 <tr>
-<td>Disable Strikethrough text</td>
-<td>Disables the strike through of the waypoint text for disabled waypoints.</td>
+<td>Désactiver le texte barré</td>
+<td>Désactive le barrage du texte du waypoint pour les waypoints désactivés.</td>
 </tr>
 <tr>
-<td>Use Waypoint Actions Button</td>
-<td>Use a single actions dropdown per waypoint instead of the image button list. Using the single button allows for larger text display.</td>
+<td>Utiliser le bouton d'actions de point de cheminement</td>
+<td>Utilisez une seule liste déroulante d'actions par waypoint au lieu de la liste des boutons d'image. L’utilisation d’un seul bouton permet un affichage de texte plus grand.</td>
 </tr>
 <tr>
-<td>Open Waypoint Manager in Current Dimension</td>
-<td>Opens the Waypoint Manager focused on the dimension you are currently in.</td>
+<td>Ouvrir Waypoint Manager dans la dimension actuelle</td>
+<td>Ouvre le Waypoint Manager axé sur la dimension dans laquelle vous vous trouvez actuellement.</td>
 </tr>
 <tr>
-<td><strong>Create Deathpoints</strong></td>
-<td>Automatically create a waypoint at the spot where you die.</td>
+<td><strong>Créer des points de mort</strong></td>
+<td>Créez automatiquement un waypoint à l'endroit où vous mourez.</td>
 </tr>
 <tr>
-<td>Show Player Heads</td>
-<td>Show player heads in the world at their location. Only works on a server that has JourneyMap installed with expanded radar enabled.</td>
+<td>Afficher les têtes des joueurs</td>
+<td>Montrez les têtes des joueurs dans le monde à leur emplacement. Fonctionne uniquement sur un serveur sur lequel JourneyMap est installé avec le radar étendu activé.</td>
 </tr>
 <tr>
-<td>Remove Decimals from Teleport</td>
-<td>Some servers do not support teleporting to the center of a block, so this option uses whole numbers instead of adding .5 to the value.</td>
+<td>Supprimer les décimales de la téléportation</td>
+<td>Certains serveurs ne prennent pas en charge la téléportation au centre d'un bloc, cette option utilise donc des nombres entiers au lieu d'ajouter 0,5 à la valeur.</td>
 </tr>
 <tr>
-<td><strong>Display Death Waypoint Label <br>on map overlay</strong></td>
-<td>Whether to show the name for death waypoints on your minimap and <br>full-screen map.</td>
+<td><strong>Afficher l'étiquette du point de cheminement de la mort <br>on superposition de carte</strong></td>
+<td>Indique s'il faut afficher le nom des waypoints de la mort sur votre mini-carte et sur la carte plein écran <br>.</td>
 </tr>
 <tr>
-<td><strong>Double Click to Create</strong></td>
-<td>Double clicking on the fullscreen map will create a waypoint at the location.</td>
+<td><strong>Double-cliquez pour créer</strong></td>
+<td>Un double-clic sur la carte en plein écran créera un waypoint à l'emplacement.</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">26.1 and newer</p>
-<p>This category also has a <strong>Show on Locator Bar</strong> toggle, which shows
-waypoints on the vanilla locator bar above the hotbar. The locator
-bar is a Minecraft 1.21.6+ feature, so this option is only present in
-JourneyMap for Minecraft 26.1 and newer (the 26.x line), not on the
-1.21.1 line.</p>
+<div class="admonition informations">
+<p class="admonition-title">26.1 et plus récent</p>
+<p>Cette catégorie dispose également d'une bascule <strong>Afficher sur la barre de localisation</strong>, qui affiche
+waypoints sur la barre de localisation vanille au-dessus de la barre de raccourcis. Le localisateur
+la barre est une fonctionnalité de Minecraft 1.21.6+, cette option n'est donc présente que dans
+JourneyMap pour Minecraft 26.1 et versions ultérieures (la ligne 26.x), pas sur le
+Ligne 1.21.1.</p>
 </div>
-<h2 id="other-settings"><strong>Other Settings</strong></h2>
-<p>The default option for each setting below is marked with <strong>bold text.</strong></p>
+<h2 id="autres-parametres"><strong>Autres paramètres</strong></h2>
+<p>L'option par défaut pour chaque paramètre ci-dessous est marquée d'un <strong>texte en gras.</strong></p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Paramètre</th>
 <th>Options</th>
-<th>Description</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Editor XYZ Button Layout</td>
-<td><ul><li><strong>X, Z, Y</strong></li><li>X, Y, Z</li><li>Single Field</li></ul></td>
-<td>Select the format for the X, Y, Z buttons in the waypoint editor. Single Field uses one field for comma separated values, useful for copying and pasting from external sources.</td>
+<td>Disposition des boutons XYZ de l'éditeur</td>
+<td><ul><li><strong>X, Z, Y</strong></li><li>X, Y, Z</li><li>Champ unique</li></ul></td>
+<td>Sélectionnez le format des boutons X, Y, Z dans l'éditeur de waypoints. Single Field utilise un champ pour les valeurs séparées par des virgules, utile pour copier et coller à partir de sources externes.</td>
 </tr>
 <tr>
-<td>Custom Waypoint Teleport Command</td>
-<td>Text input: <strong>/execute in {dim} run tp {name} {x} {y} {z}</strong></td>
-<td>Set the teleport command used when you teleport to a waypoint, using the following placeholders: <ul><li><strong>{name}</strong>: Your player name</li><li><strong>{dim}</strong>: The target dimension</li><li><strong>{x}</strong>: The waypoint's X coordinate</li><li><strong>{y}</strong>: The waypoint's Y coordinate</li><li><strong>{z}</strong>: The waypoint's Z coordinate</li><li><strong>{wpname}</strong>: The waypoint's name</li></ul></td>
+<td>Commande de téléportation de waypoint personnalisée</td>
+<td>Saisie de texte&nbsp;: <strong>/execute dans {dim} run tp {name} {x} {y} {z}</strong></td>
+<td>Définissez la commande de téléportation utilisée lorsque vous vous téléportez vers un waypoint, en utilisant les espaces réservés suivants&nbsp;: <ul><li><strong>{name}</strong>&nbsp;: votre nom de joueur</li><li><strong>{dim}</strong>&nbsp;: la dimension cible</li><li><strong>{x}</strong>&nbsp;: la coordonnée X du waypoint</li><li><strong>{y}</strong>&nbsp;: la coordonnée Y du waypoint coordinate</li><li><strong>{z}</strong> : Coordonnée Z du waypoint</li><li><strong>{wpname}</strong> : Nom du waypoint</li></ul></td>
 </tr>
 <tr>
-<td>Auto Remove Death Waypoints</td>
-<td>Toggle</td>
-<td>Automatically removes death waypoints as you approach them.</td>
+<td>Distance du point de cheminement de la mort à suppression automatique</td>
+<td><strong>2</strong> à 64</td>
+<td>La distance à laquelle un waypoint mortel est supprimé. Minimum 2, sinon il sera supprimé dès sa création.</td>
 </tr>
 <tr>
-<td>Auto Remove Death Waypoint Distance</td>
-<td><strong>2</strong> to 64</td>
-<td>The distance at which a death waypoint is removed. Minimum 2, or it will be removed as soon as it is created.</td>
+<td>Waypoint temporaire Supprimer la distance</td>
+<td><strong>2</strong> à 64</td>
+<td>La distance du joueur à laquelle les waypoints temporaires sont automatiquement supprimés.</td>
 </tr>
 <tr>
-<td>Temporary Waypoint Remove Distance</td>
-<td><strong>2</strong> to 64</td>
-<td>The distance from the player at which temporary waypoints are automatically removed.</td>
-</tr>
-<tr>
-<td>Death Date Format</td>
-<td><ul><li><strong>MM-dd-yyyy</strong></li><li>MM-dd-yy</li><li>dd-MM-yyyy</li><li>dd-MM-yy</li><li>yyyy-MM-dd</li><li>yy-MM-dd</li></ul></td>
-<td>The text format of the date of death, as shown in the death waypoint label. <ul><li><strong>dd</strong>: Day</li><li><strong>MM</strong>: Month</li><li><strong>yy</strong>: Year (2 digits)</li><li><strong>yyyy</strong>: Year (4 digits)</li></ul></td>
-</tr>
-<tr>
-<td>Death Time Format</td>
-<td><ul><li><strong>HH:mm:ss</strong></li><li>H:mm:ss</li><li>HH:mm</li><li>H:mm</li><li>hh:mm:ss a</li><li>h:mm:ss a</li><li>hh:mm:ss</li><li>h:mm:ss</li><li>hh:mm a</li><li>h:mm a</li><li>hh:mm</li><li>h:mm</li></ul></td>
-<td>The text format of the time of death, as shown in the death waypoint label.</td>
+<td>Format de la date de décès</td>
+<td><ul><li><strong>MM-jj-aaaa</strong></li><li>MM-jj-aa</li><li>jj-MM-aaaaZZINLINE6Z Z</li><li>jj-MM-aa</li><li>aaaa-MM-jj</li><li>aa-MM-jj</li></ul></td>
+<td>Le format de texte de la date du décès, tel qu'indiqué sur l'étiquette du waypoint du décès. <ul><li><strong>jj</strong> : Jour</li><li><strong>MM</strong> : Mois</li><li><strong>aa</strong> : Année (2 chiffres)</li><li><strong>aaaa</strong> : Année (4 chiffres)</li></ul></td>
 </tr>
 </tbody>
 </table>

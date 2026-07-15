@@ -2446,508 +2446,492 @@
 
 
 <h1 id="changelogs"><strong>Changelogs</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<p>This page is the consolidated changelog for JourneyMap 6.0.x. It merges
-entries from the 1.21.1, 1.21.11, 26.1, and 26.2 builds.</p>
-<p>The 5.9.x changelog is preserved on the 5.9.x docs branch and remains
-accessible via the version selector at the top right.</p>
+<p>Cette page est le journal des modifications consolidé pour JourneyMap 6.0.x. Il fusionne
+entrées des versions 1.21.1, 1.21.11, 26.1 et 26.2.</p>
+<p>Le journal des modifications 5.9.x est conservé sur la branche 5.9.x docs et reste
+accessible via le sélecteur de version en haut à droite.</p>
 <hr>
 <h2 id="journeymap-600"><strong>JourneyMap 6.0.0</strong></h2>
 <h3 id="added">Added</h3>
 <ul>
-<li>Added: "Map All Layers" option in the Auto-Map dialog that maps all surface map types and every cave layer at once (shown only when cave mapping is enabled)</li>
-<li>Added: A "Sync" checkbox next to the Y field in the waypoint editor</li>
-<li>Added: Ability to add temp waypoints</li>
-<li>Added: Advanced option to disable number overlay on minimap preset switch</li>
-<li>Added: Advanced Option to disable rendering of the minimap behind screens (1.21.1 only)</li>
-<li>Added: Autohide icons, and label/icon angle sliders</li>
-<li>Added: Biome color editing to the color palette and redesign of those screens</li>
-<li>Added: Brightness filter shader; Fixed: map filters not applied to LOD tiles (1.21.1 only)</li>
-<li>Added: Brightness map filter shader option (26.1 only)</li>
-<li>Added: Cartography Option: Map only player chunk</li>
-<li>Added: Color palette to the color picker with colors from older versions</li>
-<li>Added: Configurable Nether surface lighting option in Cartography settings</li>
-<li>Added: Coords layout option and buttons option for waypoints</li>
-<li>Added: Dropping .dat files into the waypoint folder with proper waypoint data will merge the files</li>
-<li>Added: Group button to enable/disable group</li>
-<li>Added: Icon generation from AzureLib models</li>
-<li>Added: Icon support for GeckoLib mobs</li>
-<li>Added: Ignore snowblocks option</li>
-<li>Added: Import/Export button in the options screen to backup or load backed up date</li>
-<li>Added: Keybinds and options to enable/disable in world and on map waypoints</li>
-<li>Added: Leaf litter to plants (26.1 only)</li>
-<li>Added: Map Option to show offscreen players</li>
-<li>Added: Minimap Option for which layer to render on, default: Last</li>
-<li>Added: New Advanced Option to disable player icon fading</li>
-<li>Added: New button to waypoint manager to configure some editor options</li>
-<li>Added: New deathpoint icon</li>
-<li>Added: New Fullscreen Option: Minimal UI which hides most of the buttons on the fullscreen map</li>
-<li>Added: New hand-made waypoint icons and additional waypoint icon sets</li>
-<li>Added: New InfoSlot: Minecraft Day, know how many minecraft days you have played!</li>
-<li>Added: New Minimap orientation, Vertical Rectangle</li>
-<li>Added: New option in Minimap Position screen to hide effect icons</li>
-<li>Added: New waypoint icon selection menu for when there are a lot of icons added via resource pack</li>
-<li>Added: New WaypointGroup option to set groups as default groups for new waypoints</li>
-<li>Added: Open Folder button on the Options screen that opens your JourneyMap folder</li>
-<li>Added: Option to hide waypoint beacon label background</li>
-<li>Added: Option to pause fullscreen map</li>
-<li>Added: Option to show or hide the map type icon overlay when switching the minimap's map type</li>
-<li>Added: Pokemon Icon Scaling</li>
-<li>Added: Rolling waypoint backup files and auto-loading the latest if failure, also improved saving so less change of file corruption</li>
-<li>Added: Server Option to disable player names with player radar</li>
-<li>Added: Support for AMECS for too many shortcuts</li>
-<li>Added: Support for Controlify to the fullscreen map</li>
-<li>Added: Warning text to automap when c2me is installed</li>
-<li>Added: Waypoint Beacon option to ignore vanilla max render distance setting</li>
-<li>Added: Waypoint Beacon option, autohide label vertically. default:true</li>
-<li>Added: Waypoint editor now has individual per-waypoint settings, with group-level overrides for the same settings</li>
-<li>Added: Waypoint Manager button to import external waypoints from Xaeros. Button only exists if xaero's waypoints are detected</li>
-<li>Added: Waypoints Option to open waypoint manager in your current dimension</li>
-<li>Added: Zoom LOD invalidation button in the Delete Map popup</li>
-<li>Added: {name} to custom waypoint command</li>
+<li>Ajouté&nbsp;: option "Map All Layers" dans la boîte de dialogue Auto-Map qui cartographie tous les types de cartes de surface et chaque couche de grottes à la fois (affichée uniquement lorsque la cartographie des grottes est activée)</li>
+<li>Ajouté : Une case à cocher "Sync" à côté du champ Y dans l'éditeur de waypoint</li>
+<li>Ajouté&nbsp;: Possibilité d'ajouter des waypoints temporaires</li>
+<li>Ajouté&nbsp;: option avancée pour désactiver la superposition de numéros sur le commutateur de préréglage de la mini-carte</li>
+<li>Ajouté&nbsp;: Option avancée pour désactiver le rendu de la mini-carte derrière les écrans (1.21.1 uniquement)</li>
+<li>Ajouté&nbsp;: Masquer automatiquement les icônes et curseurs d'angle d'étiquette/icône</li>
+<li>Ajouté&nbsp;: édition des couleurs du biome dans la palette de couleurs et refonte de ces écrans</li>
+<li>Ajouté&nbsp;: shader de filtre de luminosité&nbsp;; Corrigé&nbsp;: filtres de carte non appliqués aux tuiles LOD (1.21.1 uniquement)</li>
+<li>Ajouté&nbsp;: option de shader de filtre de carte de luminosité (26.1 uniquement)</li>
+<li>Ajouté&nbsp;: Option de cartographie&nbsp;: morceau de joueur sur la carte uniquement</li>
+<li>Ajouté&nbsp;: Palette de couleurs au sélecteur de couleurs avec les couleurs des anciennes versions</li>
+<li>Ajouté&nbsp;: option d'éclairage de surface configurable du Nether dans les paramètres de cartographie</li>
+<li>Ajouté&nbsp;: option de disposition des coordonnées et option de boutons pour les waypoints</li>
+<li>Ajouté&nbsp;: le fait de déposer des fichiers .dat dans le dossier des points de cheminement avec les données de point de cheminement appropriées fusionnera les fichiers.</li>
+<li>Ajouté&nbsp;: bouton Groupe pour activer/désactiver le groupe</li>
+<li>Ajouté&nbsp;: Génération d'icônes à partir des modèles AzureLib</li>
+<li>Ajouté&nbsp;: prise en charge des icônes pour les mobs GeckoLib</li>
+<li>Ajouté&nbsp;:&nbsp;option Ignorer les blocs de neige</li>
+<li>Ajouté&nbsp;: bouton Importer/Exporter dans l'écran des options pour sauvegarder ou charger la date sauvegardée</li>
+<li>Ajouté&nbsp;: raccourcis clavier et options pour activer/désactiver les waypoints du monde et de la carte.</li>
+<li>Ajouté&nbsp;: Litière de feuilles sur les plantes (26.1 uniquement)</li>
+<li>Ajouté&nbsp;: Option de carte pour afficher les joueurs hors écran</li>
+<li>Ajouté&nbsp;: Option de mini-carte pour la couche sur laquelle effectuer le rendu, par défaut&nbsp;: Dernier</li>
+<li>Ajouté&nbsp;: Nouvelle option avancée pour désactiver la décoloration de l'icône du joueur</li>
+<li>Ajouté&nbsp;: Nouveau bouton dans le gestionnaire de waypoints pour configurer certaines options de l'éditeur</li>
+<li>Ajouté&nbsp;: Nouvelle icône de point de mort</li>
+<li>Ajouté&nbsp;: Nouvelle option plein écran&nbsp;: interface utilisateur minimale qui masque la plupart des boutons sur la carte plein écran</li>
+<li>Ajouté&nbsp;: Nouvelles icônes de points de cheminement faites à la main et jeux d'icônes de points de cheminement supplémentaires</li>
+<li>Ajouté : Nouvel InfoSlot : Minecraft Day, sachez combien de jours Minecraft vous avez joué !</li>
+<li>Ajouté&nbsp;: Nouvelle orientation de la mini-carte, rectangle vertical</li>
+<li>Ajouté&nbsp;: Nouvelle option dans l'écran de position de la mini-carte pour masquer les icônes d'effet</li>
+<li>Ajouté&nbsp;: Nouveau menu de sélection d'icônes de point de cheminement lorsqu'il y a beaucoup d'icônes ajoutées via le pack de ressources</li>
+<li>Ajouté&nbsp;: Nouvelle option WaypointGroup pour définir des groupes comme groupes par défaut pour les nouveaux waypoints</li>
+<li>Ajouté&nbsp;: bouton Ouvrir le dossier sur l'écran Options qui ouvre votre dossier JourneyMap</li>
+<li>Ajouté&nbsp;: Option pour masquer l'arrière-plan de l'étiquette de la balise de point de cheminement</li>
+<li>Ajouté&nbsp;: Option pour suspendre la carte en plein écran</li>
+<li>Ajouté&nbsp;: Option pour afficher ou masquer la superposition des icônes de type de carte lors du changement de type de carte de la mini-carte</li>
+<li>Ajouté&nbsp;: mise à l'échelle des icônes Pokémon</li>
+<li>Ajouté&nbsp;: sauvegarde des fichiers de points de cheminement et chargement automatique des dernières en cas d'échec, amélioration de la sauvegarde, donc moins de modification de la corruption des fichiers.</li>
+<li>Ajouté&nbsp;: Option de serveur pour désactiver les noms de joueurs avec le radar des joueurs- Ajouté : Prise en charge d'AMECS pour trop de raccourcis</li>
+<li>Ajouté&nbsp;: Prise en charge de Controlify sur la carte plein écran</li>
+<li>Ajouté&nbsp;: Texte d'avertissement à mapper automatiquement lorsque c2me est installé</li>
+<li>Ajouté&nbsp;: option Waypoint Beacon pour ignorer le paramètre de distance de rendu maximale de Vanilla</li>
+<li>Ajouté&nbsp;: option Waypoint Beacon, masquer automatiquement l'étiquette verticalement. par défaut&nbsp;: vrai</li>
+<li>Ajouté&nbsp;: l'éditeur de waypoint dispose désormais de paramètres individuels par point de cheminement, avec des remplacements au niveau du groupe pour les mêmes paramètres</li>
+<li>Ajouté&nbsp;: bouton Waypoint Manager pour importer des waypoints externes depuis Xaeros. Le bouton n'existe que si les waypoints de xaero sont détectés</li>
+<li>Ajouté&nbsp;: Option Waypoints pour ouvrir le gestionnaire de waypoints dans votre dimension actuelle</li>
+<li>Ajouté&nbsp;: bouton d'invalidation du zoom LOD dans la fenêtre contextuelle Supprimer la carte</li>
+<li>Ajout&nbsp;:&nbsp;{name} à la commande de point de cheminement personnalisé</li>
 </ul>
 <h3 id="changed">Changed</h3>
 <ul>
-<li>Changed: Cache value minimum lowered from 1000ms to 100ms</li>
-<li>Changed: Client will send packets to server if the server has initiated the connection, even if it is not in the registered channels list</li>
-<li>Changed: Forced Pixelmon icons always the same size, due to resourcepack devs unable to have consistency (26.1 only)</li>
-<li>Changed: Group color override split into separate per-row Icon, Icon Color, Beacon, and Label overrides</li>
-<li>Changed: Handle stb-image-resize issues between lwjgl 3.3.3 and 3.3.6</li>
-<li>Changed: Import saftey checks and pre-backup before import, with some file saving saftey checks</li>
-<li>Changed: Map rendering speed increased, map updates much faster now!</li>
-<li>Changed: More waypoint backups</li>
-<li>Changed: Moved waypoint icon and text to modloader apis (26.1 only)</li>
-<li>Changed: Player names switched to Display names</li>
-<li>Changed: Polygon blend function so that it does not show what is behind the map (26.1 only)</li>
-<li>Changed: Server commands moved under the /jm prefix. So the waypoint command is now "/jm waypoint" or "/jm wp"</li>
-<li>Changed: Share waypoint no longer uses chat mixes, uses modloader specific client commands</li>
-<li>Changed: Topography max colors increased from 128 to 2048</li>
-<li>Changed: Waypoint and WaypointGroup name sorting to sort by alphanumeric instead of just plain java string sorting</li>
+<li>Modifié&nbsp;: valeur minimale du cache réduite de 1&nbsp;000&nbsp;ms à 100&nbsp;ms</li>
+<li>Modifié&nbsp;: le client enverra des paquets au serveur si le serveur a initié la connexion, même s'il ne figure pas dans la liste des chaînes enregistrées</li>
+<li>Modifié&nbsp;: les icônes Pixelmon forcées ont toujours la même taille, en raison de l'incapacité des développeurs du pack de ressources à avoir une cohérence (26.1 uniquement).</li>
+<li>Modifié&nbsp;: le remplacement des couleurs de groupe est divisé en remplacements distincts d'icône, de couleur d'icône, de balise et d'étiquette par ligne.</li>
+<li>Modifié&nbsp;: Gérer les problèmes de stb-image-resize entre lwjgl 3.3.3 et 3.3.6</li>
+<li>Modifié&nbsp;:&nbsp;contrôles de sécurité d'importation et pré-sauvegarde avant l'importation, avec quelques contrôles de sécurité d'enregistrement de fichiers</li>
+<li>Changé&nbsp;: la vitesse de rendu de la carte a augmenté, les mises à jour de la carte sont beaucoup plus rapides maintenant&nbsp;!</li>
+<li>Changé&nbsp;:&nbsp;Plus de sauvegardes de points de cheminement</li>
+<li>Modifié&nbsp;: icône et texte du point de cheminement déplacés vers les API du modloader (26.1 uniquement)</li>
+<li>Modifié&nbsp;: les noms des joueurs sont passés aux noms d'affichage</li>
+<li>Modifié&nbsp;: Fonction de fusion de polygones afin qu'elle ne montre pas ce qui se trouve derrière la carte (26.1 uniquement)</li>
+<li>Modifié&nbsp;: les commandes du serveur ont été déplacées sous le préfixe /jm. La commande waypoint est donc désormais "/jm waypoint" ou "/jm wp".</li>
+<li>Modifié&nbsp;: le point de cheminement partagé n'utilise plus de mix de chat, utilise les commandes client spécifiques au modloader</li>
+<li>Modifié&nbsp;: les couleurs maximales de la topographie ont été augmentées de 128 à 2048.</li>
+<li>Modifié&nbsp;: tri des noms de Waypoint et WaypointGroup pour trier par alphanumérique au lieu d'un simple tri de chaîne Java</li>
 </ul>
 <h3 id="updated">Updated</h3>
 <ul>
-<li>Updated: Nether surface is brighter and removed night map type from nether</li>
-<li>Updated: Rewrite: About Screen to use layouts (1.21.1 only)</li>
-<li>Updated: Rewrite: About Screen to use layouts.(player skins are broken) (26.1 only)</li>
-<li>Updated: Rewrote the player head fetching code</li>
-<li>Updated: Spanish translations and added more spanish variants</li>
+<li>Mise à jour&nbsp;: la surface du Nether est plus lumineuse et le type de carte de nuit a été supprimé du Nether.</li>
+<li>Mise à jour&nbsp;: Réécriture&nbsp;: À propos de l'écran pour utiliser les mises en page (1.21.1 uniquement)</li>
+<li>Mise à jour&nbsp;: réécriture&nbsp;:&nbsp;à propos de l'écran pour utiliser les mises en page. (les skins des joueurs sont cassés) (26.1 uniquement)</li>
+<li>Mise à jour&nbsp;: réécriture du code de récupération de la tête du joueur</li>
+<li>Mise à jour&nbsp;: traductions espagnoles et ajout de variantes espagnoles supplémentaires</li>
 </ul>
 <h3 id="fixed">Fixed</h3>
 <ul>
-<li>Fixed: "What's New" entries duplicating on About screen revisit</li>
-<li>Fixed: [1.21.6] Region tile blur not getting cleared when zooming in (26.1 only)</li>
-<li>Fixed: [1.21.6]: Waypoint Group Setting to display waypoint icon on the locator bar. Default:True (26.1 only)</li>
-<li>Fixed: [1.21.7] Issues with automap on world painter worlds (26.1 only)</li>
-<li>Fixed: [1.21.8] Minimap displaying for forge build 58.0.9+ which is also the minimum required version going forward (26.1 only)</li>
-<li>Fixed: [Fabric]: Some mods that modify chat break waypoint chat sharing</li>
-<li>Fixed: A couple more memory issues (26.1 only)</li>
-<li>Fixed: Action bar announcement when disabling/enabling waypoint rendering</li>
-<li>Fixed: Adjusted how modded flowerblock colors are calculated</li>
-<li>Fixed: Advanced Option: Disable mob icon fade based on vertical distance from player</li>
-<li>Fixed: After using /transfer, JourneyMap now switches to the correct map data directory for the new server</li>
-<li>Fixed: Aliasing issues with grid lines and text on the map when zoomed in</li>
-<li>Fixed: Always Map Caves Option caused some issues with rendering distance when enabled</li>
-<li>Fixed: Always Map Caves will map all cave layers</li>
-<li>Fixed: An issue with importing waypoints from xaeros with multiplayer</li>
-<li>Fixed: Ancient unused method that may have been flagging some av's as false positive</li>
-<li>Fixed: Another edge case that could cause some biomes to not blend on chunk edges</li>
-<li>Fixed: Another Fix for Intel ARC Gpus causing flicking buttons in fullscreen map (26.1 only)</li>
-<li>Fixed: Another issue with the Feather client breaking things (1.21.11, 26.1, 26.2 only)</li>
-<li>Fixed: Another Waypoint crash</li>
-<li>Fixed: Attempt to fix rare nvidia gpu crashes</li>
-<li>Fixed: Auto backup of WaypointData.dat file on load. Will load backup if issues are found with main file</li>
-<li>Fixed: AutoHide waypoint label option</li>
-<li>Fixed: AutoMap button showing up in multiplayer when it should not (26.1 only)</li>
-<li>Fixed: Automap on unlimited height worlds</li>
-<li>Fixed: Automap screen rewritten as a popup</li>
-<li>Fixed: Automapping a surface area now generates all surface map types (Day/Night, Topography, Biome) instead of only Day and Night</li>
-<li>Fixed: Automapping speed</li>
-<li>Fixed: Baby mobs causing issues (26.1 only)</li>
-<li>Fixed: Base Map shader not always working (26.1 only)</li>
-<li>Fixed: Beacon Rendering when shaders are used</li>
-<li>Fixed: Better cleaning up of region images once expired</li>
-<li>Fixed: Biome color fixes</li>
-<li>Fixed: Biome color lookup</li>
-<li>Fixed: Biome map mapping water with mapBathymetry enabled</li>
-<li>Fixed: Blank map issues when underground and clicking follow, when server disables cave mapping</li>
-<li>Fixed: Broken fish icons from Aquaculture fish and possibly other mods</li>
-<li>Fixed: Broken Legacy mob icon resource packs</li>
-<li>Fixed: Bug for dragging zoomed in map</li>
-<li>Fixed: Button to fill a palette with default colors</li>
-<li>Fixed: Cache flushing on slower hard drives causing a lag spike</li>
-<li>Fixed: Cache not getting Biome Key correctly</li>
-<li>Fixed: Cartography options to adjust the max height for topography calculations</li>
-<li>Fixed: Cave automapping not displaying lights</li>
-<li>Fixed: Cave lighting when disabled "use cave lighting" option only rendering blocks with a light value</li>
-<li>Fixed: CaveSurface rendering no longer starting as black</li>
-<li>Fixed: Check BlockColors to see if leaves need to follow the biome color (1.21.1 only)</li>
-<li>Fixed: Checkbox to singleplayer world delete confirmation to also delete JM data for world</li>
-<li>Fixed: Cherry Petal colors</li>
-<li>Fixed: Chunk cache not persisting data; block data only available in render range</li>
-<li>Fixed: Clear docs</li>
-<li>Fixed: Clearing of player radar cache on server disconnect</li>
-<li>Fixed: Clearing some state on server when exiting game</li>
-<li>Fixed: Closing the entire stack when a popup menu item is selected</li>
-<li>Fixed: Cobblemon npc icons(mostly)</li>
-<li>Fixed: Cobblemon npc waypoint chat sharing</li>
-<li>Fixed: Compat with Chococraft icons</li>
-<li>Fixed: Compat with Doggy Talent Icons</li>
-<li>Fixed: Compatibility crash with Tectonic when automapping chunks (26.1 only)</li>
-<li>Fixed: Compatibility issue with Moonrise</li>
-<li>Fixed: Compatibility with hiding effect icons and Raised mod</li>
-<li>Fixed: Concurrent modification exception fix</li>
-<li>Fixed: Correctly handle icons for mobs that could not be generated one</li>
-<li>Fixed: Correctly selects the "all" palette when there are no longer any colors in the selected palette</li>
-<li>Fixed: Crash caused by an ETF bug with ImmediatelyFast (1.21.11, 26.1 only)</li>
-<li>Fixed: Crash if for some reason a waypoint does not have a group</li>
-<li>Fixed: Crash related to mod "Remove Reloading Screen"</li>
-<li>Fixed: Crash when clicking a per-row Accept/Decline button on the pending waypoints screen</li>
-<li>Fixed: Crash when enabling and disabling waypoints and waypoint groups in singleplayer</li>
-<li>Fixed: Crash when setting group icon overrided</li>
-<li>Fixed: Crash when worldId is sent before player is loaded in the world</li>
-<li>Fixed: Crash with auto remove deathpoints enabled</li>
-<li>Fixed: Crash with Flachback mod replays</li>
-<li>Fixed: Crash with scaled textures</li>
-<li>Fixed: Crash with waypoints and the new locator bar (26.1 only)</li>
-<li>Fixed: Custom dimension map colors shifting with day/night cycle; End night map removed</li>
-<li>Fixed: Custom shader program to fix opacities below 0.1F</li>
-<li>Fixed: Custom theme minimap frame persists when switching themes</li>
-<li>Fixed: Data caches not resetting properly if mapping is disabled</li>
-<li>Fixed: Dead bush, and tall grass to plants (26.1 only)</li>
-<li>Fixed: Deathpoint filtering when clients disable deathpoint creation when on a server(or singleplayer) that manages waypoints</li>
-<li>Fixed: Debug entry in fabric (26.1 only)</li>
-<li>Fixed: Default Player display to Outlined Icons</li>
-<li>Fixed: Default vanilla teleport command to use "/execute in {dim} run tp {name} {x} {y} {z}"</li>
-<li>Fixed: Delete map screen rewritten as a popup</li>
-<li>Fixed: Delete waypoints in native groups</li>
-<li>Fixed: Deleting a specific region forces nearby remap</li>
-<li>Fixed: Deleting a waypoint from the waypoint editor now closes the editor after confirming</li>
-<li>Fixed: Deleting waypoint groups is deleting all waypoints</li>
-<li>Fixed: Disable mipmapping for arc gpus due poor opengl support (1.21.1 only)</li>
-<li>Fixed: Disabled waypoints no longer how up on locator bar (26.1 only)</li>
-<li>Fixed: Disabling deathpoints by the server causing odd issues</li>
-<li>Fixed: Display loaded chunks for admins</li>
-<li>Fixed: Display Update event to getting called on fullscreen map close</li>
-<li>Fixed: Distorted info text on fullscreen map</li>
-<li>Fixed: Don't draw texts with opacity 0 because Minecraft draws them with full opacity</li>
-<li>Fixed: Drawing the polygons behind the other overlays as was done in previous versions (26.1 only)</li>
-<li>Fixed: DynamicTextures crash when loading off the main thread</li>
-<li>Fixed: Enabling rendering of an Overworld waypoint in the nether changes waypoint position</li>
-<li>Fixed: Entity collection for radar cleanup and optimizations</li>
-<li>Fixed: Entity collection performance issues (26.1 only)</li>
-<li>Fixed: Entity Icon fade background colors bleeding through (26.1 only)</li>
-<li>Fixed: Entity icons appear and disappear when zooming in and out. Fixed: Entity icons looking crooked and weird, report any other issues with icons (26.1 only)</li>
-<li>Fixed: Entity icons no longer rotate with the minimap when it is set to "My Heading"; they once again stay top-down (26.1, 26.2 only)</li>
-<li>Fixed: Errors from journeymap if the server crashes, giving a false negative when JM tries to access the crashed server</li>
-<li>Fixed: Errors when resources packs use invalid namespace names</li>
-<li>Fixed: Essential ptp server integration</li>
-<li>Fixed: Exception being thrown from a null server if the server crashes by another mod</li>
-<li>Fixed: Exceptions caused when looking for external waypoints causing a crash when opening waypoint manager</li>
-<li>Fixed: Excessive disk I/O from zoom-level cache writes while exploring</li>
-<li>Fixed: Excessive IO on logout and over-saving unchanged region images</li>
-<li>Fixed: Fabric - disconnect when messages do not have a signature for waypoint sharing</li>
-<li>Fixed: Fabric minimap double rendering</li>
-<li>Fixed: File theme and webmap asset extraction on some linux distros</li>
-<li>Fixed: Fix day counter not respecting dodaylightcycle gamerule</li>
-<li>Fixed: Fix forge crash</li>
-<li>Fixed: Fix group create event</li>
-<li>Fixed: Fix inventory hud+ compat issues</li>
-<li>Fixed: Fix more waypoint migration issue</li>
-<li>Fixed: Fix neoforge breaking chagne in 26.1.2.19 (26.1 only)</li>
-<li>Fixed: Fix nether waypoint rendering</li>
-<li>Fixed: Fix to color conversion and colorpicker in grid editor (26.1 only)</li>
-<li>Fixed: Fix waypoint labels being hidden when chat screen is open</li>
-<li>Fixed: Fix waypoint not saving</li>
-<li>Fixed: Fix waypoint oddness in the nether, still not perfect</li>
-<li>Fixed: Fixes mapping disabled breaking waypoints closes #47</li>
-<li>Fixed: Force purge all images from memory before exiting game</li>
-<li>Fixed: Forced Pixelmon icons always the same size, due to resourcepack devs unable to have consistency (1.21.1 only)</li>
-<li>Fixed: Forge and NeoForge getting fluid colors (26.1 only)</li>
-<li>Fixed: Forge and NeoForge issue with f3+f4 (1.21.1 only)</li>
-<li>Fixed: Forge and NeoForge not updating block place and break events correctly</li>
-<li>Fixed: Forge log spam (26.1 only)</li>
-<li>Fixed: Forge Optifine crash (26.1 only)</li>
-<li>Fixed: Fullscreen follow preventing manual switching surface to/from underground without manually breaking follow</li>
-<li>Fixed: Fullscreen follow turning off when transitioning between surface and underground</li>
-<li>Fixed: Fullscreen Map buttons flickering on intel gpus (26.1 only)</li>
-<li>Fixed: Fullscreen Map text bars not always in the correct position</li>
-<li>Fixed: Fullscreen Option to hide the theme button on the fullscreen map</li>
-<li>Fixed: Fullscreen slice slider when nether heights are not default</li>
-<li>Fixed: Fullscreen waypoint teleporting when waypoint is below blocks</li>
-<li>Fixed: Game Time info slots not tracking time in the Nether (26.1, 26.2 only)</li>
-<li>Fixed: GameTime display regression for info slot</li>
-<li>Fixed: GameTime InfoSlot skipping minutes</li>
-<li>Fixed: Get the stroke lines buffer between different segments to prevent geometry from joining together</li>
-<li>Fixed: Getting correct blockentity colors</li>
-<li>Fixed: Getting default water colors for mods like EssentialsClient that breaks it</li>
-<li>Fixed: Glyphs to images</li>
-<li>Fixed: Grid editor screen rewritten as a popup</li>
-<li>Fixed: Group Create Event firing twice</li>
-<li>Fixed: Group transfer event</li>
-<li>Fixed: Handle corrupted waypoint data file</li>
-<li>Fixed: Handshake logic getting erroneously cleared preventing waypoints updating when switching dims (26.1 only)</li>
-<li>Fixed: Hide fullscreen buttons and waypoint render keys unbound</li>
-<li>Fixed: Horse pets breaking entity radar rendering (26.1 only)</li>
-<li>Fixed: Horses rendering on map (26.1 only)</li>
-<li>Fixed: House looking waypoint icons</li>
-<li>Fixed: Ice and Fire icons displaying as full texture. Resource packs are needed for icons</li>
-<li>Fixed: Icon generation for mobs that use a TextureAtlas instead of a DynamicTexture and for mobs that extend EntityModel and have modelparts fields where none is head (1.21.1 only)</li>
-<li>Fixed: Ignore heightmaps option</li>
-<li>Fixed: ImmediatelyFast issue with minimap text</li>
-<li>Fixed: Immersive portals fix</li>
-<li>Fixed: Import dialog blocking the game thread, causing disconnects on servers</li>
-<li>Fixed: Import Xaeros importing waypoints on multiplayer servers</li>
-<li>Fixed: Importing a world zip can stop on a bad file read and stop the full export, now it skips the bad file and continues</li>
-<li>Fixed: Importing and migrating ancient waypoints (1.7.10/1.12.2)</li>
-<li>Fixed: Issue when disabling worldId</li>
-<li>Fixed: Issue when entity icons cannot be generated can cause a bit of log spam</li>
-<li>Fixed: Issue where built-in group settings would get reset</li>
-<li>Fixed: Issue with fullscreen map with both "Visual Overhaul" and "Fancy Menu" mods installed at the same time</li>
-<li>Fixed: Issue with MacOS and retina displays (26.1 only)</li>
-<li>Fixed: Issue with map data going funky on resourcepack change (1.21.1 only)</li>
-<li>Fixed: Issue with mipmaps not getting uploaded to gpu for some users (1.21.1 only)</li>
-<li>Fixed: Issues getting Realm Server name (26.1 only)</li>
-<li>Fixed: Issues when migrating 1000's of waypoints from old versions</li>
-<li>Fixed: Issues when using the mousebutton to open/close the fullscreen map</li>
-<li>Fixed: Issues with default groups not getting created on new worlds</li>
-<li>Fixed: Issues with immediately fast mod (26.1 only)</li>
-<li>Fixed: Issues with water when automapping topography maps (1.21.1 only)</li>
-<li>Fixed: JourneyMap minimap no longer interferes with other mods' HUD rendering (1.21.1 only)</li>
-<li>Fixed: JVM crash when writing region map images to disk</li>
-<li>Fixed: Keybind for following the player</li>
-<li>Fixed: Large map disk IO performance</li>
-<li>Fixed: Lazy color cache</li>
-<li>Fixed: Leaves colors</li>
-<li>Fixed: Lines on the top and bottom of the scroll panes</li>
-<li>Fixed: Locatorbar mixin crash (26.1 only)</li>
-<li>Fixed: LOD tiles (zoomed-out map) not updating live when new chunks are mapped (1.21.1 only)</li>
-<li>Fixed: Log spam caused by biome color blending</li>
-<li>Fixed: Log spam if server disables deathpoints and user has never had a deathpoint</li>
-<li>Fixed: Long hang when disconnecting from a world caused by waypoint saves repeatedly re-triggering each other</li>
-<li>Fixed: Lunar Client not displaying map tiles (1.21.11 only)</li>
-<li>Fixed: Made it so Npc.class interface is handled a bit differently than pathfindermob.class</li>
-<li>Fixed: Malfunctioning selections in color palette</li>
-<li>Fixed: Map Filter shaders (26.1 only)</li>
-<li>Fixed: Map not clearing old dimension map tiles for some custom servers that do not update the player's dimension (1.21.1 only)</li>
-<li>Fixed: Map render distance</li>
-<li>Fixed: Map Shaders halting mod loading on Linux</li>
-<li>Fixed: Map tiles not saving when exiting the game right after the tile is generated</li>
-<li>Fixed: Map type swap missing regions</li>
-<li>Fixed: MapImage fixes</li>
-<li>Fixed: MapImage uses textureWidth/Height incorrectly swapped with displayWidth/Height</li>
-<li>Fixed: Marker and Image overlays uses MapImage blur incorrectly</li>
-<li>Fixed: Marker overlays not using their icon's texture parameters (26.1 only)</li>
-<li>Fixed: Master Options not disabling all other options in the category (26.1 only)</li>
-<li>Fixed: Max port 65535 for webmap</li>
-<li>Fixed: Memory Leak</li>
-<li>Fixed: Memory leak when previewing minimap</li>
-<li>Fixed: Minimap behind screens not respecting the visibility toggle</li>
-<li>Fixed: Minimap being hidden when chat is opened</li>
-<li>Fixed: Minimap could appear at minimum size after logging in due to MC bug changing the frame buffer size +1 on the y (26.1 only)</li>
-<li>Fixed: Minimap depth masking broken on some Vulkan Intel drivers (26.2 only)</li>
-<li>Fixed: Minimap incorrectly shifting position when moving infoslots</li>
-<li>Fixed: Minimap lagging behind the border when dragging it in the minimap position screen (1.21.11, 26.1, 26.2 only)</li>
-<li>Fixed: Minimap not rendering sometimes using the Feather client (1.21.11, 26.1, 26.2 only)</li>
-<li>Fixed: Minimap points and rim getting flipped (26.1 only)</li>
-<li>Fixed: Minimap Position Option, move infoslots to top or bottom</li>
-<li>Fixed: Minimap rendering behind debug screen overlay</li>
-<li>Fixed: MiniMap self arrow is drawn under other icons (26.1 only)</li>
-<li>Fixed: Mob icon crash fix</li>
-<li>Fixed: Mod compat with OkZoomer (26.1 only)</li>
-<li>Fixed: ModCompat amecs-reborn</li>
-<li>Fixed: ModCompat issues with ImmediatelyFast for waypoints and minimap</li>
-<li>Fixed: ModCompat with VulkanMod</li>
-<li>Fixed: Modmenu support</li>
-<li>Fixed: More fixes for issues with icons that do not generate</li>
-<li>Fixed: More fixes in place to prevent CCMs when getting waypoints to render and added better logging</li>
-<li>Fixed: More issues related to zoom LODs not populating correctly</li>
-<li>Fixed: More realms issues (26.1 only)</li>
-<li>Fixed: More shader reloading issues</li>
-<li>Fixed: Moved Forge and NeoForge waypoint decoration rendering to modloader apis (1.21.1 only)</li>
-<li>Fixed: Native out of memory crash when saving map (GitHub #1060) (26.1 only)</li>
-<li>Fixed: NeoForge breaking change requires 21.10.34-beta and above (26.1 only)</li>
-<li>Fixed: Neoforge issues with reloadable resources (26.1 only)</li>
-<li>Fixed: NeoForge minimap rendering on f3 screen (26.1 only)</li>
-<li>Fixed: Nether colors (26.1 only)</li>
-<li>Fixed: No more streaming values to a list, caused a crash</li>
-<li>Fixed: Optimization of map tile loading</li>
-<li>Fixed: Option to disable share waypoint, also removes the chat position from right click menu in fullscreen map</li>
-<li>Fixed: Option to disable waypoint delete confirmation</li>
-<li>Fixed: Options screen tabs do not reset mouse position to center of screen</li>
-<li>Fixed: Overlay labels vibrating</li>
-<li>Fixed: Overlays never displayed when added with a zoom range that does not include the current zoom</li>
-<li>Fixed: Performance hit in singleplayer with block events</li>
-<li>Fixed: Performance issue on the fullscreen map with the Terrain Diffusion MC mod</li>
-<li>Fixed: Performance issue with map rendering (1.21.1 only)</li>
-<li>Fixed: Performance issues at high zoom</li>
-<li>Fixed: Pixelmon icons blurring when first rendered on map (1.21.1 only)</li>
-<li>Fixed: Player heads are blurry</li>
-<li>Fixed: Player heads not rendering in all cases (26.1 only)</li>
-<li>Fixed: Player icons not displaying for non-English player names (26.1 only)</li>
-<li>Fixed: Player Locations packet more optimized, use fewer packets and less data</li>
-<li>Fixed: Players not respecting the range value in settings</li>
-<li>Fixed: Players remaining on map after disconnect on velocity servers</li>
-<li>Fixed: Polygon fixes (26.1 only)</li>
-<li>Fixed: Polygons doing funny things when zoomed out far (1.21.1 only)</li>
-<li>Fixed: Polygons drawing outside the minimap</li>
-<li>Fixed: Possible naming issue when joining a realms server from the launcher</li>
-<li>Fixed: Possible thread lock with mouse movement on the fullscreen map</li>
-<li>Fixed: Potential crash if no group is selected when saving a waypoint</li>
-<li>Fixed: Potential crash with some PS5 button assignments with Controlify</li>
-<li>Fixed: Prevent waypoints from occupying the same xz cords</li>
-<li>Fixed: Preventing a fake icon from replacing another icon in TextureManager, closing the previous icon</li>
-<li>Fixed: Preventing exceptions from escaping the icon generation process (1.21.1 only)</li>
-<li>Fixed: Radio Buttons not showing up in Grid Editor or Waypoint Coordinate layout editor (26.1 only)</li>
-<li>Fixed: Rare client deadlock (stuck on "Loading Terrain") when the minimap rendered during a dimension change (1.21.1, 1.21.11 only)</li>
-<li>Fixed: Rare crash condition</li>
-<li>Fixed: Rare crash when accepting a pending waypoint</li>
-<li>Fixed: Rare crash when managing waypoints when on a server</li>
-<li>Fixed: Rare issue where waypoint beacons will not render</li>
-<li>Fixed: Realm state change issues when joining or leaving a Realm</li>
-<li>Fixed: Reduced render-thread microstutter when the minimap loads region images</li>
-<li>Fixed: Region tiles not getting cleaned properly when switching dimensions</li>
-<li>Fixed: Region tiles stuck blank</li>
-<li>Fixed: Regions randomly going blank while playing</li>
-<li>Fixed: Render issue with TES mod</li>
-<li>Fixed: Rendering Issues with ImmediatlyFast (26.1 only)</li>
-<li>Fixed: Resource reload breaking mapping (26.1 only)</li>
-<li>Fixed: Revert forcing pixelmon size (1.21.1 only)</li>
-<li>Fixed: Revert pixelmon icon size (26.1 only)</li>
-<li>Fixed: Scaling compat with QDAA</li>
-<li>Fixed: Scaling on macOS so things are not so small (26.1 only)</li>
-<li>Fixed: Screen blacklisting start</li>
-<li>Fixed: Semi-rare crash when deleting the map in game</li>
-<li>Fixed: Server Admin option to disable all coordinate displays</li>
-<li>Fixed: Server admin radar settings were ignored in singleplayer</li>
-<li>Fixed: Server Admin save button not showing up</li>
-<li>Fixed: Server biome blending on newly generate chunks not blending on chunk borders</li>
-<li>Fixed: Server Option to adjust max cave render distance</li>
-<li>Fixed: Server option to disable cross dim tp</li>
-<li>Fixed: Server Option to disable/enable right click teleporting on full map when waypoint teleport is enabled</li>
-<li>Fixed: Server Options to adjust radar ranges and entity counts</li>
-<li>Fixed: Servers unable to create config files, due to Mojang changing how getServerDirectory() works</li>
-<li>Fixed: Set default waypoint icon size to 16</li>
-<li>Fixed: Setting max render distance on the server</li>
-<li>Fixed: Several crashes and errors related to waypoints</li>
-<li>Fixed: Shaders moved to the assets/journeymap folder and unified in common</li>
-<li>Fixed: Shaking icons and grid</li>
-<li>Fixed: Shaky movement of marker overlays on the minimap (26.1 only)</li>
-<li>Fixed: Skipping the decorative cages from Bosses'Rise because they are not mobs (1.21.1 only)</li>
-<li>Fixed: Some color issues (26.1 only)</li>
-<li>Fixed: Some fullscreen map issues on MACOS retina displays (1.21.1 only)</li>
-<li>Fixed: Some GC thrashing and memory issues</li>
-<li>Fixed: Some glass blocks transparency</li>
-<li>Fixed: Some image tiles getting corrupted during updates on force exit (26.1 only)</li>
-<li>Fixed: Some player heads getting rendered with a blue hue (26.1 only)</li>
-<li>Fixed: Some resource pack issues for mob icons</li>
-<li>Fixed: Some waypoint fixes</li>
-<li>Fixed: Sort regions by distance from map center</li>
-<li>Fixed: Square minimap has weird issues with the grid on some systems (1.21.11, 26.1, 26.2 only)</li>
-<li>Fixed: State reset loop when mapping is disabled</li>
-<li>Fixed: Surface Slicing skipping some chunks (26.1 only)</li>
-<li>Fixed: Switching icon types not actually switching</li>
-<li>Fixed: Team names only show when the option is disabled.. oops</li>
-<li>Fixed: Team prefix rendered twice when Show Team Names is enabled</li>
-<li>Fixed: Tectonic breaking automap (26.1 only)</li>
-<li>Fixed: Teleporting or moving fast in a multiplayer world may miss-render biome blend due to chunks getting to the client slower than expected</li>
-<li>Fixed: Teleporting to nether from overworld being off</li>
-<li>Fixed: Teleporting when mounted</li>
-<li>Fixed: Text parsing for xaeros waypoint share (26.1 only)</li>
-<li>Fixed: Textures not clearing correctly on world logout and log spam (26.1 only)</li>
-<li>Fixed: Threadlock when firing API events from the netty thread while disconnecting from a multiplayer server</li>
-<li>Fixed: Throw pre-launch error when Fabric users install the Forge or NeoForge version of journeymap</li>
-<li>Fixed: Tooltips in dim panel on waypoint editor</li>
-<li>Fixed: Transferring a waypoint into a locked group</li>
-<li>Fixed: Transparency of mob icons blending with the dot color</li>
-<li>Fixed: Tree and Water color updates</li>
-<li>Fixed: Tree colors when foliage blend is disabled</li>
-<li>Fixed: Underground y level fix (1.21.1 only)</li>
-<li>Fixed: Updating the x and z values of a waypoint, it will pull the top-y value from cache if it exists</li>
-<li>Fixed: Use generated icons when no legacy icon is found</li>
-<li>Fixed: Valid mis-named waypoint .dat files getting migrated to the server</li>
-<li>Fixed: Various visual problems on the color palette screen</li>
-<li>Fixed: Version parsing issue</li>
-<li>Fixed: Very old map data</li>
-<li>Fixed: Very old waypoint migration issue</li>
-<li>Fixed: Villager Icon for flat theme images, added a bit of gaussian blur</li>
-<li>Fixed: Villager icons were incorrectly replaced with the alternative code used when the icon could not be generated (26.1 only)</li>
-<li>Fixed: Villagers sometimes flashing red/green on the map</li>
-<li>Fixed: Wait for the theme button to reopen to avoid dragging the map while switching themes</li>
-<li>Fixed: Waypoint and service loader fixes</li>
-<li>Fixed: Waypoint codecs returning immutable maps</li>
-<li>Fixed: Waypoint command crashing servers sometimes</li>
-<li>Fixed: Waypoint Dimensions and Import Waypoints List display -- Such a stupid hack, fix this garbage (26.1 only)</li>
-<li>Fixed: Waypoint editor ignoring first keypress</li>
-<li>Fixed: Waypoint enhancements</li>
-<li>Fixed: Waypoint folders not refreshing after import until reconnect</li>
-<li>Fixed: Waypoint group fixes</li>
-<li>Fixed: Waypoint group tags to prefix on waypoint names for the group</li>
-<li>Fixed: Waypoint Groups can use custom icons for all waypoints in the group</li>
-<li>Fixed: Waypoint groups, delete and hiding</li>
-<li>Fixed: Waypoint Icon issues when removing an icon resource pack</li>
-<li>Fixed: Waypoint Icons not showing on webmap (26.1 only)</li>
-<li>Fixed: Waypoint icons rendering ontop of crosshair</li>
-<li>Fixed: Waypoint icons will now always show</li>
-<li>Fixed: Waypoint manager fixes</li>
-<li>Fixed: Waypoint name not highlighted when opening editor</li>
-<li>Fixed: Waypoint Option a global "Show On Locator Bar" Default:false (26.1 only)</li>
-<li>Fixed: Waypoint Option to display Player Heads in world</li>
-<li>Fixed: Waypoint Option to remove decimals from /tp command</li>
-<li>Fixed: Waypoint rendering race condition causing a null group crash</li>
-<li>Fixed: Waypoint saving, should no longer corrupt waypoint files</li>
-<li>Fixed: Waypoint search and other fixes</li>
-<li>Fixed: Waypoint selection window when icons are added via resourcepack (26.1 only)</li>
-<li>Fixed: Waypoint teleport for OPs only works for perm level 2 and larger</li>
-<li>Fixed: Waypoint Teleporting</li>
-<li>Fixed: Waypoint teleporting nether calculations when JM is not on the server</li>
-<li>Fixed: Waypoint text moving when disabling waypoint (26.1 only)</li>
-<li>Fixed: Waypoints can be added/removed from the temp group</li>
-<li>Fixed: Waypoints not deleting in singleplayer</li>
-<li>Fixed: Weird issues with compass points with purist theme</li>
-<li>Fixed: Weird mouse behavior wehn initially opening fullscreen map and not following player</li>
-<li>Fixed: Weirdness with FancyMenu installed</li>
-<li>Fixed: Wierd border issues on dropdown/popup menus</li>
-<li>Fixed: World close log spam</li>
-<li>Fixed: World Export zip not including WaypointData.dat on servers that manage waypoints and singleplayer</li>
-<li>Fixed: Wpname for waypoint name in custom waypoint command</li>
-<li>Fixed: Xaero Minimap waypoints not detected when connected to a Realms server (26.1 only)</li>
-<li>Fixed: Xaeros waypoint import enhancements</li>
-<li>Fixed: Zombie Villagers hidden when disabling villager display</li>
-<li>Fixed: Zombie Villagers ignoring Show Villagers and Show Villager Names toggles</li>
-<li>Fixed: Zombie villagers not showing up as hostile</li>
-<li>Fixed: Zoom LODs not being generated, causing black holes in the map</li>
-<li>Fixed: Zoomed-out (LOD) map tiles appearing scrambled or jumbled after a game crash</li>
+<li>Corrigé&nbsp;:&nbsp;les entrées «&nbsp;Quoi de neuf&nbsp;» se dupliquaient lors de la revisite de l'écran À propos</li>
+<li>Corrigé&nbsp;: [1.21.6] Le flou des tuiles de région n'est pas effacé lors d'un zoom avant (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [1.21.6]&nbsp;:&nbsp;Paramètre du groupe de points de cheminement pour afficher l'icône du point de cheminement sur la barre de localisation. Par défaut&nbsp;:&nbsp;Vrai (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [1.21.7] Problèmes avec l'automap sur les mondes World Painter (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [1.21.8] Affichage de la mini-carte pour la version de forge 58.0.9+ qui est également la version minimale requise à l'avenir (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: [Tissu]&nbsp;: Certains mods qui modifient le partage de discussion des points de cheminement des interruptions de discussion</li>
+<li>Corrigé&nbsp;: quelques problèmes de mémoire supplémentaires (26.1 uniquement)</li>
+<li>Corrigé : Annonce de la barre d'action lors de la désactivation/activation du rendu des waypoints</li>
+<li>Corrigé&nbsp;: ajustement de la façon dont les couleurs des blocs de fleurs modifiées sont calculées</li>
+<li>Corrigé : Option avancée : Désactiver le fondu de l'icône de la foule en fonction de la distance verticale du joueur</li>
+<li>Corrigé&nbsp;: après avoir utilisé /transfer, JourneyMap passe désormais au répertoire de données cartographiques correct pour le nouveau serveur</li>
+<li>Corrigé&nbsp;: problèmes d'alias avec les lignes de quadrillage et le texte sur la carte lors d'un zoom avant</li>
+<li>Corrigé&nbsp;: l'option Toujours cartographier les grottes provoquait des problèmes de distance de rendu lorsqu'elle était activée</li>
+<li>Corrigé : Always Map Caves cartographiera toutes les couches de grottes</li>
+<li>Corrigé : Un problème avec l'importation de waypoints depuis xaeros avec le multijoueur</li>
+<li>Corrigé : Ancienne méthode inutilisée qui pouvait signaler certains AV comme faux positifs</li>
+<li>Corrigé&nbsp;: un autre cas limite qui pouvait empêcher certains biomes de se fondre sur les bords des morceaux</li>
+<li>Corrigé&nbsp;: un autre correctif pour les GPU Intel ARC provoquant le clignotement des boutons sur la carte plein écran (26.1 uniquement)</li>
+<li>Corrigé : Un autre problème avec le client Feather qui cassait des choses (1.21.11, 26.1, 26.2 uniquement)</li>
+<li>Corrigé&nbsp;: un autre crash de Waypoint</li>
+<li>Corrigé&nbsp;: tentative de correction de rares plantages du GPU nvidia</li>
+<li>Corrigé&nbsp;: sauvegarde automatique du fichier WaypointData.dat au chargement. Chargera la sauvegarde si des problèmes sont détectés avec le fichier principal</li>
+<li>Corrigé&nbsp;: option Masquer automatiquement l'étiquette du point de cheminement</li>
+<li>Corrigé&nbsp;: le bouton AutoMap apparaissait en multijoueur alors qu'il ne devrait pas (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;Automap sur des mondes à hauteur illimitée</li>
+<li>Corrigé&nbsp;: l'écran Automap réécrit sous forme de popup</li>
+<li>Corrigé&nbsp;: la cartographie automatique d'une zone génère désormais tous les types de cartes de surface (Jour/Nuit, Topographie, Biome) au lieu de seulement Jour et Nuit.</li>
+<li>Corrigé&nbsp;: vitesse de mappage automatique</li>
+<li>Corrigé&nbsp;: les bébés mobs causaient des problèmes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le shader de la carte de base ne fonctionne pas toujours (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: rendu des balises lorsque des shaders sont utilisés</li>
+<li>Corrigé&nbsp;: meilleur nettoyage des images de région une fois expirées</li>
+<li>Corrigé&nbsp;: corrections de couleurs du biome</li>
+<li>Corrigé&nbsp;: recherche de couleur du biome</li>
+<li>Corrigé&nbsp;: carte du biome cartographiant l'eau avec mapBathymetry activé</li>
+<li>Corrigé&nbsp;: problèmes de carte vierge lorsque vous êtes sous terre et cliquez sur Suivre, lorsque le serveur désactive la cartographie des grottes.</li>
+<li>Corrigé&nbsp;: icônes de poisson cassées provenant des poissons d'aquaculture et éventuellement d'autres mods</li>
+<li>Corrigé&nbsp;: packs de ressources d'icônes de foule Broken Legacy</li>
+<li>Corrigé&nbsp;: Bug pour faire glisser la carte zoomée</li>
+<li>Corrigé&nbsp;: Bouton pour remplir une palette avec les couleurs par défaut- Corrigé&nbsp;:&nbsp;vidage du cache sur les disques durs plus lents provoquant un pic de décalage</li>
+<li>Corrigé&nbsp;: le cache n'obtient pas correctement la clé du biome</li>
+<li>Corrigé&nbsp;: options de cartographie pour ajuster la hauteur maximale pour les calculs de topographie</li>
+<li>Corrigé&nbsp;: le mappage automatique des grottes n'affichant pas les lumières</li>
+<li>Corrigé&nbsp;: l'éclairage de la grotte lorsqu'il est désactivé, l'option "utiliser l'éclairage de la grotte" ne rend que les blocs avec une valeur de lumière</li>
+<li>Corrigé&nbsp;: le rendu CaveSurface ne démarre plus en noir</li>
+<li>Corrigé&nbsp;: vérifiez BlockColors pour voir si les feuilles doivent suivre la couleur du biome (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: case à cocher pour confirmer la suppression du monde solo afin de supprimer également les données JM pour le monde</li>
+<li>Corrigé&nbsp;: couleurs des pétales de cerise</li>
+<li>Corrigé&nbsp;: le cache de fragments ne conserve pas les données&nbsp;; bloquer les données uniquement disponibles dans la plage de rendu</li>
+<li>Corrigé&nbsp;: effacer les documents</li>
+<li>Corrigé&nbsp;:&nbsp;Effacement du cache radar du joueur lors de la déconnexion du serveur</li>
+<li>Corrigé : Effacement d'un état sur le serveur en quittant le jeu</li>
+<li>Corrigé&nbsp;:&nbsp;Fermeture de la pile entière lorsqu'un élément de menu contextuel est sélectionné</li>
+<li>Corrigé&nbsp;: icônes de PNJ Cobblemon (principalement)</li>
+<li>Corrigé&nbsp;: partage de discussion sur les points de cheminement Cobblemon NPC</li>
+<li>Corrigé : Compatibilité avec les icônes Chococraft</li>
+<li>Corrigé&nbsp;: compatibilité avec les icônes Doggy Talent</li>
+<li>Corrigé&nbsp;: Crash de compatibilité avec Tectonic lors du mappage automatique de morceaux (26.1 uniquement)</li>
+<li>Corrigé : Problème de compatibilité avec Moonrise</li>
+<li>Corrigé : Compatibilité avec les icônes d'effet de masquage et le mod Raised</li>
+<li>Corrigé&nbsp;: correctif d'exception de modification simultanée</li>
+<li>Corrigé&nbsp;: gérer correctement les icônes des mobs qui ne pouvaient pas être générés</li>
+<li>Corrigé : Sélectionne correctement la palette "tout" lorsqu'il n'y a plus de couleurs dans la palette sélectionnée</li>
+<li>Corrigé&nbsp;: Crash causé par un bug ETF avec ImmédiatementFast (1.21.11, 26.1 uniquement)</li>
+<li>Corrigé : Crash si pour une raison quelconque un waypoint n'a pas de groupe</li>
+<li>Corrigé : Crash lié au mod "Supprimer l'écran de rechargement"</li>
+<li>Corrigé&nbsp;: crash lorsque vous cliquez sur un bouton Accepter/Refuser par ligne sur l'écran des waypoints en attente</li>
+<li>Corrigé&nbsp;: Crash lors de l'activation et de la désactivation des waypoints et des groupes de waypoints en mode solo</li>
+<li>Corrigé&nbsp;: Crash lors de la configuration de l'icône du groupe remplacée</li>
+<li>Corrigé&nbsp;: Crash lorsque le worldId est envoyé avant que le joueur ne soit chargé dans le monde</li>
+<li>Corrigé&nbsp;: Crash avec suppression automatique des points de mort activé</li>
+<li>Corrigé&nbsp;: Crash avec les rediffusions du mod Flachback</li>
+<li>Corrigé&nbsp;: Crash avec des textures mises à l'échelle</li>
+<li>Corrigé&nbsp;: Crash avec les waypoints et la nouvelle barre de localisation (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les couleurs de la carte des dimensions personnalisées changent selon le cycle jour/nuit&nbsp;; Carte de fin de nuit supprimée</li>
+<li>Corrigé&nbsp;: programme de shader personnalisé pour corriger les opacités inférieures à 0,1F</li>
+<li>Corrigé&nbsp;: le cadre de la mini-carte du thème personnalisé persiste lors du changement de thème</li>
+<li>Corrigé&nbsp;: les caches de données ne se réinitialisent pas correctement si le mappage est désactivé</li>
+<li>Corrigé&nbsp;: buisson mort et herbes hautes sur les plantes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Filtrage des points de mort lorsque les clients désactivent la création de points de mort sur un serveur (ou en mode solo) qui gère les points de cheminement</li>
+<li>Corrigé&nbsp;: entrée de débogage dans Fabric (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;affichage du lecteur par défaut sur les icônes décrites- Corrigé&nbsp;: commande de téléportation Vanilla par défaut pour utiliser "/execute in {dim} run tp {name} {x} {y} {z}"</li>
+<li>Corrigé&nbsp;: Supprimer l'écran de la carte réécrit sous forme de popup</li>
+<li>Corrigé&nbsp;: Supprimer les waypoints dans les groupes natifs</li>
+<li>Corrigé&nbsp;: la suppression d'une région spécifique force le remappage à proximité</li>
+<li>Corrigé : La suppression d'un waypoint de l'éditeur de waypoint ferme désormais l'éditeur après confirmation</li>
+<li>Corrigé&nbsp;:&nbsp;la suppression de groupes de points de cheminement supprime tous les points de cheminement</li>
+<li>Corrigé&nbsp;:&nbsp;désactivation du mipmapping pour les GPU Arc en raison d'une mauvaise prise en charge d'OpenGL (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: les waypoints désactivés n'apparaissent plus sur la barre de localisation (26.1 uniquement)</li>
+<li>Corrigé : Désactivation des points de mort par le serveur provoquant des problèmes étranges</li>
+<li>Corrigé&nbsp;: Afficher les morceaux chargés pour les administrateurs</li>
+<li>Corrigé&nbsp;: Afficher l'événement de mise à jour pour être appelé sur la fermeture de la carte en plein écran</li>
+<li>Corrigé&nbsp;: texte d'information déformé sur la carte en plein écran</li>
+<li>Corrigé : Ne dessinez pas de textes avec une opacité de 0 car Minecraft les dessine avec une opacité totale</li>
+<li>Corrigé : Dessiner les polygones derrière les autres superpositions comme cela se faisait dans les versions précédentes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Crash de DynamicTextures lors du chargement à partir du thread principal</li>
+<li>Corrigé&nbsp;: l'activation du rendu d'un waypoint Overworld dans le Nether modifie la position du waypoint</li>
+<li>Corrigé&nbsp;: collection d'entités pour le nettoyage et les optimisations du radar</li>
+<li>Corrigé&nbsp;: problèmes de performances de la collection d'entités (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: l'icône d'entité efface les couleurs d'arrière-plan (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les icônes d'entité apparaissent et disparaissent lors d'un zoom avant et arrière. Corrigé&nbsp;: les icônes d'entité semblent tordues et bizarres, signalez tout autre problème avec les icônes (26.1 uniquement)</li>
+<li>Corrigé : les icônes d'entité ne tournent plus avec la mini-carte lorsqu'elle est définie sur « Mon cap » ; ils restent une fois de plus descendants (26.1, 26.2 seulement)</li>
+<li>Corrigé&nbsp;: erreurs de Journeymap si le serveur plante, donnant un faux négatif lorsque JM tente d'accéder au serveur en panne</li>
+<li>Corrigé&nbsp;: erreurs lorsque les packs de ressources utilisent des noms d'espace de noms non valides</li>
+<li>Corrigé&nbsp;: intégration essentielle du serveur PTP</li>
+<li>Corrigé : Exception levée depuis un serveur nul si le serveur plante par un autre mod</li>
+<li>Corrigé&nbsp;:&nbsp;Exceptions provoquées lors de la recherche de waypoints externes provoquant un crash lors de l'ouverture du gestionnaire de waypoints</li>
+<li>Corrigé&nbsp;:&nbsp;E/S disque excessives lors des écritures du cache au niveau du zoom lors de l'exploration</li>
+<li>Corrigé&nbsp;: E/S excessives à la déconnexion et sauvegarde excessive des images de région inchangées</li>
+<li>Corrigé : Fabric - se déconnecter lorsque les messages n'ont pas de signature pour le partage de waypoint</li>
+<li>Corrigé&nbsp;: double rendu de la mini-carte Fabric</li>
+<li>Corrigé&nbsp;: extraction de thèmes de fichiers et d'éléments de carte Web sur certaines distributions Linux</li>
+<li>Corrigé&nbsp;: Correction du compteur de jours ne respectant pas la règle de jeu dodaylightcycle</li>
+<li>Corrigé&nbsp;: Correction d'un crash de forge</li>
+<li>Corrigé&nbsp;: Correction d'un événement de création de groupe</li>
+<li>Corrigé : Correction des problèmes de compatibilité de l'inventaire hud+</li>
+<li>Corrigé&nbsp;: Correction d'un problème de migration de points de cheminement supplémentaires</li>
+<li>Corrigé&nbsp;: Correction du chagne cassant Neoforge dans 26.1.2.19 (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: correction du rendu des points de cheminement du Nether</li>
+<li>Corrigé&nbsp;: correction de la conversion des couleurs et du sélecteur de couleurs dans l'éditeur de grille (26.1 uniquement)- Corrigé&nbsp;: correction des étiquettes de points de cheminement masquées lorsque l'écran de discussion est ouvert</li>
+<li>Corrigé&nbsp;: Correction du waypoint qui n'était pas enregistré</li>
+<li>Corrigé&nbsp;: correction d'une bizarrerie de point de cheminement dans le Nether, toujours pas parfaite</li>
+<li>Corrigé : Correction de la cartographie désactivée, rupture des waypoints ferme #47</li>
+<li>Corrigé&nbsp;: forcer la purge de toutes les images de la mémoire avant de quitter le jeu</li>
+<li>Corrigé&nbsp;: les icônes Pixelmon forcées ont toujours la même taille, en raison de l'incapacité des développeurs du pack de ressources à avoir une cohérence (1.21.1 uniquement).</li>
+<li>Corrigé&nbsp;: Forge et NeoForge obtenaient des couleurs fluides (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problème Forge et NeoForge avec f3+f4 (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: Forge et NeoForge ne mettent pas à jour correctement les événements de blocage et de rupture.</li>
+<li>Corrigé&nbsp;: spam du journal Forge (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: crash de Forge Optifine (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le suivi en plein écran empêchant la commutation manuelle de la surface vers/depuis le sous-sol sans interrompre manuellement le suivi</li>
+<li>Corrigé&nbsp;: le suivi plein écran se désactive lors de la transition entre la surface et le sous-sol</li>
+<li>Corrigé&nbsp;: les boutons de carte plein écran scintillent sur les GPU Intel (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les barres de texte de la carte en plein écran ne sont pas toujours dans la bonne position</li>
+<li>Corrigé&nbsp;: Option plein écran pour masquer le bouton de thème sur la carte plein écran</li>
+<li>Corrigé&nbsp;: curseur de tranche plein écran lorsque les hauteurs inférieures ne sont pas celles par défaut</li>
+<li>Corrigé&nbsp;: téléportation du point de cheminement en plein écran lorsque le point de cheminement est en dessous des blocs</li>
+<li>Corrigé&nbsp;: les emplacements d'informations sur l'heure de jeu ne suivent pas le temps dans le Nether (26.1, 26.2 uniquement)</li>
+<li>Corrigé&nbsp;: régression de l'affichage GameTime pour l'emplacement d'informations</li>
+<li>Corrigé : GameTime InfoSlot sautant des minutes</li>
+<li>Corrigé&nbsp;: obtenez le tampon des lignes de trait entre différents segments pour empêcher la géométrie de se joindre</li>
+<li>Corrigé&nbsp;: obtenir les couleurs correctes des entités de bloc</li>
+<li>Corrigé&nbsp;: obtenir des aquarelles par défaut pour des mods comme EssentialsClient qui le casse</li>
+<li>Corrigé&nbsp;: Glyphes vers les images</li>
+<li>Corrigé : écran de l'éditeur de grille réécrit sous forme de popup</li>
+<li>Corrigé&nbsp;:&nbsp;un événement de création de groupe se déclenchait deux fois</li>
+<li>Corrigé&nbsp;: événement de transfert de groupe</li>
+<li>Corrigé&nbsp;: gérer le fichier de données de point de cheminement corrompu</li>
+<li>Corrigé&nbsp;: la logique de prise de contact était effacée par erreur, empêchant la mise à jour des points de cheminement lors du changement de luminosité (26.1 uniquement).</li>
+<li>Corrigé&nbsp;: masquer les boutons plein écran et les touches de rendu des points de cheminement non liés</li>
+<li>Corrigé&nbsp;: les animaux de compagnie des chevaux brisant le rendu radar de l'entité (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: rendu des chevaux sur la carte (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: icônes de waypoint ressemblant à une maison</li>
+<li>Corrigé&nbsp;: les icônes de glace et de feu s'affichaient sous forme de texture complète. Des packs de ressources sont nécessaires pour les icônes</li>
+<li>Corrigé&nbsp;: génération d'icônes pour les mobs qui utilisent un TextureAtlas au lieu d'un DynamicTexture et pour les mobs qui étendent EntityModel et ont des champs modelparts où aucun n'est en tête (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;option Ignorer les cartes de hauteur</li>
+<li>Corrigé&nbsp;: problème ImmédiatementFast avec le texte de la mini-carte</li>
+<li>Corrigé&nbsp;: correctif des portails immersifs</li>
+<li>Corrigé&nbsp;: la boîte de dialogue d'importation bloquait le fil de jeu, provoquant des déconnexions sur les serveurs</li>
+<li>Corrigé&nbsp;: Importer Xaeros en important des waypoints sur des serveurs multijoueurs- Corrigé&nbsp;: l'importation d'un fichier zip mondial peut s'arrêter sur une mauvaise lecture de fichier et arrêter l'exportation complète, maintenant elle ignore le mauvais fichier et continue</li>
+<li>Corrigé : Importation et migration d'anciens waypoints (1.7.10/1.12.2)</li>
+<li>Corrigé&nbsp;: problème lors de la désactivation de WorldId</li>
+<li>Corrigé&nbsp;: un problème lorsque les icônes d'entité ne peuvent pas être générées peut provoquer un peu de spam dans les journaux.</li>
+<li>Corrigé&nbsp;: problème de réinitialisation des paramètres de groupe intégrés</li>
+<li>Corrigé&nbsp;: problème avec la carte en plein écran avec les mods "Visual Overhaul" et "Fancy Menu" installés en même temps</li>
+<li>Corrigé&nbsp;: problème avec MacOS et les écrans Retina (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problème avec les données cartographiques qui devenaient géniales lors du changement du pack de ressources (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: problème avec les mipmaps qui n'étaient pas téléchargés sur le GPU pour certains utilisateurs (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes d'obtention du nom du serveur de domaine (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes lors de la migration de milliers de waypoints à partir d'anciennes versions</li>
+<li>Corrigé&nbsp;: problèmes lors de l'utilisation du bouton de la souris pour ouvrir/fermer la carte en plein écran</li>
+<li>Corrigé&nbsp;: problèmes avec les groupes par défaut qui n'étaient pas créés sur les nouveaux mondes</li>
+<li>Corrigé&nbsp;: problèmes avec le mod immédiatement rapide (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes avec l'eau lors du mappage automatique des cartes topographiques (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: la mini-carte JourneyMap n'interfère plus avec le rendu HUD des autres mods (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: crash de la JVM lors de l'écriture d'images de carte de région sur le disque</li>
+<li>Corrigé&nbsp;: raccourci clavier pour suivre le joueur</li>
+<li>Corrigé&nbsp;: performances d'E/S du disque de grande carte</li>
+<li>Corrigé&nbsp;: cache de couleurs paresseux</li>
+<li>Corrigé&nbsp;: couleurs des feuilles</li>
+<li>Corrigé&nbsp;: Lignes en haut et en bas des volets de défilement</li>
+<li>Corrigé&nbsp;: Crash du mixin Locatorbar (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les tuiles LOD (carte zoomée) ne se mettent pas à jour en direct lorsque de nouveaux morceaux sont cartographiés (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: journaliser le spam causé par le mélange des couleurs du biome</li>
+<li>Corrigé&nbsp;: enregistrer le spam si le serveur désactive les points de mort et que l'utilisateur n'a jamais eu de point de mort</li>
+<li>Corrigé&nbsp;: Long blocage lors de la déconnexion d'un monde causé par des sauvegardes de points de cheminement se redéclenchant à plusieurs reprises.</li>
+<li>Corrigé&nbsp;: Lunar Client n'affichant pas les tuiles de la carte (1.21.11 uniquement)</li>
+<li>Corrigé&nbsp;: l'interface Npc.class est gérée un peu différemment de celle de pathfindermob.class.</li>
+<li>Corrigé&nbsp;: sélections défectueuses dans la palette de couleurs</li>
+<li>Corrigé&nbsp;: shaders de filtre de carte (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: la carte n'efface pas les anciennes tuiles de la carte dimensionnelle pour certains serveurs personnalisés qui ne mettent pas à jour la dimension du joueur (1.21.1 uniquement).</li>
+<li>Corrigé&nbsp;: Distance de rendu de la carte</li>
+<li>Corrigé&nbsp;: Map Shaders interrompant le chargement du mod sous Linux</li>
+<li>Corrigé&nbsp;: les tuiles de carte ne sont pas enregistrées lorsque vous quittez le jeu juste après la génération de la tuile.</li>
+<li>Corrigé&nbsp;: le type de carte permute les régions manquantes</li>
+<li>Corrigé&nbsp;: correctifs pour MapImage</li>
+<li>Corrigé&nbsp;: MapImage utilise textureWidth/Height incorrectement échangé avec displayWidth/Height</li>
+<li>Corrigé&nbsp;: les superpositions de marqueurs et d'images utilisent incorrectement le flou MapImage.</li>
+<li>Corrigé&nbsp;: les superpositions de marqueurs n'utilisaient pas les paramètres de texture de leur icône (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;Les options principales ne désactivent pas toutes les autres options de la catégorie (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: port maximum 65535 pour la carte Web- Corrigé&nbsp;: fuite de mémoire</li>
+<li>Corrigé&nbsp;: fuite de mémoire lors de la prévisualisation de la mini-carte</li>
+<li>Corrigé : Minimap derrière les écrans ne respectant pas le bouton de visibilité</li>
+<li>Corrigé&nbsp;: la mini-carte était masquée lorsque le chat est ouvert</li>
+<li>Corrigé&nbsp;: la mini-carte pouvait apparaître à sa taille minimale après la connexion en raison d'un bug MC modifiant la taille du frame buffer +1 sur le y (26.1 uniquement)</li>
+<li>Corrigé : masquage de profondeur de la mini-carte cassé sur certains pilotes Vulkan Intel (26.2 uniquement)</li>
+<li>Corrigé&nbsp;: la mini-carte changeait incorrectement de position lors du déplacement des emplacements d'information.</li>
+<li>Corrigé&nbsp;: la mini-carte était en retard par rapport à la bordure lorsque vous la faisiez glisser dans l'écran de position de la mini-carte (1.21.11, 26.1, 26.2 uniquement).</li>
+<li>Corrigé&nbsp;: la mini-carte ne s'affiche pas parfois avec le client Feather (1.21.11, 26.1, 26.2 uniquement)</li>
+<li>Corrigé&nbsp;: les points de la mini-carte et le bord étaient inversés (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: option de position de la mini-carte, déplacez les emplacements d'information vers le haut ou le bas</li>
+<li>Corrigé&nbsp;: rendu de la mini-carte derrière la superposition de l'écran de débogage</li>
+<li>Corrigé&nbsp;: la flèche automatique de la MiniMap est dessinée sous d'autres icônes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: correction d'un crash de l'icône Mob</li>
+<li>Corrigé&nbsp;: compatibilité des modules avec OkZoomer (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: ModCompat amecs-reborn</li>
+<li>Corrigé&nbsp;: problèmes ModCompat avec ImmédiatementFast pour les waypoints et la mini-carte</li>
+<li>Corrigé&nbsp;: ModCompat avec VulkanMod</li>
+<li>Corrigé&nbsp;: prise en charge du menu Mod</li>
+<li>Corrigé : Plus de correctifs pour les problèmes avec les icônes qui ne génèrent pas</li>
+<li>Corrigé : Plus de correctifs en place pour empêcher les CCM lors du rendu des waypoints et ajout d'une meilleure journalisation</li>
+<li>Corrigé&nbsp;:&nbsp;Plus de problèmes liés aux LOD de zoom qui ne se remplissent pas correctement</li>
+<li>Corrigé : Plus de problèmes de royaumes (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Plus de problèmes de rechargement des shaders</li>
+<li>Corrigé&nbsp;: déplacement du rendu de la décoration des points de cheminement Forge et NeoForge vers les API du chargeur de mod (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: crash de mémoire native insuffisante lors de l'enregistrement de la carte (GitHub #1060) (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le changement radical de NeoForge nécessite la version 21.10.34-beta et supérieure (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes de Neoforge avec les ressources rechargeables (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: rendu de la mini-carte NeoForge sur l'écran f3 (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: couleurs du Nether (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Plus de valeurs de diffusion en continu vers une liste, provoquant un crash</li>
+<li>Corrigé&nbsp;: Optimisation du chargement des tuiles de carte</li>
+<li>Corrigé&nbsp;: option permettant de désactiver le partage du point de cheminement, supprime également la position du chat du menu contextuel de la carte plein écran.</li>
+<li>Corrigé&nbsp;: Option pour désactiver la confirmation de suppression du point de cheminement</li>
+<li>Corrigé&nbsp;: les onglets de l'écran Options ne réinitialisaient pas la position de la souris au centre de l'écran</li>
+<li>Corrigé&nbsp;: les étiquettes superposées vibraient</li>
+<li>Corrigé&nbsp;: les superpositions ne s'affichaient jamais lorsqu'elles étaient ajoutées avec une plage de zoom qui n'inclut pas le zoom actuel</li>
+<li>Corrigé&nbsp;: performances améliorées en mode solo avec événements de blocage</li>
+<li>Corrigé : Problème de performances sur la carte plein écran avec le mod Terrain Diffusion MC</li>
+<li>Corrigé&nbsp;: problème de performances avec le rendu de la carte (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: problèmes de performances avec un zoom élevé</li>
+<li>Corrigé&nbsp;: les icônes Pixelmon sont floues lors du premier rendu sur la carte (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: les têtes des joueurs sont floues</li>
+<li>Corrigé&nbsp;: les têtes des joueurs ne s'affichent pas dans tous les cas (26.1 uniquement)- Corrigé&nbsp;: les icônes des joueurs ne s'affichaient pas pour les noms de joueurs non anglais (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le paquet d'emplacements des joueurs est plus optimisé, utilise moins de paquets et moins de données</li>
+<li>Corrigé : Les joueurs ne respectaient pas la valeur de portée dans les paramètres</li>
+<li>Corrigé&nbsp;:&nbsp;les joueurs restaient sur la carte après une déconnexion sur les serveurs Velocity</li>
+<li>Corrigé&nbsp;: corrections de polygones (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les polygones faisaient des choses amusantes lors d'un zoom arrière important (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;les polygones s'affichent en dehors de la mini-carte</li>
+<li>Corrigé&nbsp;: problème de nom possible lors de la connexion à un serveur de royaumes depuis le lanceur</li>
+<li>Corrigé&nbsp;: blocage de fil possible avec le mouvement de la souris sur la carte plein écran</li>
+<li>Corrigé : Crash potentiel si aucun groupe n'est sélectionné lors de la sauvegarde d'un waypoint</li>
+<li>Corrigé : Crash potentiel avec certaines affectations de boutons PS5 avec Controlify</li>
+<li>Corrigé&nbsp;:&nbsp;Empêcher les waypoints d'occuper les mêmes cordons xz</li>
+<li>Corrigé : Empêcher une fausse icône de remplacer une autre icône dans TextureManager, fermant l'icône précédente</li>
+<li>Corrigé&nbsp;:&nbsp;empêcher les exceptions d'échapper au processus de génération d'icônes (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: les boutons radio n'apparaissaient pas dans l'éditeur de grille ou dans l'éditeur de disposition des coordonnées de point de cheminement (26.1 uniquement)</li>
+<li>Corrigé : Rare blocage du client (bloqué sur "Chargement du terrain") lors du rendu de la mini-carte lors d'un changement de dimension (1.21.1, 1.21.11 uniquement)</li>
+<li>Corrigé&nbsp;: condition de crash rare</li>
+<li>Corrigé&nbsp;: crash rare lors de l'acceptation d'un waypoint en attente</li>
+<li>Corrigé : Crash rare lors de la gestion des waypoints sur un serveur</li>
+<li>Corrigé&nbsp;: problème rare où les balises de waypoint ne s'afficheront pas</li>
+<li>Corrigé&nbsp;: problèmes de changement d'état de royaume lors de la connexion ou de la sortie d'un royaume</li>
+<li>Corrigé&nbsp;: réduction du micro-stutter du fil de rendu lorsque la mini-carte charge les images de région</li>
+<li>Corrigé&nbsp;: les tuiles de région n'étaient pas nettoyées correctement lors du changement de dimension</li>
+<li>Corrigé&nbsp;: les tuiles de région restaient vides</li>
+<li>Corrigé&nbsp;: les régions devenaient vides de manière aléatoire pendant la lecture</li>
+<li>Corrigé&nbsp;: problème de rendu avec le mod TES</li>
+<li>Corrigé&nbsp;: problèmes de rendu avec ImmediatlyFast (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: mappage de rupture de rechargement des ressources (26.1 uniquement)</li>
+<li>Corrigé : Annuler le forçage de la taille du pixelmon (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: rétablir la taille de l'icône Pixelmon (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: compatibilité de mise à l'échelle avec QDAA</li>
+<li>Corrigé&nbsp;: mise à l'échelle sur macOS pour que les choses ne soient pas si petites (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: démarrage de la liste noire de l'écran</li>
+<li>Corrigé : Crash semi-rare lors de la suppression de la carte dans le jeu</li>
+<li>Corrigé&nbsp;: option d'administration du serveur pour désactiver tous les affichages de coordonnées</li>
+<li>Corrigé&nbsp;: les paramètres du radar de l'administrateur du serveur étaient ignorés en mode solo</li>
+<li>Corrigé&nbsp;: le bouton de sauvegarde de l'administrateur du serveur n'apparaissait pas</li>
+<li>Corrigé&nbsp;: le mélange du biome du serveur sur les morceaux nouvellement générés ne se mélange pas sur les bordures des morceaux</li>
+<li>Corrigé&nbsp;: Option du serveur pour ajuster la distance maximale de rendu de la grotte</li>
+<li>Corrigé&nbsp;: option du serveur pour désactiver le cross dim tp</li>
+<li>Corrigé&nbsp;: Option du serveur permettant de désactiver/activer la téléportation par clic droit sur la carte complète lorsque la téléportation par point de cheminement est activée</li>
+<li>Corrigé : Options du serveur pour ajuster les portées radar et le nombre d'entités- Corrigé&nbsp;: les serveurs ne parviennent pas à créer des fichiers de configuration, en raison de la modification par Mojang du fonctionnement de getServerDirectory()</li>
+<li>Corrigé&nbsp;: définir la taille de l'icône du waypoint par défaut sur 16</li>
+<li>Corrigé&nbsp;:&nbsp;Définition de la distance de rendu maximale sur le serveur</li>
+<li>Corrigé : Plusieurs crashs et erreurs liés aux waypoints</li>
+<li>Corrigé&nbsp;: les shaders déplacés vers le dossier assets/journeymap et unifiés en commun</li>
+<li>Corrigé&nbsp;:&nbsp;secouement des icônes et de la grille</li>
+<li>Corrigé : Mouvement tremblant des superpositions de marqueurs sur la mini-carte (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: ignorer les cages décoratives de Bosses'Rise car ce ne sont pas des mobs (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: Quelques problèmes de couleur (26.1 uniquement)</li>
+<li>Corrigé : Quelques problèmes de carte plein écran sur les écrans MACOS Retina (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: quelques problèmes de GC et de mémoire</li>
+<li>Corrigé&nbsp;: transparence de certains blocs de verre</li>
+<li>Corrigé&nbsp;: certaines vignettes d'images étaient corrompues lors des mises à jour lors d'une sortie forcée (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: certaines têtes de joueurs étaient rendues avec une teinte bleue (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Quelques problèmes de pack de ressources pour les icônes de foule</li>
+<li>Corrigé&nbsp;: quelques corrections de points de cheminement</li>
+<li>Corrigé&nbsp;: trier les régions par distance du centre de la carte</li>
+<li>Corrigé&nbsp;: la mini-carte carrée présente des problèmes étranges avec la grille sur certains systèmes (1.21.11, 26.1, 26.2 uniquement).</li>
+<li>Corrigé&nbsp;: boucle de réinitialisation d'état lorsque le mappage est désactivé</li>
+<li>Corrigé&nbsp;:&nbsp;Slicing de surface sautant certains morceaux (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: le changement de type d'icône ne changeait pas réellement</li>
+<li>Corrigé&nbsp;: les noms des équipes ne s'affichent que lorsque l'option est désactivée.. oups</li>
+<li>Corrigé&nbsp;: le préfixe d'équipe affiché deux fois lorsque Afficher les noms d'équipe est activé</li>
+<li>Corrigé&nbsp;: carte automatique de rupture tectonique (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: se téléporter ou se déplacer rapidement dans un monde multijoueur peut ne pas rendre le mélange de biomes en raison de morceaux arrivant au client plus lentement que prévu.</li>
+<li>Corrigé&nbsp;: la téléportation vers le Nether depuis le monde extérieur était désactivée</li>
+<li>Corrigé&nbsp;:&nbsp;Téléportation une fois monté</li>
+<li>Corrigé&nbsp;: analyse de texte pour le partage de waypoints xaeros (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les textures ne s'effacent pas correctement lors de la déconnexion mondiale et du spam du journal (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Threadlock lors du déclenchement d'événements API à partir du thread Netty lors de la déconnexion d'un serveur multijoueur</li>
+<li>Corrigé&nbsp;: erreur de pré-lancement lorsque les utilisateurs de Fabric installent la version Forge ou NeoForge de Journeymap</li>
+<li>Corrigé&nbsp;: info-bulles dans le panneau sombre de l'éditeur de waypoints</li>
+<li>Corrigé : Transfert d'un waypoint dans un groupe verrouillé</li>
+<li>Corrigé&nbsp;: Transparence des icônes de foule se mélangeant avec la couleur des points</li>
+<li>Corrigé&nbsp;:&nbsp;mises à jour des couleurs de l'arbre et de l'eau</li>
+<li>Corrigé&nbsp;: couleurs des arbres lorsque le mélange de feuillage est désactivé</li>
+<li>Corrigé&nbsp;: correctif du niveau souterrain y (1.21.1 uniquement)</li>
+<li>Corrigé&nbsp;: lors de la mise à jour des valeurs x et z d'un waypoint, la valeur top-y sera extraite du cache si elle existe</li>
+<li>Corrigé&nbsp;: utiliser les icônes générées lorsqu'aucune icône héritée n'est trouvée</li>
+<li>Corrigé&nbsp;:&nbsp;les fichiers .dat de points de cheminement valides mal nommés sont migrés vers le serveur</li>
+<li>Corrigé : Divers problèmes visuels sur l'écran de la palette de couleurs</li>
+<li>Corrigé&nbsp;: problème d'analyse de version</li>
+<li>Corrigé&nbsp;: données cartographiques très anciennes</li>
+<li>Corrigé&nbsp;: problème de migration de waypoint très ancien- Corrigé&nbsp;: icône de villageois pour les images à thème plat, ajout d'un peu de flou gaussien</li>
+<li>Corrigé&nbsp;: les icônes des villageois étaient incorrectement remplacées par le code alternatif utilisé lorsque l'icône ne pouvait pas être générée (26.1 uniquement).</li>
+<li>Corrigé&nbsp;: les villageois clignotent parfois en rouge/vert sur la carte</li>
+<li>Corrigé&nbsp;: attendez que le bouton de thème se rouvre pour éviter de faire glisser la carte lors du changement de thème</li>
+<li>Corrigé&nbsp;: corrections de points de cheminement et de chargeur de services</li>
+<li>Corrigé&nbsp;: les codecs Waypoint renvoyant des cartes immuables</li>
+<li>Corrigé&nbsp;: la commande Waypoint plante parfois les serveurs</li>
+<li>Corrigé&nbsp;: affichage des dimensions des points de cheminement et de la liste des points de cheminement importés -&nbsp;C'est un hack tellement stupide, corrigez cette poubelle (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: l'éditeur de waypoint ignore la première pression sur une touche</li>
+<li>Corrigé&nbsp;:&nbsp;améliorations des points de cheminement</li>
+<li>Corrigé&nbsp;: les dossiers Waypoint ne s'actualisent pas après l'importation jusqu'à la reconnexion</li>
+<li>Corrigé&nbsp;: corrections du groupe Waypoint</li>
+<li>Corrigé&nbsp;: balises de groupe de points de cheminement à préfixer sur les noms de points de cheminement pour le groupe</li>
+<li>Corrigé&nbsp;: les groupes de waypoints peuvent utiliser des icônes personnalisées pour tous les waypoints du groupe.</li>
+<li>Corrigé&nbsp;: groupes de waypoints, suppression et masquage</li>
+<li>Corrigé&nbsp;: problèmes d'icône de point de cheminement lors de la suppression d'un pack de ressources d'icônes</li>
+<li>Corrigé&nbsp;: les icônes de waypoint ne s'affichent pas sur la carte Web (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les icônes de waypoint s'affichent au-dessus du réticule</li>
+<li>Corrigé&nbsp;: les icônes de waypoint seront désormais toujours affichées</li>
+<li>Corrigé&nbsp;: correctifs du gestionnaire de points de cheminement</li>
+<li>Corrigé&nbsp;: le nom du waypoint n'est pas mis en surbrillance lors de l'ouverture de l'éditeur</li>
+<li>Corrigé&nbsp;: Option de point de cheminement "Afficher sur la barre de localisation" globale Par défaut&nbsp;: false (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: Option Waypoint pour afficher les têtes des joueurs dans le monde</li>
+<li>Corrigé&nbsp;: Option Waypoint pour supprimer les décimales de la commande /tp</li>
+<li>Corrigé&nbsp;: condition de concurrence critique pour le rendu du point de cheminement provoquant un crash de groupe nul</li>
+<li>Corrigé&nbsp;: la sauvegarde des points de cheminement ne devrait plus corrompre les fichiers de points de cheminement</li>
+<li>Corrigé&nbsp;: recherche de waypoint et autres correctifs</li>
+<li>Corrigé&nbsp;: fenêtre de sélection de waypoint lorsque les icônes sont ajoutées via le pack de ressources (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: la téléportation de waypoint pour les OP ne fonctionne que pour les niveaux de permis 2 et supérieurs.</li>
+<li>Corrigé&nbsp;: téléportation de waypoint</li>
+<li>Corrigé&nbsp;: Waypoint téléportant les calculs du Nether lorsque JM n'est pas sur le serveur</li>
+<li>Corrigé&nbsp;: le texte du waypoint se déplaçait lors de la désactivation du waypoint (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: des waypoints peuvent être ajoutés/supprimés du groupe temporaire</li>
+<li>Corrigé&nbsp;: les waypoints ne sont pas supprimés en mode solo</li>
+<li>Corrigé&nbsp;: problèmes étranges avec les points cardinaux avec un thème puriste</li>
+<li>Corrigé&nbsp;: comportement étrange de la souris lors de l'ouverture initiale de la carte en plein écran et du non-suivi du joueur.</li>
+<li>Corrigé&nbsp;: bizarrerie avec FancyMenu installé</li>
+<li>Corrigé&nbsp;: problèmes de bordure étranges dans les menus déroulants/popups</li>
+<li>Corrigé&nbsp;: spam du journal de fermeture du monde</li>
+<li>Corrigé&nbsp;: le zip World Export n'inclut pas WaypointData.dat sur les serveurs qui gèrent les waypoints et le mode solo</li>
+<li>Corrigé&nbsp;: Wpname pour le nom du point de cheminement dans la commande de point de cheminement personnalisé</li>
+<li>Corrigé&nbsp;: les waypoints Xaero Minimap non détectés lors de la connexion à un serveur Realms (26.1 uniquement)</li>
+<li>Corrigé&nbsp;:&nbsp;améliorations de l'importation des points de cheminement Xaeros</li>
+<li>Corrigé&nbsp;: les villageois zombies étaient masqués lors de la désactivation de l'affichage des villageois- Corrigé&nbsp;: les villageois zombies ignorant les options Afficher les villageois et Afficher les noms des villageois</li>
+<li>Corrigé&nbsp;: les villageois zombies n'apparaissent pas comme hostiles</li>
+<li>Corrigé&nbsp;: les LOD de zoom n'étaient pas générés, provoquant des trous noirs dans la carte</li>
+<li>Corrigé&nbsp;: les tuiles de carte avec zoom arrière (LOD) apparaissaient brouillées ou mélangées après un crash du jeu.</li>
 </ul>
 <h3 id="api">API</h3>
 <ul>
-<li>Added: Addon Option when Pixelmon or Cobblemon are installed to hide or display Pokemon independent of hide animals option</li>
-<li>Added: Addons can now add extra infoslots</li>
-<li>Added: Client teleport event in the API (1.21.1 only)</li>
-<li>Added: Custom data for waypoints and groups, only for data stored for addon devs</li>
-<li>Added: Server API hooks for polygons on the client</li>
-<li>Added: Several new Server API events and updated some events</li>
-<li>Added: Stroke position to ShapeProperties</li>
-<li>Changed: API requestMapTile updated to remove modId checks</li>
-<li>Fixed: &gt;Fixed: Race condition that can cause duplicate addon waypoints</li>
-<li>Fixed: Addons creating Waypoint groups, not getting saved</li>
-<li>Fixed: Addons registering multiple option categories under the same mod id only showing the first category</li>
-<li>Fixed: Addons updating waypoints after creation, updates not persisting</li>
-<li>Fixed: API attempting to get non-existing waypoint throws npe</li>
-<li>Fixed: Api overlay titles at mouse position not rendering and macOS issues</li>
-<li>Fixed: API: keyed customdata</li>
-<li>Fixed: Change iconLocation from String to ResourceLocation in EntityDTO</li>
-<li>Fixed: Crash when saving waypoints with custom icons from addons</li>
-<li>Fixed: Issue with api unable to remove waypoints after game restart</li>
-<li>Fixed: Minimap causing issues when mods using forge's and neoforge's gui layering api</li>
-<li>Fixed: Mob cache not fully clearing on logout and login causing API added icons to not show on relogin</li>
-<li>Fixed: Update for neoforge 21.6.16-beta updated fabric-api version (26.1 only)</li>
-<li>Fixed: Waypoint groups added by addons getting duplicated</li>
-<li>Updated: InfoSlot registration to take components</li>
+<li>Ajouté&nbsp;: Option complémentaire lorsque Pixelmon ou Cobblemon sont installés pour masquer ou afficher Pokémon indépendamment de l'option Masquer les animaux.</li>
+<li>Ajouté&nbsp;: les modules complémentaires peuvent désormais ajouter des emplacements d'informations supplémentaires</li>
+<li>Ajouté&nbsp;: événement de téléportation client dans l'API (1.21.1 uniquement)</li>
+<li>Ajouté&nbsp;: données personnalisées pour les waypoints et les groupes, uniquement pour les données stockées pour les développeurs de modules complémentaires</li>
+<li>Ajouté&nbsp;: hooks d'API serveur pour les polygones sur le client</li>
+<li>Ajouté&nbsp;: Plusieurs nouveaux événements de l'API du serveur et mise à jour de certains événements</li>
+<li>Ajouté&nbsp;: position du trait dans ShapeProperties</li>
+<li>Modifié&nbsp;: API requestMapTile mise à jour pour supprimer les vérifications modId</li>
+<li>Corrigé&nbsp;:&nbsp;&gt; Corrigé&nbsp;: condition de concurrence pouvant provoquer des points de cheminement complémentaires en double</li>
+<li>Corrigé&nbsp;: les modules complémentaires créent des groupes de points de cheminement et ne sont pas enregistrés</li>
+<li>Corrigé&nbsp;: les modules complémentaires enregistrent plusieurs catégories d'options sous le même identifiant de mod et n'affichent que la première catégorie.</li>
+<li>Corrigé&nbsp;: les modules complémentaires mettent à jour les waypoints après la création, les mises à jour ne persistent pas</li>
+<li>Corrigé&nbsp;: l'API tentant d'obtenir un waypoint inexistant lance npe</li>
+<li>Corrigé&nbsp;: les titres de superposition de l'API à la position de la souris ne sont pas rendus et des problèmes macOS</li>
+<li>Corrigé&nbsp;:&nbsp;API&nbsp;: données personnalisées saisies</li>
+<li>Corrigé&nbsp;:&nbsp;changer iconLocation de String à ResourceLocation dans EntityDTO</li>
+<li>Corrigé&nbsp;: Crash lors de l'enregistrement de waypoints avec des icônes personnalisées provenant d'addons</li>
+<li>Corrigé&nbsp;: problème avec l'API incapable de supprimer les waypoints après le redémarrage du jeu</li>
+<li>Corrigé&nbsp;: la mini-carte causait des problèmes lorsque les mods utilisaient l'API de superposition d'interface graphique de Forge et Neoforge.</li>
+<li>Corrigé&nbsp;: le cache Mob ne s'efface pas complètement lors de la déconnexion et de la connexion, ce qui empêche les icônes ajoutées par l'API de s'afficher lors de la reconnexion.</li>
+<li>Corrigé&nbsp;: mise à jour pour la version fabric-api mise à jour de neoforge 21.6.16-beta (26.1 uniquement)</li>
+<li>Corrigé&nbsp;: les groupes de waypoints ajoutés par les modules complémentaires étaient dupliqués</li>
+<li>Mise à jour&nbsp;: enregistrement InfoSlot pour prendre des composants</li>
 </ul>
 
 

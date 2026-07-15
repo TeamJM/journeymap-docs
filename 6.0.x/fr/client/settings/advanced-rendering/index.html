@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#advanced-map-rendering-options" class="md-skip">
+        <a href="#options-avancees-de-rendu-de-carte" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1113,10 +1113,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#light-and-brightness-tweaks" class="md-nav__link">
+  <a href="#ajustements-de-lumiere-et-de-luminosite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Light and brightness tweaks
+        Ajustements de lumière et de luminosité
       
     </span>
   </a>
@@ -2332,10 +2332,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#light-and-brightness-tweaks" class="md-nav__link">
+  <a href="#ajustements-de-lumiere-et-de-luminosite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Light and brightness tweaks
+        Ajustements de lumière et de luminosité
       
     </span>
   </a>
@@ -2373,130 +2373,124 @@
   
 
 
-<h1 id="advanced-map-rendering-options"><strong>Advanced Map Rendering Options</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0. Some sections shown are
-the English source pending translation. See Contributing to help
-translate the docs.</p>
-</div>
+<h1 id="options-avancees-de-rendu-de-carte"><strong>Options avancées de rendu de carte</strong></h1>
 <div class="admonition warning">
 <p class="admonition-title">Caution</p>
-<p>These options significantly change how the map is rendered. After
-changing a value it takes time for the change to appear, because
-every chunk has to be redrawn. Only adjust these if you know what
-you are doing; use the Reset button to return to the defaults.</p>
+<p>Ces options modifient considérablement la façon dont la carte est rendue. Après
+en changeant une valeur, il faut du temps pour que le changement apparaisse, car
+chaque morceau doit être redessiné. Ne les ajustez que si vous savez quoi
+vous faites&nbsp;; utilisez le bouton Réinitialiser pour revenir aux valeurs par défaut.</p>
 </div>
-<p>This category fine-tunes the shading and lighting math the map renderer
-uses. The defaults are tuned to look good in most worlds.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/advanced-rendering.png" data-desc-position="bottom"><img alt="Advanced-Map-Rendering" class="center" src="../../../img/settings/client/advanced-rendering.png"></a></p>
+<p>Cette catégorie affine les calculs d'ombrage et d'éclairage du moteur de rendu de carte.
+utilise. Les valeurs par défaut sont ajustées pour bien paraître dans la plupart des mondes.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/advanced-rendering.png" data-desc-position="bottom"><img alt="Rendu de carte avancé" class="center" src="../../../img/settings/client/advanced-rendering.png"></a></p>
 <h2 id="slope-shading"><strong>Slope shading</strong></h2>
-<p>These control the hillshading effect that gives the map its sense of
-elevation.</p>
+<p>Ceux-ci contrôlent l'effet d'ombrage qui donne à la carte son impression de
+élévation.</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Range (Default)</th>
-<th>Description</th>
+<th>Paramètre</th>
+<th>Plage (par défaut)</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>shadingSlopeMin</td>
-<td>0 - 5 (<strong>0.2</strong>)</td>
-<td>Lower bound for the slope shading range. Slopes below this are flattened.</td>
+<td>ombrageSlopeMin</td>
+<td>0 - 5 (<strong>0,2</strong>)</td>
+<td>Limite inférieure de la plage d'ombrage de la pente. Les pentes en dessous sont aplaties.</td>
 </tr>
 <tr>
-<td>shadingSlopeMax</td>
-<td>0 - 5 (<strong>1.7</strong>)</td>
-<td>Upper bound for the slope shading range. Slopes above this are clamped.</td>
+<td>ombrageSlopeMax</td>
+<td>0 - 5 (<strong>1,7</strong>)</td>
+<td>Limite supérieure de la plage d'ombrage de la pente. Les pentes au-dessus sont bloquées.</td>
 </tr>
 <tr>
 <td>shadingPrimaryDownslopeMultiplier</td>
-<td>0 - 5 (<strong>0.65</strong>)</td>
-<td>How much downward-facing slopes are darkened (primary pass).</td>
+<td>0 - 5 (<strong>0,65</strong>)</td>
+<td>Dans quelle mesure les pentes orientées vers le bas sont obscurcies (passage primaire).</td>
 </tr>
 <tr>
 <td>shadingPrimaryUpslopeMultiplier</td>
-<td>0 - 5 (<strong>1.20</strong>)</td>
-<td>How much upward-facing slopes are brightened (primary pass).</td>
+<td>0 - 5 (<strong>1,20</strong>)</td>
+<td>Dans quelle mesure les pentes orientées vers le haut sont-elles éclaircies (passage primaire).</td>
 </tr>
 <tr>
-<td>shadingSecondaryDownslopeMultiplier</td>
-<td>0 - 5 (<strong>0.95</strong>)</td>
-<td>Downslope darkening for the secondary shading pass.</td>
+<td>ombrageSecondaireDownslopeMultiplier</td>
+<td>0 - 5 (<strong>0,95</strong>)</td>
+<td>Assombrissement de la pente descendante pour la passe d’ombrage secondaire.</td>
 </tr>
 <tr>
 <td>shadingSecondaryUpslopeMultiplier</td>
-<td>0 - 5 (<strong>1.05</strong>)</td>
-<td>Upslope brightening for the secondary shading pass.</td>
+<td>0 - 5 (<strong>1,05</strong>)</td>
+<td>Éclaircissement de la pente ascendante pour la passe d'ombrage secondaire.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="light-and-brightness-tweaks"><strong>Light and brightness tweaks</strong></h2>
+<h2 id="ajustements-de-lumiere-et-de-luminosite"><strong>Ajustements de lumière et de luminosité</strong></h2>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Range (Default)</th>
-<th>Description</th>
+<th>Paramètre</th>
+<th>Plage (par défaut)</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>tweakMoonlightLevel</td>
-<td>0 - 5 (<strong>3.5</strong>)</td>
-<td>The light level used as moonlight when rendering the night map.</td>
+<td>modifierMoonlightLevel</td>
+<td>0 - 5 (<strong>3,5</strong>)</td>
+<td>Le niveau de lumière utilisé comme clair de lune lors du rendu de la carte nocturne.</td>
 </tr>
 <tr>
 <td>tweakBrightenDaylightDiff</td>
-<td>0 - 5 (<strong>0.06</strong>)</td>
-<td>How much the day map is brightened.</td>
+<td>0 - 5 (<strong>0,06</strong>)</td>
+<td>À quel point la carte du jour est éclaircie.</td>
 </tr>
 <tr>
 <td>tweakBrightenLightsourceBlock</td>
-<td>0 - 5 (<strong>1.2</strong>)</td>
-<td>How much light-emitting blocks are brightened on the map.</td>
+<td>0 - 5 (<strong>1,2</strong>)</td>
+<td>Combien de blocs électroluminescents sont éclaircis sur la carte.</td>
 </tr>
 <tr>
 <td>tweakMinimumDarkenNightWater</td>
-<td>0 - 5 (<strong>0.25</strong>)</td>
-<td>The minimum amount water is darkened on the night map.</td>
+<td>0 - 5 (<strong>0,25</strong>)</td>
+<td>La quantité minimale d'eau est obscurcie sur la carte de nuit.</td>
 </tr>
 <tr>
-<td>tweakWaterColorBlend</td>
-<td>0 - 5 (<strong>0.5</strong>)</td>
-<td>How strongly water color is blended with the terrain below it.</td>
+<td>modifierWaterColorBlend</td>
+<td>0 - 5 (<strong>0,5</strong>)</td>
+<td>Dans quelle mesure la couleur de l’eau se mélange-t-elle avec le terrain en dessous.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="ambient-colors"><strong>Ambient colors</strong></h2>
-<p>These set the ambient tint applied to the map in each environment. Each
-value is a hex color (<code>#rrggbb</code>).</p>
+<p>Ceux-ci définissent la teinte ambiante appliquée à la carte dans chaque environnement. Chacun
+la valeur est une couleur hexadécimale (<code>#rrggbb</code>).</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Default</th>
-<th>Description</th>
+<th>Paramètre</th>
+<th>Par défaut</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>tweakSurfaceAmbientColor</td>
 <td><strong>#00001a</strong></td>
-<td>Ambient tint for the Overworld surface map.</td>
+<td>Teinte ambiante pour la carte de surface Overworld.</td>
 </tr>
 <tr>
-<td>tweakNetherAmbientColor</td>
+<td>modifierNetherAmbientColor</td>
 <td><strong>#330808</strong></td>
-<td>Ambient tint for the Nether map.</td>
+<td>Teinte ambiante pour la carte du Nether.</td>
 </tr>
 <tr>
 <td>tweakEndAmbientColor</td>
 <td><strong>#00001a</strong></td>
-<td>Ambient tint for the End map.</td>
+<td>Teinte ambiante pour la carte de fin.</td>
 </tr>
 </tbody>
 </table>

@@ -2390,12 +2390,6 @@
   <h1>Topographique</h1>
 
 <h2 id="terminologie"><strong>Terminologie</strong></h2>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0. Some sections shown are
-the English source pending translation. See Contributing to help
-translate the docs.</p>
-</div>
 <ul>
 <li><strong>Carte topographique</strong> : Une représentation graphique de la position, de l'échelle, de la forme, du relief et de la distribution des caractéristiques naturelles et culturelles sélectionnées d'une zone de la surface de la Terre.</li>
 <li><strong>Ligne de contour</strong> : Une ligne tracée sur une carte topographique reliant deux points d'élévation égale au-dessus du niveau de la mer.</li>
@@ -2403,26 +2397,26 @@ translate the docs.</p>
 </ul>
 <p><a href="https://quizlet.com/16183184/topographic-maps-terms-flash-cards">Source</a></p>
 <h2 id="apercu-des-cartes-topographiques-dans-journeymap"><strong>Aperçu des Cartes Topographiques dans JourneyMap</strong></h2>
-<p>JourneyMap's Topographic Maps let you see the elevation contours of your world.  You can customize the topographic map properties and colors in (<code>.minecraft/journeymap/config/6.0/journeymap.topo.config</code>) according to what looks best to you, or what you want to emphasize.</p>
+<p>Les cartes topographiques de JourneyMap vous permettent de voir les contours d'élévation de votre monde.  Vous pouvez personnaliser les propriétés et les couleurs de la carte topographique dans (<code>.minecraft/journeymap/config/6.0/journeymap.topo.config</code>) en fonction de ce qui vous convient le mieux ou de ce que vous souhaitez mettre en valeur.</p>
 <p>Voici comment cela fonctionne :</p>
-<p><strong>{World height} / {Number of colors} = {Contour interval}</strong></p>
-<p>So, given a <strong>world height of 384</strong> blocks, a palette of <strong>32 colors</strong> will create 32 elevation contours, each with a <strong>contour interval of 12</strong> blocks high.</p>
+<p><strong>{Hauteur du monde} / {Nombre de couleurs} = {Intervalle de contour}</strong></p>
+<p>Ainsi, étant donné une <strong>hauteur mondiale de 384</strong> blocs, une palette de <strong>32 couleurs</strong> créera 32 contours d'élévation, chacun avec un <strong>intervalle de contour de 12</strong> blocs de haut.</p>
 <ul>
-<li>1st color: the lowest 12 blocks</li>
-<li>2nd color: the next 12 blocks</li>
-<li>etc.</li>
+<li>1ère couleur : les 12 blocs les plus bas</li>
+<li>2ème couleur : les 12 blocs suivants</li>
+<li>etc</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Custom Max Topo Height</p>
-<p>By default the topographic map uses the world's full build height
-for the contour math. The <a href="../../client/settings/cartography/">Cartography settings</a>
-have a <strong>Custom Max Topo Height</strong> option that lets you cap the
-height used, which is useful for emphasizing contours in a height
-range you care about. Any blocks above the cap are drawn in the
-top color.</p>
+<p>Par défaut, la carte topographique utilise toute la hauteur de construction du monde
+pour les mathématiques de contour. Les <a href="../../client/settings/cartography/">Paramètres de cartographie</a>
+avoir une option <strong>Hauteur topographique maximale personnalisée</strong> qui vous permet de limiter la
+hauteur utilisée, ce qui est utile pour souligner les contours d'une hauteur
+gamme qui vous tient à cœur. Tous les blocs au-dessus du capuchon sont dessinés dans le
+couleur supérieure.</p>
 </div>
 <h2 id="personnalisation"><strong>Personnalisation</strong></h2>
-<p>The topographic maps config file <code>.minecraft/journeymap/config/6.0/journeymap.topo.config</code> can be edited with a simple text editor.  You can make changes to it, save it, and see the results immediately in JourneyMap without a need to restart.</p>
+<p>Le fichier de configuration des cartes topographiques <code>.minecraft/journeymap/config/6.0/journeymap.topo.config</code> peut être édité avec un simple éditeur de texte.  Vous pouvez y apporter des modifications, l'enregistrer et voir les résultats immédiatement dans JourneyMap sans avoir besoin de redémarrer.</p>
 <p>Le fichier contient les propriétés suivantes :</p>
 <ul>
 <li><strong>showContour</strong> : Indique si une ligne de contour doit être affichée entre les intervalles de contour. Par défaut, c'est vrai.</li>

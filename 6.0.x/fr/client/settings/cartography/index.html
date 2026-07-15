@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cartography-settings" class="md-skip">
+        <a href="#parametres-de-cartographie" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1029,10 +1029,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2321,10 +2321,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2351,160 +2351,150 @@
   
 
 
-<h1 id="cartography-settings"><strong>Cartography Settings</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<p>The cartography settings allow you to customize how the map is rendered, and what is shown on it.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/cartography.png" data-desc-position="bottom"><img alt="Cartography-Settings" class="center" src="../../../img/settings/client/cartography.png"></a></p>
-<p>For map color filters and shader options, see <a href="../filters/">Map Filters</a>.</p>
+<h1 id="parametres-de-cartographie"><strong>Paramètres de cartographie</strong></h1>
+<p>Les paramètres de cartographie vous permettent de personnaliser le rendu de la carte et ce qui y est affiché.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/cartography.png" data-desc-position="bottom"><img alt="Cartographie-Paramètres" class="center" src="../../../img/settings/client/cartography.png"></a></p>
+<p>Pour les filtres de couleur de carte et les options de shader, voir <a href="../filters/">Map Filters</a>.</p>
 <h2 id="toggles"><strong>Toggles</strong></h2>
-<p>The <strong>bold</strong> toggle settings below are enabled by default.</p>
+<p>Les paramètres de bascule <strong>gras</strong> ci-dessous sont activés par défaut.</p>
 <table>
 <thead>
 <tr>
-<th>Toggle</th>
-<th>Description</th>
+<th>Basculer</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Always Map Caves</td>
-<td>Always map every cave layer in your vertical chunk, even when on the Overworld surface. Disabling this will improve performance.</td>
+<td>Toujours cartographier les grottes</td>
+<td>Cartographiez toujours chaque couche de grottes de votre morceau vertical, même lorsque vous êtes sur la surface de l'Overworld. La désactivation de cette option améliorera les performances.</td>
 </tr>
 <tr>
-<td>Always Map Surface</td>
-<td>Always map the Overworld surface, even when underground. Disabling this will improve performance.</td>
+<td>Toujours cartographier la surface</td>
+<td>Cartographiez toujours la surface de l'Overworld, même sous terre. La désactivation de cette option améliorera les performances.</td>
 </tr>
 <tr>
-<td><strong>Blend Foliage</strong></td>
-<td>Blends foliage colors between biomes. Disable to improve performance.</td>
+<td><strong>Mélanger le feuillage</strong></td>
+<td>Mélange les couleurs du feuillage entre les biomes. Désactivez-le pour améliorer les performances.</td>
 </tr>
 <tr>
-<td><strong>Blend Grass</strong></td>
-<td>Blends grass colors between biomes. Disable to improve performance.</td>
+<td><strong>Mélanger l'herbe</strong></td>
+<td>Mélange les couleurs de l'herbe entre les biomes. Désactivez-le pour améliorer les performances.</td>
 </tr>
 <tr>
-<td><strong>Blend Water</strong></td>
-<td>Blends water colors between biomes. Disable to improve performance.</td>
+<td><strong>Mélanger l'eau</strong></td>
+<td>Mélange les aquarelles entre les biomes. Désactivez-le pour améliorer les performances.</td>
 </tr>
 <tr>
-<td>Clear Unlit Caves</td>
-<td>Unlit and inner slice blocks are rendered clear instead of black. This option only affects newly mapped blocks.</td>
+<td>Effacer les grottes non éclairées</td>
+<td>Les blocs de tranches éteints et intérieurs sont rendus clairs au lieu d'être noirs. Cette option n'affecte que les blocs nouvellement mappés.</td>
 </tr>
 <tr>
-<td><strong>Ignore Glass Ceilings</strong></td>
-<td>Being under a glass roof will not switch to cave mapping</td>
+<td><strong>Ignorez les plafonds de verre</strong></td>
+<td>Être sous une verrière ne passera pas à la cartographie des grottes</td>
 </tr>
 <tr>
-<td>Ignore Heightmaps</td>
-<td>Ignores chunk heightmaps if the top layer of the world is not rendering correctly. This may impact performance.</td>
+<td>Ignorer les cartes de hauteur</td>
+<td>Ignore les cartes de hauteur de fragments si la couche supérieure du monde ne s'affiche pas correctement. Cela peut avoir un impact sur les performances.</td>
 </tr>
 <tr>
-<td>Ignore Snow Blocks</td>
-<td>Ignores all snow type blocks from mapping. This is an experimental feature and may have weird side effects and may be removed in the future.</td>
+<td>Ignorer les blocs de neige</td>
+<td>Ignore tous les blocs de type neige de la cartographie. Il s'agit d'une fonctionnalité expérimentale qui peut avoir des effets secondaires étranges et pourrait être supprimée à l'avenir.</td>
 </tr>
 <tr>
-<td>Map only Player Chunk</td>
-<td>Only maps the chunk the player is currently standing in. It ignores any distance setting.</td>
+<td>Carte uniquement Player Chunk</td>
+<td>Cartographie uniquement le morceau dans lequel se trouve actuellement le joueur. Il ignore tout paramètre de distance.</td>
 </tr>
 <tr>
-<td><strong>Map Biomes</strong></td>
-<td>Provides a map of biomes.</td>
+<td><strong>Carte des biomes</strong></td>
+<td>Fournit une carte des biomes.</td>
 </tr>
 <tr>
-<td><strong>Map Topography</strong></td>
-<td>Provides a contour map that shows elevation changes</td>
+<td><strong>Topographie de la carte</strong></td>
+<td>Fournit une carte de contour qui montre les changements d'altitude</td>
 </tr>
 <tr>
-<td><strong>Show Map Shadows</strong></td>
-<td>Blocks will cast shadows on map.</td>
+<td><strong>Afficher les ombres de la carte</strong></td>
+<td>Les blocs projetteront des ombres sur la carte.</td>
 </tr>
 <tr>
-<td>Show Bathymetry</td>
-<td>Shows the terrain of the ocean floor and under water</td>
+<td><strong>Afficher les cultures</strong></td>
+<td>Les cultures sont indiquées sur la carte</td>
 </tr>
 <tr>
-<td><strong>Show Crops</strong></td>
-<td>Crops are shown on the map</td>
+<td>Afficher les ombres des plantes</td>
+<td>Les plantes et les cultures projetteront des ombres sur la carte</td>
 </tr>
 <tr>
-<td>Show Plant Shadows</td>
-<td>Plants and crops will cast shadows on the map</td>
+<td>Afficher les plantes</td>
+<td>Les plantes sont représentées sur la carte</td>
 </tr>
 <tr>
-<td>Show Plants</td>
-<td>Plants are shown on the map</td>
+<td><strong>Afficher la surface au-dessus des grottes</strong></td>
+<td>Une faible vue de la surface voisine est visible sous terre</td>
 </tr>
 <tr>
-<td><strong>Show Surface Above Caves</strong></td>
-<td>A dim view of the nearby surface is visible when underground</td>
+<td><strong>Afficher les couleurs du biome aquatique</strong></td>
+<td>Affiche des aquarelles basées sur le biome.</td>
 </tr>
 <tr>
-<td><strong>Show Water Biome Colors</strong></td>
-<td>Shows water colors based on biome.</td>
+<td><strong>Utiliser l'anticrénelage</strong></td>
+<td>Améliore l’effet d’ombrage utilisé pour afficher les changements d’altitude. La désactivation peut améliorer les performances.</td>
 </tr>
 <tr>
-<td><strong>Use Antialiasing</strong></td>
-<td>Enhances the shading effect used to show elevation changes. Disabling may improve performance.</td>
+<td><strong>Utilisez l'éclairage des grottes</strong></td>
+<td>Utilisez les niveaux de lumière réels sous terre. Désactivez l'utilisation de la pleine lumière.</td>
 </tr>
 <tr>
-<td><strong>Use Cave Lighting</strong></td>
-<td>Use the actual light levels underground. Disable to use full light.</td>
+<td><strong>Utilisez l'éclairage de surface du Nether</strong></td>
+<td>Lorsqu'il est activé, utilise les niveaux de lumière mondiaux réels pour la carte de la surface du Nether. Lorsqu'elle est désactivée, utilise la luminosité maximale pour que la carte soit toujours visible.</td>
 </tr>
 <tr>
-<td><strong>Use Nether Surface Lighting</strong></td>
-<td>When enabled, uses actual world light levels for the Nether surface map. When disabled, uses maximum brightness so the map is always visible.</td>
-</tr>
-<tr>
-<td><strong>Use Transparency</strong></td>
-<td>Transparent blocks will reveal what is below them</td>
+<td><strong>Utilisez la transparence</strong></td>
+<td>Les blocs transparents révéleront ce qui se trouve en dessous</td>
 </tr>
 </tbody>
 </table>
-<h2 id="other-settings"><strong>Other Settings</strong></h2>
-<p>The default option for each setting below is marked with <strong>bold text.</strong></p>
+<h2 id="autres-parametres"><strong>Autres paramètres</strong></h2>
+<p>L'option par défaut pour chaque paramètre ci-dessous est marquée d'un <strong>texte en gras.</strong></p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Paramètre</th>
 <th>Options</th>
-<th>Description</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Reveal Shape</td>
-<td><ul><li>Square</li><li><strong>Circle</strong></li></ul></td>
-<td>Shape of the map area revealed around you. Circle reveals fewer chunks than Square and will improve performance.</td>
+<td>Révéler la forme</td>
+<td><ul><li>Carré</li><li><strong>Cercle</strong></li></ul></td>
+<td>Forme de la zone de carte révélée autour de vous. Circle révèle moins de morceaux que Square et améliorera les performances.</td>
 </tr>
 <tr>
-<td>Render Delay</td>
-<td>Range: 100 - 60000 (in milliseconds, Default: <strong>500</strong>)</td>
-<td>Time (in milliseconds) between render passes. Higher values can improve performance, but may result in missed chunks while travelling.</td>
+<td>Délai de rendu</td>
+<td>Plage : 100 - 60 000 (en millisecondes, par défaut : <strong>500</strong>)</td>
+<td>Temps (en millisecondes) entre les passes de rendu. Des valeurs plus élevées peuvent améliorer les performances, mais peuvent entraîner la perte de morceaux pendant le voyage.</td>
 </tr>
 <tr>
-<td>Cave Distance</td>
-<td>Range: 0 - 32 (in chunks, Default: <strong>0</strong>)</td>
-<td>Radius of chunks around you that are eventually mapped underground or in dimensions with no sky. Lower values can improve performance. Values greater than Minecraft's render distance have no effect. Set to 0 to mirror the video option chunk render range.</td>
+<td>Distance de la grotte</td>
+<td>Plage : 0 - 32 (en morceaux, par défaut : <strong>0</strong>)</td>
+<td>Rayon de morceaux autour de vous qui sont finalement cartographiés sous terre ou dans des dimensions sans ciel. Des valeurs inférieures peuvent améliorer les performances. Les valeurs supérieures à la distance de rendu de Minecraft n'ont aucun effet. Réglez sur 0 pour refléter la plage de rendu du bloc de l'option vidéo.</td>
 </tr>
 <tr>
-<td>Surface Distance</td>
-<td>Range: 0 - 32 (in chunks, Default: <strong>0</strong>)</td>
-<td>Radius of chunks around you that are eventually mapped on the surface in dimensions with a sky. Lower values can improve performance. Values greater than Minecraft's render distance have no effect. Set to 0 to mirror the video option chunk render range.</td>
+<td>Distance superficielle</td>
+<td>Plage : 0 - 32 (en morceaux, par défaut : <strong>0</strong>)</td>
+<td>Rayon de morceaux autour de vous qui sont finalement cartographiés sur la surface en dimensions avec un ciel. Des valeurs inférieures peuvent améliorer les performances. Les valeurs supérieures à la distance de rendu de Minecraft n'ont aucun effet. Réglez sur 0 pour refléter la plage de rendu du bloc de l'option vidéo.</td>
 </tr>
 <tr>
-<td>Custom Max Topo Height</td>
-<td>Range: 0 - 320 (in blocks, Default: <strong>0</strong>)</td>
-<td>The height that topography mapping uses for the max height calculations. Any blocks above this height will be white. Changing this setting may have dramatic effects on the topography map. Set to 0 to use the world default max build height.</td>
+<td>Hauteur Topo maximale personnalisée</td>
+<td>Plage : 0 - 320 (en blocs, par défaut : <strong>0</strong>)</td>
+<td>Hauteur utilisée par la cartographie topographique pour les calculs de hauteur maximale. Tous les blocs au-dessus de cette hauteur seront blancs. La modification de ce paramètre peut avoir des effets considérables sur la carte topographique. Réglez sur 0 pour utiliser la hauteur de construction maximale par défaut mondiale.</td>
 </tr>
 <tr>
-<td>Auto Cave Mode Threshold</td>
-<td>Range: 1 - 100 (in blocks, Default: <strong>2</strong>)</td>
-<td>How many blocks to switch to cave mode. This is useful for preventing cave mode switching when going in a house.</td>
+<td>Seuil du mode Cave automatique</td>
+<td>Plage : 1 - 100 (en blocs, par défaut : <strong>2</strong>)</td>
+<td>Combien de blocs pour passer en mode grotte. Ceci est utile pour empêcher le changement de mode grotte lorsque vous entrez dans une maison.</td>
 </tr>
 </tbody>
 </table>

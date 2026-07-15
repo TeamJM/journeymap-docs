@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#waypoint-icon-resource-packs" class="md-skip">
+        <a href="#packs-de-ressources-dicones-de-point-de-cheminement" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1963,10 +1963,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#waypoint-icon-resource-packs" class="md-nav__link">
+  <a href="#packs-de-ressources-dicones-de-point-de-cheminement" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Waypoint Icon Resource Packs
+        Packs de ressources d'icônes de point de cheminement
       
     </span>
   </a>
@@ -2030,10 +2030,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#naming-the-set" class="md-nav__link">
+  <a href="#nommer-lensemble" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Naming the set
+        Nommer l'ensemble
       
     </span>
   </a>
@@ -2041,10 +2041,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tooltip-for-the-set" class="md-nav__link">
+  <a href="#info-bulle-pour-lensemble" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tooltip for the set
+        Info-bulle pour l'ensemble
       
     </span>
   </a>
@@ -2385,10 +2385,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#waypoint-icon-resource-packs" class="md-nav__link">
+  <a href="#packs-de-ressources-dicones-de-point-de-cheminement" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Waypoint Icon Resource Packs
+        Packs de ressources d'icônes de point de cheminement
       
     </span>
   </a>
@@ -2452,10 +2452,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#naming-the-set" class="md-nav__link">
+  <a href="#nommer-lensemble" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Naming the set
+        Nommer l'ensemble
       
     </span>
   </a>
@@ -2463,10 +2463,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tooltip-for-the-set" class="md-nav__link">
+  <a href="#info-bulle-pour-lensemble" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tooltip for the set
+        Info-bulle pour l'ensemble
       
     </span>
   </a>
@@ -2511,44 +2511,38 @@
 
   <h1>Icônes de Points de Repère</h1>
 
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<h2 id="waypoint-icon-resource-packs"><strong>Waypoint Icon Resource Packs</strong></h2>
-<p>JourneyMap ships with a set of built-in waypoint icons, but you can add
-your own by shipping them in a Minecraft resource pack. JourneyMap picks
-the icons up automatically and they appear in the icon picker in the
-waypoint editor.</p>
-<p>For mob and entity icons (a different system), see
-<a href="../custom-mob-icons/">Custom Mob Icons</a>.</p>
+<h2 id="packs-de-ressources-dicones-de-point-de-cheminement"><strong>Packs de ressources d'icônes de point de cheminement</strong></h2>
+<p>JourneyMap est livré avec un ensemble d'icônes de waypoints intégrées, mais vous pouvez ajouter
+les vôtres en les expédiant dans un pack de ressources Minecraft. Choix de JourneyMap
+les icônes s'affichent automatiquement et elles apparaissent dans le sélecteur d'icônes dans le
+éditeur de waypoints.</p>
+<p>Pour les icônes de foule et d'entité (un système différent), voir
+<a href="../custom-mob-icons/">Icônes de foule personnalisées</a>.</p>
 <h2 id="resource-pack-path"><strong>Resource pack path</strong></h2>
-<p>Place your waypoint icons inside a resource pack at this path:</p>
+<p>Placez vos icônes de waypoint dans un pack de ressources sur ce chemin&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>assets/journeymap/textures/waypoint/icon/&lt;name&gt;.png
 </code></pre></div>
-<p><code>&lt;name&gt;</code> becomes the icon's name in the waypoint editor's icon picker,
-so use something descriptive.</p>
-<p>In code / resource location terms this path is
+<p><code>&lt;name&gt;</code> devient le nom de l'icône dans le sélecteur d'icône de l'éditeur de waypoints,
+alors utilisez quelque chose de descriptif.</p>
+<p>En termes de code/emplacement de ressource, ce chemin est
 <code>journeymap:textures/waypoint/icon/&lt;name&gt;.png</code>.</p>
 <h2 id="image-size"><strong>Image size</strong></h2>
-<p>Waypoint icons must be <strong>16x16</strong> pixels. Images of other sizes will not
-render correctly. Use transparent PNG files so the icon blends with the
-waypoint marker.</p>
+<p>Les icônes de waypoint doivent mesurer <strong>16x16</strong> pixels. Les images d'autres tailles ne le seront pas
+rendre correctement. Utilisez des fichiers PNG transparents pour que l'icône se fonde avec le
+marqueur de point de cheminement.</p>
 <h2 id="example-resource-pack"><strong>Example resource pack</strong></h2>
-<p>A starter resource pack is available to use as a template:</p>
+<p>Un pack de ressources de démarrage est disponible pour être utilisé comme modèle&nbsp;:</p>
 <p><a href="https://github.com/user-attachments/files/26309255/icons_test.zip">icons_test.zip</a></p>
-<p>To use it:</p>
+<p>Pour l'utiliser :</p>
 <ol>
-<li>Open the zip in 7-Zip, WinZip, WinRAR, or any zip tool.</li>
-<li>Edit the <code>description</code> in <code>pack.mcmeta</code>.</li>
-<li>Delete the help files included in the example.</li>
-<li>Put your 16x16 PNG images in
-   <code>assets/journeymap/textures/waypoint/icon</code> inside the zip.</li>
-<li>Rename the zip to whatever you want the pack to be called.</li>
-<li>Drop the zip into your <code>resourcepacks</code> folder and enable it in
-   Minecraft's Resource Packs screen.</li>
+<li>Ouvrez le zip dans 7-Zip, WinZip, WinRAR ou tout autre outil zip.</li>
+<li>Modifiez le <code>description</code> dans <code>pack.mcmeta</code>.</li>
+<li>Supprimez les fichiers d'aide inclus dans l'exemple.</li>
+<li>Mettez vos images PNG 16x16 dans
+   <code>assets/journeymap/textures/waypoint/icon</code> à l'intérieur du zip.</li>
+<li>Renommez le zip comme vous voulez que le pack soit appelé.</li>
+<li>Déposez le zip dans votre dossier <code>resourcepacks</code> et activez-le dans
+   Écran des packs de ressources de Minecraft.</li>
 </ol>
 <h2 id="folder-layout"><strong>Folder layout</strong></h2>
 <div class="highlight"><pre><span></span><code>my-waypoint-icons.zip
@@ -2563,22 +2557,22 @@ waypoint marker.</p>
  └───pack.mcmeta
 </code></pre></div>
 <h2 id="custom-icon-sets"><strong>Custom icon sets</strong></h2>
-<p>Icons placed directly in <code>textures/waypoint/icon/</code> appear in the
-<strong>JourneyMap</strong> set. To ship your icons as their own named set, put them in a
-<strong>subfolder</strong>:</p>
+<p>Les icônes placées directement dans <code>textures/waypoint/icon/</code> apparaissent dans le
+Ensemble <strong>JourneyMap</strong>. Pour expédier vos icônes sous leur propre ensemble nommé, placez-les dans un
+<strong>sous-dossier</strong>&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>assets/journeymap/textures/waypoint/icon/&lt;set&gt;/&lt;name&gt;.png
 </code></pre></div>
-<p>Each subfolder becomes its own tab in the icon picker. The subfolder name
-(<code>&lt;set&gt;</code>) is the set's identifier. Resource-pack sets appear alongside
-JourneyMap's built-in tabs - <strong>All</strong>, <strong>JourneyMap</strong>, <strong>Minecraft</strong>
-(vanilla item textures), and <strong>Map Deco</strong> (map markers).</p>
-<h3 id="naming-the-set">Naming the set</h3>
-<p>By default the tab is labelled with the raw subfolder name. To give it a
-friendly, localizable name, add this translation key to your resource pack's
-language files:</p>
+<p>Chaque sous-dossier devient son propre onglet dans le sélecteur d'icônes. Le nom du sous-dossier
+(<code>&lt;set&gt;</code>) est l'identifiant de l'ensemble. Les ensembles de packs de ressources apparaissent à côté
+Onglets intégrés de JourneyMap - <strong>Tous</strong>, <strong>JourneyMap</strong>, <strong>Minecraft</strong>
+(textures d'objets vanille) et <strong>Map Deco</strong> (marqueurs de carte).</p>
+<h3 id="nommer-lensemble">Nommer l'ensemble</h3>
+<p>Par défaut, l'onglet porte le nom du sous-dossier brut. Pour lui donner un
+nom convivial et localisable, ajoutez cette clé de traduction au fichier de votre pack de ressources
+fichiers de langue&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>waypoint.icon.set.&lt;set&gt;.name
 </code></pre></div>
-<p>For example, a <code>houses</code> subfolder:</p>
+<p>Par exemple, un sous-dossier <code>houses</code>&nbsp;:</p>
 <p><code>assets/journeymap/lang/en_us.json</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cool Houses"</span>
@@ -2589,13 +2583,13 @@ language files:</p>
 <span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casas Geniales"</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>The key is optional. Without it, the tab shows the subfolder name (<code>houses</code>).</p>
-<h3 id="tooltip-for-the-set">Tooltip for the set</h3>
-<p>To show a hover tooltip on the set's tab, add a second translation key
-alongside the name:</p>
+<p>La clé est facultative. Sans cela, l'onglet affiche le nom du sous-dossier (<code>houses</code>).</p>
+<h3 id="info-bulle-pour-lensemble">Info-bulle pour l'ensemble</h3>
+<p>Pour afficher une info-bulle de survol sur l'onglet de l'ensemble, ajoutez une deuxième clé de traduction
+à côté du nom :</p>
 <div class="highlight"><pre><span></span><code>waypoint.icon.set.&lt;set&gt;.name.tooltip
 </code></pre></div>
-<p>For the same <code>houses</code> subfolder:</p>
+<p>Pour le même sous-dossier <code>houses</code>&nbsp;:</p>
 <p><code>assets/journeymap/lang/en_us.json</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cool Houses"</span><span class="p">,</span>
@@ -2608,8 +2602,8 @@ alongside the name:</p>
 <span class="w">  </span><span class="nt">"waypoint.icon.set.houses.name.tooltip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casas y bases construidas por jugadores."</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>The tooltip key is optional. Without it (or with an empty value), the tab
-shows no tooltip on hover.</p>
+<p>La clé d'info-bulle est facultative. Sans cela (ou avec une valeur vide), l'onglet
+n'affiche aucune info-bulle au survol.</p>
 <h3 id="folder-layout_1">Folder layout</h3>
 <div class="highlight"><pre><span></span><code>my-waypoint-icons.zip
  └───assets
@@ -2627,9 +2621,9 @@ shows no tooltip on hover.</p>
  │                       │   manor.png       (Cool Houses set)
  └───pack.mcmeta
 </code></pre></div>
-<p>Icons in a set placed under the <code>journeymap</code> namespace (the path shown above)
-are tinted by the waypoint color, like JourneyMap's built-in icons. Use 16x16
-transparent PNG files, as for the JourneyMap set.</p>
+<p>Icônes dans un ensemble placé sous l'espace de noms <code>journeymap</code> (le chemin indiqué ci-dessus)
+sont teintés par la couleur du waypoint, comme les icônes intégrées de JourneyMap. Utiliser 16x16
+fichiers PNG transparents, comme pour l’ensemble JourneyMap.</p>
 
 
 

@@ -1281,10 +1281,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fabric-neoforge-and-forge-servers" class="md-nav__link">
+  <a href="#serveurs-fabric-neoforge-et-forge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fabric, NeoForge, and Forge servers
+        Serveurs Fabric, NeoForge et Forge
       
     </span>
   </a>
@@ -1303,10 +1303,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#server-commands" class="md-nav__link">
+  <a href="#commandes-du-serveur" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Server commands
+        Commandes du serveur
       
     </span>
   </a>
@@ -2335,10 +2335,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fabric-neoforge-and-forge-servers" class="md-nav__link">
+  <a href="#serveurs-fabric-neoforge-et-forge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fabric, NeoForge, and Forge servers
+        Serveurs Fabric, NeoForge et Forge
       
     </span>
   </a>
@@ -2357,10 +2357,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#server-commands" class="md-nav__link">
+  <a href="#commandes-du-serveur" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Server commands
+        Commandes du serveur
       
     </span>
   </a>
@@ -2389,44 +2389,38 @@
 
   <h1>Installation</h1>
 
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
 <h2 id="installing"><strong>Installing</strong></h2>
-<p>Installing JourneyMap on the server is optional. It adds utility for
-server admins: it lets them restrict some client features per dimension,
-manage waypoints, and support multi-world setups. JourneyMap clients on
-any loader can connect to a server running JourneyMap regardless of
-which loader the server uses.</p>
-<h2 id="fabric-neoforge-and-forge-servers"><strong>Fabric, NeoForge, and Forge servers</strong></h2>
+<p>L'installation de JourneyMap sur le serveur est facultative. Il ajoute une utilité pour
+administrateurs de serveur&nbsp;: cela leur permet de restreindre certaines fonctionnalités client par dimension,
+gérer les waypoints et prendre en charge les configurations multi-mondes. Clients JourneyMap sur
+n'importe quel chargeur peut se connecter à un serveur exécutant JourneyMap, quel que soit le
+quel chargeur le serveur utilise.</p>
+<h2 id="serveurs-fabric-neoforge-et-forge"><strong>Serveurs Fabric, NeoForge et Forge</strong></h2>
 <ol>
-<li>Put the JourneyMap jar in your server's <code>mods</code> folder:
+<li>Placez le pot JourneyMap dans le dossier <code>mods</code> de votre serveur&nbsp;:
    <code>(server folder)/mods</code></li>
-<li>The first time you start the server after installing JourneyMap, a
-   config file is generated under
+<li>La première fois que vous démarrez le serveur après avoir installé JourneyMap, un
+   le fichier de configuration est généré sous
    <code>(server folder)/journeymap/server/&lt;version&gt;/</code>.</li>
-<li>Connected clients are automatically associated with the server's
-   world id. Each client creates a folder to store its waypoints and
-   map images: <code>.minecraft/journeymap/data/mp/(server_worldid)</code></li>
+<li>Les clients connectés sont automatiquement associés au serveur
+   identifiant du monde. Chaque client crée un dossier pour stocker ses waypoints et
+   Images de la carte&nbsp;: <code>.minecraft/journeymap/data/mp/(server_worldid)</code></li>
 </ol>
 <h2 id="paper-servers"><strong>Paper servers</strong></h2>
 <div class="admonition info">
-<p class="admonition-title">Minecraft 26.1 and 26.2 only</p>
-<p>The Paper build of JourneyMap is available for the Minecraft 26.1 and
-26.2 builds of JourneyMap 6.0. It is not available for the 1.21.1 or
-1.21.11 builds.</p>
+<p class="admonition-title">Minecraft 26.1 et 26.2 uniquement</p>
+<p>La version papier de JourneyMap est disponible pour Minecraft 26.1 et
+26.2 versions de JourneyMap 6.0. Il n'est pas disponible pour la version 1.21.1 ou
+Versions 1.21.11.</p>
 </div>
-<p>On Paper servers, JourneyMap ships as a plugin rather than a mod. Place
-the JourneyMap Paper jar in your server's <code>plugins</code> folder instead of
-<code>mods</code>. The config and per-world behavior are otherwise the same as the
-mod-loader builds.</p>
-<h2 id="server-commands"><strong>Server commands</strong></h2>
-<p>JourneyMap's server commands live under the <code>/jm</code> prefix. The main one
-is the waypoint command, <code>/jm waypoint</code> (alias <code>/jm wp</code>), documented on
-the <a href="../commands/waypoint_command/">Waypoint Command</a> page.</p>
+<p>Sur les serveurs Paper, JourneyMap est livré sous forme de plugin plutôt que de mod. Lieu
+le pot JourneyMap Paper dans le dossier <code>plugins</code> de votre serveur au lieu de
+<code>mods</code>. La configuration et le comportement par monde sont par ailleurs les mêmes que ceux de
+versions du chargeur de mod.</p>
+<h2 id="commandes-du-serveur"><strong>Commandes du serveur</strong></h2>
+<p>Les commandes du serveur JourneyMap vivent sous le préfixe <code>/jm</code>. Le principal
+est la commande waypoint, <code>/jm waypoint</code> (alias <code>/jm wp</code>), documentée sur
+la page <a href="../commands/waypoint_command/">Waypoint Command</a>.</p>
 
 
 

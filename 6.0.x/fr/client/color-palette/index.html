@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#color-palette" class="md-skip">
+        <a href="#palette-de-couleurs" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1192,10 +1192,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#opening-the-color-palette" class="md-nav__link">
+  <a href="#ouverture-de-la-palette-de-couleurs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opening the Color Palette
+        Ouverture de la palette de couleurs
       
     </span>
   </a>
@@ -1226,10 +1226,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mobs-and-players" class="md-nav__link">
+  <a href="#mobs-et-joueurs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobs and Players
+        Mobs et joueurs
       
     </span>
   </a>
@@ -1248,10 +1248,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#editing-a-single-entry" class="md-nav__link">
+  <a href="#modification-dune-seule-entree" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Editing a single entry
+        Modification d'une seule entrée
       
     </span>
   </a>
@@ -2419,10 +2419,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#opening-the-color-palette" class="md-nav__link">
+  <a href="#ouverture-de-la-palette-de-couleurs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opening the Color Palette
+        Ouverture de la palette de couleurs
       
     </span>
   </a>
@@ -2453,10 +2453,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mobs-and-players" class="md-nav__link">
+  <a href="#mobs-et-joueurs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobs and Players
+        Mobs et joueurs
       
     </span>
   </a>
@@ -2475,10 +2475,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#editing-a-single-entry" class="md-nav__link">
+  <a href="#modification-dune-seule-entree" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Editing a single entry
+        Modification d'une seule entrée
       
     </span>
   </a>
@@ -2571,139 +2571,133 @@
   
 
 
-<h1 id="color-palette"><strong>Color Palette</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<p>The Color Palette is a client-side editor for the colors JourneyMap uses
-when rendering the map. You can recolor individual blocks, biome tints
-(foliage, grass, water, fog), and the dot and label colors used for mobs
-and players on the map.</p>
+<h1 id="palette-de-couleurs"><strong>Palette de couleurs</strong></h1>
+<p>La palette de couleurs est un éditeur côté client pour les couleurs utilisées par JourneyMap.
+lors du rendu de la carte. Vous pouvez recolorer des blocs individuels, des teintes de biome
+(feuillage, herbe, eau, brouillard) et les couleurs des points et des étiquettes utilisées pour les foules
+et les joueurs sur la carte.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/color-palette.png" data-desc-position="bottom"><img alt="Color-Palette" class="center" src="../../img/client/color-palette.png"></a></p>
-<h2 id="opening-the-color-palette"><strong>Opening the Color Palette</strong></h2>
-<p>Open the fullscreen map (default key <code>J</code>) and click the <strong>Color Palette</strong>
-button in the action bar.</p>
-<p>This opens the <strong>Manage Colors</strong> screen. From there, the <strong>Manage
-Palettes</strong> button (bottom of the screen) opens the higher-level palette
-management screen described in the <a href="#managing-palettes">Managing Palettes</a>
-section below.</p>
+<h2 id="ouverture-de-la-palette-de-couleurs"><strong>Ouverture de la palette de couleurs</strong></h2>
+<p>Ouvrez la carte en plein écran (touche par défaut <code>J</code>) et cliquez sur la <strong>Palette de couleurs</strong>
+dans la barre d'action.</p>
+<p>Cela ouvre l'écran <strong>Gérer les couleurs</strong>. À partir de là, le <strong>Gérer
+Le bouton Palettes</strong> (en bas de l'écran) ouvre la palette de niveau supérieur
+écran de gestion décrit dans la section <a href="#managing-palettes">Gestion des palettes</a>
+section ci-dessous.</p>
 <h2 id="manage-colors"><strong>Manage Colors</strong></h2>
-<p>The Manage Colors screen lists every block, biome, or entity color the
-map renderer can use. You can filter the list, edit individual colors,
-and bulk-edit the entries shown.</p>
+<p>L'écran Gérer les couleurs répertorie chaque couleur de bloc, de biome ou d'entité
+le moteur de rendu de carte peut utiliser. Vous pouvez filtrer la liste, modifier des couleurs individuelles,
+et modifiez en masse les entrées affichées.</p>
 <h3 id="modes">Modes</h3>
 <table>
 <thead>
 <tr>
 <th>Mode</th>
-<th>Shows</th>
+<th>Spectacles</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Blocks</td>
-<td>Every block (and block state) JourneyMap has a color for. Block colors drive the base map render.</td>
+<td>Blocs</td>
+<td>Chaque bloc (et état de bloc) JourneyMap a une couleur pour laquelle. Les couleurs des blocs déterminent le rendu de la carte de base.</td>
 </tr>
 <tr>
 <td>Biomes</td>
-<td>Per-biome tints used by foliage, grass, water, and fog overlays.</td>
+<td>Teintes par biome utilisées par les superpositions de feuillage, d'herbe, d'eau et de brouillard.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="mobs-and-players">Mobs and Players</h3>
-<p>The <strong>Mobs and Players...</strong> button opens a focused editor for the
-non-block entries: Hostile Dot/Label, Passive Dot/Label, Pet Dot/Label,
-Player Dot/Label, Villager Dot/Label, and the Self Arrow. Use this to
-change the colors used for entity dots and name labels on the map.</p>
+<h3 id="mobs-et-joueurs">Mobs et joueurs</h3>
+<p>Le bouton <strong>Mobs and Players...</strong> ouvre un éditeur ciblé pour le
+entrées non bloquantes&nbsp;: Hostile Dot/Label, Passive Dot/Label, Pet Dot/Label,
+Player Dot/Label, Villager Dot/Label et l’auto-flèche. Utilisez ceci pour
+modifiez les couleurs utilisées pour les points d'entité et les étiquettes de nom sur la carte.</p>
 <h3 id="filters">Filters</h3>
 <ul>
-<li><strong>Search</strong> - free-text filter against the visible list.</li>
-<li><strong>Domain</strong> - filter by mod ID, or pick <code>All</code>, <code>Resource Packs</code>, or
-  <code>Mods</code> to widen or narrow the scope.</li>
-<li><strong>Palette</strong> - choose the palette to edit (see Domain Scopes below).</li>
-<li><strong>Sort</strong> - sort by Name or ID, ascending or descending.</li>
+<li><strong>Recherche</strong> - filtre de texte libre sur la liste visible.</li>
+<li><strong>Domaine</strong> - filtrez par ID de mod ou choisissez <code>All</code>, <code>Resource Packs</code> ou
+  <code>Mods</code> pour élargir ou réduire la portée.</li>
+<li><strong>Palette</strong> - choisissez la palette à modifier (voir Étendues de domaine ci-dessous).</li>
+<li><strong>Trier</strong> - trier par nom ou ID, croissant ou décroissant.</li>
 </ul>
-<h3 id="editing-a-single-entry">Editing a single entry</h3>
-<p>Click <strong>Edit</strong> next to any entry to open the color picker for that
-entry. For blocks, the picker lets you set the color for each block
-state. For biomes, you set the foliage, grass, water, and fog tints
-independently. Save back to either the Global or the World palette.</p>
+<h3 id="modification-dune-seule-entree">Modification d'une seule entrée</h3>
+<p>Cliquez sur <strong>Modifier</strong> à côté de n'importe quelle entrée pour ouvrir le sélecteur de couleurs correspondant.
+entrée. Pour les blocs, le sélecteur vous permet de définir la couleur de chaque bloc
+état. Pour les biomes, vous définissez les teintes du feuillage, de l'herbe, de l'eau et du brouillard.
+indépendamment. Enregistrez à nouveau dans la palette Global ou Monde.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/color-picker.png" data-desc-position="bottom"><img alt="Color-Picker" class="center" src="../../img/client/color-picker.png"></a></p>
 <h2 id="domain-scopes"><strong>Domain Scopes</strong></h2>
-<p>JourneyMap stores up to two palettes:</p>
+<p>JourneyMap stocke jusqu'à deux palettes&nbsp;:</p>
 <table>
 <thead>
 <tr>
-<th>Palette</th>
-<th>Scope</th>
+<th>Palettes</th>
+<th>Portée</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Global</td>
-<td>Applied across every world you open with JourneyMap.</td>
+<td>Mondial</td>
+<td>Appliqué dans tous les mondes que vous ouvrez avec JourneyMap.</td>
 </tr>
 <tr>
-<td>World</td>
-<td>Applied only to the currently loaded singleplayer world or server save. World palette overrides Global where both define a color.</td>
+<td>Monde</td>
+<td>Appliqué uniquement au monde solo ou à la sauvegarde du serveur actuellement chargé. La palette Monde remplace Global où les deux définissent une couleur.</td>
 </tr>
 </tbody>
 </table>
-<p>The active scope is shown in the palette dropdown. Saving an edit to
-the World palette only affects the current world; saving to Global
-applies it everywhere.</p>
+<p>La portée active est affichée dans la liste déroulante de la palette. Enregistrer une modification dans
+la palette Monde n'affecte que le monde actuel ; enregistrer dans Global
+l'applique partout.</p>
 <h2 id="managing-palettes"><strong>Managing Palettes</strong></h2>
-<p>The <strong>Manage Palettes</strong> screen (reached via the button on Manage
-Colors) shows the Global and World palettes side by side, with the
-total block / state / biome counts each one defines.</p>
+<p>L'écran <strong>Gérer les palettes</strong> (accessible via le bouton sur Gérer
+Couleurs) affiche les palettes Global et Monde côte à côte, avec le
+le nombre total de blocs/états/biomes est défini par chacun.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/client/manage-palettes.png" data-desc-position="bottom"><img alt="Manage-Palettes" class="center" src="../../img/client/manage-palettes.png"></a></p>
 <h3 id="actions-per-palette">Actions per palette</h3>
 <table>
 <thead>
 <tr>
-<th>Action</th>
-<th>Effect</th>
+<th>Actions</th>
+<th>Effet</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Delete all</td>
-<td>Removes every color from that palette (asks for confirmation).</td>
+<td>Supprimer tout</td>
+<td>Supprime toutes les couleurs de cette palette (demande une confirmation).</td>
 </tr>
 <tr>
-<td>Fill with default</td>
-<td>Copies any missing colors from the JourneyMap default palette into this palette.</td>
+<td>Remplir avec la valeur par défaut</td>
+<td>Copie toutes les couleurs manquantes de la palette par défaut JourneyMap dans cette palette.</td>
 </tr>
 <tr>
-<td>Copy &gt;</td>
-<td>Copy from Global to World, with a sub-mode choice (all and replace, existing only, non-existing only).</td>
+<td>Copier &gt;</td>
+<td>Copiez de Global vers World, avec un choix de sous-mode (tout et remplacer, existant uniquement, non existant uniquement).</td>
 </tr>
 <tr>
-<td>&lt; Copy</td>
-<td>Copy from World to Global, same sub-mode choices.</td>
+<td>&lt; Copier</td>
+<td>Copiez du monde vers le global, mêmes choix de sous-mode.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="copy-modes">Copy modes</h3>
-<p>When copying between palettes, you choose how existing entries are
-treated:</p>
+<p>Lors de la copie entre palettes, vous choisissez la façon dont les entrées existantes sont
+traité :</p>
 <ul>
-<li><strong>Copy all and replace existing</strong> - overwrite every entry in the
-  destination with the source's value.</li>
-<li><strong>Copy and replace only existing ones</strong> - update destination entries
-  whose key already exists; do not add new keys.</li>
-<li><strong>Copy only non-existing ones</strong> - fill in missing keys only; never
-  change a destination entry that already has a value.</li>
+<li><strong>Copier tout et remplacer les existants</strong> - écraser chaque entrée du
+  destination avec la valeur de la source.</li>
+<li><strong>Copier et remplacer uniquement ceux existants</strong> - mettre à jour les entrées de destination
+  dont la clé existe déjà&nbsp;; n'ajoutez pas de nouvelles clés.</li>
+<li><strong>Copier uniquement celles qui n'existent pas</strong> - remplissez uniquement les clés manquantes&nbsp;; jamais
+  modifier une entrée de destination qui a déjà une valeur.</li>
 </ul>
 <h2 id="storage"><strong>Storage</strong></h2>
-<p>Palettes are saved on disk as JourneyMap color palette files. The
-World palette lives alongside the world's JourneyMap data; the Global
-palette lives in the top-level JourneyMap config folder. If a palette
-file is corrupted, JourneyMap surfaces an error rather than silently
-discarding your colors.</p>
+<p>Les palettes sont enregistrées sur le disque sous forme de fichiers de palette de couleurs JourneyMap. Le
+La palette mondiale cohabite avec les données JourneyMap du monde&nbsp;; le Mondial
+La palette se trouve dans le dossier de configuration JourneyMap de niveau supérieur. Si une palette
+le fichier est corrompu, JourneyMap fait apparaître une erreur plutôt que silencieusement
+jeter vos couleurs.</p>
 
 
 

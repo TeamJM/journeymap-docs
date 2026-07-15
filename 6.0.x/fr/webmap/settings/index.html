@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#webmap-settings" class="md-skip">
+        <a href="#parametres-de-la-carte-web" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1868,10 +1868,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2330,10 +2330,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2371,62 +2371,56 @@
   
 
 
-<h1 id="webmap-settings"><strong>Webmap Settings</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<p>The Webmap is configured from JourneyMap's options, under the <strong>Webmap</strong>
-category. Open JourneyMap's options (press <code>O</code>, or use the Options
-button on the fullscreen map) and select <strong>Webmap</strong>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/settings/client/webmap.png" data-desc-position="bottom"><img alt="Webmap-Settings" class="center" src="../../img/settings/client/webmap.png"></a></p>
+<h1 id="parametres-de-la-carte-web"><strong>Paramètres de la carte Web</strong></h1>
+<p>La carte Web est configurée à partir des options de JourneyMap, sous la <strong>Webmap</strong>
+catégorie. Ouvrez les options de JourneyMap (appuyez sur <code>O</code> ou utilisez les options
+sur la carte en plein écran) et sélectionnez <strong>Carte Web</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/settings/client/webmap.png" data-desc-position="bottom"><img alt="Webmap-Paramètres" class="center" src="../../img/settings/client/webmap.png"></a></p>
 <h2 id="toggles"><strong>Toggles</strong></h2>
-<p>This toggle is <strong>off</strong> by default.</p>
+<p>Cette bascule est <strong>désactivée</strong> par défaut.</p>
 <table>
 <thead>
 <tr>
-<th>Toggle</th>
-<th>Description</th>
+<th>Basculer</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Enable Web Map</td>
-<td>Whether the Webmap server is enabled and accessible.</td>
+<td>Activer la carte Web</td>
+<td>Si le serveur Webmap est activé et accessible.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="other-settings"><strong>Other Settings</strong></h2>
+<h2 id="autres-parametres"><strong>Autres paramètres</strong></h2>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Paramètre</th>
 <th>Options</th>
-<th>Description</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Port</td>
-<td>Range: 80 - 65535 (Default: <strong>8080</strong>)</td>
-<td>The port the Webmap server tries to bind to.</td>
+<td>Plage&nbsp;: 80 - 65&nbsp;535 (par défaut&nbsp;: <strong>8080</strong>)</td>
+<td>Le port auquel le serveur Webmap tente de se lier.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="how-port-selection-works"><strong>How port selection works</strong></h2>
-<p>When the Webmap starts, it tries to bind the port you configured
-(8080 by default).</p>
-<p>If that port is already in use, the Webmap falls back to a free port
-chosen by the operating system instead of failing to start. This means
-the port the Webmap ends up on can differ from the one you set.</p>
-<p>To find the port actually in use:</p>
+<p>Lorsque la carte Web démarre, elle essaie de lier le port que vous avez configuré
+(8080 par défaut).</p>
+<p>Si ce port est déjà utilisé, la carte Web revient à un port libre
+choisi par le système d'exploitation au lieu de ne pas démarrer. Cela signifie
+le port sur lequel la carte Web aboutit peut différer de celui que vous avez défini.</p>
+<p>Pour trouver le port réellement utilisé :</p>
 <ul>
-<li>If the <strong>Announce Mod</strong> advanced option is enabled (it is by
-  default), JourneyMap posts the Webmap address in chat once when you
-  join a world.</li>
-<li>The resolved port is also written to the game log
+<li>Si l'option avancée <strong>Annonce Mod</strong> est activée (c'est par
+  par défaut), JourneyMap publie l'adresse de la carte Web dans le chat une fois lorsque vous
+  rejoindre un monde.</li>
+<li>Le port résolu est également écrit dans le journal de jeu
   (<code>WebMap is now listening on port ...</code>).</li>
 </ul>
 

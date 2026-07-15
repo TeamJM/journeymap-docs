@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#waypoint-command" class="md-skip">
+        <a href="#commande-de-point-de-cheminement" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1390,15 +1390,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-waypoint" class="md-nav__link">
+  <a href="#creer-un-waypoint" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create a waypoint
+        Créer un waypoint
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Create a waypoint">
+    <nav class="md-nav" aria-label="Créer un waypoint">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1418,10 +1418,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-temporary-waypoint" class="md-nav__link">
+  <a href="#creer-un-waypoint-temporaire" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create a temporary waypoint
+        Créer un waypoint temporaire
       
     </span>
   </a>
@@ -1429,15 +1429,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#delete-a-waypoint" class="md-nav__link">
+  <a href="#supprimer-un-waypoint" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delete a waypoint
+        Supprimer un waypoint
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Delete a waypoint">
+    <nav class="md-nav" aria-label="Supprimer un waypoint">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2377,15 +2377,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-waypoint" class="md-nav__link">
+  <a href="#creer-un-waypoint" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create a waypoint
+        Créer un waypoint
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Create a waypoint">
+    <nav class="md-nav" aria-label="Créer un waypoint">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2405,10 +2405,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-temporary-waypoint" class="md-nav__link">
+  <a href="#creer-un-waypoint-temporaire" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create a temporary waypoint
+        Créer un waypoint temporaire
       
     </span>
   </a>
@@ -2416,15 +2416,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#delete-a-waypoint" class="md-nav__link">
+  <a href="#supprimer-un-waypoint" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delete a waypoint
+        Supprimer un waypoint
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Delete a waypoint">
+    <nav class="md-nav" aria-label="Supprimer un waypoint">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2463,57 +2463,51 @@
   
 
 
-<h1 id="waypoint-command"><strong>Waypoint Command</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<p>When JourneyMap is installed on the server, server admins can create and
-delete waypoints on players' clients from the chat.</p>
-<p>All JourneyMap server commands live under the <code>/jm</code> prefix. The waypoint
-command is <code>/jm waypoint</code>, with <code>/jm wp</code> as a shorter alias.</p>
+<h1 id="commande-de-point-de-cheminement"><strong>Commande de point de cheminement</strong></h1>
+<p>Lorsque JourneyMap est installé sur le serveur, les administrateurs du serveur peuvent créer et
+supprimez les waypoints sur les clients des joueurs du chat.</p>
+<p>Toutes les commandes du serveur JourneyMap vivent sous le préfixe <code>/jm</code>. Le point de cheminement
+La commande est <code>/jm waypoint</code>, avec <code>/jm wp</code> comme alias plus court.</p>
 <h2 id="permissions"><strong>Permissions</strong></h2>
-<p>The command can be used by:</p>
+<p>La commande peut être utilisée par&nbsp;:</p>
 <ul>
-<li>Players at permission level 2 (GAMEMASTERS) or higher.</li>
-<li>Players in the JourneyMap server admin list.</li>
-<li>Anyone in single-player.</li>
+<li>Joueurs au niveau d'autorisation 2 (GAMEMASTERS) ou supérieur.</li>
+<li>Joueurs dans la liste des administrateurs du serveur JourneyMap.</li>
+<li>N'importe qui en mode solo.</li>
 </ul>
-<h2 id="create-a-waypoint"><strong>Create a waypoint</strong></h2>
+<h2 id="creer-un-waypoint"><strong>Créer un waypoint</strong></h2>
 <div class="highlight"><pre><span></span><code>/jm waypoint create "name" &lt;dimension&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;color&gt; &lt;players&gt; [announce]
 </code></pre></div>
 <ul>
-<li><code>"name"</code> - the waypoint name, in quotes.</li>
-<li><code>&lt;dimension&gt;</code> - the dimension id, for example <code>minecraft:overworld</code>.</li>
-<li><code>&lt;x&gt; &lt;y&gt; &lt;z&gt;</code> - the waypoint coordinates.</li>
-<li><code>&lt;color&gt;</code> - a Minecraft color name, for example <code>aqua</code>.</li>
-<li><code>&lt;players&gt;</code> - the target player or players. Accepts a player name, a
-  list of players, or <code>@a</code> for everyone. This argument is required.</li>
-<li><code>[announce]</code> - optional. <code>true</code> notifies the player that a waypoint
-  was created; defaults to <code>false</code> (created silently).</li>
+<li><code>"name"</code> - le nom du waypoint, entre guillemets.</li>
+<li><code>&lt;dimension&gt;</code> - l'identifiant de dimension, par exemple <code>minecraft:overworld</code>.</li>
+<li><code>&lt;x&gt; &lt;y&gt; &lt;z&gt;</code> - les coordonnées du waypoint.</li>
+<li><code>&lt;color&gt;</code> - un nom de couleur Minecraft, par exemple <code>aqua</code>.</li>
+<li><code>&lt;players&gt;</code> - le ou les joueurs cibles. Accepte un nom de joueur, un
+  liste des joueurs, ou <code>@a</code> pour tout le monde. Cet argument est nécessaire.</li>
+<li><code>[announce]</code> - en option. <code>true</code> informe le joueur qu'un waypoint
+  a été créé; la valeur par défaut est <code>false</code> (créé silencieusement).</li>
 </ul>
 <h3 id="examples">Examples</h3>
 <div class="highlight"><pre><span></span><code>/jm waypoint create "Spawn" minecraft:overworld 1 50 12 aqua @a
 /jm waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew
 /jm waypoint create "Home" minecraft:overworld 1 50 12 aqua mysticdrew true
 </code></pre></div>
-<h2 id="create-a-temporary-waypoint"><strong>Create a temporary waypoint</strong></h2>
-<p>Add <code>temp</code> before <code>create</code> to create a temporary waypoint, which is not
-saved to disk:</p>
+<h2 id="creer-un-waypoint-temporaire"><strong>Créer un waypoint temporaire</strong></h2>
+<p>Ajoutez <code>temp</code> avant <code>create</code> pour créer un waypoint temporaire, qui n'est pas
+enregistré sur le disque&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>/jm waypoint temp create "name" &lt;dimension&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;color&gt; &lt;players&gt; [announce]
 </code></pre></div>
-<h2 id="delete-a-waypoint"><strong>Delete a waypoint</strong></h2>
+<h2 id="supprimer-un-waypoint"><strong>Supprimer un waypoint</strong></h2>
 <div class="highlight"><pre><span></span><code>/jm waypoint delete "name" &lt;players&gt; [announce]
 </code></pre></div>
 <ul>
-<li><code>"name"</code> - the name of the waypoint to delete.</li>
-<li><code>&lt;players&gt;</code> - the target player or players. Required.</li>
-<li><code>[announce]</code> - optional. <code>true</code> notifies the player; defaults to
+<li><code>"name"</code> - le nom du waypoint à supprimer.</li>
+<li><code>&lt;players&gt;</code> - le ou les joueurs cibles. Requis.</li>
+<li><code>[announce]</code> - en option. <code>true</code> informe le joueur&nbsp;; par défaut
   <code>false</code>.</li>
 </ul>
-<p>Only waypoints created by the command can be deleted by the command.</p>
+<p>Seuls les waypoints créés par la commande peuvent être supprimés par la commande.</p>
 <h3 id="examples_1">Examples</h3>
 <div class="highlight"><pre><span></span><code>/jm waypoint delete "Home" @a
 /jm waypoint delete "Home" mysticdrew

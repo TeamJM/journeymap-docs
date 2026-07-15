@@ -2412,34 +2412,28 @@
   <h1>Utilisation de Base</h1>
 
 <h2 id="apercu"><strong>Aperçu</strong></h2>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0. Some sections shown are
-the English source pending translation. See Contributing to help
-translate the docs.</p>
-</div>
-<p>You don't have to have JourneyMap installed on the server to use the JourneyMap client. Installing it on the server gives admins a way to restrict some client features, manage waypoints, and support multi-world and proxy (BungeeCord / Velocity) setups. JourneyMap server runs on Fabric, NeoForge, and Forge servers, and on Paper servers (Minecraft 26.1 line). See <a href="../installing/">Installing</a> for details.</p>
+<p>Il n'est pas nécessaire que JourneyMap soit installé sur le serveur pour utiliser le client JourneyMap. L'installer sur le serveur donne aux administrateurs un moyen de restreindre certaines fonctionnalités du client, de gérer les points de cheminement et de prendre en charge les configurations multi-mondes et proxy (BungeeCord / Velocity). Le serveur JourneyMap fonctionne sur les serveurs Fabric, NeoForge et Forge, ainsi que sur les serveurs Paper (gamme Minecraft 26.1). Voir <a href="../installing/">Installation de </a> pour plus de détails.</p>
 <h2 id="configuration-de-ladministrateur-de-serveur"><strong>Configuration de l'Administrateur de Serveur</strong></h2>
 <p>Pour accéder à l'écran d'administration du serveur, ouvrez l'écran des options de JourneyMap. En tant qu'utilisateur Opped, un bouton <code>Server Admin</code> apparaîtra en bas de l'écran.</p>
 <p>Toutes les options de l'écran d'administration du serveur ont des info-bulles qui les expliquent en détail.</p>
 <p>Si le bouton n'apparaît pas, vous devrez peut-être vous déconnecter et vous reconnecter à votre serveur si vous avez récemment été Opped, ou l'administrateur l'a désactivé dans le fichier de configuration.</p>
 <p>Par défaut, tous les utilisateurs Opped ont accès à l'écran d'administration du serveur. Cela peut être modifié via un fichier de configuration sur le serveur.</p>
 <p>Emplacement du fichier de configuration pour les serveurs Fabric : <code>(server_folder)/configs/journeymap_server.cfg</code>.</p>
-<p>The config file location for NeoForge and Forge servers: <code>(server_folder)/world/serverconfig/journeymap_server.cfg</code>.</p>
-<div class="highlight"><pre><span></span><code>    server {
-    # Les joueurs dans cette liste ont accès au panneau d'administration du serveur de JourneyMap
-    # Ajoutez des utilisateurs par nom ou UUID, privilégiez l'UUID car c'est plus sécurisé !
-    # Chaque valeur sur une nouvelle ligne avec le format d'exemple fourni. (veuillez supprimer les valeurs par défaut)
-    S:"Administrateurs du Serveur Journeymap" &lt;
-    mysticdrew
-    12341234132
-    &gt;
+<p>L'emplacement du fichier de configuration pour les serveurs NeoForge et Forge&nbsp;: <code>(server_folder)/world/serverconfig/journeymap_server.cfg</code>.</p>
+<div class="highlight"><pre><span></span><code>server {
+# Les joueurs dans cette liste ont accès au panneau d'administration du serveur de JourneyMap
+# Ajoutez des utilisateurs par nom ou UUID, privilégiez l'UUID car c'est plus sécurisé !
+# Chaque valeur sur une nouvelle ligne avec le format d'exemple fourni. (veuillez supprimer les valeurs par défaut)
+S:"Administrateurs du Serveur Journeymap" &lt;
+mysticdrew
+12341234132
+&gt;
 
         # Par défaut, tous les Ops ont accès à l'interface d'administration du serveur dans l'écran des Options.
         # Si défini sur false, seuls les utilisateurs de la liste des administrateurs auront accès.
         # Si défini sur true, tous les ops et les utilisateurs de la liste des administrateurs auront accès.
         B:"Accès Admin Ops"=true
-    }
+}
 </code></pre></div>
 <h2 id="ce-que-ce-nest-pas"><strong>Ce que ce n'est pas</strong></h2>
 <ul>

@@ -1979,10 +1979,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-icons-without-a-resource-pack" class="md-nav__link">
+  <a href="#ajout-dicones-sans-pack-de-ressources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding icons without a resource pack
+        Ajout d'icônes sans pack de ressources
       
     </span>
   </a>
@@ -2379,10 +2379,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-icons-without-a-resource-pack" class="md-nav__link">
+  <a href="#ajout-dicones-sans-pack-de-ressources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding icons without a resource pack
+        Ajout d'icônes sans pack de ressources
       
     </span>
   </a>
@@ -2411,60 +2411,54 @@
 
   <h1>Icônes de Mobs Personnalisées</h1>
 
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
 <h2 id="custom-mob-icons"><strong>Custom Mob Icons</strong></h2>
-<p>JourneyMap shows an icon for each mob on the map and the entity radar.</p>
-<p>As of JourneyMap 6.0, JourneyMap <strong>automatically generates an icon</strong> for
-every mob, including modded mobs, from the mob's model. You no longer
-need to provide icons just to get something to show up. You can still
-provide your own icons to replace the generated ones, and you are no
-longer restricted to a mod-specific texture path to do it.</p>
+<p>JourneyMap affiche une icône pour chaque foule sur la carte et sur le radar de l'entité.</p>
+<p>Depuis JourneyMap 6.0, JourneyMap <strong>génère automatiquement une icône</strong> pour
+chaque foule, y compris les foules modifiées, à partir du modèle de la foule. Tu n'es plus
+besoin de fournir des icônes juste pour que quelque chose apparaisse. Vous pouvez toujours
+fournissez vos propres icônes pour remplacer celles générées, et vous n'êtes pas
+plus limité à un chemin de texture spécifique au mod pour le faire.</p>
 <h2 id="icon-path"><strong>Icon path</strong></h2>
-<p>Custom mob icons live under the <code>journeymap</code> namespace at this path:</p>
+<p>Les icônes de foule personnalisées se trouvent sous l'espace de noms <code>journeymap</code> à ce chemin&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>assets/journeymap/icon/entity/{mod_id}/{mob_name}.png
 </code></pre></div>
 <ul>
-<li><code>{mod_id}</code> is the id of the mod the mob belongs to, or <code>minecraft</code>
-  for a vanilla mob.</li>
-<li><code>{mob_name}</code> is the name of the mob.</li>
+<li><code>{mod_id}</code> est l'identifiant du mod auquel appartient le mob, ou <code>minecraft</code>
+  pour une foule vanille.</li>
+<li><code>{mob_name}</code> est le nom de la foule.</li>
 </ul>
-<p>For example, a custom creeper icon goes at:</p>
+<p>Par exemple, une icône de creeper personnalisée va à&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>assets/journeymap/icon/entity/minecraft/creeper.png
 </code></pre></div>
-<p>This path is the same whether you are a mod author bundling icons in
-your mod jar or a resource pack author shipping them in a resource pack.</p>
+<p>Ce chemin est le même que vous soyez un auteur de mod regroupant des icônes dans
+votre pot de mod ou un auteur de pack de ressources les expédiant dans un pack de ressources.</p>
 <h2 id="image-size"><strong>Image size</strong></h2>
-<p>The recommended icon size is 16x16. Icons can be any size, but they
-have to fit inside the marker's circle to display correctly. If you use
-a larger image, put transparent pixels in the corners so they do not
-stick out past the circle.</p>
+<p>La taille d'icône recommandée est de 16 x 16. Les icônes peuvent être de n'importe quelle taille, mais elles
+doivent s'insérer à l'intérieur du cercle du marqueur pour s'afficher correctement. Si vous utilisez
+une image plus grande, mettez des pixels transparents dans les coins pour qu'ils ne
+dépassez le cercle.</p>
 <h2 id="outlined-icons"><strong>Outlined icons</strong></h2>
-<p>JourneyMap has an icon "outlined" display option. Resource packs can
-provide an outlined variant of an icon by adding a second file with an
-<code>_outline.png</code> suffix, for example:</p>
+<p>JourneyMap a une option d'affichage d'icône «&nbsp;décrite&nbsp;». Les packs de ressources peuvent
+fournir une variante décrite d'une icône en ajoutant un deuxième fichier avec un
+Suffixe <code>_outline.png</code>, par exemple&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>assets/journeymap/icon/entity/minecraft/creeper.png
 assets/journeymap/icon/entity/minecraft/creeper_outline.png
 </code></pre></div>
-<p>The outlined variant is optional. If the outlined display option is
-enabled and no <code>_outline.png</code> variant exists, JourneyMap uses the
-regular icon instead. So if a resource pack replaces <code>creeper.png</code> but
-not <code>creeper_outline.png</code>, the outlined option will use the replaced
+<p>La variante décrite est facultative. Si l'option d'affichage décrite est
+activé et qu'aucune variante <code>_outline.png</code> n'existe, JourneyMap utilise le
+icône régulière à la place. Ainsi, si un pack de ressources remplace <code>creeper.png</code> mais
+pas <code>creeper_outline.png</code>, l'option décrite utilisera le remplacement
 <code>creeper.png</code>.</p>
-<h2 id="adding-icons-without-a-resource-pack"><strong>Adding icons without a resource pack</strong></h2>
-<p>You can also drop icons straight into JourneyMap's icon folder, without
-making a resource pack:</p>
+<h2 id="ajout-dicones-sans-pack-de-ressources"><strong>Ajout d'icônes sans pack de ressources</strong></h2>
+<p>Vous pouvez également déposer des icônes directement dans le dossier d'icônes de JourneyMap, sans
+créer un pack de ressources&nbsp;:</p>
 <div class="highlight"><pre><span></span><code>{minecraft}/journeymap/icon/entity/{mod_id}/{mob_name}.png
 </code></pre></div>
-<p>Icons added this way require a client restart to be picked up.</p>
-<p>The icons JourneyMap generates automatically are stored under
-<code>{minecraft}/journeymap/icon/entity/</code>. You can browse that folder to see
-the mob names JourneyMap uses and to use the generated icons as a
-starting point for your own.</p>
+<p>Les icônes ajoutées de cette manière nécessitent un redémarrage du client pour être récupérées.</p>
+<p>Les icônes générées automatiquement par JourneyMap sont stockées sous
+<code>{minecraft}/journeymap/icon/entity/</code>. Vous pouvez parcourir ce dossier pour voir
+les noms de foule utilisés par JourneyMap et pour utiliser les icônes générées comme
+point de départ pour le vôtre.</p>
 
 
 

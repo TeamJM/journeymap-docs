@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#advanced-settings" class="md-skip">
+        <a href="#parametres-avances" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1085,10 +1085,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2321,10 +2321,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#autres-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Settings
+        Autres paramètres
       
     </span>
   </a>
@@ -2351,176 +2351,161 @@
   
 
 
-<h1 id="advanced-settings"><strong>Advanced Settings</strong></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation needed for 6.0</p>
-<p>This page was updated for JourneyMap 6.0 in English. Translation
-is pending; the content shown is the English source. See
-Contributing to help translate the docs.</p>
-</div>
-<p>This section contains advanced settings for power users and those that may wish to tweak some of JourneyMap's internals.</p>
+<h1 id="parametres-avances"><strong>Paramètres avancés</strong></h1>
+<p>Cette section contient des paramètres avancés pour les utilisateurs expérimentés et ceux qui souhaitent modifier certains éléments internes de JourneyMap.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The settings in this section can have extreme effects on the performance of your client. We don't recommend touching these settings unless you have a good understanding of what you're doing, or you're directed to do so by a member of the JourneyMap support staff.</p>
-<p>If tweaking these settings crashes your client or causes your computer to lag horribly, don't say we didn't warn you.</p>
+<p>Les paramètres de cette section peuvent avoir des effets extrêmes sur les performances de votre client. Nous vous déconseillons de toucher à ces paramètres, sauf si vous comprenez bien ce que vous faites ou si un membre de l'équipe d'assistance JourneyMap vous demande de le faire.</p>
 </div>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/advanced-options.png" data-desc-position="bottom"><img alt="Advanced-Settings" class="center" src="../../../img/settings/client/advanced-options.png"></a></p>
+<p>Si la modification de ces paramètres fait planter votre client ou entraîne un horrible retard de votre ordinateur, ne dites pas que nous ne vous avons pas prévenu.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/settings/client/advanced-options.png" data-desc-position="bottom"><img alt="Paramètres avancés" class="center" src="../../../img/settings/client/advanced-options.png"></a></p>
 <h2 id="toggles"><strong>Toggles</strong></h2>
-<p>The <strong>bold</strong> toggle settings below are enabled by default.</p>
+<p>Les paramètres de bascule <strong>gras</strong> ci-dessous sont activés par défaut.</p>
 <table>
 <thead>
 <tr>
-<th>Toggle</th>
-<th>Description</th>
+<th>Basculer</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Announce Mod</strong></td>
-<td>Announces in the chat window that JourneyMap is ready</td>
+<td><strong>Annoncez le module</strong></td>
+<td>Annonce dans la fenêtre de discussion que JourneyMap est prêt</td>
 </tr>
 <tr>
-<td><strong>Check for Mod Updates</strong></td>
-<td>Turning this off means you won't be notified when there's a new version of JourneyMap available</td>
+<td><strong>Vérifiez les mises à jour des modules</strong></td>
+<td>Désactiver cette option signifie que vous ne serez pas averti lorsqu'une nouvelle version de JourneyMap sera disponible</td>
 </tr>
 <tr>
-<td><strong>Chunk Data Caching</strong></td>
-<td>Enables or disables chunk caching - when disabled, teleporting or creating waypoints outside of your render range will default to sea level y=64</td>
+<td><strong>Mise en cache de fragments de données</strong></td>
+<td>Active ou désactive la mise en cache de morceaux - lorsqu'elle est désactivée, la téléportation ou la création de points de cheminement en dehors de votre plage de rendu sera par défaut au niveau de la mer y=64</td>
 </tr>
 <tr>
-<td>GL Error Checking</td>
-<td>Enables OpenGL error checking - enabling can decrease performance, and a restart is required after changing this value. Applies to the OpenGL builds only; the Minecraft 26.2 build uses Vulkan</td>
+<td>Vérification des erreurs GL</td>
+<td>Active la vérification des erreurs OpenGL - l'activation peut diminuer les performances et un redémarrage est requis après avoir modifié cette valeur. S'applique uniquement aux versions OpenGL&nbsp;; la version Minecraft 26.2 utilise Vulkan</td>
 </tr>
 <tr>
-<td><strong>Hide Sneaking Entities</strong></td>
-<td>Whether to hide creatures that are trying to sneak (crouch)</td>
+<td><strong>Masquer les entités furtives</strong></td>
+<td>S'il faut cacher les créatures qui tentent de se faufiler (s'accroupir)</td>
 </tr>
 <tr>
-<td>Hide Spectators</td>
-<td>Whether to hide spectators on the radar</td>
+<td>Masquer les spectateurs</td>
+<td>Faut-il cacher les spectateurs sur le radar</td>
 </tr>
 <tr>
-<td><strong>LOD Tiles</strong></td>
-<td>Enable LOD (level-of-detail) tile rendering when zoomed out on the map - disabling and saving will delete LOD cache files from disk</td>
+<td><strong>Tuiles LOD</strong></td>
+<td>Activer le rendu des tuiles LOD (niveau de détail) lors d'un zoom arrière sur la carte - la désactivation et l'enregistrement supprimeront les fichiers de cache LOD du disque</td>
 </tr>
 <tr>
-<td><strong>Minimap Map Type Overlay</strong></td>
-<td>Show or hide the map type icon that briefly appears when you switch the minimap's map type (Day, Night, Cave, Topo, Biome)</td>
+<td><strong>Superposition de type de carte mini-carte</strong></td>
+<td>Afficher ou masquer l'icône de type de carte qui apparaît brièvement lorsque vous changez le type de carte de la mini-carte (Jour, Nuit, Grotte, Topo, Biome)</td>
 </tr>
 <tr>
-<td><strong>Minimap Preset Number Overlay</strong></td>
-<td>Show or hide the number overlay displayed when switching minimap presets</td>
+<td><strong>Superposition de numéros prédéfinis sur la mini-carte</strong></td>
+<td>Afficher ou masquer la superposition de numéros affichée lors du changement de préréglage de la mini-carte</td>
 </tr>
 <tr>
-<td><strong>Mob Icon Fade</strong></td>
-<td>Enable or disable mob icons fading based on vertical distance from the player</td>
+<td>** Fondu de l'icône de la foule **</td>
+<td>Activer ou désactiver la décoloration des icônes de foule en fonction de la distance verticale par rapport au joueur</td>
 </tr>
 <tr>
-<td>Multi World Support</td>
-<td>Experimental: prevents map overwriting in multi-world server setups - only takes effect after rejoining the server</td>
+<td>Prise en charge multi-monde</td>
+<td>Expérimental&nbsp;: empêche l'écrasement de la carte dans les configurations de serveur multi-mondes - ne prend effet qu'après avoir rejoint le serveur</td>
 </tr>
 <tr>
-<td><strong>Player Icon Fade</strong></td>
-<td>Enable or disable player icons fading based on vertical distance from the player</td>
+<td>** Fondu de l'icône du joueur **</td>
+<td>Activer ou désactiver la décoloration des icônes des joueurs en fonction de la distance verticale par rapport au joueur</td>
 </tr>
 <tr>
-<td>Record Cache Statistics</td>
-<td>Whether to enable caches to record their statistics - may slightly hurt performance if enabled - intended for beta testers</td>
+<td><strong>Rendu la mini-carte derrière les écrans</strong></td>
+<td>Autoriser le rendu de la mini-carte derrière des écrans ouverts</td>
 </tr>
 <tr>
-<td><strong>Render Minimap behind Screens</strong></td>
-<td>Allow the minimap to render behind open screens</td>
+<td>Utiliser les icônes héritées</td>
+<td>Utilisez les icônes de foule fournies avec JourneyMap au lieu de celles générées automatiquement ou celles fournies dans les packs de ressources</td>
 </tr>
 <tr>
-<td>Use Legacy Icons</td>
-<td>Use the mob icons that come with JourneyMap instead of automatically generated ones or those that come in resource packs</td>
-</tr>
-<tr>
-<td>Use Server IP</td>
-<td>Use the server IP address in data saving to help keep maps unique - only takes effect after rejoining the server</td>
+<td>Utiliser l'adresse IP du serveur</td>
+<td>Utiliser l'adresse IP du serveur lors de la sauvegarde des données pour conserver l'unicité des cartes&nbsp;; ne prend effet qu'après avoir rejoint le serveur</td>
 </tr>
 </tbody>
 </table>
-<h2 id="other-settings"><strong>Other Settings</strong></h2>
-<p>The default option for each setting below is marked with <strong>bold text.</strong></p>
+<h2 id="autres-parametres"><strong>Autres paramètres</strong></h2>
+<p>L'option par défaut pour chaque paramètre ci-dessous est marquée d'un <strong>texte en gras.</strong></p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Paramètre</th>
 <th>Options</th>
-<th>Description</th>
+<th>Descriptif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Logging Level</td>
+<td>Niveau de journalisation</td>
 <td><ul><li><strong>INFO</strong></li><li>ALL</li><li>DEBUG</li><li>ERROR</li><li>FATAL</li><li>OFF</li><li>TRACE</li><li>WARN</li></ul></td>
-<td>Set how verbose JourneyMap's logs are - caution, some logging levels will hurt performance, keep the default unless instructed</td>
+<td>Définissez le niveau de détail des journaux de JourneyMap - attention, certains niveaux de journalisation nuiront aux performances, conservez la valeur par défaut sauf indication contraire</td>
 </tr>
 <tr>
-<td>AutoMap Poll Frequency</td>
-<td>Range: 500 - 10000 (in ms) <br>Default is <strong>2000</strong></td>
-<td>Delay between AutoMap region tasks - lower values will decrease time to AutoMap, but can hurt performance</td>
+<td>Fréquence des sondages AutoMap</td>
+<td>Plage&nbsp;: 500 - 10&nbsp;000 (en ms) <br>La valeur par défaut est <strong>2000</strong></td>
+<td>Délai entre les tâches de région AutoMap&nbsp;: des valeurs inférieures réduiront le temps d'exécution d'AutoMap, mais peuvent nuire aux performances</td>
 </tr>
 <tr>
-<td>Cache Animals</td>
-<td>Range: 100 - 10000 (in ms) <br>Default is <strong>3100</strong></td>
-<td>Duration radar data is cached before checking for new animals - lower values can hurt performance</td>
+<td>Cacher les animaux</td>
+<td>Plage&nbsp;: 100 - 10&nbsp;000 (en ms) <br>La valeur par défaut est <strong>3&nbsp;100</strong></td>
+<td>Durée Les données radar sont mises en cache avant de rechercher de nouveaux animaux – des valeurs inférieures peuvent nuire aux performances</td>
 </tr>
 <tr>
-<td>Cache Mobs</td>
-<td>Range: 100 - 10000 (in ms) <br>Default is <strong>3000</strong></td>
-<td>Duration radar data is cached before checking for new mobs - lower values can hurt performance</td>
+<td>Cacher les monstres</td>
+<td>Plage : 100 - 10 000 (en ms) <br>La valeur par défaut est <strong>3 000</strong></td>
+<td>Les données radar de durée sont mises en cache avant de rechercher de nouveaux monstres – des valeurs inférieures peuvent nuire aux performances</td>
 </tr>
 <tr>
-<td>Cache Player</td>
-<td>Range: 100 - 2000 (in ms) <br>Default is <strong>1000</strong></td>
-<td>Duration status data about you is cached before being rechecked - lower values can hurt performance</td>
+<td>Lecteur de cache</td>
+<td>Plage : 100 - 2 000 (en ms) <br>La valeur par défaut est <strong>1 000</strong></td>
+<td>Les données d'état de durée vous concernant sont mises en cache avant d'être revérifiées - des valeurs inférieures peuvent nuire aux performances</td>
 </tr>
 <tr>
-<td>Cache Players</td>
-<td>Range: 100 - 10000 (in ms) <br>Default is <strong>2000</strong></td>
-<td>Duration radar data is cached before checking for new players - lower values can hurt performance</td>
+<td>Joueurs de cache</td>
+<td>Plage : 100 - 10 000 (en ms) <br>La valeur par défaut est <strong>2 000</strong></td>
+<td>Les données radar de durée sont mises en cache avant de rechercher de nouveaux joueurs – des valeurs inférieures peuvent nuire aux performances</td>
 </tr>
 <tr>
-<td>Cache Villagers</td>
-<td>Range: 100 - 10000 (in ms) <br>Default is <strong>2200</strong></td>
-<td>Duration radar data is cached before checking for new villagers - lower values can hurt performance</td>
+<td>Cacher les villageois</td>
+<td>Plage : 100 - 10 000 (en ms) <br>La valeur par défaut est <strong>2 200</strong></td>
+<td>Durée Les données radar sont mises en cache avant de rechercher de nouveaux villageois – des valeurs inférieures peuvent nuire aux performances</td>
 </tr>
 <tr>
-<td>Maximum Animals</td>
-<td>Range: 1 - 128 <br>Default is <strong>32</strong></td>
-<td>The maximum number of passive mobs displayed on the radar - larger numbers may cause lag</td>
+<td>Animaux maximum</td>
+<td>Plage : 1 - 128 <br>La valeur par défaut est <strong>32</strong></td>
+<td>Le nombre maximum de monstres passifs affichés sur le radar – des nombres plus élevés peuvent provoquer un décalage</td>
 </tr>
 <tr>
-<td>Maximum Ambient Creatures</td>
-<td>Range: 1 - 128 <br>Default is <strong>32</strong></td>
-<td>The maximum number of ambient mobs displayed on the radar - larger numbers may cause lag</td>
+<td>Nombre maximum de foules</td>
+<td>Plage : 1 - 128 <br>La valeur par défaut est <strong>32</strong></td>
+<td>Le nombre maximum de foules hostiles affichées sur le radar – des nombres plus élevés peuvent entraîner un décalage</td>
 </tr>
 <tr>
-<td>Maximum Mobs</td>
-<td>Range: 1 - 128 <br>Default is <strong>32</strong></td>
-<td>The maximum number of hostile mobs displayed on the radar - larger numbers may cause lag</td>
+<td>Nombre maximum de joueurs</td>
+<td>Plage : 1 - 128 <br>La valeur par défaut est <strong>32</strong></td>
+<td>Le nombre maximum de joueurs affichés sur le radar – des nombres plus élevés peuvent entraîner un décalage</td>
 </tr>
 <tr>
-<td>Maximum Players</td>
-<td>Range: 1 - 128 <br>Default is <strong>32</strong></td>
-<td>The maximum number of players displayed on the radar - larger numbers may cause lag</td>
+<td>Villageois maximum</td>
+<td>Plage : 1 - 128 <br>La valeur par défaut est <strong>32</strong></td>
+<td>Le nombre maximum de villageois affichés sur le radar – des nombres plus élevés peuvent entraîner un décalage</td>
 </tr>
 <tr>
-<td>Maximum Villagers</td>
-<td>Range: 1 - 128 <br>Default is <strong>32</strong></td>
-<td>The maximum number of villagers displayed on the radar - larger numbers may cause lag</td>
+<td>Portée radar latérale</td>
+<td>Plage : 16 - 512 (en blocs) <br>La valeur par défaut est <strong>64</strong></td>
+<td>Distance latérale pour rechercher et afficher des entités sur le radar – des nombres plus élevés peuvent entraîner un décalage important</td>
 </tr>
 <tr>
-<td>Radar Range Lateral</td>
-<td>Range: 16 - 512 (in blocks) <br>Default is <strong>64</strong></td>
-<td>Lateral distance to search for and display entities on the radar - larger numbers may cause significant lag</td>
-</tr>
-<tr>
-<td>Radar Range Vertical</td>
-<td>Range: 8 - 320 (in blocks) <br>Default is <strong>16</strong></td>
-<td>Vertical distance to search for and display entities on the radar - larger numbers may cause significant lag</td>
+<td>Portée radar verticale</td>
+<td>Plage : 8 - 320 (en blocs) <br>La valeur par défaut est <strong>16</strong></td>
+<td>Distance verticale pour rechercher et afficher des entités sur le radar – des nombres plus élevés peuvent entraîner un décalage important</td>
 </tr>
 </tbody>
 </table>
